@@ -1,0 +1,1001 @@
+1
+00:00:02,870 --> 00:00:10,800
+are you ready yeah okay first question
+such question for you who already
+
+2
+00:00:10,800 --> 00:00:15,120
+experienced some difficulties to grasp
+DDD concept at the very beginning while
+it was the time to put it into your
+
+3
+00:00:17,490 --> 00:00:23,910
+project or into your code yeah okay so
+you you're not alone and we yeah I have
+
+4
+00:00:23,910 --> 00:00:30,029
+to confess I have a sin problem I see a
+lot of talk about DDD and I tried to
+
+5
+00:00:30,029 --> 00:00:35,399
+apply on legacy akhada
+that's not no result why we imagine
+
+6
+00:00:35,399 --> 00:00:41,280
+cessation absolutely so the as this
+camera here we will talk mostly talk
+
+7
+00:00:41,280 --> 00:00:46,980
+about tactical patterns and lost like he
+talking about ubiquitous always and how
+to put the long wave of your domain
+
+8
+00:00:49,260 --> 00:00:53,460
+expert of your business into your code
+much more than strategical pattern we
+
+9
+00:00:53,460 --> 00:01:01,309
+will talk a little bit about it but it's
+rather tactical yeah I wanted session
+
+10
+00:01:01,520 --> 00:01:10,850
+maybe before no no sorry
+so I'm blue car I've come from Paris and
+coach and teaching and I'm in charge of
+
+11
+00:01:20,240 --> 00:01:26,270
+BDD meetup in Paris okay my name is
+tilapia use case driven on Twitter I'm
+
+12
+00:01:26,270 --> 00:01:32,490
+I'm working software since 18 euros and
+I'm also Corgan either of the DDD Paris
+
+13
+00:01:32,490 --> 00:01:37,380
+meetup I'm kind of upset by use cases
+and problem space because I think we
+
+14
+00:01:37,380 --> 00:01:41,790
+jump too much too soon into the solution
+space we all our golden armors and stuff
+
+15
+00:01:41,790 --> 00:01:48,810
+like that our solutions so this is one
+of my obsession okay we have some gifts
+
+16
+00:01:48,810 --> 00:01:57,240
+for you so we have two books two Bibles
+the blue one and the one and refactoring
+by Sola and voila
+
+17
+00:01:59,119 --> 00:02:04,590
+so to win those books you will have to
+tweet as hell during this session using
+
+18
+00:02:04,590 --> 00:02:13,739
+the abstract DDD you you you thank you
+we have a referee here so you will
+
+19
+00:02:13,739 --> 00:02:20,310
+have a look at that as tagging the most
+funny tweet or you can you can quote you
+
+20
+00:02:20,310 --> 00:02:25,319
+can take picture you can do jokes about
+us about you whatever and Jerome will
+tell us the two winners at the end of
+
+21
+00:02:27,090 --> 00:02:32,609
+the shell session all right okay fine
+cool all the other men for today will be
+
+22
+00:02:32,609 --> 00:02:39,150
+trained trainees kind of labs actually
+so we will focus more on the city
+
+23
+00:02:39,150 --> 00:02:45,180
+Federation optimization yeah just in
+front here it's the model of a train a
+
+24
+00:02:45,180 --> 00:02:51,120
+train which has three coaches coach a
+could be in coach C which has some seats
+
+25
+00:02:51,120 --> 00:02:56,209
+already reserved in the orange empty
+seats in in in white and here we are
+
+26
+00:02:56,209 --> 00:03:02,969
+asking six seats to be reserving the
+Train in blue this is a simple model but
+
+27
+00:03:02,969 --> 00:03:07,889
+that may helps to illustrate some
+something okay we have two business rule
+
+28
+00:03:07,889 --> 00:03:12,540
+for today for the system the first one
+is you should not we should not with
+there more than 70% of the entire
+
+29
+00:03:14,340 --> 00:03:19,409
+training capability capacity okay so
+this is the first rule business rule and
+
+30
+00:03:19,409 --> 00:03:23,220
+the second business rule is when I want
+to reserve I want all my city into the
+
+31
+00:03:23,220 --> 00:03:28,829
+same coach I don't we we don't want to
+split families and friends between
+
+32
+00:03:28,829 --> 00:03:34,049
+coaches right simple we taking the rule
+from amid abashed rank at our
+
+33
+00:03:34,049 --> 00:03:40,650
+reservation and we put some crappy code
+on top of that but okay our domain
+
+34
+00:03:40,650 --> 00:03:44,849
+expert could have managed to be with us
+in Amsterdam today but we talked a lot
+with him before previous weeks so he
+
+35
+00:03:48,209 --> 00:03:53,430
+talked a lot about train I talked about
+train IG or identifier it talks about
+
+36
+00:03:53,430 --> 00:04:00,840
+seats coach's reservation attempts and
+whether or not they are not automation
+
+37
+00:04:00,840 --> 00:04:08,430
+attempt is fulfilled and you know they
+also can we find to book working affair
+
+38
+00:04:08,430 --> 00:04:15,000
+as we explain what is it reservation
+reservation failure that's a world from
+
+39
+00:04:15,000 --> 00:04:19,759
+the yeah you know the session we have
+with it those words were the kind of
+
+40
+00:04:19,759 --> 00:04:26,240
+ubiquitous
+so we will work for a startup company
+
+41
+00:04:26,240 --> 00:04:30,110
+which name is Tata
+they provide the reservation service
+
+42
+00:04:30,110 --> 00:04:36,140
+which is basically a web api and this
+will apply to do its work he has to rely
+
+43
+00:04:36,140 --> 00:04:41,870
+on external backends provided by
+external companies so in front it's SNCF
+
+44
+00:04:41,870 --> 00:04:47,450
+so the first back-end provided by SMSF
+which is external to our company it's a
+
+45
+00:04:47,450 --> 00:04:52,850
+trend data basically it's a hand
+topology service meaning we we provide a
+
+46
+00:04:52,850 --> 00:04:57,260
+trend in Australia and we get back the
+topology of the trend meaning the all
+the coaches and for every coaches all
+
+47
+00:05:00,020 --> 00:05:04,460
+the seats and for every seat whether or
+not it's available or already reserved
+
+48
+00:05:04,460 --> 00:05:11,540
+ok quite easy second one is the booking
+reference physical kind of tricky one
+
+49
+00:05:11,540 --> 00:05:15,620
+because not working with when you buy a
+ticket you have an ID on your train
+
+50
+00:05:15,620 --> 00:05:19,550
+ticket this Israeli actually yeah but
+this is a service that only provides a
+
+51
+00:05:19,550 --> 00:05:25,670
+unique identifier so we can't booked
+anything with that all we can do is to
+
+52
+00:05:25,670 --> 00:05:32,270
+get unique identifiers to play with and
+once our seat reservation service on the
+Left we'll have get a topology find
+
+53
+00:05:34,400 --> 00:05:39,830
+available seats then getting a booking
+reference we actually booked the
+
+54
+00:05:39,830 --> 00:05:42,470
+reservation
+through the National Train appellate of
+
+55
+00:05:42,470 --> 00:05:48,200
+service through that last train booking
+sighs all right in terms of we are kind
+of done streams we are a tiny startup in
+
+56
+00:05:52,160 --> 00:05:56,570
+that open market that has been opened
+recently so these are the the back-end
+provided by the National Train operator
+
+57
+00:05:58,460 --> 00:06:06,080
+is it ok for all of you yeah we will
+continue maybe a balloon can do a demo
+
+58
+00:06:06,080 --> 00:06:13,130
+of the Web API so it will takes few
+seconds to to switch
+
+59
+00:06:13,130 --> 00:06:25,880
+yeah ok so I use postman
+where you can see the URL to call the
+
+60
+00:06:25,880 --> 00:06:33,889
+API and we can see the body the payload
+with to fail to an ID
+
+61
+00:06:33,889 --> 00:06:43,340
+is a the notifier of the Train and the
+number of teeth requested okay so if you
+post yeah that one take a while yeah we
+
+62
+00:06:52,370 --> 00:06:57,830
+have some same an answer
+transfer the first is a train ID okay
+
+63
+00:06:57,830 --> 00:07:02,449
+second one is a famous booking reference
+I located by the serving as Tom I
+
+64
+00:07:02,449 --> 00:07:14,120
+described before and the list of sit we
+get in back okay so basically that's
+
+65
+00:07:14,120 --> 00:07:25,900
+quite simple way to interact with our
+system yes that's okay
+
+66
+00:07:25,900 --> 00:07:32,060
+basically we have a problem and this is
+really why we are here today at startup
+
+67
+00:07:32,060 --> 00:07:39,650
+call us because they face rechromed
+penalties exist excess of penalties by
+
+68
+00:07:39,650 --> 00:07:46,610
+europe national trainer patents is why
+every call you met on all those back
+
+69
+00:07:46,610 --> 00:07:50,719
+ends you pages so that means that
+started crossed our top every time you
+
+70
+00:07:50,719 --> 00:07:57,259
+call one of those where the pie is
+charged from fees so they were expected
+
+71
+00:07:57,259 --> 00:08:02,689
+to do so but the thing they are paying
+too much so they asked us to have a look
+
+72
+00:08:02,689 --> 00:08:08,149
+at the code and to see what may be the
+reason and can can we troubleshoot and
+
+73
+00:08:08,149 --> 00:08:13,699
+fix if you have something to fix okay
+but before touching any legacy code if
+
+74
+00:08:13,699 --> 00:08:22,849
+you are like Bruno and and I what would
+you recommend us to do that test yeah
+
+75
+00:08:22,849 --> 00:08:26,539
+absolutely
+in fact we this is really one we missed
+
+76
+00:08:26,539 --> 00:08:29,800
+the keynote we have built test arrest
+this morning
+
+77
+00:08:29,800 --> 00:08:35,209
+discovering the the code and trying to
+highlights all those business rules so
+we've made so far three acceptance tests
+
+78
+00:08:38,380 --> 00:08:45,319
+first one first one is a happy pasta we
+have a trend with only one coach we
+
+79
+00:08:45,319 --> 00:08:49,959
+stand sit and we
+allocate a reserve twisted and as you
+
+80
+00:08:49,959 --> 00:08:56,649
+can see exactly what I do with postman
+yeah and it is exactly the same answer
+
+81
+00:08:56,649 --> 00:09:01,529
+okay
+simple IP pass okay second one is the
+
+82
+00:09:01,529 --> 00:09:09,940
+yeah this is the first business rule we
+can exceed 70 percent for reservation in
+
+83
+00:09:09,940 --> 00:09:18,269
+all the Train and we if we ask to sit
+and you can see I already six C reserved
+
+84
+00:09:18,269 --> 00:09:26,320
+yeah and because I applies the rule so
+70 percent seven seeing exactly transit
+
+85
+00:09:26,320 --> 00:09:32,290
+the way to response an arrow is this one
+I get that will ID but the booking
+reference is empty and the list of the
+
+86
+00:09:34,149 --> 00:09:39,910
+city's empty this is how transfer is
+telling us no reservation has been made
+
+87
+00:09:39,910 --> 00:09:47,260
+for you okay and the third test was test
+highlighting the old seat must be in the
+
+88
+00:09:47,260 --> 00:09:51,699
+same coach please the second business
+rule and in that case we found we
+
+89
+00:09:51,699 --> 00:09:57,279
+followed bag we found about because we
+asked here we have a sorry a train with
+
+90
+00:09:57,279 --> 00:10:02,350
+two two coaches and one is almost full
+the other is completely free and when we
+
+91
+00:10:02,350 --> 00:10:07,389
+ask two seats actually we get here one
+seat in coach a one sitting could be
+
+92
+00:10:07,389 --> 00:10:12,069
+which was unexpected because we don't
+want to split families and friends so we
+
+93
+00:10:12,069 --> 00:10:16,510
+are thinking about that is we know we
+were saying that it's may explain some
+
+94
+00:10:16,510 --> 00:10:20,709
+things related to the field you have
+some ideas about what may explain the
+
+95
+00:10:20,709 --> 00:10:27,610
+extra fees
+imagine you use the website you call the
+
+96
+00:10:27,610 --> 00:10:35,819
+service and you prepare a trip with your
+family or your girlfriend boyfriend
+
+97
+00:10:35,819 --> 00:10:48,370
+what's happen exactly it's to to counsel
+because I'm not pleased to have two
+
+98
+00:10:48,370 --> 00:10:53,440
+seats in two different countries or
+Council maybe we try it concern retry
+
+99
+00:10:53,440 --> 00:10:55,840
+consul retire at the end of the day I
+will
+
+100
+00:10:55,840 --> 00:11:01,390
+which switch to another provider we left
+control poor experience but that may
+
+101
+00:11:01,390 --> 00:11:07,420
+explain that because every time every
+attempt will be charged actually so that
+
+102
+00:11:07,420 --> 00:11:11,590
+was our epithet ease and we discussed it
+with Dominic's path through foreign aid
+
+103
+00:11:11,590 --> 00:11:18,850
+say yeah that might be the one so please
+guys can you please fix that bugger so
+
+104
+00:11:18,850 --> 00:11:22,540
+we are here to fix that back
+altogether and we will ask you to help
+us in that journey so what would you
+
+105
+00:11:25,840 --> 00:11:42,910
+recommend to fix that back what would be
+your strategy yeah sorry we are we are
+the ten data service 20 Direction
+
+106
+00:11:45,940 --> 00:11:51,250
+service on the left on your range yeah
+okay we are only working on that seat
+
+107
+00:11:51,250 --> 00:11:56,620
+reservation in in yellow these are
+dependencies we don't have leverage on
+
+108
+00:11:56,620 --> 00:12:03,820
+that actually yeah not only consumers
+now will complete with all the companion
+
+109
+00:12:03,820 --> 00:12:07,960
+we all start up and we compete with
+other we need some information from
+
+110
+00:12:07,960 --> 00:12:13,240
+those two and we need to set and to
+confirm and to book to make a
+
+111
+00:12:13,240 --> 00:12:20,230
+transaction with that guy so is that a
+kind of interaction we have so in terms
+
+112
+00:12:20,230 --> 00:12:25,540
+of strategy what will you recommend
+right test yeah right to test so
+
+113
+00:12:25,540 --> 00:12:30,910
+actually we already wrote a test so that
+highlighted the bug so we'll have to fix
+
+114
+00:12:30,910 --> 00:12:37,450
+that test actually okay so let's dive
+into the code yeah you know what set a
+
+115
+00:12:37,450 --> 00:12:45,150
+breakpoint you can call it yeah that's
+okay asking me it's lunch in the bug mud
+so here if you just to the side of the
+
+116
+00:12:50,620 --> 00:12:57,400
+screen it's a web it says AC sharp code
+it's a high-speed Metco API it's simply
+
+117
+00:12:57,400 --> 00:13:02,410
+father doing Java spring boots it's tied
+so simply for when we request that post
+
+118
+00:13:02,410 --> 00:13:08,680
+on that so sauce with that name we get
+that callback
+
+119
+00:13:08,680 --> 00:13:15,160
+so and it's an emotional question we
+receive just to have a look under the
+
+120
+00:13:15,160 --> 00:13:23,740
+TiVo is very simple exactly the payload
+or the design absolutely and so after
+
+121
+00:13:23,740 --> 00:13:27,670
+that we instance yet you can slide to
+the left so yeah thank you
+
+122
+00:13:27,670 --> 00:13:31,480
+so we associate a web ticket manager
+which is seems to be the entry point of
+
+123
+00:13:31,480 --> 00:13:37,360
+the system and we call herself method on
+it providing the energy you know the
+
+124
+00:13:37,360 --> 00:13:44,980
+bonus it's requested okay so this is
+what we have test so far if we have a
+
+125
+00:13:44,980 --> 00:13:53,200
+look at the test that is failing our
+three test is I kind of acceptance test
+
+126
+00:13:53,200 --> 00:13:58,779
+we consider the system as a black box
+and we send so my quest and we checked
+
+127
+00:13:58,779 --> 00:14:06,220
+it done syringes on the last one is the
+test demonstrate the program okay so
+
+128
+00:14:06,220 --> 00:14:10,860
+what we why we have a tool that is named
+and crunch we see every time we changed
+
+129
+00:14:10,860 --> 00:14:16,060
+something we type something we change
+the code it will run the test in in
+background execute it and provide us a
+
+130
+00:14:18,760 --> 00:14:25,600
+feedback loop with a colored arrow on
+the margins or greens is fine and ready
+
+131
+00:14:25,600 --> 00:14:31,900
+either there's a problem and there is an
+arrow in in red below you you know yeah
+
+132
+00:14:31,900 --> 00:14:38,650
+a lot of you of the arrow is basically
+it's the problem we were expecting to
+
+133
+00:14:38,650 --> 00:14:45,400
+have to sit in one Bo and to be and
+actually we get 10 I 10 a and 1 B so
+
+134
+00:14:45,400 --> 00:14:51,370
+this is the bug we discussed earlier
+okay okay all right well I think it
+
+135
+00:14:51,370 --> 00:14:56,620
+would be a good things to stuff to have
+another view of what the hell method is
+
+136
+00:14:56,620 --> 00:15:04,180
+is doing oh yeah I just aligned the code
+okay for you let's have a first author
+
+137
+00:15:04,180 --> 00:15:09,579
+of you let's we discover that this
+morning so we have a little bit much
+
+138
+00:15:09,579 --> 00:15:14,560
+more knowledge about it so I will try to
+help you to to have another view first
+
+139
+00:15:14,560 --> 00:15:18,350
+we
+we associate a list of available seats
+
+140
+00:15:18,350 --> 00:15:24,320
+that should be probably the ritual of
+the of the method then we call a get
+
+141
+00:15:24,320 --> 00:15:30,380
+trained on a trend at a service and we
+get something like we call G's entrain I
+
+142
+00:15:30,380 --> 00:15:35,840
+need so G's on topology you will see
+that yeah then we associate the Train a
+
+143
+00:15:35,840 --> 00:15:42,230
+trainer stalls from that design topology
+and on that trailer stalls we do some
+
+144
+00:15:42,230 --> 00:15:47,900
+business rules here and there so here we
+if the number of seats already reserved
+
+145
+00:15:47,900 --> 00:15:54,380
+in the Train plus number of sittin being
+requesting is below is below something
+
+146
+00:15:54,380 --> 00:15:58,640
+like get max raise let me check should
+be some percentage or something like
+
+147
+00:15:58,640 --> 00:16:02,270
+that
+celebration yeah okay so eighty percent
+
+148
+00:16:02,270 --> 00:16:09,170
+of the overall trend capacity so if I
+respect the the first business rule I'm
+
+149
+00:16:09,170 --> 00:16:14,570
+continue I continue is a number of K
+over K 0 seems to be an accumulative
+
+150
+00:16:14,570 --> 00:16:20,450
+viable here and we tried to find some
+available seats unavailable sits in that
+
+151
+00:16:20,450 --> 00:16:28,700
+system is the one that a booking life is
+empty we have a property and if it's
+
+152
+00:16:28,700 --> 00:16:34,190
+empty string that means that the seat is
+available and then we can add it into
+
+153
+00:16:34,190 --> 00:16:39,230
+the list beliefs that we will return at
+the end of the of the method still ok
+
+154
+00:16:39,230 --> 00:16:44,870
+for you so far ok then we have a kind of
+stupid for which we will see that in a
+
+155
+00:16:44,870 --> 00:16:52,370
+second then what do we have
+yes if we can't find the number of seats
+
+156
+00:16:52,370 --> 00:16:57,110
+requested but we do we do we get the
+answer you know the the answer that is
+
+157
+00:16:57,110 --> 00:17:01,850
+saying that you can even count reserved
+for another spelling around so failing
+
+158
+00:17:01,850 --> 00:17:09,500
+methods if it work that when we call the
+booking FF series 3-1 in the middle on
+
+159
+00:17:09,500 --> 00:17:16,160
+the right side and called get booking
+reference then we assign that booking
+
+160
+00:17:16,160 --> 00:17:21,830
+reference to every one of the available
+see that we have found so far we had a
+bunch of accumulator here and then again
+
+161
+00:17:25,819 --> 00:17:29,299
+it's pretty much the same if if you look
+at me right
+
+162
+00:17:29,299 --> 00:17:36,470
+you know now yeah first one is not
+really insane but if it's still okay we
+
+163
+00:17:36,470 --> 00:17:43,730
+owe we use a cash yeah thirsting see
+that why okay and then what we do we do
+
+164
+00:17:43,730 --> 00:17:48,590
+we actually this is the one that that is
+making the booking I know tours i
+
+165
+00:17:48,590 --> 00:17:52,759
+transaction actually it will be the
+external web app I would call through to
+
+166
+00:17:52,759 --> 00:18:01,149
+book a seat if I enter to that
+let me check here the implementation
+Emily we call a web app I know plenty is
+
+167
+00:18:04,700 --> 00:18:10,970
+on to call the web app yeah no real
+interest in that and if we assume that
+
+168
+00:18:10,970 --> 00:18:16,279
+if we don't have any kind of exception
+here what do we do we jump the answer
+
+169
+00:18:16,279 --> 00:18:24,049
+and the answer is the one dumping the
+least receipts we were found so far okay
+
+170
+00:18:24,049 --> 00:18:30,980
+and in the case here what in the case
+yes in the case of the trunk capacity
+
+171
+00:18:30,980 --> 00:18:35,960
+limit as X C has been exceeded we return
+the empty
+
+172
+00:18:35,960 --> 00:18:40,700
+you can't reserve anything in that
+trailer at the fella okay for every one
+
+173
+00:18:40,700 --> 00:18:46,929
+of you we will make a few review while
+working on it but do you have some
+
+174
+00:18:46,929 --> 00:18:58,879
+feedback about that so far what are we
+string concatenating to create didn't we
+actually this is not awkward as a
+
+175
+00:19:00,889 --> 00:19:08,359
+disclaimer this is the car we discovered
+this morning so yes but this is a good
+
+176
+00:19:08,359 --> 00:19:14,269
+remark why do we say allies attendees on
+here in the middle of something that is
+
+177
+00:19:14,269 --> 00:19:20,200
+expected to be some kind of business
+knowledge yeah sorry
+
+178
+00:19:20,200 --> 00:19:24,840
+[Laughter]
+they don't know they don't even use
+gates in that project in you know I
+
+179
+00:19:27,059 --> 00:19:36,179
+can't do that
+yeah yeah yeah you're right yeah
+
+180
+00:19:36,179 --> 00:19:40,620
+absolutely
+yeah that is a strategy we will try to
+apply with with you we try to discover
+
+181
+00:19:43,860 --> 00:19:51,870
+the domain expert concept it's for this
+card we try to figure out how can we
+
+182
+00:19:51,870 --> 00:19:57,179
+improve that because so far there is
+something that's really bother me we
+
+183
+00:19:57,179 --> 00:20:03,230
+were talking about the domain expert
+talking with us with terms of concepts
+
+184
+00:20:03,230 --> 00:20:08,669
+can you see about the Train and the
+concept of seat do you Trina
+
+185
+00:20:08,669 --> 00:20:16,860
+do you see any other concept of the
+domain there is something missing coach
+coach the concept of coach is completely
+
+186
+00:20:18,720 --> 00:20:24,360
+missing here and and other stuff
+reservation the reservation no
+reservation no reservation no
+
+187
+00:20:25,710 --> 00:20:32,460
+reservation attempt so far so who
+already expense code like this in this
+
+188
+00:20:32,460 --> 00:20:39,210
+carrier has yeah so we are not alone so
+the ID here for us will be to have a
+
+189
+00:20:39,210 --> 00:20:45,360
+kind of way of improving it because
+since we don't have any kind of coach
+here the strategy for us to fix the bug
+
+190
+00:20:48,960 --> 00:20:56,610
+would be to make it MLG but before that
+it still there is so much crappy thing
+in like that so let's clean first came
+
+191
+00:20:59,909 --> 00:21:04,230
+the deck yeah do you know the name
+cleans the deck the expression clean the
+
+192
+00:21:04,230 --> 00:21:11,010
+deck now clean the deck is the first
+phase when you discover a code you
+
+193
+00:21:11,010 --> 00:21:18,750
+because you need to be more confident
+before to apply a deep refactoring it's
+
+194
+00:21:18,750 --> 00:21:28,289
+a way to discover fix a little name of
+the variables for example and after get
+
+195
+00:21:28,289 --> 00:21:34,049
+into the program it's a way to prepare a
+mental model yeah you know heads from

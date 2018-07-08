@@ -1,0 +1,1001 @@
+196
+00:21:34,049 --> 00:21:38,460
+the SCOTUS with
+so come back from the beginning
+
+197
+00:21:38,460 --> 00:21:41,910
+Sookie near the deck you will have
+another of you but trying to improve a
+
+198
+00:21:41,910 --> 00:21:47,640
+little bit yep
+but before that is about that yeah well
+
+199
+00:21:47,640 --> 00:21:55,560
+typhoon 63 yeah yes for sure it's a
+really early Jessica but you notice
+something wrong with that yeah it's red
+
+200
+00:21:58,590 --> 00:22:05,520
+it's difficult to be confident if my
+color is right because if I measure a
+
+201
+00:22:05,520 --> 00:22:13,340
+mistake I don't see the mistake I prefer
+to see green light oh so to do that
+
+202
+00:22:13,340 --> 00:22:18,480
+we'll completely in do the test to the
+strip in the burgh yeah it's a good
+
+203
+00:22:18,480 --> 00:22:23,700
+technique if you are in the same
+situation why the test failing and you
+
+204
+00:22:23,700 --> 00:23:18,720
+need to you know so yeah there's a
+technique that I like a lot which is a
+
+205
+00:23:18,720 --> 00:23:25,380
+golden master kundo master is you take a
+legacy code you clone it and you wrote
+
+206
+00:23:25,380 --> 00:23:30,780
+you write acceptance test every time I
+send that input into the legacy code and
+the new instance which one I will
+
+207
+00:23:33,570 --> 00:23:39,750
+working on I must I'm expecting to see
+the same output on both instances so
+
+208
+00:23:39,750 --> 00:23:46,460
+that without even understanding the
+legacy I can't have a test unless
+
+209
+00:23:46,460 --> 00:23:51,830
+making me and forcing me I don't break
+any existing behavior so this is a
+
+210
+00:23:51,830 --> 00:23:57,440
+strategy that we could have done but
+here we are implementing the business
+
+211
+00:23:57,440 --> 00:24:01,940
+rule as the domain expert told us so we
+will stick to that point for now but yes
+
+212
+00:24:01,940 --> 00:24:10,659
+it's a good amount so good so let's give
+the decks below yes the first variable
+
+213
+00:24:10,659 --> 00:24:22,340
+this is notable everybody Sita I would
+just have a look where it's using stuff
+from the user so maybe I can decide to
+
+214
+00:24:31,460 --> 00:24:38,630
+move this one close to the user goes to
+the usage yeah for example in the
+
+215
+00:24:38,630 --> 00:24:43,940
+backups room can you see all the code
+every time I test is running in real
+
+216
+00:24:43,940 --> 00:24:49,030
+time I know I'm not breaking the code
+still green
+
+217
+00:24:49,030 --> 00:24:55,760
+the div are of a C programmer because I
+was a C programmer it was to put all the
+
+218
+00:24:55,760 --> 00:25:03,980
+way about as we know but right now so
+this is your now it's not like okay
+
+219
+00:25:03,980 --> 00:25:11,840
+second one is called count what the name
+yeah yeah count
+
+220
+00:25:11,840 --> 00:25:19,010
+wow what a stupid loop yeah we're
+looping on a list actually the list of
+
+221
+00:25:19,010 --> 00:25:24,919
+property count it's exactly the same
+number so we have a hint here is unused
+
+222
+00:25:24,919 --> 00:25:28,490
+maybe here
+yeah yeah previous developer want to say
+
+223
+00:25:28,490 --> 00:25:35,600
+something that so why can I do
+it's maybe to use I've ever sit and
+
+224
+00:25:35,600 --> 00:25:40,039
+apply cone property because at the end
+of the for each loop account will have
+
+225
+00:25:40,039 --> 00:25:46,130
+the same value as available soon I can
+remove this one okay cool a little bit
+
+226
+00:25:46,130 --> 00:25:54,799
+how many screams hi do we have a time
+for we wanna check you want you to to an
+alpha 2 and alpha yeah
+
+227
+00:25:56,780 --> 00:26:07,160
+so that's a lot of thing that wasn't me
+listen like that okay okay this is a
+
+228
+00:26:07,160 --> 00:26:16,370
+code for the treasurer's topology
+maybe we can rename it yeah okay
+Trent apology oh yeah it's all wrong and
+
+229
+00:26:19,340 --> 00:26:24,830
+you can topology topology domain expert
+was talking about technology so if it's
+
+230
+00:26:24,830 --> 00:26:31,310
+better talk to me the smart guys okay
+things not rent math instruction
+
+231
+00:26:31,310 --> 00:26:36,050
+instance we asked to do been expressed
+about dodgy say no I am not aware of any
+
+232
+00:26:36,050 --> 00:26:40,250
+trainings in my domain so should I be
+trained on stones my video so let's
+
+233
+00:26:40,250 --> 00:26:46,270
+rename it into train yeah well you will
+set the transform a train topology yeah
+
+234
+00:26:46,700 --> 00:26:53,960
+what's this guy maybe you can just
+assume yeah and it is here for people in
+
+235
+00:26:53,960 --> 00:27:01,280
+the back okay okay yeah you see this one
+the block of concern is it used
+
+236
+00:27:01,280 --> 00:27:10,490
+yeah huge isipatana actually we use
+multi population we use I adore for for
+
+237
+00:27:10,490 --> 00:27:15,290
+nothing and just just in case the
+collection that count is wrong maybe you
+
+238
+00:27:15,290 --> 00:27:21,650
+can have a maybe that's the president a
+together I don't know no sometimes we
+
+239
+00:27:21,650 --> 00:27:28,310
+don't have to try to understand which is
+just silly stuff okay okay so I can't
+release this phone used okay so you get
+
+240
+00:27:31,220 --> 00:27:47,000
+rid of it get rid this is fun it's it's
+it's yes from the collection of
+
+241
+00:27:47,000 --> 00:27:55,730
+against it and it's the citizens ethical
+Reserve said we don't talk about said we
+
+242
+00:27:55,730 --> 00:28:02,030
+we ask we ask me the very first also do
+we have set us and they say no this is a
+
+243
+00:28:02,030 --> 00:28:10,400
+look to but never use you already see
+that kind of valuables the clutter in
+
+244
+00:28:10,400 --> 00:28:16,970
+the code not even used anymore
+yeah legacy code is full of kind of
+
+245
+00:28:16,970 --> 00:28:26,330
+stuff and it's kind of polishing your
+mind this one have a look of this one we
+
+246
+00:28:26,330 --> 00:28:33,380
+have mother if here and we have all
+pretty much the same if with the knee
+
+247
+00:28:33,380 --> 00:28:38,690
+invest yeah I just heard we like
+symmetry it's much better to to you know
+
+248
+00:28:38,690 --> 00:28:43,370
+to compare stuff to to so as you just a
+to inverse yeah and to be a good I
+thought yeah I'll tend to invert if and
+
+249
+00:28:46,640 --> 00:28:53,030
+then okay we can see pretty much the
+same you everything like fast no no way
+just illustrate it because here as you
+
+250
+00:28:56,990 --> 00:29:03,080
+can see there is a one if here and
+pretty much the same here so yeah this
+
+251
+00:29:03,080 --> 00:29:08,240
+seems there is nothing in the middle we
+can cut the cord into the if below and
+
+252
+00:29:08,240 --> 00:29:14,060
+put it into the at the end of the first
+if this one just at the at the end to
+
+253
+00:29:14,060 --> 00:29:22,190
+respect algorithm so it will simplify a
+little bit the because to achieve so
+
+254
+00:29:22,190 --> 00:29:29,780
+it's really great a green yeah okay so
+now you can read but why what are you
+
+255
+00:29:29,780 --> 00:29:37,690
+doing that because yeah it's right yeah
+entrance when the code is not cover put
+
+256
+00:29:37,690 --> 00:29:44,300
+white thicket oh yeah
+so let code for us this one is not
+
+257
+00:29:44,300 --> 00:29:54,920
+necessary to okay remove some line so I
+think we have some space so this one can
+
+258
+00:29:54,920 --> 00:29:59,890
+be crosses the user J the
+
+259
+00:30:00,710 --> 00:30:08,460
+okay so you closed the dicussion yeah
+it's not perfect but we chose a little
+
+260
+00:30:08,460 --> 00:30:13,649
+bit not not so more it's not really a
+deep refactoring just to be more
+confident it's the first round with the
+
+261
+00:30:15,629 --> 00:30:21,989
+first pass and the code from improving
+your mental model about it and trying to
+
+262
+00:30:21,989 --> 00:30:29,909
+clean up some so mess okay something
+better you yeah can you see what's still
+
+263
+00:30:29,909 --> 00:30:35,340
+bothering okay it's still very
+procedural code one method to screen hi
+I am doing this and then doing that and
+
+264
+00:30:37,169 --> 00:30:45,539
+then do this okay
+you know collection script yeah yeah but
+
+265
+00:30:45,539 --> 00:30:52,190
+here to get the train doesn't know is
+usually such that we cut yes because we
+
+266
+00:30:52,190 --> 00:31:02,609
+know the problem is we we instantiate a
+train but this one normally after with a
+domain object and not a kind of Jesus we
+
+267
+00:31:08,129 --> 00:31:11,639
+which is that a trend that has a
+physical of proxy to of the external web
+
+268
+00:31:11,639 --> 00:31:18,629
+api we will make into a adapter for in
+the portal adapter pattern exec us to do
+
+269
+00:31:18,629 --> 00:31:23,489
+that we will have another view before
+that so don't worry if you are not aware
+
+270
+00:31:23,489 --> 00:31:29,669
+of that but instead of returning a
+string of design let's make that method
+
+271
+00:31:29,669 --> 00:31:36,480
+returning as a trainer stones yeah so
+that we can get rid of G zone within the
+
+272
+00:31:36,480 --> 00:31:41,639
+resident method and to make it more
+domain and purely them and not mixing
+technical stuff with a functional domain
+
+273
+00:31:45,029 --> 00:31:52,169
+stuff okay for you yeah still okay
+so I discover the file there is a
+
+274
+00:31:52,169 --> 00:31:57,629
+constructor of the Train so this is a
+training okay yeah yeah I we see a lot
+of stuff to this allies geez on cereal a
+
+275
+00:32:02,970 --> 00:32:09,220
+dog yeah this is a file actually this
+one is not shoes
+
+276
+00:32:09,220 --> 00:32:20,470
+I hear at it I can at the artistry so
+today it's okay this one is never used
+
+277
+00:32:20,470 --> 00:32:32,170
+to let's delete it also this one is gray
+you can split into various files maybe
+
+278
+00:32:32,170 --> 00:32:34,620
+yeah
+
+279
+00:32:35,310 --> 00:32:43,810
+so here we are in the Train class yeah
+and clang class does not have tons of
+
+280
+00:32:43,810 --> 00:32:50,020
+behaviors I would say except by passing
+a JSON and then we I actually Scott
+
+281
+00:32:50,020 --> 00:32:57,340
+Richter Souls my geometric see sharp
+okay so copper serum is using a lambda
+
+282
+00:32:57,340 --> 00:33:03,880
+yeah okay and I will move this one so
+these are the member of I abilities are
+
+283
+00:33:03,880 --> 00:33:09,250
+the properties on the fields in okay and
+then all we have it's a constructor is a
+
+284
+00:33:09,250 --> 00:33:16,170
+only technical stuff so what you what
+would you suggest
+
+285
+00:33:18,480 --> 00:33:31,000
+refactoring yeah should we keep yeah
+there is a better locations to do some
+
+286
+00:33:31,000 --> 00:33:36,370
+season passing but the trend which part
+of the domain and we should not do that
+
+287
+00:33:36,370 --> 00:33:45,760
+here do that yeah okay so to do that I
+have to create a little to encapsulate
+
+288
+00:33:45,760 --> 00:33:50,560
+the code I want to move okay this is
+something that we will do a lot extract
+
+289
+00:33:50,560 --> 00:33:54,310
+and move extract the method excited
+video into a method and move into the
+
+290
+00:33:54,310 --> 00:33:58,030
+prop allocation we do that a lot during
+the session first time we will do it
+
+291
+00:33:58,030 --> 00:34:06,570
+okay I I take all the code I want to
+remove extract this one is okay
+
+292
+00:34:08,350 --> 00:34:19,700
+you're one more okay of this one okay
+the screen is very high okay so extract
+
+293
+00:34:19,699 --> 00:34:26,388
+the method from that and it still will
+be instance method yeah that Trent
+
+294
+00:34:26,389 --> 00:34:32,810
+apology because while passing the design
+the thing is setting some value to the
+
+295
+00:34:32,810 --> 00:34:40,840
+property of the Train it's a nice method
+here so who is extracting into a new
+
+296
+00:34:40,840 --> 00:34:45,560
+method yeah
+public to be able to move it to continue
+
+297
+00:34:45,560 --> 00:34:50,300
+to use it yeah a good way to see if I
+have some dependency because I want to
+
+298
+00:34:50,300 --> 00:34:56,060
+move this one but I don't want to have
+dependency from this one I won't be to
+insulate so I use static and I have some
+
+299
+00:35:02,540 --> 00:35:06,010
+squeezer
+squeezes yeah and yeah because this is
+
+300
+00:35:06,010 --> 00:35:11,180
+static this is where we try to change
+the install second test also see if it's
+static it's made for Miro yeah so how
+
+301
+00:35:13,850 --> 00:35:28,790
+can we how can we get those yeah
+Russian ship yeah to remove the
+
+302
+00:35:28,790 --> 00:35:38,000
+differences those two actually we're
+trying to alright send the dependency as
+
+303
+00:35:38,000 --> 00:35:43,460
+an argument yes yeah yeah it's a good
+idea but there is something like we can
+
+304
+00:35:43,460 --> 00:35:49,190
+do also it's a so far the if is not
+Miriam empty then I increment the
+
+305
+00:35:49,190 --> 00:35:54,619
+reserve seats instead of changing that
+value of kinds of seeds from that point
+
+306
+00:35:54,619 --> 00:35:59,359
+we may be able to cut the behavior
+within the property and every time I
+
+307
+00:35:59,359 --> 00:36:04,640
+call the property the property is doing
+compute the test so it may be one way of
+
+308
+00:36:04,640 --> 00:36:11,440
+doing it so you think yeah let's try
+that and as I sit here instead of
+
+309
+00:36:11,440 --> 00:36:19,850
+letting the method changing the value it
+will be something like sit return on
+
+310
+00:36:19,850 --> 00:36:24,640
+that collection of seeds
+so that as we're not not that were
+
+311
+00:36:24,640 --> 00:36:31,150
+called count not neuro oMG something
+like that yeah
+
+312
+00:36:31,150 --> 00:36:38,530
+Richard so it's a kind of think you for
+so much aware of Java streams it's a
+
+313
+00:36:38,530 --> 00:36:44,940
+more Ducati fictional way of dealing
+with collection and with enumerables
+
+314
+00:36:44,940 --> 00:36:49,780
+it's reserved so it's not so here below
+is writing something like I take the
+
+315
+00:36:49,780 --> 00:36:54,910
+list of the seats and I count every six
+where that lambda is valid meaning all
+seats where they don't have a booking at
+
+316
+00:36:57,790 --> 00:37:03,610
+first new OMG so okay I can I can
+surprise this one so now you can get rid
+
+317
+00:37:03,610 --> 00:37:11,140
+of that it will be done at the other
+level and this one maybe I can make as
+you propose something seminar associate
+
+318
+00:37:13,840 --> 00:37:18,970
+to list
+yeah of seats of and and show some that
+method into a function actually because
+
+319
+00:37:21,040 --> 00:37:32,280
+it it may be a static function yeah so I
+have a sit I change the future I make a
+
+320
+00:37:32,280 --> 00:37:41,410
+list of suits it okay
+and and then here I shape the local
+variable yesterday yeah now I return it
+
+321
+00:37:47,880 --> 00:37:54,010
+so we can solve that method into a
+function so that where we call it we get
+
+322
+00:37:54,010 --> 00:38:00,250
+the results directly so sis we adapt to
+anthropology this is a first step
+
+323
+00:38:00,250 --> 00:38:05,140
+because we have to move it into the
+proper location why is it trend is
+
+324
+00:38:05,140 --> 00:38:12,970
+because it's because it's running yeah
+it's a matter of time after eventually
+
+325
+00:38:12,970 --> 00:38:19,570
+it's on to to be okay maybe so you
+extract the method you make its static
+
+326
+00:38:19,570 --> 00:38:27,070
+function so we can move it kind of
+easily let's put it if you get back to
+
+327
+00:38:27,070 --> 00:38:31,859
+the resonated well it has been called
+yes
+well adjourn here here we have a get
+
+328
+00:38:37,150 --> 00:38:42,430
+trained yeah so it might be interesting
+instead of having the genome topology to
+get the train to return a train so maybe
+
+329
+00:38:44,500 --> 00:38:49,799
+we can put that static function into the
+tender the service yeah
+
+330
+00:38:49,799 --> 00:39:03,690
+so let's move so you move the method
+into the train that I say is okay
+
+331
+00:39:04,270 --> 00:39:08,710
+so far we still have a awkward
+dependency in the trend class but we
+
+332
+00:39:08,710 --> 00:39:16,260
+will change it in a second
+so you make it to a public user yes and
+
+333
+00:39:16,260 --> 00:39:22,089
+the goal is to change this one the get
+train the gate train every change the
+signature so instead of returning a task
+
+334
+00:39:25,270 --> 00:39:30,339
+of string yeah touches before it's I
+think where of requesting a Web API so
+
+335
+00:39:30,339 --> 00:39:38,020
+it's kind of actually on that complexity
+but okay but you have to read it it's
+
+336
+00:39:38,020 --> 00:39:42,880
+written a train
+yeah to be Bella for the business part
+
+337
+00:39:42,880 --> 00:39:49,630
+to take the trend already in some
+okay so you trying to track from the
+
+338
+00:39:49,630 --> 00:39:57,970
+topology but the trend don't take the
+topology we want to adapt the design so
+we call it that adaption topology but
+
+339
+00:40:04,529 --> 00:40:12,789
+currently the train don't receive yeah
+you have to change that yeah I have to
+
+340
+00:40:12,789 --> 00:40:17,079
+change that or so stead of that
+let's accepting a list of seats yes so
+
+341
+00:40:17,079 --> 00:40:20,319
+to instantiate a train we will accept
+the list of seats which will be much
+
+342
+00:40:20,319 --> 00:40:25,750
+more easy to discussed yet to play with
+yeah and remove this one so we don't
+
+343
+00:40:25,750 --> 00:40:30,609
+have any kind of references from the
+train to any kind of trend data service
+
+344
+00:40:30,609 --> 00:40:38,770
+or a structure code you know so that so
+now I can take this one so gate trend
+
+345
+00:40:38,770 --> 00:40:42,579
+now is returning a train
+estas so you don't need that anymore I
+
+346
+00:40:42,579 --> 00:40:47,820
+can remove this
+and here we have some okay yes much
+
+347
+00:40:47,820 --> 00:40:49,620
+better
+we asked the trend at our service to get
+a train and we get a train
+
+348
+00:40:51,240 --> 00:40:55,530
+estas I compiled because maybe I have
+brick yeah I read something it's
+
+349
+00:40:55,530 --> 00:41:00,420
+something that Bazar is unconscious even
+if it does not compile it still green
+
+350
+00:41:00,420 --> 00:41:07,370
+yeah it's a Kenneth Berger I would say
+but Bruno was compiled yes this is
+
+351
+00:41:07,370 --> 00:41:11,970
+within of test we did enough tests we
+have made some LPS to estancia trend
+
+352
+00:41:11,970 --> 00:41:17,220
+from a given design for given topology
+and this is where we have to do the same
+
+353
+00:41:17,220 --> 00:41:24,210
+we have to adjust the previous code that
+we are expecting to the pharmacy at your
+
+354
+00:41:24,210 --> 00:41:32,370
+previous signature to the new one so
+should I'm saying yeah okay just right
+
+355
+00:41:32,370 --> 00:41:35,130
+fine all right
+I don't okay it's okay it's okay and
+
+356
+00:41:35,130 --> 00:41:39,600
+come back to let's get back to the house
+okay so thank you Bruno
+
+357
+00:41:39,600 --> 00:41:45,050
+yeah
+actually we move a technical code that
+
+358
+00:41:45,050 --> 00:41:50,030
+were part of the trend and we get put it
+into a politician which is part of the
+
+359
+00:41:50,030 --> 00:41:55,430
+Constitution so I'm much better much
+more comfortable with that code but
+there's still lots of things that bother
+
+360
+00:41:57,290 --> 00:42:03,800
+me for instance let's see the trend okay
+you clean the deck you improve the
+
+361
+00:42:03,800 --> 00:42:13,880
+situation but ok this is a train what is
+it it's a pure data class without any
+
+362
+00:42:13,880 --> 00:42:18,650
+kind of behaviors without any color
+responsibly and I'm not aware maybe it's
+
+363
+00:42:18,650 --> 00:42:23,180
+a follower or regular man that has said
+once this kind of object is kind of
+teenager object or child object you have
+
+364
+00:42:25,970 --> 00:42:33,650
+to take responsibilities somehow and yet
+yet - so - let's let's do that also we
+
+365
+00:42:33,650 --> 00:42:39,710
+have a concept of seats yeah seat Wow
+shiny stuff there is a name for that
+
+366
+00:42:39,710 --> 00:42:45,860
+yeah actually there is a name for that
+kind of domain you have an idea of what
+
+367
+00:42:45,860 --> 00:42:57,620
+it is an amygdala analyser completely an
+amygdala is a so we are lacking all the
+concept of the domain within our code
+
+368
+00:42:59,360 --> 00:43:03,950
+but when we have we have kind of anemic
+stupid data class yeah and all of you
+have yours in easy that original method
+
+369
+00:43:06,800 --> 00:43:12,470
+kind of collections fit here very
+positive are doing all the logic what I
+suggest if you agree is to try to cap
+
+370
+00:43:18,200 --> 00:43:22,010
+some behaviors and to put it in the
+proper location and try to Lhasa
+
+371
+00:43:22,010 --> 00:43:29,300
+our child objects yeah maybe you can
+show something about our to check yeah
+
+372
+00:43:29,300 --> 00:43:37,310
+maybe we'll slide just since we will do
+it a lot let's see visually what we will
+do we have a Class A Class B Class A is
+
+373
+00:43:40,970 --> 00:43:44,990
+a web ticket manager has a message for
+instance and the Class B is like say the
+
+374
+00:43:44,990 --> 00:43:50,300
+trial the train so what we will do a lot
+it's to extract code to extract the
+
+375
+00:43:50,300 --> 00:43:54,200
+behavior and to a method so then we will
+have a method
+into the same type and then we will move
+
+376
+00:43:56,870 --> 00:44:01,310
+it into the proper location the train
+for instance and at the end of the day
+
+377
+00:44:01,310 --> 00:44:06,560
+we will have more actually breaking the
+balance balance
+
+378
+00:44:06,560 --> 00:44:14,030
+yeah domain and stuff like that okay so
+let me switch back to the code so I
+
+379
+00:44:14,030 --> 00:44:22,970
+suggest that we will do that okay
+each train reserved seats plus it's the
+first business school a trend should not
+
+380
+00:44:25,490 --> 00:44:30,370
+exceed maximum capacity of the Train I
+suggest that we extract a method here
+
+381
+00:44:30,370 --> 00:44:41,600
+but maybe does a lot if does not exceed
+does not exceed overall trend capacity
+
+382
+00:44:41,600 --> 00:44:45,260
+once you like that are you okay you know
+there are you
+
+383
+00:44:45,260 --> 00:44:53,450
+yeah capacity sorry I will make us a
+non-static method a public one to be
+able to move it easily so here I strike
+
+384
+00:44:57,380 --> 00:45:07,580
+that big if with that method where
+should I move it according to a train
+
+385
+00:45:07,580 --> 00:45:13,730
+yeah and there is a hint if I have said
+f6 to move we shall I say okay you pass
+
+386
+00:45:13,730 --> 00:45:18,680
+an argument a train instance of argument
+so you can easily move that behavior to
+
+387
+00:45:18,680 --> 00:45:23,780
+the train okay do train I have the trend
+does not exceed overall trend capacity
+
+388
+00:45:23,780 --> 00:45:33,950
+if I want to request that number of
+seats okay actually what we have here is
+available seats we are building a list
+
+389
+00:45:36,770 --> 00:45:43,280
+of available seats so let us call a
+method with fine available seats for
