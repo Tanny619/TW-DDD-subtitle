@@ -1,114 +1,114 @@
 1
 00:00:00,000 --> 00:00:02,304
-Ok, something better you?
+好，还有什么你想改进的吗？
 
 2
 00:00:03,072 --> 00:00:03,584
-Yep
+是的
 
 3
 00:00:04,096 --> 00:00:05,888
-Can you see what's still bothering
+你看出来还有不爽的地方吗？
 
 4
 00:00:06,656 --> 00:00:09,728
-Ok it's still very procedural code, one method, too screen high
+是的。这里全是过程代码，一个方法，一屏幕高
 
 5
 00:00:10,240 --> 00:00:13,824
-doing this and then doing that and then do this ok
+做这个，做那个，做这个等等
 
 6
 00:00:14,592 --> 00:00:15,616
-Collection script
+就是一些脚本
 
 7
 00:00:19,968 --> 00:00:24,832
-Yeah, Here "get the train" is useless
+是的。这里"get the train"就没有用了
 
 8
 00:00:25,088 --> 00:00:26,624
-so we cut it
+所以，我们删掉它
 
 9
 00:00:27,136 --> 00:00:28,160
-Yeah, It is better
+好，现在好多了
 
 10
 00:00:28,416 --> 00:00:31,488
-Now, the problem is we
+现在，我们的问题是，
 
 11
 00:00:32,256 --> 00:00:38,400
-still share the "train", but this one normally return the domain object, not a kind of JSON.
+我们共享了"train"，通常这是要返回领域对象，而不是JSON数据
 
 12
 00:00:39,936 --> 00:00:41,984
-We will see that a trend that have a physical of proxy
+我们看到我们这里有个物理代理
 
 13
 00:00:43,264 --> 00:00:49,408
-to external web API will make into
+来扩展WebAPI，来组成一个
 
 14
 00:00:49,664 --> 00:00:54,784
-a adaptor, for in the portal adapter pattern that we will 
+适配器，通过适配器模式
 
 15
 00:00:55,296 --> 00:01:01,440
-Have another of view before that, so don't worry if you are not aware of that, instead of returning
+我们还会继续来着这段代码，所以不用担心你不知道。对比返回
 
 16
 00:01:01,696 --> 00:01:04,512
-a string of JSON let's make that
+JSON字符串。
 
 17
 00:01:04,768 --> 00:01:06,560
-method return as a train stones. Yeah
+我们让它返回Train对象。好的。
 
 18
 00:01:07,072 --> 00:01:13,216
-So that we can get rid of JSON within the method
+这样我们就可以在函数内处理JSON了
 
 19
 00:01:13,728 --> 00:01:18,592
-To make it more domain and purely and not mixing technical staff with
+这样可以更面向领域，不会和技术细节
 
 20
 00:01:18,848 --> 00:01:20,896
-function domain stuff. Ok for you? Yes. Still Ok for you?
+纠缠在一起。你觉着呢？同意。你觉着还好？
 
 21
 00:01:24,992 --> 00:01:27,040
-So I discovered that the file
+所以，我发现这个文件
 
 22
 00:01:27,296 --> 00:01:29,344
-There is a constructor of the train
+有一个Train的构造函数
 
 23
 00:01:29,600 --> 00:01:35,744
-The train, ok, we see a lot of stuff to deserialize JSON
+Train。好的。我们看到很多反序列化JSON的东西。
 
 24
 00:01:36,768 --> 00:01:39,328
-This is the file actually
+这个文件就是这样
 
 25
 00:01:39,584 --> 00:01:43,936
-This one is not choosed
+这个不要选中吗？
 
 26
 00:01:50,080 --> 00:01:51,872
-Delete, OK
+删掉。好的。
 
 27
 00:01:53,152 --> 00:01:56,480
-this one is never used too
+这个也没有用到
 
 28
 00:01:58,016 --> 00:01:58,528
-Let's delete it also
+我们也删除它
 
 29
 00:01:59,040 --> 00:01:59,808
@@ -116,15 +116,15 @@ Let's delete it also
 
 30
 00:02:00,064 --> 00:02:03,648
-also this one is grey
+这个也变灰了
 
 31
 00:02:05,952 --> 00:02:09,280
-You can split into various files maybe.. Yeah, let's delete
+或者你可以把它分拆到几个文件中.. 嗯，删掉它。
 
 32
 00:02:11,584 --> 00:02:12,864
-So here we are in the
+现在，我们在
 
 33
 00:02:13,888 --> 00:02:14,656
@@ -132,15 +132,15 @@ Train
 
 34
 00:02:14,912 --> 00:02:15,680
-Class
+这个类中
 
 35
 00:02:16,192 --> 00:02:21,312
-Yeah, and Train class does not have tons of behaviors I would say except
+是的。Train没有太多的行为，除了
 
 36
 00:02:21,568 --> 00:02:23,872
-by parsing a
+解析
 
 37
 00:02:24,128 --> 00:02:27,200
@@ -148,23 +148,23 @@ JSON
 
 38
 00:02:27,712 --> 00:02:29,248
-My magic resharper
+神奇的Resharper
 
 39
 00:02:29,760 --> 00:02:30,272
-Ok
+好
 
 40
 00:02:31,296 --> 00:02:33,856
-we use a lambda. OK. Yeah.
+我们使用Lambda。好的。好。
 
 41
 00:02:34,112 --> 00:02:40,256
-I will move this one. There are the members of ... the properties and field of ... Ok.
+我要移动这个了。这里有很多..属性...字段...好。
 
 42
 00:02:40,512 --> 00:02:46,400
- Then all we have its a constructor. Only technical stuff.
+我们有一个构造函数。全是技术细节了。
 
 43
 00:02:47,680 --> 00:02:48,704
@@ -172,51 +172,51 @@ I will move this one. There are the members of ... the properties and field of .
 
 44
 00:02:48,960 --> 00:02:49,984
-What would you suggest
+你还有什么建议吗？
 
 45
 00:02:54,592 --> 00:02:55,616
-If I drink
+如果我来喝点水
 
 46
 00:02:56,128 --> 00:02:57,152
-[Audience Question]
+[观众问题]
 
 47
 00:03:04,320 --> 00:03:09,696
-There is better location to do some JSON parsing
+这里有个更好的地方来解析JSON
 
 48
 00:03:09,952 --> 00:03:12,512
-but the train which is part of the domain and we should not do that here.
+Train是领域模型的一部分，所以，我们不应该在这里做这件事。
 
 49
 00:03:13,024 --> 00:03:19,168
-Let's us do that. Yeah, Ok, so do that I have to create
+好吧，让我们来修改。好，我来创建
 
 50
 00:03:20,960 --> 00:03:23,264
-a little [method] to encapsulat the code I want to move.
+一个小[方法]来封装我要移动的代码
 
 51
 00:03:23,776 --> 00:03:29,920
- This is something that we will do a lot. Extract and Move, Extract the method and move into the proper location.
+我们会做很多次的这种操作。抽取，移动。抽取函数，移动到合适的位置。
 
 52
 00:03:30,176 --> 00:03:34,784
-We do that a lot during the session. The first time we will do it. Ok.
+我们会在会议中多次使用到。好吧，让我们来做第一次。
 
 53
 00:03:35,040 --> 00:03:37,088
-I take all the code I want
+我想选中我要的所有代码
 
 54
 00:03:37,600 --> 00:03:38,624
-To remove, To extract
+来抽取，移动
 
 55
 00:03:39,392 --> 00:03:40,416
-This one is ok?
+这个可以吗？
 
 56
 00:03:40,928 --> 00:03:42,208
@@ -232,19 +232,19 @@ This one is ok?
 
 59
 00:03:45,536 --> 00:03:47,328
-One more, Ok. this one. Okey. 
+再多一点？好的，这个，好的。
 
 60
 00:03:48,352 --> 00:03:51,168
-The screen is very high.
+代码太长了
 
 61
 00:03:54,496 --> 00:03:59,616
-So we extract method from that, and it still will be instance method. Yeah.
+好的，我们抽取了函数，但是它现在依然是实体函数。好的。
 
 62
 00:03:59,872 --> 00:04:01,408
-That
+这个是
 
 63
 00:04:01,664 --> 00:04:02,688
@@ -252,83 +252,83 @@ Train topology
 
 64
 00:04:02,944 --> 00:04:05,248
-Because while passing the JSON.
+因为在解析JSON
 
 65
 00:04:05,504 --> 00:04:06,016
-The thing is
+所以，
 
 66
 00:04:06,528 --> 00:04:09,344
-Setting some value to the property of the train
+对Train的很多属性做了赋值
 
 67
 00:04:10,112 --> 00:04:11,904
-That's a nice method.
+不错的方法
 
 68
 00:04:12,160 --> 00:04:12,672
- Here?
+这个吗？
 
 69
 00:04:13,696 --> 00:04:16,256
-So who is extracting into a new
+所以，抽取函数的人
 
 70
 00:04:16,768 --> 00:04:17,792
-Method
+可以把它
 
 71
 00:04:18,304 --> 00:04:22,144
-Probility to move it to continue to use this? Yeah.
+移动到新的位置
 
 72
 00:04:22,656 --> 00:04:26,496
-A good way to see if I have some dependency because that I want to move this one
+一个好的查看依赖的方法。因为我想移动它
 
 73
 00:04:27,008 --> 00:04:30,080
-But I don't want to add dependency from this one
+但是我不想增加依赖
 
 74
 00:04:30,336 --> 00:04:32,128
-I know I want to be insulate
+我知道我想隔离
 
 75
 00:04:32,384 --> 00:04:32,896
-So
+所以
 
 76
 00:04:33,152 --> 00:04:34,176
-I use static
+我使用了静态函数
 
 77
 00:04:36,992 --> 00:04:38,528
-And I have some squeezers.
+现在出现了几个下划线
 
 78
 00:04:39,040 --> 00:04:39,552
-Squeezes
+几个下划线
 
 79
 00:04:39,808 --> 00:04:41,344
-Here and here because this is static
+这里，这里，因为它们是静态的
 
 80
 00:04:41,856 --> 00:04:48,000
-That's where we tried to change the second test also see if it's static, it make some error.
+现在我们要修改第二个测试，来看看，是否静态... 出现了错误
 
 81
 00:04:48,256 --> 00:04:51,584
-Yeah so how can we cut these
+好的，来看看如何切断这些
 
 82
 00:04:51,840 --> 00:04:53,120
-Yeah relationship
+好的，联系。
 
 83
 00:04:53,888 --> 00:04:54,656
-
+Results
 
 84
 00:05:02,848 --> 00:05:07,456
