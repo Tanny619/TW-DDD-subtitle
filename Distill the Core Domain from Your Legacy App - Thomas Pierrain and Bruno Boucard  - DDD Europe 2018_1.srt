@@ -1,2071 +1,2445 @@
 1
 00:00:00,256 --> 00:00:06,400
 Are you ready? Yeah? Okay, here we go.
+大家准备好了吗？好了？好，那我们开始。
 
 2
 00:00:08,192 --> 00:00:12,800
-First question for you, who some difficulties ???
+First question for you, who experienced some difficulties
+第一个问题，当把DDD这个概念
 
 3
 00:00:13,056 --> 00:00:15,616
 to grasp DDD concept at the very beginning
+运用到项目或者代码里的时候，
 
 4
 00:00:15,872 --> 00:00:18,944
-While it's the time to put it into your project or into your code? 
+while it's the time to put it into your project or into your code? 
+你们有谁遇到了困难？
 
 5
 00:00:19,968 --> 00:00:26,112
-Yeah ok. So you're not alone. Me and ???
+Yeah ok. So you're not alone. I have to confess
+好吧，看来大家都有这样的困惑。我确实
 
 6
 00:00:26,368 --> 00:00:28,160
-??? I see a lot of talk about DDD. 
+I see a lot of talk about DDD. 
+看到过很多关于DDD的讨论。
 
 7
 00:00:28,416 --> 00:00:28,928
-And I tried to apply on legacy code.
+And I
+我
 
 8
 00:00:29,184 --> 00:00:32,000
-So that's why we've made this session.
+tried to apply on legacy code.
+也试过把DDD用在遗留代码上。
 
 9
-00:00:32,768 --> 00:00:33,536
-
+00:00:34,768 --> 00:00:35,536
+So that's why we've made this session.
+这就是我们举行这个会议的原因。
 
 10
 00:00:37,120 --> 00:00:43,264
-Absolutely. So as the lar system and we will mostly talk about you talk about technical Patel
+Absolutely. At this time here we will mostly talk about technical patterns.
+没错。这次我们主要讨论技术模式。
 
 11
 00:00:44,032 --> 00:00:50,176
-The most likely talking about ubiquitous for resin how to put the ??? domain ?? of your business
+And most likely talking about where and how to put your domain experience of your business
+主要讲一下怎样把你的领域知识放到
 
 12
 00:00:50,432 --> 00:00:51,456
-into your code
+into your code.
+代码中。
 
 13
 00:00:51,712 --> 00:00:54,272
-Much more than ??? We'll talk a little bit ???
+Much more than strategical pattern. We'll talk a little bit about it.
+我们也会稍微涉及一些战略模式，不过不会仅限于此。
 
 14
 00:00:54,784 --> 00:00:58,112
-But it's rather theoretical
+But it's rather technical.
+但是整个会议呢，还是比较
 
 15
 00:00:58,368 --> 00:00:59,392
-on ??? session
+on the entire session.
+偏向技术的。
 
 16
 00:00:59,648 --> 00:01:04,000
 Let's introduce ourself maybe before we move?
+我们进行下一步之前先介绍一下自己吧？
 
 17
 00:01:06,048 --> 00:01:12,192
-Oh yeah. So I'm Bruno Boucard. I'm coming from Paris and I'm coach.
+Oh yeah. So I'm Bruno Boucard. I'm coming from Paris and I'm a coach.
+嗯好。我是Bruno Boucard。是来自巴黎的讲师。
 
 18
 00:01:12,448 --> 00:01:18,080
-I'm teaching TDD, BDD and ??? DDD.
+I'm teaching TDD, BDD and DDD.
+我教TDD，BDD和DDD。
 
 19
 00:01:18,592 --> 00:01:20,640
 And I'm in charge of
+我现在负责
 
 20
 00:01:20,896 --> 00:01:22,688
-BDD meet up in Paris
+BDD meet up in Paris.
+巴黎的BDD会议。
 
 21
 00:01:23,456 --> 00:01:26,784
-Ok, my name is Thomas Pierrain??? on twitter
+Ok, my name is Thomas Pierrain.
+我是Thomas Pierrain。
 
 22
 00:01:27,040 --> 00:01:33,184
-I'm working software since18 years. I'm also co-organize the DDD Paris meetup.
+I'm working software since 18 years. I'm also co-organize the DDD Paris meetup.
+我18岁以来就从事软件工作。我也是巴黎DDD会议的组织者之一。
 
 23
 00:01:33,440 --> 00:01:35,488
-I'm kind of opposite by use cases and
+I'm kind of opposite, by use cases and
+我更倾向于
 
 24
 00:01:35,744 --> 00:01:36,512
-problems base.
+problems based.
+基于问题。
 
 25
 00:01:36,768 --> 00:01:40,096
-??? I think we jump too much too soon into the solution base
+Cause I think we jump too much too soon into the solution based.
+因为我认为我们太快进入基于解决方案了。
 
 26
 00:01:40,352 --> 00:01:42,912
-All our ??? and stuff like that, all solutions
+All our ??? and stuff like that, all solutions.
+我们周围的好多都是基于解决方案的。
 
 27
 00:01:43,424 --> 00:01:45,472
-So this is one of my obsession
+So this is one of my obsession.
+这是我的一个发现。
 
 28
 00:01:45,984 --> 00:01:49,056
 Ok we have some gifts
+好，我们为大家准备了
 
 29
 00:01:49,568 --> 00:01:50,080
-For you
+for you.
+一些礼物。
 
 30
 00:01:50,336 --> 00:01:51,872
-So we have two books
+So we have two books.
+这有两本书。
 
 31
 00:01:52,384 --> 00:01:58,528
 ??? The blue one and the Refactoring by Martin Fowler.
+蓝色的这本，还有Martin Fowler的重构。
 
 32
 00:01:59,808 --> 00:02:03,904
-So to win those books you would have to tweet as hell during the session
+So to win those books you would have to tweet as hell during the session.
+如果想赢得这些书，大家得在会议期间多发推文。
 
 33
 00:02:04,160 --> 00:02:10,304
 Using the #DDDEU.
+并加上#DDDEU。
 
 34
 00:02:10,560 --> 00:02:11,840
-We have a reference here
+We have a referee here
+我们这有一个裁判。
 
 35
 00:02:12,096 --> 00:02:17,216
-So you will have a look at that hash tag. And the most
+So he will have a look at that hash tag. And the most
+他到时候会去看这个标签。最有趣的
 
 36
 00:02:17,472 --> 00:02:23,616
 funny tweet or you can record, you can take picture, you can do jokes about us or about you, whatever
+推文将会获奖。大家可以录像，可以照相，可以开我们的玩笑，也可以开你们自己的玩笑，怎样都行。
 
 37
 00:02:23,872 --> 00:02:28,480
-??? and John will tell us the two winners at the end of the session. All right? Cool.
+and John will tell us the two winners at the end of the session. All right? Cool.
+John会在会议最后公布最终的两个获奖人。好吗？
 
 38
 00:02:30,784 --> 00:02:33,344
 Our domain for today will be train.
+我们今天来说说火车领域。
 
 39
 00:02:34,624 --> 00:02:40,768
 Train is kind of large. Actually so we will focus more on the seat reservation optimazation.
+火车领域其实还挺大的。我们今天主要关注怎么来优化座位预定。
 
 40
-00:02:41,024 --> 00:02:41,792
-
-
-41
 00:02:42,304 --> 00:02:48,448
 Here is the model of a train. The train which has three coaches. Coach A, coach B, and coach C.
+这是一个火车模型。这个火车有三个车厢，A，B和C。
 
-42
+41
 00:02:48,960 --> 00:02:50,240
 Which has some 
+橙色的代表
 
-43
+42
 00:02:50,496 --> 00:02:53,312
 seats already reserved in the orange.
+已经被预定的座位。
 
-44
+43
 00:02:53,568 --> 00:02:55,104
 Empty seats are in white.
+白色的代表空座位。
 
-45
+44
 00:02:55,360 --> 00:02:58,176
 And here we are asking 6 seats
+现在我们要预定6个座位
+
+45
+00:02:58,688 --> 00:03:04,832
+to be reserved there in the train in blue. This is a simple model but that may help to understand something。
+蓝色的这6个。这是个比较简单的模型，这个图也有助我们的理解。
 
 46
-00:02:58,688 --> 00:03:04,832
-to be ???there in the train in blue. This is a simple model but that may help to ???
-
-47
 00:03:05,088 --> 00:03:06,624
 something. Okay?
+好吧。
 
-48
+47
 00:03:06,880 --> 00:03:10,720
 We have two business rules for today for the system. The first one is
+今天我们的系统有两个业务准则。第一个是
 
-49
+48
 00:03:10,976 --> 00:03:15,584
 We should not reserve more than 70% of the entire train capacity.
+我们最多只能预定火车总座位的70%。
 
-50
-00:03:15,840 --> 00:03:16,352
-
-
-51
+49
 00:03:17,120 --> 00:03:20,448
 Okay this is the first business rule.The second business rule is
+好这是第一个业务规准则。第二个是
 
-52
+50
 00:03:20,704 --> 00:03:24,032
 When I want to reserve, I want all my seats in the same coach.
+当我预定座位时，所有的座位要在同一个车厢。
 
-53
+51
 00:03:24,288 --> 00:03:26,848
 We don't want to split families and friends
+谁也不想家人朋友坐在
 
-54
+52
 00:03:27,104 --> 00:03:29,920
 between coaches. Right?
+不同的车厢。对吧？
 
-55
+53
 00:03:30,176 --> 00:03:30,688
 Simple.
+就这么简单。
 
-56
+54
 00:03:30,944 --> 00:03:34,784
 We are taking those rules from Emily Bache's Train Reservation.
+我们是从Emily Bache火车预订那里得到这些准则的。
 
-57
+55
 00:03:35,296 --> 00:03:39,392
 And we've put some crappy code on top of that but... ok
+我们这还有一些用来实现这些规则的代码。
 
-58
+56
 00:03:40,160 --> 00:03:46,304
-??? couldn't manage to be with us in Amsterdam today but we talked a lot with him before
+Our domain expert couldn't manage to be with us in Amsterdam today but we talked a lot with him before
+我们的领域专家今天不能跟我们一起来到阿马斯特丹，不过前几周，
 
-59
+57
 00:03:46,560 --> 00:03:47,840
 previous weeks.
+我们和他谈了很多。
 
-60
+58
 00:03:48,096 --> 00:03:49,632
 So he talked a lot about rain
+他谈了很多火车相关的话题。
 
-61
+59
 00:03:50,144 --> 00:03:53,984
 He talked about train ID or identifier. He talked about seats.
+他谈了火车ID、火车座位，
 
-62
+60
 00:03:54,496 --> 00:03:55,264
 Coaches.
+火车车厢之类的。
 
-63
+61
 00:03:56,288 --> 00:04:02,432
 Reservation attempts and whether or not these reservation attemps are fulfilled.
+还谈了预定，还有这些预定有没有成功。
 
-64
+62
 00:04:02,688 --> 00:04:06,784
 And you know there are also to book. If I'm to book,
+如果我准备订票，还得有订票功能。
 
-65
+63
 00:04:07,808 --> 00:04:09,600
 Booking reference we have explained what it is.
+我们之前已经解释了什么是订票单据。
 
-66
+64
 00:04:10,368 --> 00:04:12,672
 Reservation, reservation failure.
+什么是预定，什么是预定失败。
 
-67
+65
 00:04:13,184 --> 00:04:19,327
-That's the word from the ??? Yeah you know the session we have, those words ???
+That's the word from the expert. Yeah you know the session we have, those words
+这是专家的用词。对，我们之前的交流，
 
-68
+66
 00:04:19,583 --> 00:04:20,095
 kind of
+用的就是这些词。
 
-69
-00:04:20,351 --> 00:04:22,143
-???
-
-70
+67
 00:04:22,399 --> 00:04:28,543
 So we will work for a start-up company which name is Train Train. They provide
+我们将会为一个名为Train Train的初创公司工作。他们提供
 
-71
+68
 00:04:28,799 --> 00:04:32,127
-seat reservation service which is basically web application???
+seat reservation service which is basically web API.
+座位预定服务，是个web API。
 
-72
+69
 00:04:32,383 --> 00:04:36,479
-And this web application ??? to do his work, he has to rely on the
+And this web API to do its work, he has to rely on the
+这个web API还依赖于
 
-73
+70
 00:04:36,735 --> 00:04:39,295
 external backends provided by external companies
+其他公司提供的后端支持。
 
-74
+71
 00:04:39,807 --> 00:04:42,111
 So in fact it's SNCF
+也就是SNCF。
 
-75
+72
 00:04:42,367 --> 00:04:44,927
 So the first backends provided by SNCF,
+SNCF提供的第一个后端支持
 
-76
+73
 00:04:45,439 --> 00:04:48,255
 which is extermal to our company, it's Train Data
+是Train Data。
 
-77
+74
 00:04:48,767 --> 00:04:49,791
 Basically it's a
+它就是一个
 
-78
+75
 00:04:50,047 --> 00:04:51,327
-train topology
+train topology service.
+火车拓扑服务。
 
-79
+76
 00:04:51,583 --> 00:04:54,143
-meaning we provide a train ??? for you.
+Meaning we provide a train event for you.
+也就是说我们给他一个火车事件，
 
-80
+77
 00:04:54,655 --> 00:04:56,959
 And we get back the topology of the train meaning
+我们可以就得到火车拓扑，比如
 
-81
+78
 00:04:57,215 --> 00:05:03,359
 all the coaches and for every coach, all the seats and for every seat, whether or not it's available
+所有的车厢，每一个车厢里的所有座位，每一个座位是可以预定的状态，
 
-82
+79
 00:05:03,615 --> 00:05:04,639
 or already reserved.
+还是已经被预定了。
 
-83
+80
 00:05:05,919 --> 00:05:06,431
 Okay. Quantity
+对，还有数量。
 
-84
+81
 00:05:07,199 --> 00:05:13,343
 Second one is the booking reference. This is a kind of tricky one because... not tricky
+第二个是订票单据。这个有点麻烦...也不麻烦
 
-85
+82
 00:05:13,599 --> 00:05:14,623
 When you buy a ticket, you have an ID
+当你买完票，你的火车票上就会有一个ID。
 
-86
+83
 00:05:14,879 --> 00:05:21,023
-on your train ticket. This is the idea.Yeah. But this is a service that only provide a unique identifier. 
+on your train ticket. This is the idea actually. Yeah. But this is a service that only provide a unique identifier. 
+就是这个意思。对。这就是一个只提供ID的服务。
 
-87
+84
 00:05:21,279 --> 00:05:22,047
 We call it
+我们用它
 
-88
+85
 00:05:22,303 --> 00:05:23,583
 book anything with that.
+来订票。
 
-89
+86
 00:05:24,095 --> 00:05:27,423
 All we can do is to get a unique identifier
+我们用它只是
 
-90
+87
 00:05:27,679 --> 00:05:28,447
 to play with.
+得到一个ID
 
-91
+88
 00:05:29,215 --> 00:05:35,359
-And once seat reservation service on the left will have ??? topology, find available seats,
+And once seat reservation service on the left will have train topology, find available seats,
+当左边的预定服务拿到火车拓扑后，我们就能找到可选的座位，
 
-92
+89
 00:05:35,615 --> 00:05:36,127
 then,
+然后
 
-93
+90
 00:05:36,383 --> 00:05:39,199
 Getting a booking reference, we actually book
+可以拿到一个订票单据，我们其实是
 
-94
+91
 00:05:39,711 --> 00:05:40,735
 the reservation
+通过
 
-95
+92
 00:05:40,991 --> 00:05:43,039
 through the national train operator service
+国家列车运营服务来订票的。
 
-96
+93
 00:05:43,295 --> 00:05:45,855
 through the last train booking service.
+就是通过最下面的这个火车订票服务。
 
-97
+94
 00:05:46,367 --> 00:05:52,511
 All right? In terms of we are kind of down streams. We are a tiny start-up in that
+好吧？我们是一个初创公司，在这个刚开放的市场中
 
-98
+95
 00:05:52,767 --> 00:05:58,655
-open market that hasn't been opened recently. So these are the back-end provided by the national train ???
+open market that hasn't been opened recently. So these are the back-end provided by the national train.
+还处于下游。这些后端的服务是国家列车运营服务提供的。
 
-99
+96
 00:05:59,167 --> 00:06:00,447
 Is it ok for all of you?
+到现在大家有什么问题吗？
 
-100
+97
 00:06:01,727 --> 00:06:02,495
+We will continue.
+那我们继续。
 
-
-101
+98
 00:06:03,519 --> 00:06:07,615
 Maybe Bruno we can do a demo of the web API
+Bruno现在可以演示一下Web API。
 
-102
+99
 00:06:10,175 --> 00:06:10,943
 It will take a few
+需要
 
-103
+100
 00:06:11,199 --> 00:06:12,223
 seconds to
+几秒钟
 
-104
+101
 00:06:12,479 --> 00:06:13,247
 switch.
+才能转换屏幕。
 
-105
+102
 00:06:16,575 --> 00:06:17,855
 So
+嗯
 
-106
+103
 00:06:18,111 --> 00:06:19,903
 I use postman
+我用的是postman，
 
-107
-00:06:20,159 --> 00:06:23,231
-where you can see the url 
+104
+00:06:20,159 --> 00:06:27,231
+where you can see the url to call the web API.
+你可以看到我调用Web API时的url。
 
-108
-00:06:23,999 --> 00:06:27,071
-to call the web API.
-
-109
+105
 00:06:27,327 --> 00:06:29,375
 And we can see the body
+我们还能看到请求体
 
-110
+106
 00:06:29,631 --> 00:06:33,471
-The ??? with two fields.
+The payload is with two fields.
+有两个值。
 
-111
+107
 00:06:33,727 --> 00:06:36,031
 Train_id is the identifier of the train.
+Train_id是火车的ID。
 
-112
+108
 00:06:36,287 --> 00:06:39,359
-And the number_of_seats requested
+And the number_of_seats requested.
+还有请求的座位数量number_of_seats。
 
-113
+109
 00:06:40,127 --> 00:06:40,639
 Ok
+好
 
-114
+110
 00:06:42,431 --> 00:06:43,711
 So if you post.
+如果你发送请求。
 
-115
+111
 00:06:43,967 --> 00:06:45,247
 Yeah.
+没错。
 
-116
+112
 00:06:45,759 --> 00:06:46,527
 Take a while.
+需要等一会。
 
-117
+113
 00:06:50,367 --> 00:06:53,695
-It's to loading. Okay and we have a answer.
+Still loading. Okay and we have a answer.
+还在加载。好现在我们得到了响应。
 
-118
+114
 00:06:53,951 --> 00:06:54,975
-Transfer.
+The answer.
+这就是响应。
 
-119
+115
 00:06:55,231 --> 00:06:57,023
 The first is the train_id.
+第一个是train_id。
 
-120
+116
 00:06:57,535 --> 00:06:58,047
 Okay?
+对吧？
 
-121
+117
 00:06:58,303 --> 00:07:00,351
-Second one is a famous booking reference.
+Second one is a booking reference.
+第二个是订票单据。
 
-122
+118
 00:07:00,607 --> 00:07:03,423
-???before
+Allocated by service as I said before。
+是通过我们之前说的那个服务得到的。
 
-123
+119
 00:07:03,679 --> 00:07:05,215
 And the list of seats
+然后我们得到了
 
-124
-00:07:05,983 --> 00:07:08,031
-We get
+120
+00:07:05,983 --> 00:07:11,031
+We get back.
+座位的列表。
 
-125
-00:07:09,055 --> 00:07:11,615
-back
-
-126
+121
 00:07:13,151 --> 00:07:17,503
 Okay. So basically that's quite simple way to interact with our system. Yeah.
+好，我们的系统还挺简单的，对。
 
-127
-00:07:18,015 --> 00:07:19,295
-
-
-128
-00:07:20,063 --> 00:07:20,575
-
-
-129
-00:07:20,831 --> 00:07:21,855
-
-
-130
+122
 00:07:25,183 --> 00:07:30,559
 Okay. And basically we have a problem. And this is reason why we are here today.
+不过我们有一个问题，这也是为什么我们今天在这里。
 
-131
+123
 00:07:31,071 --> 00:07:35,935
-Train Train stucked, called us because they face recurrent penalties,
+Train Train start-up, called us because they face recurrent penalties,
+Train Train公司找到我们，说一直都在面临着一个问题。
 
-132
+124
 00:07:36,447 --> 00:07:41,311
-Excess of penalties by the national train ??? service.
+Excess of penalties by the national train service.
+国家列车运营服务给他们带来的问题。
 
-133
+125
 00:07:42,079 --> 00:07:43,103
 Why?
+什么问题呢？
 
-134
+126
 00:07:43,359 --> 00:07:44,383
 Every call
+每一次调用
 
-135
+127
 00:07:44,895 --> 00:07:49,759
-You made on all those back-ends, you pay for this. So that means that stuck the Train Train start-up.
+You made on all those back-ends, you pay fees. So that means that start-up the Train Train start-up.
+后端服务的时候，都是收费的。这对Train Train这个初创公司意味着
 
-136
+128
 00:07:50,271 --> 00:07:55,647
 Every time you call one of those web API is charged from these.
+每次调用这些web API都要钱。
 
-137
+129
 00:07:55,903 --> 00:07:57,439
 So they are expected
+他们知道这些调用是要钱的，
 
-138
+130
 00:07:57,695 --> 00:07:58,719
 to do so. But,
+但是
 
-139
+131
 00:07:59,231 --> 00:08:01,023
 they think they are paying too much.
+他们觉得还是太贵了。
 
-140
+132
 00:08:01,279 --> 00:08:03,327
 So they asked us to have a look at the code.
+因此他们让我们来看一下代码。
 
-141
+133
 00:08:03,583 --> 00:08:04,351
 And to see
+来看看
 
-142
+134
 00:08:04,607 --> 00:08:08,447
 what may be the reason and can we troubleshoot and fix
+到底是为什么，看看我们能不能找到它，如果有什么要修复的话，
 
-143
+135
 00:08:08,703 --> 00:08:09,983
 if we have something to fix
+看看能不能修复。
 
-144
+136
 00:08:11,519 --> 00:08:17,407
 Okay? But before touching any legacy code, if you are... Bruno and I, what would you recommend
+好吧？但是在我们着手遗留代码之前，如果你...
+大家建议我和Bruno
 
-145
+137
 00:08:19,455 --> 00:08:20,223
 us to do?
+应该先干什么？
 
-146
+138
 00:08:22,015 --> 00:08:23,807
-Test? Test, yes absolutely.
+(Test?) Test, yes absolutely.
+（测试？）测试，没错。
 
-147
+139
 00:08:24,319 --> 00:08:29,439
 In fact, this is the reason why we miss the keynote. We have a bit test on this this morning.
+事实上，这就是我们错过主题演讲的原因。今天早上我们对此进行了一些测试。
 
-148
+140
 00:08:30,207 --> 00:08:33,023
 Discovering the code in trying to highlight
+查看代码，试着凸显
 
-149
+141
 00:08:33,279 --> 00:08:38,655
-all those business rules. So we've made so far 3 ?? ? tests.
+all those business rules. So we've made so far 3 exception tests.
+那些业务准则。到现在为止我们写了三个测试。
 
-150
+142
 00:08:39,167 --> 00:08:44,543
 First on is a happy pass. We have a train with only one coach
+第一个测试通过了。我们建了一个只有一个车厢
 
-151
+143
 00:08:45,055 --> 00:08:49,151
 with 10 seats. And we want allocate or reserve 3 seats.
+一共10个座的火车。我们想预定3个座位。
 
-152
+144
 00:08:49,407 --> 00:08:52,991
 And as you can see that's exactly what I do with postman. And exactly the same answer.
+你看这就是我用postman做的，响应也都一样。
 
-153
+145
 00:08:57,855 --> 00:08:59,391
 Simple happy pass. Ok.
+通过。
 
-154
+146
 00:09:00,159 --> 00:09:01,695
 Second one is the
+第二个测试是
 
-155
+147
 00:09:02,207 --> 00:09:08,351
 Yeah this is the first business rule.  We can't exceed 70%,
+对这是第一个业务准则。我们对预定不能超过
 
-156
+148
 00:09:08,607 --> 00:09:14,751
- for reservation , in all the train. And if we ask 2 seats,
+for reservation , in all the train. And if we ask 2 seats,
+所有座位的70%。如果我们现在想预定2个座位，
 
-157
+149
 00:09:15,007 --> 00:09:16,543
 and you can see I already have 6 seats reserved,
+现在我们已经订出去了6个座位了，
 
-158
+150
 00:09:17,567 --> 00:09:18,335
 Here.
+这里
 
-159
+151
 00:09:19,871 --> 00:09:22,431
 Because I applied the rule,
+因为这个准则，
 
-160
+152
 00:09:22,943 --> 00:09:28,831
 So 70% is 7 seats in the train you can sit. Exactly. So the way to repond an error
+70%也就是只有7个座位可以被预定。没错。所以是这么响应
 
-161
+153
 00:09:29,343 --> 00:09:30,111
 is this one
+这个错误的。
 
-162
+154
 00:09:30,623 --> 00:09:33,183
 I get the train ID but the booking reference is empty.
+我能得到火车的ID，但是订票单据是空的。
 
-163
+155
 00:09:33,439 --> 00:09:34,975
 And the list of seats are empty.
+而且座位列表也是空的。
 
-164
+156
 00:09:35,487 --> 00:09:38,047
 This is how Train Train is telling us, no
+用这种方式，Train Train告诉我们，我们没有
 
-165
+157
 00:09:38,559 --> 00:09:40,095
 reservation has been made for you.
+预定任何座位。
 
-166
+158
 00:09:41,375 --> 00:09:41,887
 Ok.
+好。
 
-167
+159
 00:09:42,143 --> 00:09:48,031
 And the third test was... test highlighting the all seats must be in the same coach please.
+第三个测试是...所有的预定必须是在同一个车厢里。
 
-168
+160
 00:09:48,543 --> 00:09:49,823
 The second business rule.
+这是第二个业务准则。
 
-169
+161
 00:09:50,079 --> 00:09:53,663
-And in that case we followed back. We followed back because we asked
+And in that case we found a bug. We found a bug because we asked
+这种情况下我们找到了bug，因为我们这有
 
-170
+162
 00:09:54,175 --> 00:10:00,319
 here we have a train with two coaches. And one is almost full.
+一个两节车厢的火车。一节车厢基本上满了。
 
-171
+163
 00:10:00,831 --> 00:10:03,135
 The other is completely free. And when we asked 2 seats,
+另一节车厢完全是空的。当我们想订2个座位时，
 
-172
+164
 00:10:03,647 --> 00:10:09,279
 Actually we get here. One seat in coach A and one seat in coach B, which was unexpected because
+我们得到的是这个结果。两个车厢一边一个座位，这不是我们想要的，
 
-173
+165
 00:10:09,535 --> 00:10:11,071
 we don't want to split families and friends.
+因为我们让家人朋友分开坐。
 
-174
+166
 00:10:11,839 --> 00:10:14,143
 So we're thinking about that. Bruno was saying that
+我们正在考虑的这个问题。Bruno说
 
-175
+167
 00:10:15,423 --> 00:10:18,239
 it may explain something related to this phase.
+这结果也许解释了一些事。
 
-176
+168
 00:10:18,495 --> 00:10:21,567
 You have some ideas about what may explain the extra phase.
+大家可能想到了这个结果会导致什么。
 
-177
-00:10:21,823 --> 00:10:22,335
-
-
-178
+169
 00:10:23,871 --> 00:10:25,407
 Imagine you use
+试想你用
 
-179
+170
 00:10:25,663 --> 00:10:26,431
 the website.
+网站订票
 
-180
+171
 00:10:26,943 --> 00:10:28,223
 You call the service.
+你调用了后端的服务。
 
-181
+172
 00:10:29,247 --> 00:10:31,039
 And you prepare a trip
+你准备跟家人
 
-182
+173
 00:10:31,295 --> 00:10:33,087
 With your family or your
+或者你的女朋友，男朋友
 
-183
+174
 00:10:33,855 --> 00:10:35,391
 girlfriend boyfriend.
+一起旅行。
 
-184
-00:10:36,671 --> 00:10:37,183
-What happened? Maybe you want to cancel your reservation because you cannot sit with your firend.
+175
+00:10:36,183 --> 00:10:40,183
+What happened? （Maybe you want to cancel your reservation because you cannot sit with your firend.）
+会发生什么？（也许你就会取消这个预定了，因为你不能跟朋友坐一起了。）
 
-185
+176
 00:10:41,279 --> 00:10:45,375
 Yeah. Exactly. The answer is to cancel.
+没错，这会导致人们取消预定。
 
-186
-00:10:45,631 --> 00:10:51,263
+177
+00:10:45,631 --> 00:10:52,263
 Because I'm not pleased to have 2 seats in 2 different coaches. We cancel maybe retry it.
+因为我可不想俩座位分别在俩车厢。我也许会取消了再订一次试试。
 
-187
+178
 00:10:52,543 --> 00:10:57,663
 Cancel retry, cancel retry, at the end of the day I will switch to another provider.
+取消重新订，再取消，再订，最后可能我就会换一个别的地方订票了。
 
-188
+179
 00:10:57,919 --> 00:10:58,943
 I will left Train Train.
+就不用Train Train了。
 
-189
+180
 00:10:59,199 --> 00:11:00,479
 Poor experience.
+因为用户体验太差。
 
-190
+181
 00:11:00,735 --> 00:11:05,087
 But it may explain that because every time every attempt will be charged actually.
+这也解释了为什么Train Train会觉得服务很贵，因为每一次预定都会被收费。
 
-191
+182
 00:11:05,599 --> 00:11:08,671
 So that was our hypothesis.
+这是我们的假设。
 
-192
+183
 00:11:09,183 --> 00:11:12,511
-And we discussed it with domain expert ??? and he said, yeah,
+And we discussed it with domain expert and he said, yeah,
+我们跟领域专家讨论过。他说，是啊
 
-193
+184
 00:11:12,767 --> 00:11:16,351
 maybe a new answer, please
+也许得找个新的方案，拜托
 
-194
+185
 00:11:16,863 --> 00:11:18,399
 guys can you please fix that bug.
+你们要修好这个bug啊。
 
-195
+186
 00:11:18,655 --> 00:11:23,519
 So we are here to fix that bug all together. And we will ask you to help us in the journey.
+所以，我们现在要一起修好这个bug。我们也会在这个过程中寻求大家的帮助。
 
-196
+187
 00:11:25,055 --> 00:11:27,103
 So what would you recommend to fix that bug?
+大家现在有什么建议吗？
 
-197
-00:11:27,359 --> 00:11:28,639
-What would be your strategy? (Are you doubly service provider was ??? the service?)
+188
+00:11:27,359 --> 00:11:40,639
+What would be your strategy? 
+你们的策略是什么？（预定的那个服务是从Train Data那个服务拿数据吗？）
 
-198
+189
 00:11:41,439 --> 00:11:47,327
 We are the train reservation service on the left on the Orange. Here, let me...ok
+我们是左边橙色的这个火车票预定服务。这个，我来...
 
-199
+190
 00:11:49,119 --> 00:11:52,703
 We are only working on that seat reservation in the yellow.
+我们现在只管黄色的这个座位预定。
 
-200
-00:11:53,727 --> 00:11:57,055
-These are dependencies. We don't have leverage on that actually. (Are you the only cosumer for these ???)
+191
+00:11:53,727 --> 00:11:59,055
+These are dependencies. We don't have leverage on that actually. (Are you the only cosumer for these)
+这些都是依赖。我们其实没法控制。（是只有我们用这些服务吗？）
 
-201
+192
 00:12:00,127 --> 00:12:06,271
 No we compete with other companies. We are start-up and we compete with other companies.
+不，我们和其他公司一起竞争。我们是一个初创公司，我们要跟别人竞争。
 
-202
+193
 00:12:06,527 --> 00:12:11,391
 We need some information from those two and we need to set and to comfirm
+我们需要从那俩服务获取信息，我们还得设置信息、确认信息、
 
-203
+194
 00:12:11,647 --> 00:12:12,159
 and to book
+还要订票，
 
-204
+195
 00:12:12,671 --> 00:12:14,463
 to make transaction with that guy
+用它来交易。
 
-205
+196
 00:12:14,975 --> 00:12:15,487
 So
+所以
 
-206
+197
 00:12:15,999 --> 00:12:17,279
 That's kind of interaction we have.
+这就是我们能做的操作。
 
-207
-00:12:19,327 --> 00:12:22,143
-So hit's time for the strategy what would you recommend? (Writing tests?) 
+198
+00:12:19,327 --> 00:12:23,143
+So it's time for the strategy what would you recommend? (Writing tests?) 
+那现在还有什么建议吗？（写测试？）
 
-208
+199
 00:12:23,679 --> 00:12:24,191
 Write tests.
+写测试。
 
-209
+200
 00:12:24,447 --> 00:12:25,215
 Yeah write tests.
+没错，写测试。
 
-210
+201
 00:12:25,471 --> 00:12:31,615
-So actually we already wrote 2 tests so that highlight the bug. So we will have to fix that test. ??? Ok?
+So actually we already wrote 2 tests so that highlight the bug. So we will have to fix that test. Ok?
+其实我们已经写好了2个测试，来凸显这个bug。我们要修这个bug了。
 
-211
+202
 00:12:33,663 --> 00:12:35,711
 So let's dive into the code.
+那我们看看代码吧。
 
-212
+203
 00:12:35,967 --> 00:12:36,735
 Bruno has
+Bruno已经
 
-213
+204
 00:12:37,247 --> 00:12:38,271
 set breakpoints
+设了几个断点
 
-214
+205
 00:12:39,807 --> 00:12:40,575
 We can call it here. Yeah absolutely. Just a minute.
+我们可以在这调用一下。没错，要等一小会儿。
 
-215
+206
 00:12:43,135 --> 00:12:44,415
 It's launching the bug
+现在正在触发这个bug。
 
-216
-00:12:44,927 --> 00:12:45,439
-
-
-217
+207
 00:12:45,951 --> 00:12:47,743
 So here if you
+这块，
 
-218
+208
 00:12:48,255 --> 00:12:51,071
 just slide to the left side of the screen
+稍微向左移一下屏幕。
 
-219
+209
 00:12:51,583 --> 00:12:56,447
 It's a C# code. It's a asp.net code API.
+这是个C#代码，用的是asp.net的API。
 
-220
+210
 00:12:56,703 --> 00:13:02,847
-Is simple for those who are doing java spring boot ??? It's simple for... When we request that post on ???networks
+It's simple for those who are doing java spring boot. It's simple for... When we request that post on networks
+这对于用Java Spring Boot的人来说比较简单。当我们用那个名字
 
-221
+211
 00:13:03,103 --> 00:13:04,127
 with that name
+请求网络服务时
 
-222
+212
 00:13:04,383 --> 00:13:07,455
 We get that call back
+我们可以得到响应。
 
-223
+213
 00:13:08,479 --> 00:13:12,575
 And it's a ReservationRequestDto we receive.
+我们得到了ReservationRequestDto。
 
-224
+214
 00:13:13,087 --> 00:13:18,975
 Just to have a look at the Dto. It's very simple, exactly the payload of the json.
+看一下这个Dto，这个很简单，跟JSON完全一样。
 
-225
+215
 00:13:19,743 --> 00:13:20,511
 Absolutely.
+没错。
 
-226
+216
 00:13:22,559 --> 00:13:28,703
 And so after all that, we installed that, if you can slide to the left, thank you. So we installed that
+然后我们安装了它，往左移一下屏幕，谢谢。你看我们安装了
 
-227
+217
 00:13:28,959 --> 00:13:33,567
 webTicketManager which it seems to be the entry point of the system and we call reserve
+webTicketManager，是这个系统的入口。我们会调用
 
-228
+218
 00:13:34,079 --> 00:13:35,103
 method on it,
+它上面的预定方法。
 
-229
+219
 00:13:35,359 --> 00:13:36,895
-providing ???  and ??
+providing train id and the number of seat requested.
+把train_id和预定的座位数当作参数。
 
-230
-00:13:37,151 --> 00:13:38,431
-
-
-231
+220
 00:13:38,943 --> 00:13:39,967
 Ok so
+好了
 
-232
+221
 00:13:40,735 --> 00:13:44,063
 This is what we have test so far
+这就是我们目前的测试。
 
-233
+222
 00:13:44,575 --> 00:13:47,135
 If we have a look at the tests. These are failing.
+我们可以看一下这些测试，这些挂了。
 
-234
+223
 00:13:49,951 --> 00:13:50,719
 We have 3 tests.
+我们一共有3个测试。
 
-235
+224
 00:13:51,743 --> 00:13:54,815
 It's like kind of exception tests. We consider these items as black bugs.
+这就像是异常测试，我们把这些当作black bug。
 
-236
+225
 00:13:55,583 --> 00:13:59,167
 And we sent some requests and we checked the
+如果我们发送这些请求，然后查看
 
-237
+226
 00:14:00,703 --> 00:14:01,727
-console ??? json.
+json.
+一下json数据
 
-238
+227
 00:14:01,983 --> 00:14:03,775
 The last one is the test
+最后一个测试，
 
-239
+228
 00:14:04,031 --> 00:14:05,823
 demonstrate the problem. Ok?
+我们就可以看出这个问题。是吧？
 
-240
+229
 00:14:06,079 --> 00:14:11,199
 So wait. We have a tool, it's name is ???  We see every time we change
+稍等，我们有一个工具。每当我们做改变的时候，
 
-241
+230
 00:14:11,455 --> 00:14:17,599
 something, we type something, we change the code. It will run the test in background, execute it,
+我们输入一些东西，改变代码，它会在后台自动跑测试。
 
-242
+231
 00:14:17,855 --> 00:14:23,999
 and provide us a feedback loop with a colored arrow on the margin.
+然后左边会有有颜色的箭头，是给我们反馈。
 
-243
+232
 00:14:24,255 --> 00:14:26,303
 So green is fine and red is
+绿色代表没问题，红色
 
-244
+233
 00:14:26,559 --> 00:14:30,399
 there's a problem. And there's an arrow in Red.
+代表有问题。这就有个红箭头。
 
-245
+234
 00:14:30,911 --> 00:14:31,423
 Bruno, if you...
+Bruno，你来...
 
-246
+235
 00:14:31,679 --> 00:14:33,983
-Yeah I will show. Hang over the arrow.
+Yeah I will show. Have another view of the error.
+好我来展示。看看这个错误。
 
-247
+236
 00:14:35,007 --> 00:14:39,103
 Basically it's the problem. We are expecting to have
+这问题是，我们本来想要2个座位，
 
-248
+237
 00:14:39,615 --> 00:14:42,431
 2 seats in 1B and 2B. And actually we get
+1B和2B，但是我们得到的却是
 
-249
+238
 00:14:42,943 --> 00:14:47,295
 10A and 1B. So this is the bug we discuss earlier.
+10A和1B。这是我们之前就讨论过的bug。
 
-250
+239
 00:14:48,575 --> 00:14:50,111
 Ok everyone?
+对吧？
 
-251
+240
 00:14:50,879 --> 00:14:57,023
-I think it would be a good thing to stop to have another view of what the Reserve mothod is doing.
+I think it would be a good thing to stop to have another view of what the Reserve method is doing.
+我觉得现在最好停一下，我们再看看这个Reserve方法在干什么。
 
-252
+241
 00:14:57,279 --> 00:15:01,119
 I'll just align the code for you.
+我帮你找一下代码。
 
-253
+242
 00:15:01,631 --> 00:15:07,519
 Let's have a first overview. We discovered that this morning so we will have
+我们先看一下。我们今天早上的时候看过了一次，所以
 
-254
+243
 00:15:07,775 --> 00:15:12,383
 a little bit more knowledge about it. So I will try to help you to
+我们可能更熟悉这段代码。我们会帮大家
 
-255
+244
 00:15:12,639 --> 00:15:13,663
 to have an overview.
+过一遍这代码。
 
-256
+245
 00:15:14,431 --> 00:15:20,575
 First we ??? a list of available seats. That should be
+首先我们有一个可选座位的列表。这应该是
 
-257
+246
 00:15:20,831 --> 00:15:22,367
 probably the result of the method.
+这个方法的结果。
 
-258
+247
 00:15:22,879 --> 00:15:25,695
 Then we call a get train on a trainDataService.
+然后我们调用trainDataService上的get train方法。
 
-259
+248
 00:15:26,207 --> 00:15:32,351
 And we get something like we call jsonTrain. Maybe is a json topology we will see it after.
+我们就得到了jsonTrain这个数据。这也许是json拓扑，我们以后再看。
 
-260
-00:15:33,631 --> 00:15:38,751
-Then we install a train. A train installs of ??? json
+249
+00:15:33,631 --> 00:15:39,751
+Then we install a train. A train installs of ??? json topology.
+然后我们就得到了train，一个火车拓扑。
 
-261
-00:15:39,007 --> 00:15:39,775
-topology.
-
-262
+250
 00:15:40,287 --> 00:15:44,895
 And after that train installed, we do some business rules here and there. So here,
+得到train之后，我们需要添加一些业务准则。
 
-263
+251
 00:15:45,407 --> 00:15:51,551
 if the number of seat already reserved in the train plus the number of seats I'm requesting
+如果被预定的座位数加上我想预定的座位数，
 
-264
+252
 00:15:52,063 --> 00:15:53,087
 is below,
+低于
 
-265
+253
 00:15:53,599 --> 00:15:56,159
- is below something like GetMaxRes, let me check.
+is below something like GetMaxRes, let me check.
+低于GetMaxRes这个数，我看一下，
 
-266
+254
 00:15:56,415 --> 00:16:00,511
 Should be some percentage or something like that. Yeah, 70%.
+应该是个百分数吧。对，70%。
 
-267
+255
 00:16:01,023 --> 00:16:01,535
 Ok.
+好。
 
-268
-00:16:01,791 --> 00:16:02,815
-70% of the 
+256
+00:16:01,791 --> 00:16:04,815
+70% of the overall train capacity.
+火车总座位数的70%。
 
-269
-00:16:03,071 --> 00:16:04,607
-overall train capacity.
-
-270
+257
 00:16:04,863 --> 00:16:05,887
 So if
+如果
 
-271
+258
 00:16:06,143 --> 00:16:09,983
 I respect the first business rule, I continue.
+我们符合这个业务准则，那么我就可以继续。
 
-272
+259
 00:16:10,751 --> 00:16:15,871
 I continue. The numberOfReserv seems to be an accumulator variable here
+继续之后，numberOfReserv感觉像是个累加变量。
 
-273
+260
 00:16:16,127 --> 00:16:18,431
 And we tried to find some available seats.
+我们想找到可选的座位。
 
-274
+261
 00:16:19,199 --> 00:16:24,575
 An availble seat in that system is the one that the BookingRef is empty.
+可选座位指的是系统里面BookingRef为空的座位。
 
-275
+262
 00:16:25,087 --> 00:16:29,951
 We have a property and if it's empty string,
+我们这有个属性，如果它为空的话，
 
-276
+263
 00:16:30,463 --> 00:16:32,255
 that means that seat is available
+就代表这个座位可选。
 
-277
+264
 00:16:32,511 --> 00:16:33,791
 And then we can add it
+然后我们就可以把它加入到
 
-278
+265
 00:16:34,047 --> 00:16:34,815
 into the list.
+座位列表里。
 
-279
+266
 00:16:35,071 --> 00:16:37,887
 The list that we will return at the end of the method
+就是方法最后我们要返回的列表。
 
-280
+267
 00:16:38,399 --> 00:16:39,679
 Is it okay for you so for?
+到现在都还跟得上吧大家？
 
-281
+268
 00:16:41,471 --> 00:16:46,079
 Then we have a kind of stupid forEach. We haven't seen that in years ago.
+然后这还有一些愚蠢的forEach，我们几年都没有看到过这个了。
 
-282
+269
 00:16:46,335 --> 00:16:50,175
 Oh then what do we have yes if we can't
+如果我们没有那么多可被预定的座位
 
-283
+270
 00:16:50,943 --> 00:16:56,063
 find the number of seat requested, what do we do? We get the answer, you know,
+怎么办？我们会得到一个响应。
 
-284
+271
 00:16:56,319 --> 00:16:59,135
-the result that is saying that you can't even resolve.
+the result that is saying that you can't even reserve.
+告诉你不可以预定了。
 
-285
+272
 00:16:59,647 --> 00:17:03,231
-Remember, it's a failing massage.
+Remember, it's a failing message.
+这个可是一个失败的消息啊。
 
-286
+273
 00:17:03,743 --> 00:17:09,887
 If it work, that when we call the bookingReferenceService, the one in the middle on the right side.
+如果座位预定好了，我们会调用bookingReferenceService，就是在右边中间部分的这个。
 
-287
+274
 00:17:10,911 --> 00:17:12,447
 And call GetBookingReference.
+然后调用GetBookingReference。
 
-288
+275
 00:17:13,983 --> 00:17:15,007
 Then we
+然后我们
 
-289
+276
 00:17:15,263 --> 00:17:19,615
 assign a booking reference to every one of the available seat that we have found.
+给每一个可预定的座位附上一个订票收据。
 
-290
+277
 00:17:20,383 --> 00:17:21,151
 So far
+到现在为止
 
-291
+278
 00:17:21,407 --> 00:17:23,967
 We have a bunch of accumulators here.
+我们有很多的累加器。
 
-292
+279
 00:17:24,479 --> 00:17:26,271
 And then, again, it's
+然后这里，又有一个
 
-293
+280
 00:17:26,527 --> 00:17:32,671
 pretty much the same if. If you look at...Yeah it seems similar. No the first one is negative.
+跟之前基本一样的if。你看之前的。对确实像的。不对，第一个条件是不等。
 
-294
+281
 00:17:32,927 --> 00:17:33,951
 Not really same. But,
+不完全一样。
 
-295
+282
 00:17:34,207 --> 00:17:40,351
 if it's still ok, oh we use the cache? Yeah. Interesting.
+如果条件还满足的话...哦我们这还用了cache？是啊，有意思。
 
-296
+283
 00:17:40,863 --> 00:17:42,399
 We will see that...why, okay?
+我们等会再看看这是为什么，好吧？
 
-297
+284
 00:17:42,655 --> 00:17:48,799
 And then what do we... Actually this is the one that is making the booking, you know.
+然后我们会干什么...这其实是在订票。
 
-298
+285
 00:17:49,055 --> 00:17:49,567
 Transaction actually.
+其实就是交易。
 
-299
+286
 00:17:49,823 --> 00:17:54,175
 It will be the external web API we call to book a seat.
+订票的话我们调用的是一个外部的web API。
 
-300
+287
 00:17:54,687 --> 00:17:55,455
 If I
+如果我
 
-301
+288
 00:17:55,967 --> 00:17:56,991
 enter that,
+进入这个的话
 
-302
+289
 00:17:58,527 --> 00:17:59,295
 let me check,
+我看一下
 
-303
+290
 00:17:59,551 --> 00:18:01,343
 here the implemetation.
+这是它的实现。
 
-304
+291
 00:18:01,599 --> 00:18:07,231
 Yeah basically we call a web API.
+对我们就是调用了一个web API。
 
-305
-00:18:07,487 --> 00:18:07,999
-Real
+292
+00:18:07,487 --> 00:18:09,399
+Real Interesting.
+有点意思。
 
-306
-00:18:08,255 --> 00:18:09,279
-Interesting.
-
-307
+293
 00:18:09,535 --> 00:18:13,375
 And it seems that if we don't have any kind of exception here,
+如果这没什么异常的话，
 
-308
+294
 00:18:13,887 --> 00:18:16,447
 what do we do? We return the answer.
+我们会返回一个数据。
 
-309
+295
 00:18:17,983 --> 00:18:21,567
 And the answer is the one dumping the list of seats
+返回值就是到目前为止我们找到的
 
-310
+296
 00:18:22,079 --> 00:18:24,127
 we have found so far. Okay?
+座位列表。都没什么问题吧？
 
-311
+297
 00:18:24,639 --> 00:18:30,783
 And the case here, what was it? Yes, in the case of the train capacity limit
+这里在干什么来着？哦对，如果预定座位数超过
 
-312
+298
 00:18:31,039 --> 00:18:33,343
 has been exceeded,
+火车总座位数的话，
 
-313
+299
 00:18:33,599 --> 00:18:38,719
 we return the empty... you can't reserve anything in that train. It's a failure.
+我们返回一个空值。你就不能预定了。预定失败了。
 
-314
+300
 00:18:39,743 --> 00:18:41,279
 Ok for everyone of you?
+对吧？
 
-315
+301
 00:18:42,559 --> 00:18:45,631
 We will make a few review working on it. But,
+我们之后还会回过头再看一下这里，不过
 
-316
+302
 00:18:45,887 --> 00:18:47,167
 do you have some
+现在大家有什么
 
-317
-00:18:47,679 --> 00:18:48,703
-feedback about that
+303
+00:18:47,679 --> 00:18:49,703
+feedback about that so far？
+疑问吗？
 
-318
-00:18:48,959 --> 00:18:49,471
-so far? (Why are you using string concatenation to create json?)
+304
+00:18:49,471 --> 00:18:54,971
+(Why are you using string concatenation to create json?)
+（你们为什么用字符串连接来创建json？）
 
-319
+305
 00:18:55,103 --> 00:18:57,919
 Why are we using string concatenation to create json?
+我们为什么用字符串连接来创建json？
 
-320
+306
 00:18:59,199 --> 00:19:00,479
 Actually this is not our code.
+其实这也不是我们自己写的代码。
 
-321
+307
 00:19:00,735 --> 00:19:06,879
 As a declarer. This is a customer we discover this morning. So yes, but this is a good remark, why do we
+先声明一下，这是客户的代码，今天早上才成为我们客户的。不过你说的很对。我们为什么
 
-322
+308
 00:19:09,695 --> 00:19:15,839
 append a json here in the middle of something that, it's expected to be some kind of
+要在这里加json呢？这里应该是有一些
 
-323
+309
 00:19:16,095 --> 00:19:17,119
 business logic.
+业务逻辑吧。
 
-324
+310
 00:19:19,935 --> 00:19:26,079
 (Prove it with a github link.) We don't even use git in that project. You know.
+（用github link证明一下你刚才说的呗？） 我们在这个项目里都没用到git。
 
-325
-00:19:26,335 --> 00:19:29,151
+311
+00:19:26,335 --> 00:19:34,151
 So I can't do that. (Maybe I think the business logic is quite intermixed all togather in one function?)
+我没法证明啊。（我觉得是不是应该把业务逻辑放在一个方法里啊？）
 
-326
-00:19:34,015 --> 00:19:35,807
+312
+00:19:34,215 --> 00:19:35,807
 Yeah, you are right.
+没错。
 
-327
+313
 00:19:36,063 --> 00:19:37,855
 Yeah absolutely. Yeah.
+对，确实是。
 
-328
+314
 00:19:38,367 --> 00:19:44,255
 That is a strategy we will try to apply with you. We try to discover
+我们以后可以试试你的这个建议。我们会试着
 
-329
-00:19:45,791 --> 00:19:47,327
-the domain expert???
+315
+00:19:45,791 --> 00:19:49,327
+the domain concept through this code.
+通过代码去了解火车领域的概念。
 
-330
-00:19:47,583 --> 00:19:48,095
-concept
-
-331
-00:19:48,607 --> 00:19:49,119
-Swiss Guard??????
-
-332
+316
 00:19:50,143 --> 00:19:55,775
 And we try to figure out how can we improve that because so far there's something that's really bother me.
+我们试图弄清楚如何才能改进这个代码，因为到目前为止，有些东西真的挺让我烦恼的。
 
-333
-00:19:57,055 --> 00:19:58,847
-We were talking about the domain
+317
+00:19:57,055 --> 00:20:00,347
+We were talking about the domain expert
+我们刚才说的那个领域专家，
 
-334
-00:19:59,359 --> 00:20:00,127
-expert
-
-335
+318
 00:20:00,639 --> 00:20:02,687
 talking with us with tons of concepts.
+跟我们讲理很多的概念。
 
-336
+319
 00:20:03,967 --> 00:20:06,783
 Can you see apart the train, and the
+除了火车的概念
 
-337
+320
 00:20:07,039 --> 00:20:10,367
 concept of seat, do you see any
+座位的概念，你们还能看出
 
-338
-00:20:10,623 --> 00:20:11,391
-other
+321
+00:20:10,623 --> 00:20:12,991
+other concept as well?
+其他的概念吗？
 
-339
-00:20:12,159 --> 00:20:12,927
-concept as well?
-
-340
-00:20:13,183 --> 00:20:14,463
+322
+00:20:13,183 --> 00:20:16,463
 There's something missing. (Coach isn't explained. )
+有些东西是缺失的。（这没有车厢的概念。）
 
-341
+323
 00:20:16,511 --> 00:20:19,839
 Yeah. The concept of coach is completely missing here.
+没错，车厢的概念完全缺失了。
 
-342
-00:20:20,095 --> 00:20:21,631
+324
+00:20:20,095 --> 00:20:22,631
 And other stuff? (Reservation?)
+其他的呢？（预定的概念？）
 
-343
+325
 00:20:22,655 --> 00:20:27,775
 Reservation, absolutely. No reservation. No reservation at time so far.
+预定，没错。到现在为止，没有预定的概念。
 
-344
+326
 00:20:28,031 --> 00:20:30,591
 So, who have experienced code like this?
+大家谁之前有看过类似这样的代码？
 
-345
+327
 00:20:32,127 --> 00:20:33,151
 In this case. Some of you.
+看来有人遇到过啊。
 
-346
+328
 00:20:34,943 --> 00:20:41,087
-So we are not alone. So as anyone here, for us will be to have a kind of way of
+So we are not alone. So the idea here, for us will be to have a kind of way of
+看来并不是只有我们遇到了这个问题。对所有在座的人来说，今天我们要找出一个方式
 
-347
+329
 00:20:41,343 --> 00:20:42,111
-improving it,
+improving it.
+来改进这个代码。
 
-348
+330
 00:20:42,367 --> 00:20:43,135
-because,
+Because,
+因为
 
-349
+331
 00:20:43,391 --> 00:20:46,463
 since we don't have any kind of coach here,
+因为现在我们这没有指导，
 
-350
-00:20:46,719 --> 00:20:50,559
+332
+00:20:46,719 --> 00:20:52,559
 the strategy for us to fix the bug would be to make it
+我们来修bug的策略就是先看懂它。
 
-351
-00:20:51,071 --> 00:20:52,351
-analogy.???
-
-352
+333
 00:20:52,863 --> 00:20:54,655
 But before that,
+但在那之前，
 
-353
+334
 00:20:54,911 --> 00:20:57,471
 there's so much crappy thing and like that.
+这有好多糟糕的代码啊。
 
-354
+335
 00:20:57,727 --> 00:20:59,007
 So let's clean,
+我们先清理一下。
 
-355
+336
 00:20:59,263 --> 00:21:00,799
 first clean the deck? Yeah.
+先Clean the deck？是的。
 
-356
+337
 00:21:01,055 --> 00:21:03,103
 Do you know the name clean the deck?
+你们知道Clean the deck是什么吗？
 
-357
+338
 00:21:03,359 --> 00:21:04,895
 The expression clean the deck? No?
+Clean the deck这种说法？不知道？
 
-358
+339
 00:21:05,407 --> 00:21:06,943
 Clean the deck
+Clean the deck
 
-359
+340
 00:21:07,455 --> 00:21:10,527
 is the first phase when you discover a code,
+是你检测代码的第一步
 
-360
+341
 00:21:10,783 --> 00:21:14,367
 because you need to be more confident before
+因为在做深度重构之前，你必须
 
-361
+342
 00:21:14,623 --> 00:21:18,208
 to apply deep refactoring.
+让自己更有信心。
 
-362
-00:21:18,464 --> 00:21:21,280
-It's a way to discover, fix
+343
+00:21:18,464 --> 00:21:23,280
+It's a way to discover, fix a little
+这是检测代码的一种方式，从小的地方去修复代码，
 
-363
-00:21:22,048 --> 00:21:23,840
-a little,
-
-364
+344
 00:21:24,096 --> 00:21:25,888
 names of the variables, for example,
+就比如变量名字啊。
 
-365
+345
 00:21:26,656 --> 00:21:27,424
-and after, 
+And after, 
+这之后，
 
-366
+346
 00:21:28,192 --> 00:21:34,336
 get into the program. Yeah, it's a way to prepare our mental model in your head.
+再继续编程。是的，这就是我们在脑海里准备一个心理模型的方式。
 
-367
-00:21:34,592 --> 00:21:40,736
+347
+00:21:35,992 --> 00:21:40,736
 So come back from the beginning, so clean the deck, you will have another view,
+好那我们回到刚才，开始Clean the deck。大家一点一点的去改进，
 
-368
+348
 00:21:40,992 --> 00:21:42,272
 trying to improve a little bit.
+就会有一个新的理解。
 
-369
+349
 00:21:42,528 --> 00:21:45,344
 but before that.
+稍等，我看有人有问题。
 
-370
+350
 00:21:47,392 --> 00:21:53,024
 (You have typo in 63.) We have typo in 63? Yeah yeah, it's for sure, for sure. It's really a legacy code.
+（你63行有个拼写错误。） 63行有个错？哦对，没错。这就是遗留代码啊。
 
-371
+351
 00:21:54,560 --> 00:21:56,864
 But you notice something wrong? We'll fix that.
+不过你注意到了没有这里有点问题？我们得修复它。
 
-372
+352
 00:21:57,888 --> 00:21:58,912
 It's red.
+这红了。
 
-373
+353
 00:21:59,424 --> 00:22:00,704
 It's difficult to
+如果我们代码红了，
 
-374
+354
 00:22:01,472 --> 00:22:05,568
 be confident if my code is red because if I made
+我很难有信心去修改它。因为如果
 
-375
+355
 00:22:05,824 --> 00:22:06,592
 a mistake,
+改的时候出错了，
 
-376
+356
 00:22:07,104 --> 00:22:10,176
 I don't see the mistake. I prefer to see green
+我根本不知道出错了。我还是更喜欢看到这里的代码
 
-377
+357
 00:22:10,688 --> 00:22:11,968
 in my tool. So
+都是绿色的。
 
-378
+358
 00:22:12,480 --> 00:22:13,248
 to do that,
+为了让它变绿，
 
-379
+359
 00:22:14,016 --> 00:22:17,600
 we'll completely ignore the test and just search the bug.
+我们要完全忽略这个测试，先去找bug。
 
-380
+360
 00:22:18,112 --> 00:22:19,136
 It's a good technique
+这是一个很好的技巧
 
-381
+361
 00:22:19,392 --> 00:22:22,720
 if you're in the same situation when the test is failing,
+如果你也面临着测试挂了的这种情况，
 
-382
+362
 00:22:23,488 --> 00:22:26,304
-and you need to ??? before fixing the bug
+and you need to refactor just before fixing the bug
+你需要先重构再修bug，
 
-383
+363
 00:22:26,816 --> 00:22:30,400
 you ignore that test and just search the bug.
+你最好就先忽略那个测试。
 
-384
+364
 00:22:30,656 --> 00:22:36,800
 So that it's green you have a test on this. You refactor and then you enable back the test to fix the bug.
+现在变绿了，我们这也还有一个测试。我们可以先重构，然后启用这个测试，再去修复bug。
 
-385
-00:22:37,568 --> 00:22:38,080
-So
+365
+00:22:37,568 --> 00:22:39,080
+So this is what
+这其实就是
 
-386
-00:22:38,336 --> 00:22:38,848
-this is what
-
-387
+366
 00:22:39,360 --> 00:22:40,896
 you're doing. And white
+你现在做的。白色
 
-388
-00:22:41,152 --> 00:22:46,784
+367
+00:22:41,152 --> 00:22:50,784
 is meaning we don't run the test. And now I'm ready. (Fast question. Does it look better to
+意味着我们不跑这个测试。现在我就可以开始了。（我有个问题。如果我们
 
-389
+368
 00:22:51,392 --> 00:22:51,904
 create a test, which test the
+新建一个测试，来测试当前的行为，
 
-390
+369
 00:22:56,000 --> 00:22:57,024
 current behavior,
+是不是更好？
 
-391
+370
 00:22:58,560 --> 00:23:00,608
 because when your refactoring, you want to basically
+因为当你重构的时候，你还是想
 
-392
+371
 00:23:02,144 --> 00:23:04,192
 maintain the current behaviour.) Yeah.
+保留当前的行为的。）是的。
 
-393
+372
 00:23:05,216 --> 00:23:09,568
 (So by creating a new test, so that ignore the old test.) Absolutely. (By creating a new test which test the
+（新建一个测试的话，我们忽略掉旧的测试。）没错。（新建的测试就测
 
-394
+373
 00:23:12,128 --> 00:23:13,664
 current behaviour, you can't basically break it.)
+当前的行为，我们得通过这个新测试才行。）
 
-395
+374
 00:23:15,200 --> 00:23:19,552
 Yeah. That is a technique I like a lot which is a golden master.
+是的，这是Golden master，是我很喜欢的一个技巧。
 
-396
+375
 00:23:20,064 --> 00:23:21,856
 Golden master is you take a legacy code,
+Golden master是你拿到一个遗留代码，
 
-397
+376
 00:23:22,368 --> 00:23:23,136
 you clone it,
+复制这个代码，
 
-398
+377
 00:23:23,648 --> 00:23:27,232
 and you write acceptance tests.
+然后去写验收测试。
 
-399
-00:23:27,488 --> 00:23:33,632
-Every time I send that input into the legacy code and the new instance, which is the one I will
+378
+00:23:27,488 --> 00:23:34,632
+Every time I send that input into the legacy code and the new instance, which is the one I will work on,
+每当我将输入发送到遗留代码和新写的代码时，
 
-400
-00:23:33,888 --> 00:23:34,400
-work on,
-
-401
+379
 00:23:34,656 --> 00:23:37,216
 I'm expecting to see the same output
+我得到的两个输出
 
-402
+380
 00:23:37,472 --> 00:23:39,264
 on both instances.
+应该一样。
 
-403
+381
 00:23:39,520 --> 00:23:40,800
 So that without
+所以即使
 
-404
+382
 00:23:41,056 --> 00:23:43,616
-even understanding delegacy,
+even understanding the legacy,
+不知道代码的上下文，
 
-405
+383
 00:23:43,872 --> 00:23:45,152
 I can have a test on this.
+我依然可以有这个测试。
 
-406
+384
 00:23:45,408 --> 00:23:50,528
 Making me and forcing me... I don't break any existing behavior.
+这也强迫我，不要影响现有的行为。
 
-407
+385
 00:23:51,040 --> 00:23:57,184
 So this is a strategy that we could have done. But here we are implementing the business rule
+我们本来应该这么做的，不过现在我们在实现业务准则，
 
-408
+386
 00:23:57,440 --> 00:23:58,976
 as a domain expertise.
+所以作为领域专家，
 
-409
+387
 00:23:59,488 --> 00:24:05,632
 So we will stick to that point for now. But it's a good way for refactor.
+我们就先用现有的代码。不过你说的那个确实是重构的好方法。
 
-410
+388
 00:24:07,168 --> 00:24:08,704
-???
+Just clean the deck Bruno.
+Bruno，继续clean the deck吧。
 
-411
+389
 00:24:08,960 --> 00:24:10,752
 The first variable,
+我们可以看到，
 
-412
-00:24:11,776 --> 00:24:13,056
-this is as noticeable,
+390
+00:24:11,776 --> 00:24:17,056
+this is as noticeable, the variable seat.
+这第一个变量，seat。
 
-413
-00:24:13,312 --> 00:24:14,080
-the variable
+391
+00:24:17,920 --> 00:24:20,444
+I'll just have a look
+我要看一下
 
-414
-00:24:14,592 --> 00:24:15,104
-seat
-
-415
-00:24:17,920 --> 00:24:18,944
-I'll just
-
-416
-00:24:19,456 --> 00:24:20,480
-have a look
-
-417
+392
 00:24:20,736 --> 00:24:23,808
 where is used. Far from the usage. Yeah, far.
+在哪用了它。离调用的地方很远啊。是啊，确实远。
 
-418
+393
 00:24:24,576 --> 00:24:25,088
 So
+那...
 
-419
+394
 00:24:26,880 --> 00:24:27,904
 maybe,
+也许
 
-420
+395
 00:24:29,952 --> 00:24:32,768
 I can decide to move this one
+我可以把它移的
 
-421
+396
 00:24:33,280 --> 00:24:35,328
 close to the usage.
+离调用的地方近一点的。
 
-422
+397
 00:24:37,632 --> 00:24:40,704
 Here for example. In the back of the room can you see all the code?
+比如放这。后面的人你们看得到所有的代码吗？
 
-423
+398
 00:24:40,960 --> 00:24:47,104
 Because my test is running in real time I know I'm not breaking the code. It's still green.
+我的测试是实时运行的，所以我知道我没有破坏现有的代码。这都是绿色的。
 
-424
+399
 00:24:48,896 --> 00:24:55,040
 The behavior of the C programmer, because I was a C programmer, was to put
+我是个C语言程序员，C语言的程序员一般习惯
 
-425
+400
 00:24:55,296 --> 00:24:58,112
 all the variable at the beginning of the code.
+把所有变量都写在代码的最前面。
 
-426
+401
 00:24:58,368 --> 00:24:59,904
 So this is your...?
+所以这是你写的代码？
 
-427
+402
 00:25:00,160 --> 00:25:06,304
 No it's not mine. Ok, second one is count.
+不，不是我写的。好，第二个变量是count。
 
-428
+403
 00:25:07,840 --> 00:25:10,656
 Count, so... What a name.
+count，这名字起的。
 
-429
+404
 00:25:11,424 --> 00:25:12,448
 Yeah, count, wow.
+是啊，count。
 
-430
+405
 00:25:13,984 --> 00:25:17,568
 What a stupid loop. Yeah, we're looping on the list.
+这又是个愚蠢的循环。是啊，我们在list里循环。
 
-431
+406
 00:25:17,824 --> 00:25:19,872
-Actually it's a list of capability count.
+Actually it's a list of property count.
+这其实是count的list。
 
-432
+407
 00:25:20,128 --> 00:25:22,432
 It's exactly the same number.
+完全是一样的数字啊。
 
-433
+408
 00:25:22,688 --> 00:25:28,832
 We have a hint here. It's unused. Maybe ??? developer want to say something?
+这有个提示，这个没被用过。它是不是想告诉我们点什么？
 
-434
-00:25:29,088 --> 00:25:30,112
-So
+409
+00:25:29,392 --> 00:25:34,208
+So what I can do is maybe to use
+我应该可以用
 
-435
-00:25:31,392 --> 00:25:34,208
-what I can do is maybe to use
-
-436
+410
 00:25:34,720 --> 00:25:35,488
 availabelSeats.
+availabelSeats
 
-437
+411
 00:25:35,744 --> 00:25:36,512
 And apply count property.
+赋值给count。
 
-438
+412
 00:25:36,768 --> 00:25:40,864
 Yeah because at the end of the for each loop, count will have the same
+对，因为这个循环最后，count和availableSeats的值
 
-439
+413
 00:25:41,120 --> 00:25:43,680
 value as availableSeats. I can remove this one.
+是一样的。我现在可以删了这个。
 
-440
+414
 00:25:43,936 --> 00:25:44,448
 Okay?
+好了。
 
-441
+415
 00:25:45,216 --> 00:25:46,240
 Cool, I'll leave it.
+好，就先这样。
 
-442
+416
 00:25:46,496 --> 00:25:50,848
 On this screen hight, do we have ah...before we...We can check.
+现在，我们可以看一下，这方法占几个屏幕。
 
-443
+417
 00:25:51,616 --> 00:25:52,640
 One, two.
+一，二
 
-444
+418
 00:25:53,664 --> 00:25:54,176
 Two
+两个
 
-445
+419
 00:25:54,432 --> 00:25:56,736
 Two and a half? Two and a half, yeah. 
+两个半？对，两个半。
 
-446
+420
 00:25:57,504 --> 00:26:00,576
 So that was another thing that bother me to have a method like that.
+这其实也是另一个困扰我的事情，方法太长了。
 
-447
+421
 00:26:01,344 --> 00:26:02,112
 Ok.
+好吧。
 
-448
-00:26:03,392 --> 00:26:09,536
-Ok, this is a code for the train
+422
+00:26:03,392 --> 00:26:10,536
+Ok, this is a code for the train topology.
+好，这是火车拓扑的代码。
 
-449
-00:26:09,792 --> 00:26:10,560
-topology.
-
-450
+423
 00:26:11,072 --> 00:26:12,352
 Maybe we can rename it?
+没准我们可以重命名？
 
-451
+424
 00:26:14,400 --> 00:26:15,424
 Yeah. Ok?
+可以啊。
 
-452
+425
 00:26:15,680 --> 00:26:16,192
 Train topology?
+Train topology?
 
-453
+426
 00:26:16,448 --> 00:26:17,216
 Yeah that' fine.
+嗯可以。
 
-454
+427
 00:26:17,472 --> 00:26:23,616
 Traintopol and you can...Topology is better. That may explain we were talking about
+Traintopol然后...拓扑这个词挺好，我们刚才一直都在说
 
-455
+428
 00:26:23,872 --> 00:26:30,016
 the  train topology. So that's better. Okay, trainInst.
+火车拓扑嘛。对，确实比之前那个好。那这个词，trainInst。
 
-456
+429
 00:26:30,528 --> 00:26:32,320
 Instruction? Instance?
+指令？还是实例？
 
-457
+430
 00:26:32,832 --> 00:26:37,952
 We asked domain expert about that, he said no I'm not aware of train instance by domain. So,
+我们问了领域专家，他说领域里没有火车实例的概念。
 
-458
+431
 00:26:38,464 --> 00:26:44,352
 should be train install maybe or. So let's treat its name into train. Yeah. So you install a train from a trainTopology ok? Yeah.
+所以这个可能是train install？那我把它改成train吧。所以现在我们从火车拓扑，得到一个火车。不错。
 
-459
+432
 00:26:45,632 --> 00:26:48,192
 What is this guy?
+这是什么？
 
-460
+433
 00:26:48,448 --> 00:26:52,032
 numberOfReserv. Maybe you can just...
+numberOfReserv。也许你应该
 
-461
+434
 00:26:52,288 --> 00:26:57,152
 Put it here for people in the back to see everything. Ok. You see this one?
+把它放这边，这样后面的人能看清所有的代码。好的，你们看这个。
 
-462
+435
 00:26:58,944 --> 00:27:02,272
 numberOfReserv. Is it used? Yeah.
+numberOfReserv。这个被用过吗？没有吧？。
 
-463
+436
 00:27:03,040 --> 00:27:05,088
 It's a pattern actually.
+这就是个形式而已啊。
 
-464
+437
 00:27:05,344 --> 00:27:09,696
 We use a variable
+我们这个变量
 
-465
+438
 00:27:09,952 --> 00:27:16,096
-for nothing and... Just in case the calculation, that count is wrong maybe you can have a
+for nothing and... Just in case the calculation, that count is wrong maybe you can have a...
+没有什么用。只是为了计算，以防我们的计数是错的。
 
-466
+439
 00:27:16,352 --> 00:27:19,936
-maybe that's intends? I don't know.
+Maybe that's intends? I don't know.
+也许这个是故意的？我也不知道。
 
-467
-00:27:20,192 --> 00:27:23,776
-Some times we don't have to try to understand. This is just
+440
+00:27:20,192 --> 00:27:24,776
+Some times we don't have to try to understand. This is just silly stuff.
+我们其实不用去理解这个。这些乱七八糟的。
 
-468
-00:27:24,032 --> 00:27:24,800
-silly stuff.
-
-469
+441
 00:27:26,848 --> 00:27:29,408
 Ok, so I can remove this one.
+好，我可以把这个删了。
 
-470
+442
 00:27:29,664 --> 00:27:32,480
 Ok so you get rid of it. Yeah I get rid of this one.
+那你不要这个了？对不要了。
 
-471
+443
 00:27:35,040 --> 00:27:35,808
 Ok you can delete it.
+那你可以删了它。
 
-472
+444
 00:27:36,064 --> 00:27:36,576
-Yeah
+Yeah.
+是的。
 
-473
+445
 00:27:36,832 --> 00:27:42,976
-Maybe...Each is fabulous. Each...
+Maybe...Each is？ Each...
+呃...这个each
 
-474
+446
 00:27:43,232 --> 00:27:47,840
 It's seat. Yes, from collection of Seats, we get a seat.
+应该是seat。对，从seat的collection中我们得到的是seat。
 
-475
+447
 00:27:48,608 --> 00:27:53,216
 This is a typo. reservedSet.
+这有个小错误，应该是reservedSet。
 
-476
+448
 00:27:53,728 --> 00:27:59,872
 We don't talk about set. We've asked the domain expert also, do we even have set? They said no. This is a loop too.
+我们没有集合的概念。我们问过领域专家到底有没有集合的概念？他们说没有。这又有一个循环。
 
-477
+449
 00:28:03,968 --> 00:28:04,992
 But never used.
+但是没被用过。
 
-478
+450
 00:28:06,272 --> 00:28:07,808
 Who has already seen that kind of 
+谁之前也在代码里遇见过这种
 
-479
+451
 00:28:08,064 --> 00:28:13,696
 variables, declarations in the code not even used anymore
+根本没被用过的变量、声明之类的？
 
-480
+452
 00:28:14,976 --> 00:28:16,512
 Yeah. Legacy code is full of
+对。遗留代码里
 
-481
-00:28:16,768 --> 00:28:17,280
-this kind of
+453
+00:28:16,768 --> 00:28:18,280
+this kind of stuff.
+很多这种东西。
 
-482
-00:28:17,792 --> 00:28:18,304
-stuff.
-
-483
+454
 00:28:18,816 --> 00:28:21,376
 And it's kind of polluting our mind.
+这有点污染我们的头脑。
 
-484
+455
 00:28:23,424 --> 00:28:24,704
 This one.
+这个。
 
-485
+456
 00:28:24,960 --> 00:28:27,008
 Have a look at this one. We have
+看看这个。我们这有
 
-486
+457
 00:28:29,056 --> 00:28:32,896
-a if here. And we have pretty much the same if at the ??? invest?
+a if here. And we have pretty much the same if at the invest?
+一个if。然后我们在这又有一个差不多的if。
 
-487
+458
 00:28:34,176 --> 00:28:35,200
 Yeah I'll just...
+是，那我...
 
-488
-00:28:35,456 --> 00:28:41,600
-We like symmetry it's much better to compare stuff. To do so, as we suggested, to invest?? Yeah, it's a good a idea.
+459
+00:28:35,456 --> 00:28:44,600
+We like symmetry it's much better to compare stuff. To do so, as we suggested, to invest? Yeah, it's a good a idea.
+我们喜欢对称性，这有利于我们去相互比较。为了这么做，我们建议把第一个if逻辑反转一下。对这是个好主意。
 
-489
+460
 00:28:44,928 --> 00:28:47,232
 Indent, invest if, and then,
+反转这个if逻辑。然后
 
-490
+461
 00:28:47,488 --> 00:28:50,304
 ok we can see pretty much the same...
+你看这些都差不多一样...
 
-491
+462
 00:28:51,328 --> 00:28:53,632
 I will select...No, no, wait.
+我要选中...等一下
 
-492
+463
 00:28:53,888 --> 00:28:54,656
 Just illustrate it.
+我们看一下。
 
-493
+464
 00:28:56,192 --> 00:28:58,752
 Here, as you can see there is one if. Here.
+这，你看有一个if。这里。
 
-494
+465
 00:29:00,032 --> 00:29:02,080
 And pretty much the same here.
+这又有一个差不多的。
 
-495
+466
 00:29:02,592 --> 00:29:08,224
 So the idea is since there is nothing in the middle we can cut the code into the if below.
+因为中间什么也没有，我们可以把下面if里的代码剪切，
 
-496
+467
 00:29:08,480 --> 00:29:11,552
 And put it into the end of the first if.
+粘贴到第一个if到后面。
 
-497
+468
 00:29:11,808 --> 00:29:14,880
 This one, just at the end, to respect the algorithm.
+这个，就在它后面，这样也符合算法逻辑。
 
-498
+469
 00:29:16,928 --> 00:29:17,440
 So
+然后
 
-499
+470
 00:29:18,976 --> 00:29:22,560
-it will simplify a little bit the construture also.
+it will simplify a little bit the code structure also.
+这也会简化一点代码结构。
 
-500
+471
 00:29:22,816 --> 00:29:26,912
 It's really great. Green yeah. Okay?
+这确实不错。都是绿的你看。
 
-501
+472
 00:29:27,936 --> 00:29:28,448
-So now you can...Red
+So now you can...Read
+现在我们可以...看一下
 
-502
+473
 00:29:28,704 --> 00:29:34,848
-Why are you doing that? Because... It's white. Yeah. Entrnce???, when the code
+Why are you doing that? Because... It's white. Yeah. Entrnce?, when the code
+你为什么那么做？因为，它是白色的。对，当代码
 
-503
+474
 00:29:35,104 --> 00:29:36,640
 is not covered,
+没被覆盖，
 
-504
+475
 00:29:38,432 --> 00:29:38,944
 put a white
+这会有一个白色的
 
-505
+476
 00:29:39,200 --> 00:29:40,480
 indicator.
+标识符
 
-506
+477
 00:29:41,248 --> 00:29:42,016
 It's a
+这对我们来说
 
-507
+478
 00:29:42,528 --> 00:29:45,600
-??? for us. This one is not necessary too.
+good for us. This one is not necessary too.
+挺好的。这个也没有什么必要。
 
-508
+479
 00:29:48,160 --> 00:29:50,464
 Ok, you can remove some lines.
+对你可以把这几行删了。
 
-509
+480
 00:29:50,720 --> 00:29:52,256
 So I think we...
+我觉得我们
 
-510
+481
 00:29:52,512 --> 00:29:58,144
 have some space? Yeah maybe this one can be closer to the usage.
+有些空行？对，也许这个可以离用它的地方更近一点。
 
-511
+482
 00:29:58,912 --> 00:29:59,936
 Ok.
+好
 
-512
+483
 00:30:01,472 --> 00:30:02,496
 Ok so you
+好，你现在
 
-513
+484
 00:30:03,008 --> 00:30:06,848
 closer the declaration to the usage. And it's not perfect, but
+把声明和调用放一起了。目前还不完美，但是
 
-514
+485
 00:30:07,360 --> 00:30:09,408
 we changed a little bit.
+我们至少做了一些改变。
 
-515
+486
 00:30:09,920 --> 00:30:14,272
 Not so much. It's not really a deep refactory. It's just to be more confident.
+改的不多。这不是一个完全的重构。这只是让我们更自信。
 
-516
+487
 00:30:14,528 --> 00:30:17,344
 It's the first round, the first pass on the code,
+如果我们想完善心理模型，
 
-517
+488
 00:30:17,600 --> 00:30:20,416
 when improving our mental model about it
+并清理一下代码，
 
-518
+489
 00:30:20,928 --> 00:30:22,976
 and trying to clean up some mess.
+这只是第一步。
