@@ -1,1134 +1,1134 @@
-390
-00:45:43,280 --> 00:45:54,350
-instance find a vein bolts it's okay
-non-static PP also remove it so here if
+1
+00:45:43,930 --> 00:45:55,000
+For instance...FindAvailableSeats...it's okay
+non-static PP also move it so here if
 the trend does not exceed if I request
 
-391
+2
 00:45:56,090 --> 00:46:02,260
 does not exceed the maximum trend
 capacity we find some available seats
 
-392
-00:46:02,260 --> 00:46:06,569
+3
+00:46:03,260 --> 00:46:07,569
 actually
 there is some concept that we may
 introduce here instead of that what do
 
-393
+4
 00:46:08,790 --> 00:46:22,530
-you think a location a specification yes
+you think a location? A specification? yes
 [Music]
 
-394
+5
 00:46:23,119 --> 00:46:28,440
 yeah certain coach at the end of the day
 we need to have seats in a given coach
 
-395
+6
 00:46:28,440 --> 00:46:33,500
 but before that the domain expert was
 talking a lot about reservation attempts
 
-396
+7
 00:46:33,500 --> 00:46:40,050
 it's a really important concept for him
 so I suggest that we instead of just
 
-397
+8
 00:46:40,050 --> 00:46:43,950
 dealing with available seats a list of
 seats let's build an instance of
 preservation attempt from that part
 
-398
+9
 00:46:50,690 --> 00:46:57,480
 something yeah yeah good you know before
 we are improving the code below as
 
-399
+10
 00:46:57,480 --> 00:47:04,319
 something to show you
 yeah maybe you some people know and
 
-400
+11
 00:47:04,319 --> 00:47:10,589
 depend it's a tool to check the
 parenthesis but it exists G architect
 
-401
+12
 00:47:10,589 --> 00:47:18,569
 for Java or C++ basically an advanced
 tools yes it's analyzing your code and
 
-402
+13
 00:47:18,569 --> 00:47:25,170
 raising some warnings or mo and we were
 working with ethics Macau etc in deeper
 
-403
+14
 00:47:25,170 --> 00:47:31,170
 yeah and we asked him to introduce a way
 to check that code base follow the
 
-404
+15
 00:47:31,170 --> 00:47:35,010
 ubiquitous language for followed along
 with the of the demand it's a prototype
 
-405
-00:47:35,010 --> 00:47:41,069
+16
+00:47:37,010 --> 00:47:43,069
 is not a release and we try to imagine
 imagine you you have a team you have a
 legacy code and you know the vocabulary
 
-406
+17
 00:47:45,060 --> 00:47:50,520
 of the domain expert and create a rule
 it's called your code should rely on
 
-407
+18
 00:47:50,520 --> 00:47:56,700
 your you basically language and we see
 we have some problem and as you can see
 
-408
+19
 00:47:56,700 --> 00:48:03,240
 we have the list of program and the
 world not matching correctly irrevocable
 
-409
+20
 00:48:03,240 --> 00:48:10,530
 the cap is there so we have to enter a
 list of worlds that are part of our
 
-410
+21
 00:48:10,530 --> 00:48:16,920
-domain yeah like train Cochise
+domain yeah like train Coaches
 a federation fulfilled etc currently we
 
-411
-00:48:16,920 --> 00:48:23,430
+22
+00:48:18,920 --> 00:48:25,430
 have to define this list for each domain
 you want and the tool we tried to check
 that so it's still in alpha yeah but I
 
-412
+23
 00:48:27,059 --> 00:48:32,729
 think it would be interesting where to
-make some audit of some good is to is to
+make some audit of some good...is to is to
 have a kind of code smell about that
 
-413
+24
 00:48:35,249 --> 00:48:43,949
 okay okay so run it and what was the
 result was a three yeah I I don't want
 
-414
+25
 00:48:43,949 --> 00:48:52,619
-to actually okay so let's get back to to
+to actually...okay so let's get back to to
 the business we have some list of
 
-415
+26
 00:48:52,619 --> 00:48:58,079
 available seats I suggest that we change
 that you change the signature of that by
 
-416
+27
 00:48:58,079 --> 00:49:02,699
 introducing the concept of reservation
 attempt so here instead of returning a
 
-417
+28
 00:49:02,699 --> 00:49:13,349
 list of seats let's make it return a
-reservation attempt typo here the nation
+reservation attempt...I got typo here the reservation
 
-418
+29
 00:49:13,349 --> 00:49:15,949
 at and thank you
 
-419
+30
 00:49:16,730 --> 00:49:24,170
 okay yeah okay the type does not exist
 so yes I'm aware of that maybe I will
 
-420
+31
 00:49:24,170 --> 00:49:37,730
 rename it also but here as you can see
 sorry I shouldn't wear did ya hear yes
 
-421
+32
 00:49:37,730 --> 00:49:41,240
-the resurrection item type does not
+the reservation item type does not
 exist yet so let's create it I'll tend
 to create a presentation attempt okay
 
-422
+33
 00:49:43,670 --> 00:49:54,049
 and here since the method is the
 function is expecting to return me that
 
-423
+34
 00:49:54,049 --> 00:49:59,079
 kind of reservation attempt all I have
 to do is to install yet here at the end
 
-424
+35
 00:49:59,079 --> 00:50:05,510
 return a new reservation attempt ok
 providing it the list of seats I just
 
-425
-00:50:05,510 --> 00:50:11,270
+36
+00:50:07,510 --> 00:50:13,270
 found all I have to do is to create the
 constructor accepting a list of seats
 for that reservation attempt ok and
 
-426
+37
 00:50:14,569 --> 00:50:23,690
-that's it maybe return I shall attempt I
+that's it...Maybe return a reservation attempt I
 need to I will need to to walk with the
 
-427
+38
 00:50:23,690 --> 00:50:29,809
 seats so let me start off creating a
 field let me create now let's be real
 
-428
+39
 00:50:29,809 --> 00:50:36,410
-and that it will be sits as a rational
+and that it will be seats as a reservation
 attempt has a list of C and maybe to to
 introduce a read property because I will
 
-429
+40
 00:50:39,170 --> 00:50:44,869
 need to work with the the seats of that
 reservation attempt okay so we just
 
-430
+41
 00:50:44,869 --> 00:50:49,819
 introduced a reservation attempt which
 has a property of seats and that's it
 
-431
+42
 00:50:49,819 --> 00:50:55,730
 pretty much so that the fine available
 seats now the name is maybe build
 
-432
+43
 00:50:55,730 --> 00:51:02,990
-another Russian attempt would be better
-yeah okay so now the method is built as
-a Russian attempt its find available
+another reservation attempt would be better
+yeah okay so now the method is build 
+reservation attempt its find available
 
-433
+44
 00:51:05,150 --> 00:51:08,450
 seat within the Train and return a
-resolution a talk with that it's okay
+reservation attempt a talk with that it's okay
 for everyone said okay yeah so the code
 
-434
+45
 00:51:12,410 --> 00:51:17,569
 is not compiling anymore because I used
 to work with the list of seats so what I
 
-435
+46
 00:51:17,569 --> 00:51:23,210
 need is to rename available seat by
-reservation turns first step and then to
+reservation attempt first step and then to
 
-436
+47
 00:51:23,210 --> 00:51:28,820
 add the in direction to the seats and to
 work with the
 
-437
+48
 00:51:28,820 --> 00:51:33,320
 the list of the weather of seeds of the
 hydrogen atoms so just let me fill that
 
-438
+49
 00:51:33,320 --> 00:51:46,040
 three location f12
-oops got seeds left well okay that
+oops got seats left well okay that
 
-439
+50
 00:51:46,040 --> 00:51:51,260
 should compile let me check
 okay it's compiling is still green
 
-440
-00:51:51,260 --> 00:51:58,910
+51
+00:51:53,260 --> 00:52:00,910
 so here what I just did is to create a
 concept that is directly come from the
 domain a reservation attempt and replace
 
-441
+52
 00:52:02,300 --> 00:52:07,520
 a simple list or seat by a mate okay
 what can I do here
 
-442
+53
 00:52:07,520 --> 00:52:14,000
-reservation at tab that's it dot count
+reservation attemt that's it dot count
 here it's like saying dot the
 
-443
+54
 00:52:14,000 --> 00:52:18,770
 reservation attempt or easel reservation
 attempt fulfilled the double experiment
 
-444
+55
 00:52:18,770 --> 00:52:24,560
 talking a lot about that so let's create
 a method for that extract and move
 
-445
+56
 00:52:24,560 --> 00:52:31,640
 either fulfilled not complicated for me
 to find out who writing in English okay
 
-446
+57
 00:52:31,640 --> 00:52:37,040
 I think it's it's okay for that so we
 asked the organization a table are you
 
-447
+58
 00:52:37,040 --> 00:52:44,510
 fulfilled so first extract still on that
 class and then to move it to the up
 
-448
+59
 00:52:44,510 --> 00:52:47,530
 sorry
-to the resurrection returned so I
+to the reservation attempt so I
 
-449
+60
 00:52:47,530 --> 00:52:51,590
 extract to behavior and I put it into
 the proper location which is as a
 
-450
+61
 00:52:51,590 --> 00:52:56,630
 rational let something bother me because
 you pass twice the seat
 
-451
+62
 00:52:56,630 --> 00:53:01,400
 request kanji that is yeah you passed
 there and pass you actually can provide
 
-452
+63
 00:53:01,400 --> 00:53:06,320
 the seat requested code once when we
 construct the resurrection attempt so
 
-453
+64
 00:53:06,320 --> 00:53:10,250
 that we don't need anymore to ask to
 provide it every time we want to to
 
-454
+65
 00:53:10,250 --> 00:53:16,810
 check if it's fulfill a lot let's do
 that okay I agree go to implementation
 
-455
+66
 00:53:16,810 --> 00:53:21,110
 she requested counts I would provide it
 into the constructor of the veneration
 
-456
+67
 00:53:21,110 --> 00:53:31,000
 attempt here okay sorry I thinking I did
 a huge mistake
 
-457
+68
 00:53:32,100 --> 00:53:38,970
 so okay so I changed the constructor of
 the reservation attempt I'll tend to add
 
-458
+69
 00:53:38,970 --> 00:53:44,520
 parameter to the constructor yes please
 sir do that and she requested code here
 
-459
+70
 00:53:44,520 --> 00:53:49,290
 like what I can do is simply to keep a
 read-only field meaning it's not public
 
-460
+71
 00:53:49,290 --> 00:53:53,580
 it won't be accessible by the outside
 world
 
-461
+72
 00:53:53,580 --> 00:53:59,610
 freedom capsulated and now I had it what
 I can do is to leverage on that instead
 
-462
+73
 00:53:59,610 --> 00:54:06,080
 of the one that is provided as argument
 in the each fulfill so here I replace it
 
-463
+74
 00:54:06,080 --> 00:54:14,670
 the parameter with the internal field
 and now can get safety nets this
 
-464
+75
 00:54:14,670 --> 00:54:22,140
 parameter since I'm in c-sharp I can
 transform it and to property expression
 
-465
+76
 00:54:22,140 --> 00:54:31,470
 body okay let's let's move that now I
 think it's okay okay so here getting
 
-466
+77
 00:54:31,470 --> 00:54:38,070
-back to the each food fielder usage you
+back to the each full filled usage you
 see I'm on a resume third I asked Reza
 
-467
+78
 00:54:38,070 --> 00:54:43,620
 to build a reservation attempt to the
 Train oh maybe you don't move on the
 train
 
-468
+79
 00:54:44,070 --> 00:54:49,110
 below that I shall attempt should be a
 method from the Train so let's I just
 
-469
+80
 00:54:49,110 --> 00:54:54,150
 extract the method first so let's move
 it into the Train so now I can ask the
 
-470
+81
 00:54:54,150 --> 00:54:57,750
 Train please train build me or as a
-Russian attempt with that number of
+reservation attempt with that number of
 
-471
+82
 00:54:57,750 --> 00:55:02,940
 seats I won't get a reservation attempt
 and then if it's fulfilled then I can
 
-472
+83
 00:55:02,940 --> 00:55:07,620
 continue I can continue to ask the
-booking reference and also looking life
+booking reference and also booking ref
 
-473
+84
 00:55:07,620 --> 00:55:13,800
 is not part of the domain he said always
 booking reference yeah so let's stick to
 
-474
-00:55:13,800 --> 00:55:20,580
+85
+00:55:14,800 --> 00:55:21,580
 the domain long edge in that case and
 then what we do is to iterate on every
 seats of the reservation attempt to
 
-475
+86
 00:55:22,170 --> 00:55:28,320
 assign the booking levels yeah maybe we
 can extract a method here and put it
 
-476
+87
 00:55:28,320 --> 00:55:34,010
-into the resurrection attempt directly
+into the reservation attempt directly
 which will be assigned booking reference
 
-477
+88
 00:55:34,010 --> 00:55:40,040
 which one the which was the
 
-478
+89
 00:55:40,420 --> 00:55:44,839
 the demo of the damage in the exact term
 of the domain expert we assign a booking
 
-479
+90
 00:55:44,839 --> 00:55:48,619
 ASEAN's
 to someone I shall attempt ok I extract
 
-480
-00:55:48,619 --> 00:55:54,200
+91
+00:55:50,619 --> 00:55:56,200
 the method what will be the next chain
 stuff to do to move yeah move to the
 other action attempt ok so we assign
 
-481
-00:55:57,619 --> 00:56:02,930
+92
+00:55:59,619 --> 00:56:04,930
 booking a falls to the reservation
 attempt ok if we look at the
 implementation just two for you to
 
-482
+93
 00:56:05,210 --> 00:56:09,650
 follow we take that booking a house and
 assign it to every one of the seats of
 
-483
+94
 00:56:09,650 --> 00:56:21,020
 the booking officials
 ok I was thinking the same thing as you
 
-484
+95
 00:56:21,020 --> 00:56:28,010
 and the domain expert was really saying
 that we build we the process is to build
 
-485
-00:56:28,010 --> 00:56:32,270
+96
+00:56:30,010 --> 00:56:34,270
 a reservation attempt and at the end of
 the day to transform it into a
 reservation so yes but I was the same
 
-486
+97
 00:56:35,670 --> 00:56:40,400
 [Music]
 idea yeah absolutely
 
-487
-00:56:40,400 --> 00:56:47,450
+98
+00:56:42,400 --> 00:56:49,450
 good question actually we thought it's
 like a technical term build you used to
 do it to use it in technical but for the
 
-488
+99
 00:56:50,390 --> 00:56:55,730
 domain expertise it was still a concept
 of this realm so we have a train caching
 
-489
+100
 00:56:55,730 --> 00:57:02,000
 save Wow well maybe it's time to morally
 have a cache in this application within
 
-490
+101
 00:57:02,000 --> 00:57:08,119
 this application on the yes you can yeah
 - everywhere let's see if it's still
 
-491
+102
 00:57:08,119 --> 00:57:12,529
 relevant here ok we have a declaration
 of the cache here on what you get
 
-492
+103
 00:57:12,529 --> 00:57:16,970
 manager then we associate it into the
 constructor of the web ticket manager
 
-493
+104
 00:57:16,970 --> 00:57:23,930
 then we clear it interesting we clear it
 and crunch is changing the color in the
 
-494
+105
 00:57:23,930 --> 00:57:30,710
 illustrating me that oh it takes 3
 second average average of 2 second - -
 
-495
+106
 00:57:30,710 --> 00:57:37,099
 to clear the cache I don't know what
 it's there but ok I hope it was and then
 
-496
+107
 00:57:37,099 --> 00:57:43,700
 we say yeah the book English fails and
 the train I do care into into the cache
 and then that's it it's just a so a
 
-497
+108
 00:57:48,470 --> 00:57:55,880
 cache where we only save stuff
 but think about our maybe it was a nap
 
-498
+109
 00:57:55,880 --> 00:58:02,570
 tent unfinished that maybe that but even
 now if we implement correctly it's a
 
-499
+110
 00:58:02,570 --> 00:58:05,720
 mistake
 as we said before we compete with all
 the companion
 
-500
-00:58:07,849 --> 00:58:16,609
+111
+00:58:09,849 --> 00:58:18,609
 so also company use of same service and
 why we cash our topology American stuff
 it's a mistake they can't change it
 
-501
+112
 00:58:19,250 --> 00:58:25,400
 and so yes it's a it's kind of stupid
 thing I would say let's get rid let's
 
-502
-00:58:25,400 --> 00:58:33,910
+113
+00:58:27,400 --> 00:58:35,910
 burn that which up I remove it here I
 remove that remove that and how it's
 better I feel better now this is the
 
-503
+114
 00:58:47,720 --> 00:58:53,000
 kind of discretion we may have with the
 domain experts since it's not here we
 
-504
+115
 00:58:53,000 --> 00:58:56,210
 call it before because it's not the
 first time when you run that station but
 
-505
+116
 00:58:56,210 --> 00:59:01,250
-yes I will be with that this is
+yes I agree with that this is
 something that we must discuss about the
 
-506
+117
 00:59:01,250 --> 00:59:06,200
 strategy without talking about technical
 details but saying that we can memorize
 
-507
+118
 00:59:06,200 --> 00:59:18,170
 stuff that we get at that time is it
 correct according to you so yeah so ok
 
-508
+119
 00:59:18,170 --> 00:59:26,410
 we get back to the method we get a train
 from 22 service then we have to train
 
-509
+120
 00:59:26,410 --> 00:59:31,880
 our weeks of exceeded the over trial
 capacity if we asked which it's yeah
 
-510
+121
 00:59:31,880 --> 00:59:36,290
 if it's not the case we build a
 reservation attempt yeah then we check
 
-511
+122
 00:59:36,290 --> 00:59:42,770
 if it's fulfilled or not because we may
 run out of seats I see the train is full
 
-512
+123
 00:59:42,770 --> 00:59:50,000
 for instance or reached the next to the
 limit then we ask booking a falls then
 
-513
+124
 00:59:50,000 --> 00:59:54,200
 we assign the booking of a horse and
 then we booked the seat and then we
 
-514
+125
 00:59:54,200 --> 01:00:00,670
 return the the result I don't know for
 you but now the method is one screen hi
 
-515
+126
 01:00:00,670 --> 01:00:05,480
 we are embracing a little bit more the
 concept of the domain
 
-516
+127
 01:00:05,480 --> 01:00:10,250
 and we have kind of spreading the
 behaviors into the proper location the
 
-517
+128
 01:00:10,250 --> 01:00:20,390
 trend are some behavior the the seats
 also the reservation attempt also yes we
 
-518
+129
 01:00:20,390 --> 01:00:26,570
 can maybe now what would you suggest
 because it's important to be time-boxed
 
-519
+130
 01:00:26,570 --> 01:00:31,010
 so high because you can improve code a
 lot but from some time we have an
 
-520
+131
 01:00:31,010 --> 01:00:37,150
 objective so the objective below us is
 to fix the bag to fix the bug yeah
 
-521
+132
 01:00:37,150 --> 01:00:46,369
 concept yeah absolutely
 you're right you are saying that you
 
-522
+133
 01:00:46,369 --> 01:00:51,320
 what we can is to get rid of that CBG
 zone here and it said to return to
 
-523
+134
 01:00:51,320 --> 01:00:56,060
 travel as a national turn into a
 reservation and then return a task of
 
-524
+135
 01:00:56,060 --> 01:01:02,150
 preservation here so that has a method
 is purely domain no string design inside
 
-525
+136
 01:01:02,150 --> 01:01:07,280
 simply returning a reservation instance
 we will do that we'll do that in a
 
-526
+137
 01:01:07,280 --> 01:01:14,380
 circle but before that we will like to
 introduce the missing concept because
 
-527
-01:01:14,380 --> 01:01:22,700
+138
+01:01:14,880 --> 01:01:23,200
 when we build a reservation attempt here
-we bill it from the Train perspective
+we build it from the Train perspective
 and not from the coach perspective yeah
 
-528
+139
 01:01:24,440 --> 01:01:31,160
-we use orders it is no notion of coach
+we use all the seats no notion of coach
 okay so how to introduce the concept of
 
-529
+140
 01:01:31,160 --> 01:01:34,960
 coach according to you what will be your
 
-530
+141
 01:01:42,380 --> 01:01:45,499
 [Music]
 
-531
+142
 01:01:51,339 --> 01:01:56,650
 basically the topology is taken from the
 name of average every citizen name
 
-532
+143
 01:01:56,650 --> 01:02:03,440
 including a 1 a 2 a 3 B 4 a is the name
 of the coach it's a name of the coach
 
-533
+144
 01:02:03,440 --> 01:02:07,730
 it's an implicit where I'll figure it
 out these seats belongs to the coach
 
-534
+145
 01:02:07,730 --> 01:02:19,010
 yeah absolutely yeah good idea but how
 to introduce it right now what
 
-535
-01:02:19,010 --> 01:02:25,700
+146
+01:02:20,010 --> 01:02:26,700
 we'll be over next move yeah okay yeah
 okay
 but how to do that how to do that we
 
-536
+147
 01:02:27,950 --> 01:02:42,200
 start by what you suggest if you have
 the keyboard yeah yeah why not but we
 
-537
+148
 01:02:42,200 --> 01:02:46,820
 will start with widget test absolutely
 yeah from from the train we will get we
 
-538
+149
 01:02:46,820 --> 01:02:54,320
-will check that a train expose Cochise
+will check that a train expose coaches
 for instance yeah for example so because
 
-539
-01:02:54,320 --> 01:03:03,859
+150
+01:02:56,320 --> 01:03:05,859
 we totally addictive TDD and we want you
 to create so let's add a trend should
 yeah fixture go so far we don't we only
 
-540
+151
 01:03:06,890 --> 01:03:13,280
 have some acceptance tests like it's a
 system should do they do that do it so
 
-541
+152
 01:03:13,280 --> 01:03:20,300
 we are three tests and here but it will
 be our first unit test I would say it's
 
-542
+153
 01:03:20,300 --> 01:03:26,630
 a should and maybe it would be should
-expose Cochise something like that so we
+expose coaches something like that so we
 
-543
+154
 01:03:26,630 --> 01:03:30,830
 get a train
 so should trend show the expose coaches
 
-544
+155
 01:03:30,830 --> 01:03:53,450
 yeah every much this one because I
 attorney should expose Cochise yeah yeah
 
-545
+156
 01:03:53,450 --> 01:03:58,100
-he talked a lot about it yeah yeah yeah
+he talked totally about it yeah yeah yeah
 yeah actually yeah I had even in mind
 
-546
+157
 01:03:58,100 --> 01:04:05,300
 some new rules for the related to the
-coach he first us to fix that back but
+coach even he first us to fix the bug but
 
-547
+158
 01:04:05,300 --> 01:04:11,900
 when because money but he has some
 inline to consolidate and to a new
 
-548
+159
 01:04:11,900 --> 01:04:20,090
 business rules such as we should not
 feed a coach more than 40 percents for
 
-549
+160
 01:04:20,090 --> 01:04:26,950
 instance and stuff like that so it will
 be the top allocation to to to make
 
-550
+161
 01:04:36,119 --> 01:04:43,840
 so far we will need it we need to play
 with the coach we need to ask to ask it
 
-551
+162
 01:04:43,840 --> 01:04:50,110
 but yes if we want to keep it completely
 private implementation details for your
 
-552
+163
 01:04:50,110 --> 01:04:58,020
 capsulated we won't write that so just
 for some explanation because I use a
 
-553
+164
 01:04:58,020 --> 01:05:07,300
 snake name because we we use it in the
 tests to mark some situations this is a
 
-554
+165
 01:05:07,300 --> 01:05:11,920
 tenth apology dinner table yeah so he'll
 probably have built a spawning yeah it's
 
-555
-01:05:11,920 --> 01:05:18,700
+166
+01:05:13,920 --> 01:05:20,700
 a way to qualify the topology and it's
 good to use because I know in this
 topology I have to seat to coach and we
 
-556
-01:05:22,090 --> 01:05:27,100
+167
+01:05:25,090 --> 01:05:30,100
 stand sit for each coach so the reason
 why I use this one okay so you in your
 test reassociate a train yeah okay
 
-557
+168
 01:05:30,310 --> 01:05:35,460
 providing the train the list of seats
 adapted from that train
 
-558
+169
 01:05:35,460 --> 01:05:46,540
 topology okay so let's check that train
 train the coaches yeah I'm sorry and I
 
-559
+170
 01:05:46,540 --> 01:05:56,980
 hate coaches but does not exist at this
-time we need to a size of true because
+time we need to a size of two because
 
-560
-01:05:56,980 --> 01:06:03,490
+171
+01:05:58,980 --> 01:06:05,490
 we have two coaches in the train
 topology and you can also check that
 every coach has ten seats maybe yeah
 
-561
+172
 01:06:06,750 --> 01:06:12,310
 actually it won't be coaches I think it
 would be like a dictionary for coach is
 
-562
+173
 01:06:12,310 --> 01:06:17,500
 a coach is B okay okay I see coach a
 that's it
 
-563
+174
 01:06:17,500 --> 01:06:24,000
-not seats okay sorry a size 10 because I
+dot seats okay sorry a size 10 because I
 stay every coach here
 
-564
+175
 01:06:24,000 --> 01:06:30,150
 okay just to just to make it explore the
 the what we have within the Trent
 
-565
+176
 01:06:30,150 --> 01:06:38,310
 apology okay so it's time to generate
 something yeah okay so you said the
 
-566
+177
 01:06:38,310 --> 01:06:44,210
 dictionary we got first name
 
-567
+178
 01:06:45,750 --> 01:06:52,800
 coach does not exist yet
 the same you will create a type of for
 
-568
+179
 01:06:52,800 --> 01:06:57,900
 coach yeah I would create because right
 time
 
-569
+180
 01:06:57,900 --> 01:07:04,800
 so here the train will have a list of
 coach yeah and now I can start as a
 
-570
+181
 01:07:04,800 --> 01:07:11,880
 dictionary but if you have more time we
 won't expose it as a dictionary also we
 
-571
+182
 01:07:11,880 --> 01:07:19,080
 expose that to read read only dictionary
 or or even better a concept the
 
-572
+183
 01:07:19,080 --> 01:07:23,340
 dedicated type for that but since we
 would like to show you a lot of other
 
-573
-01:07:23,340 --> 01:07:28,950
-stuff we would rely here but to loop and
-the sitter
+184
+01:07:25,340 --> 01:07:30,950
+stuff we would rely here but to loop on
+the seats
 so here in within the concept or dige it
 
-574
+185
 01:07:31,560 --> 01:07:37,200
 would be okay I've got a list of we
 said that the name of the coach was an
 
-575
+186
 01:07:37,200 --> 01:07:43,350
 implicit information part of the name of
-every six so for every six we just have
+every seats so for every seats we just have
 
-576
+187
 01:07:43,350 --> 01:07:49,320
 to check if there is a coach with that
 name because seats has a capacity coach
 
-577
+188
 01:07:49,320 --> 01:07:55,170
 named and if we don't have an entry in
 the dictionary yet from that coach name
 
-578
+189
 01:07:55,170 --> 01:08:08,250
 let's add it to the dictionary sorry yes
 you can use a link you have a query on
 
-579
+190
 01:08:08,250 --> 01:08:14,240
 sit for the beginning of the algorithm I
 prefer to show without thinking ok and
 
-580
+191
 01:08:14,240 --> 01:08:19,770
 by us to set a new coach a new coach we
 also set a new coach and providing him
 
-581
-01:08:19,770 --> 01:08:29,700
+192
+01:08:20,270 --> 01:08:30,200
 the name okay maybe so we iterate on
 every seats of the trainer for every one
 of them we
 
-582
+193
 01:08:30,788 --> 01:08:37,298
 add the relating coach into the
 dictionary on the fly then we have to
 
-583
+194
 01:08:37,299 --> 01:08:48,969
 add the seats so which name okay okay
 first step second step is to add the
 
-584
+195
 01:08:48,969 --> 01:08:58,949
 city into the coach yeah just got choose
-all right okay sit
+all right okay seat
 
-585
+196
 01:08:58,948 --> 01:09:05,278
-coach Nate maybe yeah I introduced
+coach name maybe yeah I introduced
 available yeah we call it can you coach
 
-586
+197
 01:09:05,279 --> 01:09:21,309
-no yes okay and new coach Adam sit are
+no yes okay and new coach add seat. Are
 you doing that for to expose the kind of
 
-587
-01:09:21,309 --> 01:09:24,699
+198
+01:09:22,309 --> 01:09:25,699
 closure for a person but you want to
 make it work and then we can refactor
 something like that it's correct okay
 
-588
+199
 01:09:27,639 --> 01:09:34,109
 okay okay okay
 
-589
+200
 01:09:37,000 --> 01:09:42,699
 actually you have to associate oh yeah
 okay I have to instance at first to
 
-590
+201
 01:09:42,698 --> 01:09:48,608
 coach the coach is here yes oh yeah
 coach Coach coach and on that coach you
 
-591
-01:09:48,609 --> 01:10:03,489
+202
+01:09:49,609 --> 01:10:04,489
 had the seats I had to I suppose I kind
-of list of sit so you are what blue is
+of list of seat so you are what blue is
 doing is to make him else the data
 
-592
-01:10:05,050 --> 01:10:14,409
+203
+01:10:07,050 --> 01:10:16,409
 structure and thing we will need to make
 a coach a nice place to to find our list
 of seats I would say but there is
 
-593
+204
 01:10:18,820 --> 01:10:23,730
-something that bother me a little bit in
+But there is something that bother me a little bit in
 here but I'll let you finish
 
-594
+205
 01:10:23,730 --> 01:10:33,280
-I've got to see greener I see just
+I'm glad to see greener I see just
 complain I think it's not quite not okay
 
-595
+206
 01:10:33,280 --> 01:10:40,820
 anymore so if you like that
-oh yeah you have to expose sheets ah
+oh yeah you have to expose seats ah
 
-596
+207
 01:10:40,820 --> 01:10:56,330
 yeah you're right
-well sure yeah yeah yeah should be green
+well sure yeah yeah yeah here should be green
 
-597
+208
 01:10:56,330 --> 01:11:03,260
 yeah it's okay
 but it's really I don't really like that
 
-598
+209
 01:11:03,260 --> 01:11:11,630
-kind of we add assets into a coach and
+kind of we add seats into a coach and
 we change the coach actually if we have
 
-599
-01:11:11,630 --> 01:11:17,480
+210
+01:11:13,630 --> 01:11:19,480
 more time there is something I would
 like to do it's even to make it
 everything immutable because what we do
 
-600
+211
 01:11:21,380 --> 01:11:26,900
-is basically with when you reserve we
-want to reserve some we get a Trent
+is because with when you reserve we
+want to reserve some we get a train
 apology which is something that we don't
 
-601
+212
 01:11:29,090 --> 01:11:35,840
 own it's coming from the outside world
-we walk on it and I really don't want us
+we work on it and I really don't want us
 
-602
+213
 01:11:35,840 --> 01:11:42,170
 to be tempted somehow to keep it in cash
 because it will be stupid and I would
 
-603
+214
 01:11:42,170 --> 01:11:45,650
 like to offer the fact that when we get
-a Trent apology it should be immutable
+a train apology it should be immutable
 
-604
+215
 01:11:45,650 --> 01:11:50,450
 all I can do is to work with to find
 some information or to build a
 
-605
+216
 01:11:50,450 --> 01:11:56,390
 reservation attempt but I don't want to
 allow my mates or new joiners in the
 
-606
-01:11:56,390 --> 01:12:02,360
+217
+01:11:58,390 --> 01:12:04,360
 team it start to to to break that by
 introducing a cache and an estate where
-I don't want to be so if we add more
+I don't want to be so if we have more
 
-607
+218
 01:12:05,930 --> 01:12:09,170
 time what I would like to do is to make
-everything in the table the train will
+everything is immutable the train will
 
-608
+219
 01:12:09,170 --> 01:12:14,120
-be my table the coaches will be me table
+be immutable the coaches will be immutable
 and the seats also and and the only
 
-609
+220
 01:12:14,120 --> 01:12:19,400
 thing that will be mutable which will be
 the FSM I shall attempt you see a formal
 
-610
+221
 01:12:19,400 --> 01:12:22,820
 direction a table which will be kind of
 entity the thing that has a lifecycle
