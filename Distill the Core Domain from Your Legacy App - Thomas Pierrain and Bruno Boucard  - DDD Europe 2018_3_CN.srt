@@ -1,94 +1,94 @@
 1
 00:00:00,000 --> 00:00:01,536
-we will do that in a circle
+好的，我们接下来要那样做了
 
 2
 00:00:01,792 --> 00:00:06,400
-but before that we would like to introduce the missing concept
+但在这之前，我们希望介绍几个之前没讲过的概念
 
 3
 00:00:06,912 --> 00:00:07,936
-because
+因为
 
 4
 00:00:08,704 --> 00:00:10,240
-when we enter BuildReservationAttempt here 
+当我们进入"BuildReservationAttempt"这里
 
 5
 00:00:12,288 --> 00:00:14,336
-we build it from the 
+我们 build 是基于
 
 6
 00:00:14,848 --> 00:00:18,944
-train perspective and not from the coach perspective
+ Train 这个层面，而不是 Coach 这个层面
 
 7
 00:00:19,200 --> 00:00:22,016
-we use all seats with no notion of coach 
+我们直接调用了所有的 seats
 
 8
 00:00:22,528 --> 00:00:27,136
-So how to introduce the concept of coach according to you what will be yours
+所以怎样理解这里的 coach 的概念呢？你的想法是什么？
 
 9
 00:00:47,360 --> 00:00:53,504
-Basiclly the topology is taken from the name of every seats...every seats has the name including a1 a2 a3 b4...
+基本上，元数据中每个座位的名字就像 a1，a2，a3，b4组成
 
 10
 00:00:53,760 --> 00:00:58,112
-A is the name of the coach...is the name of coach
+a 是每个 coach 的名字
 
 11
 00:00:58,368 --> 00:01:00,160
-it's an implict where I'll figure it out these seats belongs to the coach
+这样我才能隐式的找出 seat 与所属 coach
 
 12
 00:01:05,280 --> 00:01:07,328
-yeah absolutely..good idea
+是的，没错。这是个好主意
 
 13
 00:01:08,352 --> 00:01:10,912
-but how to introduce it 
+但我们要怎么介入它呢？
 
 14
 00:01:11,168 --> 00:01:11,680
-right now
+就现在
 
 15
 00:01:12,192 --> 00:01:14,240
-what will be your next move? 
+下一步该怎么做？
 
 16
 00:01:17,824 --> 00:01:22,688
-yeah okay, but how to do that? 
+是的，没错。如果现在键盘在你手里的话
 
 17
 00:01:22,944 --> 00:01:24,480
-start by what you suggested if you have a keyboard
+要如何根据你建议的开始呢？
 
 18
 00:01:31,904 --> 00:01:32,672
-Yeah
+没错
 
 19
 00:01:34,976 --> 00:01:37,280
-Why not? But we will start with a widget test...absolutely...
+当然可以。但我们得从一个小的测试开始着手
 
 20
 00:01:37,536 --> 00:01:40,864
-from the train we will get ...
+从 train 那里我们能获得....
 
 21
 00:01:41,120 --> 00:01:43,680
-we will check that the a train exposed coaches for instance
+例如，我们会校验 train 中暴露出的 coaches 
 
 22
 00:01:43,936 --> 00:01:46,496
- for example 
+例如
 
 23
 00:01:47,520 --> 00:01:50,080
-Because we totally addictive of
+因为我们都热衷于
 
 24
 00:01:50,592 --> 00:01:51,360
@@ -96,99 +96,99 @@ TDD
 
 25
 00:01:52,128 --> 00:01:53,152
-And
+而且
 
 26
 00:01:53,408 --> 00:01:54,944
-we want you 
+我们想要...
 
 27
 00:01:55,200 --> 00:01:59,040
-To create so let's add a TrainShould...should...fixture...
+去创建...所以让我们来增加一个 TreeShould 类...should...fixture...
 
 28
 00:01:59,296 --> 00:02:02,368
-But so far we don't...we only have some  architecture tests
+到目前为止我们只有一些 architecture 测试
 
 29
 00:02:03,136 --> 00:02:05,440
-That's total system should do
+那完全是系统行为
 
 30
 00:02:05,696 --> 00:02:07,488
-Do this do that do it so we have three tests
+.....所以我们目前有三个测试
 
 31
 00:02:07,744 --> 00:02:12,608
-And here ...to be our first unit test I would say
+到了这里，我要说得是，这是我们的第一个单元测试
 
 32
 00:02:13,632 --> 00:02:15,168
-It's a time? should
+是时候去...
 
 33
 00:02:15,424 --> 00:02:18,496
-And maybe...to be...should expose coaches something like that? 
+也许...Train 应该暴露出 coaches...之类的东西... 
 
 34
 00:02:20,032 --> 00:02:21,056
-So we get a train
+所以我们在这里拿到了 Train
 
 35
 00:02:22,080 --> 00:02:24,384
-so should TrainShould expose coaches? 
+所以 TrainShould 这里应该暴露出 coaches? 
 
 36
 00:02:32,064 --> 00:02:34,112
-I move this one because I don't...
+我得移动到它上面去不然没法...
 
 37
 00:02:37,696 --> 00:02:38,976
-Should expose coaches
+应该是...expose_coaches
 
 38
 00:02:40,256 --> 00:02:40,768
-should...expose...coaches
+应该是...expose_coaches
 
 39
 00:02:41,792 --> 00:02:42,304
-so...yeah...
+Okay..
 
 40
 00:02:46,656 --> 00:02:52,800
-it totally about it...yeah...yeah...yeah
+对...没错....完全跟那个有关
 
 41
 00:02:53,056 --> 00:02:56,896
-Actually here I had even in mind some new rules for the related to the coach even he first to fix by then
+实际上，我脑海中有一些 coach 的新业务规则....even he first to fix by then
 
 42
 00:02:57,408 --> 00:02:57,920
-But
+但是
 
 43
 00:02:58,432 --> 00:02:59,968
-Because money 
+由于资金的原因
 
 44
 00:03:00,224 --> 00:03:06,368
-But he has something in mind to consolidate and to a new business rules
+在他脑海中有了一些东西来支撑他的新业务规则
 
 45
 00:03:06,624 --> 00:03:07,136
-Such as
+例如
 
 46
 00:03:07,392 --> 00:03:08,416
-We should not
+我们不应该
 
 47
 00:03:08,928 --> 00:03:13,024
-Feed a coach more than 40%
+养活多于40%的 Coache
 
 48
 00:03:13,536 --> 00:03:14,048
-for instance
+打个比方
 
 49
 00:03:14,304 --> 00:03:18,912
@@ -196,47 +196,47 @@ and step like so it we need the population through to make it
 
 50
 00:03:30,432 --> 00:03:31,712
-So Far we need it 
+我们需要，到目前为止
 
 51
 00:03:31,968 --> 00:03:35,296
-We need to play with the coach
+我们需要在 Coach 上做些操作
 
 52
 00:03:35,552 --> 00:03:37,856
-We need to ask it...to ask it
+我们需要那个
 
 53
 00:03:38,112 --> 00:03:38,880
-that's yes
+回答是肯定的
 
 54
 00:03:39,136 --> 00:03:45,280
-If you want to keep it completely private implementation details for your detail capsulated
+如果你想封装它全部的实现细节以此保证私有性
 
 55
 00:03:45,536 --> 00:03:46,048
-we won't write that
+就不要那么写
 
 56
 00:03:46,560 --> 00:03:48,608
-So just for
+好了
 
 57
 00:03:49,120 --> 00:03:51,168
-some explanation because I use a 
+我要在这做一些解释因为我使用了
 
 58
 00:03:52,192 --> 00:03:53,984
-A snake
+snake name
 
 59
 00:03:54,240 --> 00:03:56,288
-name because we
+因为
 
 60
 00:03:56,544 --> 00:04:02,688
-We use it in the tests to mock some situations...this is a tenth topology table
+我们用他来mock 测试场景中的一些情况，这是一个有着10个元素的topology table
 
 61
 00:04:02,944 --> 00:04:09,088
@@ -244,27 +244,27 @@ so he will probably have built a spawning...it's a way to qualify the topology
 
 62
 00:04:09,344 --> 00:04:14,976
-And it's good to use because I know in this topology 
+而且很合适因为我知道这个这个 topology table 中
 
 63
 00:04:15,232 --> 00:04:17,280
-I have two coach and 
+有两个 coach 
 
 64
 00:04:18,048 --> 00:04:19,328
-we stand seat for each coach so it's the reason why I use this one 
+我们尝试给每个 coach 预定座位 所以这也是为什么用它的原因 
 
 65
 00:04:19,584 --> 00:04:22,912
-So you in your test associated a train
+所以在你的测试中现在关联到了 Train
 
 66
 00:04:23,424 --> 00:04:25,984
-Ok providing in the Train
+Ok 在 Train 中提供了....
 
 67
 00:04:26,496 --> 00:04:28,800
-The list of seats adapted from that train
+一个由 AdaptedTrainTopology 提供的 seat 的集合
 
 68
 00:04:29,824 --> 00:04:30,336
@@ -272,11 +272,11 @@ topology
 
 69
 00:04:30,592 --> 00:04:31,104
-Ok
+是的
 
 70
 00:04:31,872 --> 00:04:32,896
-So let's check
+所以我们应该 check
 
 71
 00:04:33,920 --> 00:04:35,712
@@ -284,35 +284,35 @@ train...coaches...
 
 72
 00:04:36,480 --> 00:04:37,248
-Yeah I'm sorry
+抱歉
 
 73
 00:04:39,552 --> 00:04:40,064
-And
+而且
 
 74
 00:04:40,576 --> 00:04:43,136
-I hate coaches but it doesn't exist at this time
+我不喜欢 Coach 这个类因为现在它还不存在
 
 75
 00:04:45,184 --> 00:04:46,464
-We need to
+我们得 check
 
 76
 00:04:48,256 --> 00:04:49,280
-A size of
+长度为2
 
 77
 00:04:49,792 --> 00:04:52,608
-two...because they have two coaches from the train topology
+的集合...因为在 train topology 中有两个 coache
 
 78
 00:04:55,424 --> 00:04:59,264
-And you can also check that every coach has 10 seats maybe
+也许你还需要 check 每个 coach 有10个座位
 
 79
 00:05:01,056 --> 00:05:07,200
-It is long because I think it to be like a dictionary for half hour break....coaches["A"], coaches["B"]
+这很长当我认为应该是个 Dictionary，例如 coaches["A"], coaches["B"]
 
 80
 00:05:08,992 --> 00:05:09,760
@@ -320,35 +320,35 @@ Coaches["A"]
 
 81
 00:05:10,528 --> 00:05:12,576
-the seats...dot seats
+the seats...点 seats
 
 82
 00:05:12,832 --> 00:05:14,880
-A size 10
+长度为10
 
 83
 00:05:15,136 --> 00:05:17,184
-Because every coach...ya
+因为每个 coach 都...
 
 84
 00:05:17,440 --> 00:05:19,488
-Ok just to
+Ok
 
 85
 00:05:20,000 --> 00:05:24,608
-Just to make it expose what we	have with in train topology...okay...
+现在直接把 Train 中的暴露出去吧
 
 86
 00:05:24,864 --> 00:05:27,168
-So it's start to generate something
+好，我们现在开始生成一些代码
 
 87
 00:05:28,448 --> 00:05:28,960
-Yeah...Ok
+ ok
 
 88
 00:05:30,752 --> 00:05:32,544
-So you said the dictionary
+这里...你刚提到的 Dictionary
 
 89
 00:05:35,360 --> 00:05:36,128
@@ -360,59 +360,59 @@ Coach
 
 91
 00:05:41,248 --> 00:05:42,272
-doesn't exists yet
+目前还不存在的
 
 92
 00:05:42,528 --> 00:05:45,088
-The same we will create 
+同样的，你也要创建
 
 93
 00:05:45,344 --> 00:05:45,856
-type
+
 
 94
 00:05:46,112 --> 00:05:48,672
-for Coach...Yeah I would create it because...right time
+Coach 类...没错，我到时候会创建它的...
 
 95
 00:05:50,976 --> 00:05:53,792
-So here the train will have 
+所以现在 Train 有了
 
 96
 00:05:54,304 --> 00:05:55,840
-A list of coach
+一个 coach 集合
 
 97
 00:05:56,352 --> 00:05:57,632
-And now I can
+所以我现在可以..
 
 98
 00:05:57,888 --> 00:05:59,680
-start as a dictionary
+从 Dictionary 入手
 
 99
 00:06:02,240 --> 00:06:08,384
-If we have more time we won't expose it as a dictionary also we expose that a read-only dictionary
+如果我们有足够的时间，我们不仅要作为 Dictionary 暴露出去，还要把它变为只读的
 
 100
 00:06:08,640 --> 00:06:10,944
-or even better a concept
+或者其他什么好的概念
 
 101
 00:06:11,968 --> 00:06:13,760
-The delegate type for that but
+代理类之类的...
 
 102
 00:06:14,016 --> 00:06:17,856
-Since I would like to show you a lot of other step we want
+但因为我们想要展示出更多其他的东西在这
 
 103
 00:06:18,624 --> 00:06:20,672
-right here but
+所以....
 
 104
 00:06:20,928 --> 00:06:22,464
-To loop on the seats
+循环遍历Seats
 
 105
 00:06:22,720 --> 00:06:26,048
@@ -420,83 +420,83 @@ So here we dig into the concept D I G would be
 
 106
 00:06:26,304 --> 00:06:31,424
-ok I've got a list of seats we said that the name of coach was an implict
+Ok，我现在拿到了一个 seats 的集合
 
 107
 00:06:31,936 --> 00:06:34,752
-information passed of the name of every seats
+每个 seat 上都隐式的含有 coach 的名字
 
 108
 00:06:35,520 --> 00:06:39,104
-So for every seat we just have to check if there is a coach
+所以我只需要 check 每个作为上是不是已经安排了教练
 
 109
 00:06:39,360 --> 00:06:40,128
-With their name
+通过他们的名字
 
 110
 00:06:40,640 --> 00:06:43,200
-Because seats has a proper capacity coach named
+因为座位上含有 coach 的名字
 
 111
 00:06:43,712 --> 00:06:47,296
-And if we don't have an entry in the dictionary yet from that
+如果 Coach 不在这个 Dictionary 中
 
 112
 00:06:48,064 --> 00:06:49,344
-Coach name let's
+我们就把他
 
 113
 00:06:49,600 --> 00:06:50,112
-add it
+添加进去
 
 114
 00:06:50,624 --> 00:06:51,392
-to the dictionary
+添加到 dictionary 中
 
 115
 00:06:54,464 --> 00:06:54,976
-Sorry
+抱歉？
 
 116
 00:06:59,072 --> 00:07:05,216
-Yes we can use an link...yeah. you have a query on seats for the beginning of algorithm I prefer to show without thinking
+是的，我们可以用 link...对...在最开始的逻辑中我们查询了 seats，I prefer to show without thinking
 
 117
 00:07:07,008 --> 00:07:07,776
-And
+而且
 
 118
 00:07:08,032 --> 00:07:13,920
-by use to set a new coach...we also set a new coach...and providing info name...set the coach name maybe
+通过实例化一个新的 Coach...然后提供给他名字...
 
 119
 00:07:17,248 --> 00:07:17,760
-So
+Ok
 
 120
 00:07:18,272 --> 00:07:24,416
-we iterate on every seats of the train for everyone of them
+我们轮询了Train 中的每个 seat
 
 121
 00:07:24,672 --> 00:07:29,536
-we added the relating coach into the dictionary on the fly
+我们将相关的 coach 也添加进了 Dictionary
 
 122
 00:07:30,048 --> 00:07:31,328
-Then we have to
+之后我们不得不
 
 123
 00:07:31,584 --> 00:07:32,352
-add the seats
+添加 seat（给每个 coach）
 
 124
 00:07:35,424 --> 00:07:36,448
-so...coach name
+coach 名称
 
 125
 00:07:40,800 --> 00:07:44,384
-First step second step is to add the seat into the coach
+第一步第二步都是将 seat 添加进 coach
 
 126
 00:07:47,968 --> 00:07:48,736
@@ -504,11 +504,11 @@ So...coaches...
 
 127
 00:07:49,248 --> 00:07:51,296
-...coaches...array...seat
+...coaches...数组...seat
 
 128
 00:07:51,552 --> 00:07:52,320
-seat dot coach name maybe
+seat 点 coach name
 
 129
 00:07:53,344 --> 00:07:54,368
@@ -520,19 +520,19 @@ I introduced available
 
 131
 00:07:57,440 --> 00:07:58,720
-we called it..can newCoach? No? 
+我们叫他 newCoach？
 
 132
 00:08:02,304 --> 00:08:02,816
-Yes
+可以
 
 133
 00:08:03,328 --> 00:08:04,352
-Ok...why not
+没问题
 
 134
 00:08:07,424 --> 00:08:08,192
-new coach
+newCoach
 
 135
 00:09:08,960 --> 00:09:09,472
@@ -540,15 +540,15 @@ add...seat...
 
 136
 00:08:12,544 --> 00:08:18,688
-Are you doing that for to expose it to use the kind of ? expression but you want to make it work and then we can refactor something like that
+哦，你做这个是为了使用 lambda 表达式？你可以先让它工作然后我们再来重构
 
 137
 00:08:19,712 --> 00:08:22,272
-It is correct...ok...ok..
+没问题....当然可以...
 
 138
 00:08:27,648 --> 00:08:28,928
-Now
+现在....
 
 139
 00:08:30,208 --> 00:08:33,024
@@ -556,15 +556,15 @@ Ok. Ok
 
 140
 00:08:33,280 --> 00:08:35,072
-actually you have to ......I have to refactor at first
+实际上你不得不 ......我得先重命名它
 
 141
 00:08:35,328 --> 00:08:41,472
-the coache is here 
+coache 已经在这了
 
 142
 00:08:41,728 --> 00:08:44,288
-coach..coach....coach...and on that coach..you had the seats
+coach..coach....coach...and on that coach..你已经设置过 seats 了
 
 143
 00:08:44,800 --> 00:08:45,312
@@ -572,11 +572,11 @@ So...ok
 
 144
 00:08:47,872 --> 00:08:49,408
-So I had to
+接下来我要...
 
 145
 00:08:50,432 --> 00:08:52,480
-I suppose I have kind of list of seats
+假设这里我已经有seats这个 list 了
 
 146
 00:08:55,040 --> 00:08:55,552
@@ -596,43 +596,43 @@ A nice place to to find our list of seats I would say
 
 150
 00:09:11,168 --> 00:09:11,680
-But
+但是
 
 151
 00:09:11,936 --> 00:09:12,704
-There is
+这里
 
 152
 00:09:12,960 --> 00:09:15,520
-something that bother me a little bit  in here. But
+有些东西让我有点烦...但
 
 153
 00:09:16,032 --> 00:09:16,800
-I'll let you finish
+你先完成吧
 
 154
 00:09:17,056 --> 00:09:19,360
-I've like to see greener
+我想看到它变绿....
 
 155
 00:09:21,152 --> 00:09:22,432
-The greener
+变绿...
 
 156
 00:09:27,552 --> 00:09:30,624
-I see, they are green
+ok，他们都变绿了
 
 157
 00:09:33,184 --> 00:09:36,000
-oh, no, no..just compile...I think is not compiling
+哦不不不，我不认为它编译通过了
 
 158
 00:09:37,024 --> 00:09:37,792
-anymore, something like that	
+就像这些一样
 
 159
 00:09:38,560 --> 00:09:44,704
-Oh, yeah...That expose size of seats....topology....encapsulate...and
+Oh, yeah...暴露出的 seats 的大小....topology....封装...还有...
 
 160
 00:09:48,032 --> 00:09:48,800
@@ -640,79 +640,79 @@ seats
 
 161
 00:09:49,056 --> 00:09:50,336
-here...should be green...yeah...it's
+现在应该变绿了
 
 162
 00:09:55,968 --> 00:09:58,272
-ok....I don't really like that kind of
+OK, 我并不是特别喜欢这种...
 
 163
 00:09:58,784 --> 00:09:59,296
-We
+我们
 
 164
 00:09:59,808 --> 00:10:03,136
-Add a seats to a coach...we change the coach
+添加了一个 seat 给 coach...我们改变了他
 
 165
 00:10:03,392 --> 00:10:04,416
-Actually
+但实际上
 
 166
 00:10:04,672 --> 00:10:05,952
-If you have more time
+如果你有足够的时间
 
 167
 00:10:06,464 --> 00:10:08,000
-There is something I would like to do 
+这里还有一些事情应该去做
 
 168
 00:10:09,536 --> 00:10:12,864
-It's even to make it everything immutable
+那就是让所有事情变得 immutable
 
 169
 00:10:13,888 --> 00:10:15,680
-Because what we do is
+因为我们所做的事其实...
 
 170
 00:10:15,936 --> 00:10:21,056
-basically with when you reserve...we want to reserve	some seats, we get train apology
+基于当你想要预定...我们想要预定一些座位，我们拿到了 train apology
 
 171
 00:10:21,312 --> 00:10:23,360
-Which is something that we don't own
+但我们并不是他的所有者
 
 172
 00:10:23,616 --> 00:10:25,152
-It's coming from the outside world
+这是从外部来的数据
 
 173
 00:10:25,664 --> 00:10:26,432
-We work on it
+我们只是在他上面工作
 
 174
 00:10:27,712 --> 00:10:32,576
-And I really don't want us to be tempted somehow to keep it in touch
+而且我并不希望我们冒某种危险去和它保持关联
 
 175
 00:10:33,344 --> 00:10:34,368
-because it will be stupid
+因为这很愚蠢
 
 176
 00:10:35,136 --> 00:10:41,280
-And I would like to offer the fact that's when we get a train apology it should be immutable all I can do is to work with
+而且事实是当我拿到了 train apology，它应该是不变的，我能做的只有在他上面
 
 177
 00:10:42,304 --> 00:10:45,120
-To find some information or to build reservation attempt
+去查询某些信息， 或者去创建一个reservation attempt
 
 178
 00:10:45,376 --> 00:10:47,680
-But I don't want to allow my mates
+但我并不希望我的同事
 
 179
 00:10:47,936 --> 00:10:51,264
-are new joiners in the team...it start
+或者新加入这个 team 的人
 
 180
 00:10:51,520 --> 00:10:56,128
@@ -720,936 +720,932 @@ to...to...break that by introducing a cache and a state well
 
 181
 00:10:56,384 --> 00:10:57,152
-I don't want
+我不想这样
 
 182
-00:10:57,408 --> 00:10:57,920
-to be
+00:10:58,176 --> 00:11:04,320
+所以如果有时间我会让所有事情变得 immutable，train，coach都是这样
 
 183
-00:10:58,176 --> 00:11:04,320
-So if we had more time when I would like to do is to make your everything immutable, the train will be immutable,the coaches will be
+00:11:04,576 --> 00:11:06,112
+seats 也是
 
 184
-00:11:04,576 --> 00:11:06,112
-immutable and the seats also
+00:11:06,368 --> 00:11:08,160
+只有
 
 185
-00:11:06,368 --> 00:11:08,160
-the only
+00:11:08,416 --> 00:11:11,232
+一件事是 mutable 的，那就是 reservation attempt 
 
 186
-00:11:08,416 --> 00:11:11,232
-things that will be mutable is the reservation attempt 
+00:11:12,512 --> 00:11:17,632
+之前的 reservation attempt 是一个有生命周期的实体
 
 187
-00:11:12,512 --> 00:11:17,632
-you see the a formal reservation attempt which will be kind of entity that has a life cycle and $%^&?
+00:11:17,888 --> 00:11:21,472
+但是随着时间变化
 
 188
-00:11:17,888 --> 00:11:21,472
-But the time changed all over the time
+00:11:21,728 --> 00:11:25,312
+最后我会将 reservation attemp 演变成 reservation
 
 189
-00:11:21,728 --> 00:11:25,312
-At the end I will transform the reservation attemp to reservation
+00:11:25,568 --> 00:11:27,360
+而且reseravation 也是 immutable 的
 
 190
-00:11:25,568 --> 00:11:27,360
-And the reseravation would be immutable
+00:11:27,616 --> 00:11:30,432
+从 reservation attemp 到 reservation
 
 191
-00:11:27,616 --> 00:11:30,432
-the reservation to reservation....we it's 
+00:11:30,688 --> 00:11:32,224
+ok，有问题吗？
 
 192
-00:11:30,688 --> 00:11:32,224
-yeah, you have question?
+00:11:40,160 --> 00:11:46,304
+抱歉? 是的...是的...当然....这也是个理由
 
 193
-00:11:40,160 --> 00:11:46,304
-Sorry?yeah...yeah...yeah...Absolutely....is of reasoning also if we
+00:11:46,560 --> 00:11:47,840
+如果我们回到
 
 194
-00:11:46,560 --> 00:11:47,840
-get back to the
-
-195
 00:11:48,096 --> 00:11:49,376
 addseats
 
-196
+195
 00:11:49,888 --> 00:11:54,496
-What would like is to maybe to one for seats it's to use what we call a closure of operation
+我们想对 seats 做的是一个叫做 closure of operation 的事情
+
+196
+00:11:54,752 --> 00:11:56,288
+这意味着一个coach
 
 197
-00:11:54,752 --> 00:11:56,288
-its meaning the coach
+00:11:56,544 --> 00:12:00,128
+将会有一个 addSeats 方法，所以我可以添加 seats 给 coach
 
 198
-00:11:56,544 --> 00:12:00,128
-We have a method which is addSeats so I can add seats for the coache 
-
-199
 00:12:00,384 --> 00:12:03,712
 But instead of mutating me the coache instance
 
-200
+199
 00:12:03,968 --> 00:12:06,784
 What we would like is to for that guy to reach on me
 
-201
+200
 00:12:07,296 --> 00:12:08,576
 The New Coach
 
-202
+201
 00:12:08,832 --> 00:12:10,112
 a new sort of coach installs
 
-203
+202
 00:12:10,368 --> 00:12:10,880
-So
+所以
+
+203
+00:12:11,136 --> 00:12:14,464
+我调用了一个 coach 实例上的 addSeats 方法
 
 204
-00:12:11,136 --> 00:12:14,464
-I called method...add seats on a coach instance
+00:12:14,976 --> 00:12:18,304
+它将返回给我一个包含了 seat 的
 
 205
-00:12:14,976 --> 00:12:18,304
-All it can do is to return your new instance
+00:12:18,560 --> 00:12:20,096
+新的 coach 对象
 
 206
-00:12:18,560 --> 00:12:20,096
-With that seats involved
+00:12:20,352 --> 00:12:26,240
+但不改变前一个实例
 
 207
-00:12:20,352 --> 00:12:26,240
-But without changing the previous instance here that when I call the addSeats
+00:12:26,496 --> 00:12:27,008
+听着
 
 208
-00:12:26,496 --> 00:12:27,008
-Listen
+00:12:27,520 --> 00:12:28,544
+所以
 
 209
-00:12:27,520 --> 00:12:28,544
-So
-
-210
 00:12:28,800 --> 00:12:33,408
 The benefits is the first time with ability	for of course or for passion but also reduce the coupling
 
-211
+210
 00:12:33,664 --> 00:12:36,736
-It's easier to move code
+简单的移动代码
+
+211
+00:12:36,992 --> 00:12:38,272
+这里的 coach
 
 212
-00:12:36,992 --> 00:12:38,272
-Here the coach
+00:12:38,784 --> 00:12:40,064
+ 代表他自己
 
 213
-00:12:38,784 --> 00:12:40,064
-stand by itself somehow
-
-214
 00:12:40,320 --> 00:12:44,416
 you know...method on the coach which are mean you have the source of coach
 
-215
+214
 00:12:44,928 --> 00:12:51,072
-For if I want to move that it's more easy than if the coach where related to a new type which is releated to a new types and s...
+这样，如果我想要移动它比之前 coach 中关联一个新的类型那种方式要简单的多
+
+215
+00:12:51,328 --> 00:12:52,608
+就像这样
 
 216
-00:12:51,328 --> 00:12:52,608
-step like that.
+00:12:53,120 --> 00:12:54,656
+Ok
 
 217
-00:12:53,120 --> 00:12:54,656
-Okay for everyone
-
-218
 00:12:55,168 --> 00:12:55,936
 Ok yeah
 
-219
+218
 00:13:10,784 --> 00:13:16,928
-In any case it's important to discuss with domain expert
+ 在任何情况下与领域专家交流都是一件重要的事
+
+219
+00:13:17,184 --> 00:13:19,232
+不幸的是，我们之前在做这个 session 时都会有个领域专家
 
 220
-00:13:17,184 --> 00:13:19,232
-unfortunately we used to do that session with one domain expert 
+00:13:19,488 --> 00:13:20,512
+就在我们旁边
 
 221
-00:13:19,488 --> 00:13:20,512
-on stage with us
+00:13:20,768 --> 00:13:22,560
+然后我们问很多问题记下来很多东西
 
 222
-00:13:20,768 --> 00:13:22,560
-and we asked some questions since he's not here we note a lot of stuff
+00:13:22,816 --> 00:13:24,864
+所以你脑海里有很多隐式的..你知道的...在你脑海里
 
 223
-00:13:22,816 --> 00:13:24,864
-so there is a lot of implict you know in our head
+00:13:25,120 --> 00:13:28,704
+是的，没错，你们应该有这种讨论
 
 224
-00:13:25,120 --> 00:13:28,704
-But yes you're right you should have some kind of discussion
+00:13:28,960 --> 00:13:30,496
+但是
 
 225
-00:13:28,960 --> 00:13:30,496
-But
+00:13:31,264 --> 00:13:37,408
+我想说的是这里有很多实现细节
 
 226
-00:13:31,264 --> 00:13:37,408
-Here is much more an implementation detail I would say
+00:13:37,664 --> 00:13:40,480
+这是对所有人的，我不想讨论对于
 
 227
-00:13:37,664 --> 00:13:40,480
-It's to all folks the fact that I no want to talk any kind of
+00:13:40,736 --> 00:13:44,064
+我不是 owner 的和跟状态有关的东西
 
 228
-00:13:40,736 --> 00:13:44,064
-states relating to something that I don't
+00:13:46,112 --> 00:13:46,880
+我不是
 
 229
-00:13:46,112 --> 00:13:46,880
-I'm not  
+00:13:47,136 --> 00:13:49,440
+train topology 的所有者，我只是一个用户
 
 230
-00:13:47,136 --> 00:13:49,440
-owner of the topology of the train I'm just a user
+00:13:49,696 --> 00:13:53,024
+每次一个请求返回给我，
 
 231
-00:13:49,696 --> 00:13:53,024
-and every time a request is it getting back to me
+00:13:53,536 --> 00:13:55,584
+拿到一份快照
 
 232
-00:13:53,536 --> 00:13:55,584
-Get a snapshot...walk over snapshots
+00:13:56,096 --> 00:13:59,168
+通过我的的领域模型，然后去做一个 reservation
 
 233
-00:13:56,096 --> 00:13:59,168
-through my concept of domain and then make a reservation
+00:14:00,960 --> 00:14:01,472
+所以
 
 234
-00:14:00,960 --> 00:14:01,472
-So
+00:14:14,784 --> 00:14:20,160
+是的，当然
 
 235
-00:14:14,784 --> 00:14:20,160
-Yeah, absolutely
-
-236
 00:14:21,184 --> 00:14:27,328
 Ok I think maybe it's not pop up...yeah...absolutely...okay...so...instead of changing the coach here 
 
-237
+236
 00:14:27,584 --> 00:14:29,888
-let's switch a new instance of coach
+然后转换到一个新的 coach 的实例上去吧
+
+237
+00:14:30,144 --> 00:14:32,704
+让它在这里返回一个 coach
 
 238
-00:14:30,144 --> 00:14:32,704
-make it a coach of attention here
-
-239
 00:14:34,240 --> 00:14:39,616
 So I didn't seats it doesn't mutate the existing coach which will only return 
 
-240
+239
 00:14:39,872 --> 00:14:40,640
-a new coach instance
+一个新的 coach 实例
 
-241
+240
 00:14:43,456 --> 00:14:43,968
 Coach
 
-242
+241
 00:14:44,224 --> 00:14:45,248
 Ok
 
-243
+242
 00:14:45,504 --> 00:14:46,272
-with seat name
+和 seat 的名称...
+
+243
+00:14:48,576 --> 00:14:49,344
+还有什么？
 
 244
-00:14:48,576 --> 00:14:49,344
-with what? 
+00:14:49,856 --> 00:14:50,624
+一个集合？
 
 245
-00:14:49,856 --> 00:14:50,624
-With a list
+00:14:50,880 --> 00:14:51,392
+一个新的集合？
 
 246
-00:14:50,880 --> 00:14:51,392
-a new list?
+00:14:53,440 --> 00:14:54,208
+是的
 
 247
-00:14:53,440 --> 00:14:54,208
-yeah
-
-248
 00:14:54,464 --> 00:15:00,608
 Acutally session is best form session of three hours we have made in paris ^&*()?
 
-249
+248
 00:15:00,864 --> 00:15:04,960
 expect outstage our left floor forward
 
-250
+249
 00:15:05,216 --> 00:15:11,360
 I guess museum story with tons of stuff so 
 
-251
+250
 00:15:11,616 --> 00:15:14,944
-we had to pick a fight for that short version of two hours... there are many things that we may improve what them about 
+we had to pick a fight for that short version of two hours... 这还有很多我们能改进的地方
 
-252
+251
 00:15:16,992 --> 00:15:21,856
 So we can't find that the coach seats a train really value types
 
-253
+252
 00:15:22,112 --> 00:15:22,880
-So we want to
+所以我们现在...
+
+253
+00:15:23,136 --> 00:15:27,488
+开始只让 coach 变为 immutable 的部分
 
 254
-00:15:23,136 --> 00:15:27,488
-go into that we will only make that coach immutable
+00:15:29,536 --> 00:15:30,304
+也许
 
 255
-00:15:29,536 --> 00:15:30,304
-Maybe
+00:15:31,584 --> 00:15:34,400
+这确实还有很多事情需要改进...然后为了保证
 
 256
-00:15:31,584 --> 00:15:34,400
-There's lots of things to me to improve...and respect the
+00:15:35,168 --> 00:15:36,448
+它的私有性...也许
 
 257
-00:15:35,168 --> 00:15:36,448
-priacy a sure
+00:15:39,008 --> 00:15:39,520
+是的
 
 258
-00:15:39,008 --> 00:15:39,520
-Yes
+00:15:40,288 --> 00:15:41,312
+避免
 
 259
-00:15:40,288 --> 00:15:41,312
-to avoid the 
+00:15:42,336 --> 00:15:43,616
+一些大的问题
 
 260
-00:15:42,336 --> 00:15:43,616
-The big issue
+00:15:45,408 --> 00:15:48,224
+去实现一个跟之前一样的构造函数
 
 261
-00:15:45,408 --> 00:15:48,224
-to implement the same constructor as before ok
+00:15:48,992 --> 00:15:51,040
+我现在可以去修复它
 
 262
-00:15:48,992 --> 00:15:51,040
-So now we have to fix it
+00:15:51,552 --> 00:15:52,064
+它的核心
 
 263
-00:15:51,552 --> 00:15:52,064
-the core
+00:15:52,576 --> 00:15:53,088
+是的，很好
 
 264
-00:15:52,576 --> 00:15:53,088
-Yeah prefectly
+00:16:01,024 --> 00:16:01,792
+因为那些已经存在了的代码
 
 265
-00:16:01,024 --> 00:16:01,792
-Because existing code
+00:16:02,048 --> 00:16:02,816
+正在运行
 
 266
-00:16:02,048 --> 00:16:02,816
-was doing that
+00:16:03,072 --> 00:16:04,352
+所以...有些步骤你知道的
 
 267
-00:16:03,072 --> 00:16:04,352
-so its...maybe steps you know
+00:16:04,608 --> 00:16:09,472
+所以...得修复....这里...
 
 268
-00:16:04,608 --> 00:16:09,472
-you fix...this...call...in...^&*(..
+00:16:10,496 --> 00:16:15,104
+所以是时候去修复它了
 
 269
-00:16:10,496 --> 00:16:15,104
-So time to change it and to...so
+00:16:15,360 --> 00:16:16,896
+所以这里我们要拿到 coach
 
 270
-00:16:15,360 --> 00:16:16,896
-So will be to get the coach
+00:16:17,408 --> 00:16:18,176
+去添加 seats
 
 271
-00:16:17,408 --> 00:16:18,176
-To add seats
+00:16:19,456 --> 00:16:19,968
+所以
 
 272
-00:16:19,456 --> 00:16:19,968
-So
+00:16:20,224 --> 00:16:21,248
+通过它...newCoach
 
 273
-00:16:20,224 --> 00:16:21,248
-through it...new coach
+00:16:21,504 --> 00:16:24,320
+没错, newcCoach...通过 Dictionary
 
 274
-00:16:21,504 --> 00:16:24,320
-Yeah, new coach and then to stalk the new coach by 
+00:16:24,832 --> 00:16:26,880
+ 去跟踪它
 
 275
-00:16:24,832 --> 00:16:26,880
-a ball into dictionary
+00:16:27,648 --> 00:16:30,976
+所以现在测试还是红的吗？
 
 276
-00:16:27,648 --> 00:16:30,976
-So it's still red here? 
+00:16:31,232 --> 00:16:35,328
+但我猜当我在 Dictionary 中
 
 277
-00:16:31,232 --> 00:16:35,328
-But I guess that after saving that new coach value
+00:16:35,584 --> 00:16:37,888
+保存了newCoach 的值之后，测试又会变回为绿的
 
 278
-00:16:35,584 --> 00:16:37,888
-Into the dictionary it will be green again
+00:16:38,912 --> 00:16:39,424
+newCoach
 
 279
-00:16:38,912 --> 00:16:39,424
-Fully?...new coach
+00:16:41,728 --> 00:16:42,240
+没错
 
 280
-00:16:41,728 --> 00:16:42,240
-That's right
-
-281
 00:16:42,752 --> 00:16:44,032
 Inevitable
 
-282
+281
 00:17:03,744 --> 00:17:04,512
 Yeah...yeah
 
-283
+282
 00:17:11,936 --> 00:17:13,216
-It was in the test
+在测试里
+
+283
+00:17:15,008 --> 00:17:17,312
+和 coach 一起...okay
 
 284
-00:17:15,008 --> 00:17:17,312
-and the coach...okay
+00:17:24,736 --> 00:17:25,248
+这里
 
 285
-00:17:24,736 --> 00:17:25,248
-here
+00:17:26,272 --> 00:17:28,320
+你重新回到单元测试
 
 286
-00:17:26,272 --> 00:17:28,320
-Unless you get back to the unit test again
+00:17:37,280 --> 00:17:38,560
+是的是的，没错
 
 287
-00:17:37,280 --> 00:17:38,560
-Oh yes yes...you're right
+00:17:38,816 --> 00:17:40,352
+完全正确
 
 288
-00:17:38,816 --> 00:17:40,352
-completely right
-
-289
 00:17:46,240 --> 00:17:52,384
 we will do that because we would like to show you a picture second architecture and lots of other steps...but yes you're right...you're right
 
-290
+289
 00:17:56,992 --> 00:18:02,880
-Yeah but absolutely that was next point actually we have a train which has 
+没错，绝对是。 但那是下一个点， 实际上我们有个一个 Train 
+
+290
+00:18:03,648 --> 00:18:05,184
+已经对外暴露出了 seats 的集合， 并且也尝试去暴露coach 的集合
 
 291
-00:18:03,648 --> 00:18:05,184
-exposed a list of seats and trying to expose the list of coach
+00:18:05,440 --> 00:18:09,536
+因为所有的 seats 都应该属于 coach，所以接下来我们要做的是
 
 292
-00:18:05,440 --> 00:18:09,536
-Because all seats belong to the coaches so what we should do is
+00:18:09,792 --> 00:18:13,376
+在 Train 中替换掉添加重复的集合
 
 293
-00:18:09,792 --> 00:18:13,376
-Instead of adding duplicates collection on the train
+00:18:13,632 --> 00:18:15,424
+取而代之的是projection
 
 294
-00:18:13,632 --> 00:18:15,424
-instead to have a projection
+00:18:15,936 --> 00:18:18,240
+然后在 Train 中 seats 的集合一定是
 
 295
-00:18:15,936 --> 00:18:18,240
-And the list of seats for the train must be the
+00:18:18,496 --> 00:18:21,312
+每个 coach 的所有的 seats 的projection
 
 296
-00:18:18,496 --> 00:18:21,312
-the projection of all the seats of every coach
+00:18:21,312 --> 00:18:21,568
+在 Train 中
 
 297
-00:18:21,312 --> 00:18:21,568
-of the train
+00:18:21,568 --> 00:18:22,592
+让我们动手吧
 
 298
-00:18:21,568 --> 00:18:22,592
-so let's do that
-
-299
 00:18:22,848 --> 00:18:25,920
 select mini something like that
 
-300
+299
 00:18:26,432 --> 00:18:27,712
 coaches
 
-301
+300
 00:18:28,992 --> 00:18:30,016
-let's take every coach
+用每个 coach
+
+301
+00:18:30,528 --> 00:18:33,088
+ 返回他的值
 
 302
-00:18:30,528 --> 00:18:33,088
-And return the value
+00:18:33,600 --> 00:18:34,624
+SelectMany
 
 303
-00:18:33,600 --> 00:18:34,624
-select many coach
+00:18:40,256 --> 00:18:41,024
+对于每个 seat 来说
 
 304
-00:18:40,256 --> 00:18:41,024
-for every seats
+00:18:41,536 --> 00:18:43,328
+改成 c
 
 305
-00:18:41,536 --> 00:18:43,328
-change to c 
+00:18:43,584 --> 00:18:44,352
+c dot
 
 306
-00:18:43,584 --> 00:18:44,352
-I just c dot
-
-307
 00:18:44,608 --> 00:18:45,120
 seats
 
-308
+307
 00:18:48,704 --> 00:18:49,728
 toList
 
-309
+308
 00:18:50,240 --> 00:18:50,752
 to a newList
 
-310
+309
 00:18:52,800 --> 00:18:56,384
-with this kind of linked you again but it's we met a projection
+这样就又把他们连在一起但这次是projection
+
+310
+00:18:56,640 --> 00:18:57,408
+我们用
 
 311
-00:18:56,640 --> 00:18:57,408
-we take
+00:18:57,664 --> 00:18:59,456
+每个 coach 身上的所有 seats
 
 312
-00:18:57,664 --> 00:18:59,456
-All the seats on every coach
+00:18:59,968 --> 00:19:02,784
+然后我们返回了它对于整个 train 而言
 
 313
-00:18:59,968 --> 00:19:02,784
-And we return it at the this that's it for the entire train
+00:19:03,296 --> 00:19:06,880
+所以我们不需要重新 set 它了，因为
 
 314
-00:19:03,296 --> 00:19:06,880
-So we have this one? we don't need to set it anymore because it will be
+00:19:07,136 --> 00:19:07,905
+它现在是一个属性了
 
 315
-00:19:07,136 --> 00:19:07,905
-a get on me...a property
-
-316
 00:19:12,513 --> 00:19:13,025
 Ok
 
-317
+316
 00:19:16,609 --> 00:19:18,913
-We need we have the coach...compiled
+所以，我们编译了 coach....
+
+317
+00:19:19,169 --> 00:19:20,705
+看起来不错
 
 318
-00:19:19,169 --> 00:19:20,705
-Yeah it's good now
+00:19:22,497 --> 00:19:25,313
+也许我们能修复一个 bug
 
 319
-00:19:22,497 --> 00:19:25,313
-So maybe we can maybe we can fix the bug
+00:19:25,569 --> 00:19:26,337
+你觉得怎么样
 
 320
-00:19:25,569 --> 00:19:26,337
-What do you think
+00:19:27,873 --> 00:19:28,897
+可以
 
 321
-00:19:27,873 --> 00:19:28,897
-So...Ok
-
-322
 00:19:30,433 --> 00:19:33,249
 Absolutely...villages?...yes
 
-323
+322
 00:19:33,505 --> 00:19:36,577
-idea is to move the findAvailableSeats or the buildReservationAttempt 
+我们是想将 findAvailableSeats or the buildReservationAttempt 
+
+323
+00:19:36,833 --> 00:19:37,857
+移动到 coach 里去
 
 324
-00:19:36,833 --> 00:19:37,857
-to the coach level
+00:19:38,113 --> 00:19:40,161
+因为如果我们在 train 中调用它
 
 325
-00:19:38,113 --> 00:19:40,161
-Because if we asked to the train level
+00:19:40,929 --> 00:19:42,977
+就没办法
 
 326
-00:19:40,929 --> 00:19:42,977
-There is no way of
+00:19:43,233 --> 00:19:46,817
+合适的...只有一种比较蹩脚的办法
 
 327
-00:19:43,233 --> 00:19:46,817
-properly there is a way that kind of crappy
+00:19:47,073 --> 00:19:48,097
+所以我们将它 delegate 到
 
 328
-00:19:47,073 --> 00:19:48,097
-so let's delegated it
+00:19:48,353 --> 00:19:51,169
+Coach 中去吧。所以我把这个
 
 329
-00:19:48,353 --> 00:19:51,169
-To the to The Coach so I'm removing
+00:19:51,425 --> 00:19:51,937
+删掉
 
 330
-00:19:51,425 --> 00:19:51,937
-This one
+00:19:52,193 --> 00:19:55,265
+所以我们的测试总是red-green
 
 331
-00:19:52,193 --> 00:19:55,265
-So we only do this the test it will be red and red
+00:19:55,521 --> 00:19:56,801
+这样的节奏
 
 332
-00:19:55,521 --> 00:19:56,801
-green step
+00:19:58,593 --> 00:20:02,433
+现在让我们回到 WebTicket 中去
 
 333
-00:19:58,593 --> 00:20:02,433
-So it's come back to the WebTicket
+00:20:02,689 --> 00:20:06,017
+而且就像你建议的那样
 
 334
-00:20:02,689 --> 00:20:06,017
-and as you suggested
+00:20:07,041 --> 00:20:07,809
+也许
 
 335
-00:20:07,041 --> 00:20:07,809
-Maybe the
+00:20:08,321 --> 00:20:11,649
+buildReservationAttempt 主要负责验证
 
 336
-00:20:08,321 --> 00:20:11,649
-buildReservationAttempt is in charge to be verified
-
-337
 00:20:12,929 --> 00:20:15,489
 and to tweet
 
-338
+337
 00:20:16,257 --> 00:20:17,025
-Something new
+一些新的东西
+
+338
+00:20:19,329 --> 00:20:23,425
+也许我们能改变算法
 
 339
-00:20:19,329 --> 00:20:23,425
-Maybe we can change the algorithm
-
-340
 00:20:23,937 --> 00:20:24,705
 but respect algorithm
 
-341
+340
 00:20:24,961 --> 00:20:26,753
-so I based on the coach
+所以我基于 coach 来做这件事
+
+341
+00:20:28,801 --> 00:20:30,337
+让我们把
 
 342
-00:20:28,801 --> 00:20:30,337
-Let's put that
+00:20:30,593 --> 00:20:32,897
+查找作为的逻辑
 
 343
-00:20:30,593 --> 00:20:32,897
-logic of looking at seats
+00:20:33,153 --> 00:20:34,177
+放在 coach 这层上
 
 344
-00:20:33,153 --> 00:20:34,177
-at coach level
+00:20:36,225 --> 00:20:37,249
+所以我们来 for 循环每个 coach
 
 345
-00:20:36,225 --> 00:20:37,249
-So for iterate every coach
+00:20:38,273 --> 00:20:43,393
+所以，真的要做一件相同的事，buildReservationAttemp, 没错，我喜欢用这个
 
 346
-00:20:38,273 --> 00:20:43,393
-So we really have you maybe the same thing build a reservation attempt...yeah...I would like to use this one
-
-347
 00:20:44,929 --> 00:20:45,697
 please coach
 
-348
+347
 00:20:46,209 --> 00:20:48,257
-beat me build reservation attemp if you can
+beat me build reservation attemp 如果你可以的话
 
-349
+348
 00:20:49,025 --> 00:20:49,537
 Ok
 
-350
+349
 00:20:52,865 --> 00:20:55,681
-And returning you a reservcation attempt
+然后返回给你一个 reservcationAttempt
 
-351
+350
 00:20:55,937 --> 00:20:58,241
 ReservcationAttempt
 
-352
+351
 00:20:58,753 --> 00:21:00,289
 Is reservationAttempt
 
-353
+352
 00:21:00,801 --> 00:21:01,313
 Adele
 
-354
+353
 00:21:06,945 --> 00:21:08,481
-And if...reservation attempt
+然后...如果...reservationAttempt
 
-355
+354
 00:21:08,737 --> 00:21:09,761
 IsFulfilled
 
-356
+355
 00:21:10,017 --> 00:21:10,529
 Ok
 
-357
+356
 00:21:11,297 --> 00:21:13,089
-Then return
+然后返回
 
-358
+357
 00:21:13,857 --> 00:21:15,649
 reservationAttempt
 
-359
+358
 00:21:15,905 --> 00:21:20,513
-If not, we continue to iterate it on the next coach ask to the same thing once we have
+如果不是, 我们继续遍历下一个 coach 去做相同的事
+
+359
+00:21:20,769 --> 00:21:22,049
+至少有一位 coach
 
 360
-00:21:20,769 --> 00:21:22,049
-at least one coach
+00:21:22,561 --> 00:21:25,633
+我们可以拿到他的另一个 reservationAttempt，我们很高兴看到这样
 
 361
-00:21:22,561 --> 00:21:25,633
-provide us its fulfill another reservation attempt we are happy with that
+00:21:26,401 --> 00:21:26,913
+所以
 
 362
-00:21:26,401 --> 00:21:26,913
-So
+00:21:27,169 --> 00:21:30,753
+这部分代码实际上我希望
 
 363
-00:21:27,169 --> 00:21:30,753
-This one is actually the code I would like to
+00:21:31,009 --> 00:21:33,057
+完全移动到
 
 364
-00:21:31,009 --> 00:21:33,057
-Completely get pasted
+00:21:34,081 --> 00:21:34,593
+
 
 365
-00:21:34,081 --> 00:21:34,593
-In
+00:21:36,641 --> 00:21:38,433
+让我们创建一个方法
 
 366
-00:21:36,641 --> 00:21:38,433
-So let's create a method
+00:21:44,833 --> 00:21:46,369
+好的，实际上我并不是很喜欢剪切复制，
 
 367
-00:21:44,833 --> 00:21:46,369
-Okay, and I don't like copy and paste actually
+00:21:46,881 --> 00:21:49,697
+但这里
 
 368
-00:21:46,881 --> 00:21:49,697
-but in that case it
+00:21:51,489 --> 00:21:52,769
+倒也合乎情理
 
 369
-00:21:51,489 --> 00:21:52,769
-So justified
+00:21:53,025 --> 00:21:59,169
+好了，现在变绿了...所以我们刚才修复了一个 bug，也许你可以"红，绿，重构"
 
 370
-00:21:53,025 --> 00:21:59,169
-it's green....so we just fix the bug by doing that...maybe you can a red green refactor
+00:22:02,497 --> 00:22:04,801
+将 buildReservationAttempt 放到 train 这个层级上去
 
 371
-00:22:02,497 --> 00:22:04,801
-Something to refact buildReservationAttempt to the train level
-
-372
 00:22:05,313 --> 00:22:08,129
 we still...let some code
 
-373
+372
 00:22:08,385 --> 00:22:08,897
-So
+所以
+
+373
+00:22:09,409 --> 00:22:12,225
+基于seat 上的东西
 
 374
-00:22:09,409 --> 00:22:12,225
-based on the  what's on 'seat'
+00:22:12,737 --> 00:22:14,785
+这里我们有一些
 
 375
-00:22:12,737 --> 00:22:14,785
-here we have some kind of 
+00:22:15,041 --> 00:22:20,673
+...copy过来的代码，所以让我们用 linq 来把它替换掉吧
 
 376
-00:22:15,041 --> 00:22:20,673
-...copy code so let's replace it with a linq...request
+00:22:22,209 --> 00:22:26,305
+So take me please 所有的 seats where BookingRef 是空的
 
 377
-00:22:22,209 --> 00:22:26,305
-So take me please all seats where BookingRef is empty
+00:22:26,561 --> 00:22:29,121
+空的...string 点  isNullOrEmpty
 
 378
-00:22:26,561 --> 00:22:29,121
-is empty...string dot is null or empty
+00:22:29,889 --> 00:22:36,033
+我们是否应该新创建一个方法
 
 379
-00:22:29,889 --> 00:22:36,033
-if we create a method also yeah...yeah...and
+00:22:36,289 --> 00:22:40,897
+Take the number of seatsRequestCount
 
 380
-00:22:36,289 --> 00:22:40,897
-take the number of seats request count
+00:22:41,153 --> 00:22:43,457
+所以这里我们 project 了一个 可用的
 
 381
-00:22:41,153 --> 00:22:43,457
-So here we are projecting a list of
+00:22:44,481 --> 00:22:44,993
+seats
 
 382
-00:22:44,481 --> 00:22:44,993
-Seats
+00:22:45,505 --> 00:22:51,137
+的集合，然后我们还有一个所有 seats 的集合，这样我们就能
 
 383
-00:22:45,505 --> 00:22:51,137
-That are available and then we have a list of seats and available seats and then we take
+00:22:51,649 --> 00:22:57,793
+传1，3，4 任何我要求的数字...我还要把这里也替换掉...
 
 384
-00:22:51,649 --> 00:22:57,793
-The first three four whatever number we asked...and I replace this one...it does
+00:22:58,049 --> 00:23:01,377
+它确实做了在 seats 中和 foreach loop 相同的事
 
 385
-00:22:58,049 --> 00:23:01,377
-Exactly the same thing of the foreach loop we have seats here
+00:23:02,657 --> 00:23:05,217
+想那么做你不得不.....
 
 386
-00:23:02,657 --> 00:23:05,217
-To prove it you just have to
+00:23:05,985 --> 00:23:07,777
+...不得不.....选中全部
 
 387
-00:23:05,985 --> 00:23:07,777
-you have to...just to...get all of them
+00:23:08,033 --> 00:23:12,385
+移除掉了
 
 388
-00:23:08,033 --> 00:23:12,385
-I remove
-
-389
 00:23:13,665 --> 00:23:14,177
 Ok
 
-390
+389
 00:23:15,969 --> 00:23:17,761
-Ok you remove it
+Ok 你移除掉了
+
+390
+00:23:19,297 --> 00:23:20,065
+这儿
 
 391
-00:23:19,297 --> 00:23:20,065
-Here
-
-392
 00:23:22,369 --> 00:23:23,137
 Oops
 
-393
+392
 00:23:24,161 --> 00:23:24,673
-I made a mistake
+我的错
+
+393
+00:23:24,929 --> 00:23:25,697
+现在没事了
 
 394
-00:23:24,929 --> 00:23:25,697
-Now it's ok
-
-395
 00:23:25,953 --> 00:23:32,097
 So what we can do maybe seems seat constructor missed up anything to attract mosquitoes
 
-396
+395
 00:23:32,353 --> 00:23:37,217
 things so here is quite difficult with
 
-397
+396
 00:23:40,545 --> 00:23:42,081
-Inshallah ok
+Inshallah ok 
+
+397
+00:23:46,177 --> 00:23:51,297
+目标方法应该就叫
 
 398
-00:23:46,177 --> 00:23:51,297
-The target method we should be
-
-399
 00:23:51,809 --> 00:23:52,577
 isAvailable
 
-400
+399
 00:23:53,601 --> 00:23:54,881
-Since we are working on seats
+因为我们就是在 seats 上调用这个方法的
 
-401
+400
 00:23:55,649 --> 00:23:57,441
 so non-static public 
 
-402
+401
 00:23:58,721 --> 00:23:59,489
-And we will
+然后我们将
+
+402
+00:23:59,745 --> 00:24:03,841
+抽取方法并将它移动到 seat 中去
 
 403
-00:23:59,745 --> 00:24:03,841
-extract method and then we will move it into the seats and the seats level
+00:24:04,097 --> 00:24:04,609
+所以
 
 404
-00:24:04,097 --> 00:24:04,609
-So
+00:24:05,121 --> 00:24:05,889
+移动它
 
 405
-00:24:05,121 --> 00:24:05,889
-Move it
-
-406
 00:24:06,401 --> 00:24:10,753
 So here now if you can zoom on the link us with a request 
 
-407
+406
 00:24:11,265 --> 00:24:15,361
 light on the seats and we take all the seats that are available
 
-408
+407
 00:24:15,873 --> 00:24:18,945
 And we take the first number that we need it
 
-409
+408
 00:24:25,601 --> 00:24:30,209
-We need it. That's we introduced that eariler for the each fulfilled 
+我们需要它. That's we introduced that eariler for the each fulfilled 
 
-410
+409
 00:24:31,489 --> 00:24:36,353
 for another reservation attempt I should to be
 
-411
+410
 00:24:36,609 --> 00:24:38,913
 to be able to say fulfilled obtain a good reservation it's design choice...yeah...
 
-412
+411
 00:24:39,937 --> 00:24:40,961
 Ok
 
-413
+412
 00:24:41,217 --> 00:24:43,777
-We happy because then we fix a bug
+我们很高兴修复了一个 bug
 
-414
+413
 00:24:44,033 --> 00:24:49,409
-fix bug we can imporving a little bit in the code....yeah...
+ 修复 bug 能让我们的代码有一些小的提升
