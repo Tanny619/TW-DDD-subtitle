@@ -1,6 +1,6 @@
 1
 00:00:00,000 --> 00:00:02,816
-That's collector Corps concert for gonna move on to
+That's kind like the core concept that you gonna move on to
 
 2
 00:00:04,352 --> 00:00:05,888
@@ -16,7 +16,7 @@ Running experiments and responding to what happens
 
 5
 00:00:14,336 --> 00:00:17,152
-If you're in an audit system you can plan and design
+If you're in an ordered system you can plan and design
 
 6
 00:00:17,408 --> 00:00:19,712
@@ -24,23 +24,23 @@ And Chaos is something you can use
 
 7
 00:00:19,968 --> 00:00:22,016
-To get new insight but you want to invade
+To get new insight but you want to avoid
 
 8
 00:00:22,528 --> 00:00:25,600
-How to say engineering diagrams always assume order
+and say engineering diagrams always assume order.
 
 9
 00:00:27,136 --> 00:00:28,928
-The ecosystems.
+The ecosystems don't.
 
 10
 00:00:29,440 --> 00:00:34,048
-And this is from Brian Arthur the first book complexity into economics
+And this is from Brian Arthur, the guy's first brought complexity into economics
 
 11
 00:00:34,560 --> 00:00:36,608
-Rodger defining book corner
+?Rodger? defining book called
 
 12
 00:00:36,864 --> 00:00:38,144
@@ -48,27 +48,27 @@ The evolution of technology
 
 13
 00:00:38,656 --> 00:00:41,984
-The trouble is that even scientists don't like complexity very much
+The trouble is even scientists don't like complexity very much
 
 14
 00:00:42,496 --> 00:00:45,568
-Visit means you're dealing with systems Which have perpetual novelty
+which means you're dealing with systems which have perpetual novelty.
 
 15
 00:00:47,104 --> 00:00:48,384
-Get constant change
+constant change.
 
 16
 00:00:49,408 --> 00:00:52,736
-I sometimes use the metaphor as a children's party to illustrate this
+I sometimes use the metaphor as a children's party to illustrate this:
 
 17
 00:00:53,504 --> 00:00:59,648
-Yeah you wouldn't manager children's party with key objectives targets mission goals project plans and milestones
+Yeah you wouldn't manager children's party with key objectives, targets, mission goals, project plans and milestones
 
 18
 00:01:00,160 --> 00:01:01,696
-Because everything would go wrong
+because everything would go wrong.
 
 19
 00:01:02,464 --> 00:01:04,768
@@ -76,7 +76,7 @@ You can see a more elaborate version of that on the web
 
 20
 00:01:06,048 --> 00:01:08,352
-That from that we get another couple of Simple Rules
+That from now we get another couple of Simple Rules
 
 21
 00:01:09,120 --> 00:01:11,680
@@ -88,11 +88,11 @@ If the evidence supports contradictory hypotheses
 
 23
 00:01:16,032 --> 00:01:19,616
-And you can't resolve the contradiction within the available time
+and you can't resolve the contradiction within the available time
 
 24
 00:01:19,872 --> 00:01:20,896
-Then it's complex
+then it's complex.
 
 25
 00:01:22,432 --> 00:01:26,272
@@ -100,23 +100,23 @@ This is actually where we move into a massive new approach to conflict resolutio
 
 26
 00:01:27,296 --> 00:01:30,880
-Because the whole point here is nobody is right or wrong
+Because the whole point here is nobody is right or wrong.
 
 27
 00:01:31,392 --> 00:01:34,720
-Because everything we do will change the system anyway
+Because everything we do will change the system anyway.
 
 28
 00:01:36,000 --> 00:01:39,840
-There's something which might have been right last time could be wrong this time
+So something which might be right last time could be wrong this time
 
 29
 00:01:40,864 --> 00:01:42,912
-Anybody's managed to children's party
+Anybody's managed the children's party?
 
 30
 00:01:43,680 --> 00:01:46,752
-Yeah a football can catalyser good pattern the play
+Yeah a football can catalyze a good pattern of play
 
 31
 00:01:47,008 --> 00:01:48,800
@@ -128,19 +128,19 @@ But you really don't want to bounce football in your living room in winter
 
 33
 00:01:53,408 --> 00:01:55,712
-Because the pattern the play will be radically different
+Because the pattern the play will be radically different.
 
 34
 00:01:55,968 --> 00:01:56,992
-The context of shifted
+The context is shifted.
 
 35
 00:01:57,504 --> 00:01:59,040
-Yeah and damage will be massive
+Yeah, and damage will be massive.
 
 36
 00:01:59,552 --> 00:02:01,600
-Yeah different things work well in different context
+Yeah, different things will vary in different contexts.
 
 37
 00:02:02,880 --> 00:02:03,904
@@ -148,43 +148,43 @@ So basically
 
 38
 00:02:04,672 --> 00:02:05,952
-What we know stuff to do
+What we now start to do
 
 39
 00:02:06,464 --> 00:02:11,328
-Is we look at every coherent and coherence is a really important word in complexity
+is we look at every coherent and coherence is a really important word in complexity
 
 40
 00:02:11,840 --> 00:02:13,120
-Camps and Philosophy of science
+comes from Philosophy of science.
 
 41
 00:02:14,656 --> 00:02:19,264
-I can say that evolution is coherent to the fact even though we know it's wrong
+I can say that evolution is coherent to the facts even though we know it's wrong
 
 42
 00:02:19,776 --> 00:02:22,336
-Where's creationism is incoherent to the fact
+whereas creationism is incoherent to the fact.
 
 43
 00:02:23,616 --> 00:02:27,968
-It avoids that you were wrong therefore your hypothesis everything is a hypothesis
+It avoids that you were wrong therefore your hypothesis everything is a hypothesis.
 
 44
 00:02:28,480 --> 00:02:31,552
-The issue is what's coherent the fact what incoherent to it
+The issue is what's coherent the fact what's incoherent to it
 
 45
 00:02:32,832 --> 00:02:35,904
-So we'll have to do is to agree your idea is coherent
+So all I have to do is to agree your idea is coherent.
 
 46
 00:02:37,184 --> 00:02:41,280
-I don't have to agree you're right in fact that can be pretty sure you're wrong but I agree
+I don't have to agree you're right in fact that I can be pretty sure you're wrong but I agree
 
 47
 00:02:41,536 --> 00:02:43,072
-Your argument is coherent
+your argument is coherent.
 
 48
 00:02:43,840 --> 00:02:46,144
@@ -192,1672 +192,1642 @@ At which point you get a small amount of resource
 
 49
 00:02:46,400 --> 00:02:48,960
-To run what's called the safety foil experiment
+to run what's called the safe-to-fail experiment.
 
 50
 00:02:49,984 --> 00:02:54,080
-Been in the complex world you run small safe to fail experiments
+But in the complex world you run small safe-to-fail experiments
 
 51
-00:02:54,592 --> 00:02:56,640
-Around every single coherent
+00:02:54,592 --> 00:02:57,920
+around every single coherent approach.
 
 52
-00:02:57,408 --> 00:02:57,920
-Approach
-
-53
 00:02:58,432 --> 00:03:00,224
 And then you see what happens
 
-54
+53
 00:03:00,736 --> 00:03:02,016
-And you stabilizer systems
+and you stabilize the systems.
+
+54
+00:03:03,296 --> 00:03:10,720
+You understand the complex system
+by interacting with it not by analyzing it or modeling it.
 
 55
-00:03:03,296 --> 00:03:05,088
-You understand the complex system
+00:03:11,744 --> 00:03:13,280
+I repeat that because it's key.
 
 56
-00:03:05,600 --> 00:03:07,392
-By interacting with it
+00:03:13,792 --> 00:03:16,864
+You can't understand the complex adaptive system
 
 57
-00:03:08,160 --> 00:03:09,696
-Not by analysing it
+00:03:17,120 --> 00:03:18,912
+through modeling or analysis.
 
 58
-00:03:09,952 --> 00:03:10,720
-Or modelling it
-
-59
-00:03:11,744 --> 00:03:13,280
-I repeat that because it's key
-
-60
-00:03:13,792 --> 00:03:16,864
-You can't understand the Complex Adaptive system
-
-61
-00:03:17,120 --> 00:03:18,912
-Through modelling or analysis
-
-62
 00:03:19,424 --> 00:03:22,240
 You can only understand it by interaction
 
-63
+59
 00:03:22,752 --> 00:03:24,800
-With real-time feedback loops
+with real-time feedback loops
+
+60
+00:03:25,056 --> 00:03:27,104
+over multiple agents.
+
+61
+00:03:27,360 --> 00:03:28,640
+So you don't get cognitive bias.
+
+62
+00:03:29,408 --> 00:03:30,944
+This is kind of like 101 science.
+
+63
+00:03:31,456 --> 00:03:34,016
+And again that's gonna change the way we design and work.
 
 64
-00:03:25,056 --> 00:03:27,104
-Over multiple agents
+00:03:35,040 --> 00:03:38,624
+The only thing I can say with absolute certain about a complex adaptive system
 
 65
-00:03:27,360 --> 00:03:28,640
-So you don't get cognitive bias
+00:03:39,136 --> 00:03:42,464
+is that whatever I do will produce unintended consequences.
 
 66
-00:03:29,408 --> 00:03:30,944
-This is going like 101 science
+00:03:43,232 --> 00:03:46,304
+If I show this in Australia everybody gets it straight away.
 
 67
-00:03:31,456 --> 00:03:34,016
-And again that's going to change the way we design and work
-
-68
-00:03:35,040 --> 00:03:38,624
-The only thing I can say with absolute certain about a Complex Adaptive system
-
-69
-00:03:39,136 --> 00:03:42,464
-Is there ever I do will produce unintended consequences
-
-70
-00:03:43,232 --> 00:03:46,304
-If I show this in Australia everybody gets it straight away
-
-71
 00:03:46,816 --> 00:03:48,352
 And that's a cane toad
 
-72
+68
 00:03:48,864 --> 00:03:51,680
-Introduced to reduce pest is now the dominant pest
+introduced to reduce pest is now the dominant pest.
+
+69
+00:03:54,240 --> 00:03:57,312
+Now actually that's important to realize, alright?
+
+70
+00:03:57,568 --> 00:04:00,384
+If you have a complex system and you intervene,
+
+71
+00:04:01,152 --> 00:04:03,200
+the only thing I can guarantee you
+
+72
+00:04:03,456 --> 00:04:05,760
+is that you'll have unintended consequences.
 
 73
-00:03:54,240 --> 00:03:57,312
-Naturally that's important to realise it's alright
+00:04:07,040 --> 00:04:10,112
+That means you are ethically responsible for them
 
 74
-00:03:57,568 --> 00:04:00,384
-If you have a complex system and you intervene
+00:04:11,136 --> 00:04:12,672
+This is a big new thing on government.
 
 75
-00:04:01,152 --> 00:04:03,200
-The only thing I can guarantee you
-
-76
-00:04:03,456 --> 00:04:05,760
-Is it you'll have unintended consequences
-
-77
-00:04:07,040 --> 00:04:10,112
-That means you are ethically responsible for me
-
-78
-00:04:11,136 --> 00:04:12,672
-This is a big new thing on government
-
-79
 00:04:13,184 --> 00:04:16,512
 If you do a massive intervention and something happens you didn't expect
 
-80
+76
 00:04:17,024 --> 00:04:20,608
-Oh sorry it's a complex system unexpected things were going to happen
+Well, sorry it's a complex system unexpected things were gonna happen.
 
-81
+77
 00:04:21,120 --> 00:04:23,168
 It's your responsibility when they do
 
-82
+78
 00:04:24,704 --> 00:04:29,312
-Which means you want to do small experiments in parallel much faster
+which means you want to do smaller experiments in parallel much faster.
 
-83
+79
 00:04:30,080 --> 00:04:33,664
-So the bad unintended consequences you can destroy
+so the bad unintended consequences you can destroy
 
-84
+80
 00:04:33,920 --> 00:04:35,712
-And the good ones you can have T4
+and the good ones you can amplify.
 
-85
+81
 00:04:36,736 --> 00:04:40,576
-Is actually the unintended consequences will be the accepted moments
+Because actually the unintended consequences will be the accepted moments
 
-86
+82
 00:04:40,832 --> 00:04:42,880
 The discovery of novel ways of working
 
-87
+83
 00:04:43,648 --> 00:04:46,208
-And that's actually quite important as what we all do
+and that's actually quite important in terms of what we all do.
+
+84
+00:04:47,232 --> 00:04:48,000
+So from that
+
+85
+00:04:48,768 --> 00:04:50,304
+we move on to the Cynefin framework
+
+86
+00:04:51,584 --> 00:04:52,608
+and basically
+
+87
+00:04:53,376 --> 00:04:56,448
+the Cynefin framework, by the way, is not drawn like this
 
 88
-00:04:47,232 --> 00:04:48,000
-Save from net
+00:04:57,984 --> 00:05:01,568
+It's not drawn like this adding that later just to shut me up, alright?
 
 89
-00:04:48,768 --> 00:04:50,304
-We move onto the Canavan framework
+00:05:02,336 --> 00:05:03,616
+It's actually drawn like this.
 
 90
-00:04:51,584 --> 00:04:52,608
-And basically
+00:05:07,456 --> 00:05:12,320
+Now it's the whole body of theory behind this but basically you don't want a structured model.
 
 91
-00:04:53,376 --> 00:04:56,448
-At the camera framework by the way is not drawn like this
+00:05:12,832 --> 00:05:14,624
+Cynefin is a typology
 
 92
-00:04:57,984 --> 00:05:01,568
-It's not drawn like this adding that later just to shut me up
+00:05:15,136 --> 00:05:18,464
+and in full used the framework emerges from the data
 
 93
-00:05:02,336 --> 00:05:03,616
-Is actually John like this
+00:05:18,720 --> 00:05:20,768
+The framework doesn't proceed the data
 
 94
-00:05:07,456 --> 00:05:12,320
-No the whole body of theory behind this but basically you don't want a structured model
-
-95
-00:05:12,832 --> 00:05:14,624
-Canavan is a typology
-
-96
-00:05:15,136 --> 00:05:18,464
-And in full use the framework emerges from the data
-
-97
-00:05:18,720 --> 00:05:20,768
-The framework doesn't proceed the date
-
-98
 00:05:21,280 --> 00:05:22,304
 That's really important
 
-99
+95
 00:05:23,072 --> 00:05:25,632
-If you give people a categorisation framework
+If you give people a categorization framework
+
+96
+00:05:25,888 --> 00:05:27,680
+They'll make things fit the framework
+
+97
+00:05:27,936 --> 00:05:28,704
+even if they don't.
+
+98
+00:05:29,728 --> 00:05:31,776
+So when you're working with sense-making
+
+99
+00:05:32,032 --> 00:05:36,640
+You allow the model boundaries to emerge from the data itself through discovery process
 
 100
-00:05:25,888 --> 00:05:27,680
-Don't make things fit the framework
+00:05:37,152 --> 00:05:39,712
+And then you can use it and that's a really important distinction.
 
 101
-00:05:27,936 --> 00:05:28,704
-Even if they don't
+00:05:40,480 --> 00:05:43,296
+So basically Cynefin divided all (?) into two
 
 102
-00:05:29,728 --> 00:05:31,776
-It's the one you're working with sensemaking
+00:05:44,064 --> 00:05:44,832
+spaces where
 
 103
-00:05:32,032 --> 00:05:36,640
-You like the model boundaries to emerge from the data itself through Discovery process
+00:05:45,344 --> 00:05:46,112
+the relationship
 
 104
-00:05:37,152 --> 00:05:39,712
-And then you can use it and that's a really important distinction
+00:05:46,368 --> 00:05:47,648
+between causes and effects is obvious
 
 105
-00:05:40,480 --> 00:05:43,296
-The basically Canavan divided into 2
+00:05:49,184 --> 00:05:52,768
+So for example in civilized countries we drive on the left-hand side of the road.
 
 106
-00:05:44,064 --> 00:05:44,832
-Spaces where
+00:05:57,120 --> 00:06:03,008
+There's no particular reason for it, I remember when Sweden was civilized until the 1960s.
 
 107
-00:05:45,344 --> 00:05:46,112
-The relationship
+00:06:03,776 --> 00:06:09,920
+They had a national referendum where the people voted to stay civilized but the government have the sense to ignore the referendum
 
 108
-00:05:46,368 --> 00:05:47,648
-Between cause and effect is obvious
+00:06:10,176 --> 00:06:12,224
+that I'm talking about that example lot at the moment.
 
 109
-00:05:49,184 --> 00:05:52,768
-Access example in civilised countries we drive on the left-hand side of the road
+00:06:12,992 --> 00:06:15,296
+Yeah and they moved over to driving on the right
 
 110
-00:05:57,120 --> 00:06:03,008
-There's no particular reason for it I remember when Sweden was civilized until the 1960s
+00:06:16,320 --> 00:06:18,880
+It's not a universal, I mean
 
 111
-00:06:03,776 --> 00:06:09,920
-They had a national referendum where the people voted to stay civilised but the government have the sense to ignore the referendum
-
-112
-00:06:10,176 --> 00:06:12,224
-I'm talking about that example lot at the moment
-
-113
-00:06:12,992 --> 00:06:15,296
-Yeah and I moved over to driving on the right
-
-114
-00:06:16,320 --> 00:06:18,880
-Is that a universal I mean
-
-115
 00:06:19,136 --> 00:06:20,672
 Yeah you don't drive on the left
 
-116
+112
 00:06:20,928 --> 00:06:24,256
-In the bin Sweden if a child runs on the road in the UK
+In Sweden if a child runs on the road in the UK
+
+113
+00:06:24,512 --> 00:06:27,840
+If a child runs on the road in front of you. You drive anywhere to avoid them.
+
+114
+00:06:29,120 --> 00:06:32,704
+So there is still exceptions even in rigidly constrained systems
+
+115
+00:06:32,960 --> 00:06:36,032
+Are there if you have worked for IBM, it was a bit different. I remember
+
+116
+00:06:36,544 --> 00:06:41,664
+Something moved on the road in front of me in the middle of a Welsh Mountain Road and I slammed the brakes on if you do
 
 117
-00:06:24,512 --> 00:06:27,840
-If a child runs on the road in front of you drive anywhere to avoid them
+00:06:42,176 --> 00:06:48,320
+Discovered it was a sheep but the car was a write-off and I phoned up car admin and they said next time kill the sheep
 
 118
-00:06:29,120 --> 00:06:32,704
-So there is still exceptions evening rigidly constrained systems
+00:06:48,576 --> 00:06:50,112
+I still slightly worried about that one
 
 119
-00:06:32,960 --> 00:06:36,032
-Are there if you have a work Friday that was a bit different I remember
+00:06:50,880 --> 00:06:55,232
+Yes, it was kind of hard I know where there was a sheep or kid until much later, but never mind
 
 120
-00:06:36,544 --> 00:06:41,664
-Something moved on the road in front of me in the middle of a Welsh Mountain Road and I stand the brakes on if you do
+00:06:55,744 --> 00:07:00,864
+So basically an obvious domain we got it we can basically Sense-Categorize-Respond
 
 121
-00:06:42,176 --> 00:06:48,320
-Discovered it was a sheet that the car was a write off and I phoned up car admin and they said next time kill the sheep pants
-
-122
-00:06:48,576 --> 00:06:50,112
-Still slightly worried about that one
-
-123
-00:06:50,880 --> 00:06:55,232
-Yes, had an overdose she put kids in till much later but never mind
-
-124
-00:06:55,744 --> 00:07:00,864
-I'm so basically and obviously mean we got it we can basically sense categorize respond
-
-125
 00:07:02,144 --> 00:07:03,936
 And we can apply best practice
 
-126
+122
 00:07:04,448 --> 00:07:05,984
 Because there is one right way of doing things
 
-127
+123
 00:07:07,776 --> 00:07:12,128
-Remember went to the complicated demand which is most engineering approaches set
+We then move into the complicated domain where most engineering approaches set.
 
-128
+124
 00:07:13,664 --> 00:07:15,712
 That's actually where there is a relationship
 
-129
+125
 00:07:15,968 --> 00:07:18,016
 Between cause and effect there is a right answer
 
-130
+126
 00:07:18,272 --> 00:07:22,880
-Billy can only be discovered through analysis or by the deployment of the right type of expert
+But it can only be discovered through analysis or by the deployment of the right type of expert
 
-131
+127
 00:07:23,392 --> 00:07:26,208
-Get me can we do expertise as universal by the way
+Expertise as universal by the way
 
-132
+128
 00:07:26,464 --> 00:07:29,536
 But at this point we can absolutely trust the expert decision
 
-133
-00:07:30,816 --> 00:07:32,864
-So basically at this point I sent
+129
+00:07:30,816 --> 00:07:34,144
+So basically at this point I Sense-Analyze-Respond
 
-134
-00:07:33,120 --> 00:07:34,144
-Amylose respond
-
-135
+130
 00:07:35,424 --> 00:07:37,728
-And I apply good practice not best practice
+And I apply good practice not best practice.
 
-136
+131
 00:07:39,520 --> 00:07:41,056
-Not going to argue at the moment
+Now I'd gonna argue at the moment
 
-137
+132
 00:07:41,824 --> 00:07:44,384
 90% of systems architecture
 
-138
+133
 00:07:44,640 --> 00:07:47,200
-90% of design sits in that domain
+90% of design sits in that domain.
 
-139
+134
 00:07:48,480 --> 00:07:52,832
-Busy assumption is there a right hand so we can discover it we can design for it that's it
+The assumption is there a right hand so we can discover it we can design for it, that's it.
 
-140
+135
 00:07:53,856 --> 00:07:55,392
-I'll qualify that in a minute
+I'll qualify that in a minute.
 
-141
+136
 00:07:56,416 --> 00:07:59,488
-We don't get if we over constrained system here
+We then get if we overconstrained a system here
 
-142
+137
 00:07:59,744 --> 00:08:01,792
 You get this catastrophic failure
 
-143
+138
 00:08:02,048 --> 00:08:03,328
 Which is why chaos
 
-144
+139
 00:08:04,608 --> 00:08:05,888
 Is a temporary space
 
-145
-00:08:06,400 --> 00:08:08,192
-And I get out of it by accident
+140
+00:08:06,400 --> 00:08:08,960
+And I get out of it by Act-Sense-Respond
 
-146
-00:08:08,448 --> 00:08:08,960
-Respond
-
-147
+141
 00:08:09,472 --> 00:08:10,240
 The good news is
 
-148
+142
 00:08:10,496 --> 00:08:11,264
 I get novelty
 
-149
+143
 00:08:12,800 --> 00:08:14,592
-Is nothing like a crisis
+There is nothing like a crisis
 
-150
+144
 00:08:15,104 --> 00:08:16,384
-To produce innovation
+to produce innovation
 
-151
+145
 00:08:17,664 --> 00:08:21,504
-If I did a version is all about starvation pressure and perspective shift
+If I did an innovation that is all about starvation pressure and perspective shift
 
-152
+146
 00:08:21,760 --> 00:08:22,272
 If you look at it
 
-153
+147
 00:08:22,784 --> 00:08:26,880
-Is when we can't use existing frameworks or existing ways of doing things
+when we can't use existing frameworks or existing ways of doing things
 
-154
+148
 00:08:27,392 --> 00:08:28,416
 Then we get invented
 
-155
+149
 00:08:29,696 --> 00:08:32,256
-Yeah that goes back to the cognitive entrainement patterns earlier
+Yeah that goes back to the cognitive entrainment patterns earlier
 
-156
+150
 00:08:33,024 --> 00:08:34,816
-So basically you're saying that we get the complex to me
+So basically I‚Äôll say that we get the complex to me
 
-157
+151
 00:08:35,328 --> 00:08:36,608
 In the complex domain
 
-158
+152
 00:08:39,680 --> 00:08:40,960
 What I actually do is
 
-159
+153
 00:08:41,216 --> 00:08:41,728
 Probe
 
-160
+154
 00:08:41,984 --> 00:08:42,752
 Sense respond
 
-161
+155
 00:08:43,520 --> 00:08:45,056
 But I probe in parallel
 
-162
+156
 00:08:45,312 --> 00:08:46,080
-Not in sync
+Not in sequence
 
-163
+157
 00:08:46,592 --> 00:08:47,872
 That's really important
 
-164
+158
 00:08:48,896 --> 00:08:51,712
 Because if I do one thing it will nearly always work
 
-165
+159
 00:08:52,480 --> 00:08:54,016
-You know about the Hawthorne effect
+You know about the Hawthorne effect?
 
-166
+160
 00:08:55,296 --> 00:08:57,856
 Ok that that's
 
-167
+161
 00:08:58,112 --> 00:09:02,464
-Cable manufacturers in New York State 1920 site of scientific management
+Cable manufacturers in New York State 1920 artists scientific management
 
-168
+162
 00:09:02,976 --> 00:09:06,560
-Increase lighting levels and people became more productive that's good news
+They increase lighting levels and people became more productive that's good news
 
-169
+163
 00:09:07,072 --> 00:09:09,120
-Pistes de with no publisher book
+These days they would now publish book
 
-170
+164
 00:09:09,376 --> 00:09:10,144
-Cold Light
+called Light
 
-171
+165
 00:09:10,400 --> 00:09:11,936
 The secret to productivity
 
-172
+166
 00:09:12,448 --> 00:09:18,080
 And have a certificate and training course based on how to switch on and off lights and change light bulbs
 
-173
+167
 00:09:18,848 --> 00:09:23,200
 Then they had some pretension to be real scientist so they lowered the lighting level
 
-174
+168
 00:09:24,480 --> 00:09:25,760
 People became more productive
 
-175
+169
 00:09:27,040 --> 00:09:30,112
-What they actually found his people respond to novelty
+What they actually found is people respond to novelty
 
-176
+170
 00:09:30,880 --> 00:09:35,744
 Anything done which is new with attention will work the first time
 
-177
+171
 00:09:36,256 --> 00:09:38,304
 It doesn't mean it will scale or repeat
 
-178
+172
 00:09:39,584 --> 00:09:45,216
-Can you get somebody terrible management books that way one of my least favourite at the moment is lean startup if anybody's read that
+and you get somebody terrible management books that one of my least favorite at the moment is lean startup if anybody's read that?
 
-179
+173
 00:09:45,984 --> 00:09:52,128
-Guy goes interviews people who know who's been successful as a whole body problems there because the way you remember things have your say
+Guy goes interviews people he know who's been successful as a whole body problems there because the way you remember things if you‚Äôre
 
-180
+174
 00:09:52,384 --> 00:09:52,896
 Successful
 
-181
+175
 00:09:53,152 --> 00:09:55,712
 Is different from the way you remember them if you fail
 
-182
+176
 00:09:56,224 --> 00:10:01,088
-And both of them are different from the way they actually happened for right so you can't just what people say
+And both of them are different from the way they actually happened, so you can't just what people say
 
-183
+177
 00:10:01,600 --> 00:10:06,720
-Another same time at the conference and did you study the companies who failed and he said no why would we do that
+I remember saying to him at the conference and did you study the companies who failed and he said no why would we do that
 
-184
+178
 00:10:07,744 --> 00:10:12,096
 I said we did it when I was in IBM with Dorothy Leonard at Harvard Business School
 
-185
+179
 00:10:12,352 --> 00:10:14,656
 We discovered all the companies have failed
 
-186
+180
 00:10:14,912 --> 00:10:18,496
 Did exactly the same things as the companies who succeeded
 
-187
+181
 00:10:19,776 --> 00:10:21,312
-Sjsu had a market
+If yes you had a market
 
-188
+182
 00:10:22,080 --> 00:10:25,152
 So a certain percentage would bound to succeed
 
-189
+183
 00:10:26,688 --> 00:10:32,320
 And that's the trouble we got this very lightweight research throwing at simplistic recipes it's really dangerous
 
-190
+184
 00:10:33,088 --> 00:10:36,416
-Here we go back to complexity I've tried Sainsbury's phone
+Here we come back to complexity I probe since respond
 
-191
+185
 00:10:36,928 --> 00:10:39,744
-And practice here will effectively be a merchant
+And practice here will effectively be emergent
 
-192
+186
 00:10:40,512 --> 00:10:41,792
 I will always see a pattern
 
-193
+187
 00:10:43,584 --> 00:10:47,168
-No important thing in the latest version I can have in call the liminal version
+Now important thing in the latest version I can even call the liminal version
 
-194
+188
 00:10:47,680 --> 00:10:48,192
 Looks like this
 
-195
+189
 00:10:49,472 --> 00:10:51,264
 Secrets to liminal spaces
 
-196
+190
 00:10:52,544 --> 00:10:56,384
-Illuminati is a really important concept in anthropology
+Liminality is a really important concept in anthropology
 
-197
+191
 00:10:56,896 --> 00:10:59,968
-And if you really want to understand humans go and do an answer
+And if you really want to understand humans go and do an anthropology
 
-198
+192
 00:11:00,224 --> 00:11:03,296
-Topology course alright don't go on some cultural conversion course
+course, alright? don't go on some cultural conversion course
 
-199
+193
 00:11:04,064 --> 00:11:05,600
 Most anthropologists
 
-200
+194
 00:11:05,856 --> 00:11:08,416
-No more about culture in the first year of studies
+know more about culture in the first year of studies
 
-201
+195
 00:11:08,928 --> 00:11:12,000
-And cultural change consultants will now in their entire life Style
+than cultural change consultants will now in their entire life Style
 
-202
+196
 00:11:13,280 --> 00:11:17,375
-I basically liminality is a sense of transition if you put on a mask
+Basically liminality is a sense of transition if you put on a mask
 
-203
+197
 00:11:18,143 --> 00:11:24,287
-Is a point where you start to become what the mask represents but there's a state of transition before you do it
+there is a point where you start to become what the mask represents but there's a state of transition before you do it
 
-204
+198
 00:11:25,055 --> 00:11:27,359
-Add a liminal concept in software design
+and the liminal concept in software design
 
-205
+199
 00:11:27,871 --> 00:11:31,199
-Isobel actually not committing until you really have to
+is about actually not committing until you really have to
 
-206
+200
 00:11:31,967 --> 00:11:35,807
 The longer you hold things in the state of transition the more options you've got
 
-207
+201
 00:11:37,599 --> 00:11:41,439
 And actually in software development which is I know far better than architecture
 
-208
+202
 00:11:41,695 --> 00:11:43,743
-This is actually where things like scrumpet
+This is actually where things like scrum sit
 
-209
+203
 00:11:45,535 --> 00:11:50,655
 Because they are linear iterations based on a defined requirement with a degree of ambiguity
 
-210
+204
 00:11:51,167 --> 00:11:52,447
 Therefore we're going to explore it
 
-211
+205
 00:11:53,983 --> 00:11:57,055
 That's the trouble we eliminate ambiguity too early on
 
-212
+206
 00:11:57,311 --> 00:12:00,127
-Big V12 restricted set to do linear experiments
+Because we want to restricted set to do linear experiments with it
 
-213
+207
 00:12:01,407 --> 00:12:02,943
 In a mixed methods approach
 
-214
+208
 00:12:03,455 --> 00:12:08,063
-What we start to do is to say and I use development that same as I know that better
+What we start to do is to say and I‚Äôll use development that same as I know that better
+
+209
+00:12:08,575 --> 00:12:09,855
+here there's nothing wrong with waterfall
+
+210
+00:12:13,695 --> 00:12:19,839
+Absolutely nothing wrong with Hardy structure processes you can use a TOGAF framework you can use rigid frameworks
+
+211
+00:12:20,095 --> 00:12:26,239
+You know exactly what you‚Äôve got to deliver you know the resource with an acceptable time frames why would you not take a waterfall approach
+
+212
+00:12:28,031 --> 00:12:31,103
+Remember working with Telstra(?) on this and Telstra Jesco and agile
+
+213
+00:12:31,615 --> 00:12:34,175
+Therefore nobody got promoted unless they were agile
+
+214
+00:12:34,943 --> 00:12:37,503
+So the waterfall guys rang one year sprints
 
 215
-00:12:08,575 --> 00:12:09,855
-Yeah there's nothing wrong with water for
+00:12:40,575 --> 00:12:43,903
+So they could say they were really agile
 
 216
-00:12:13,695 --> 00:12:19,839
-Absolutely nothing wrong with Hardy structure processes you can use a togaf framework you can use rigid frameworks
+00:12:44,415 --> 00:12:46,975
+That's sort of things is very very Common
 
 217
-00:12:20,095 --> 00:12:26,239
-You know exactly what you got to deliver you know the resource with an acceptable time friends why would you not take a waterfall approach
+00:12:47,231 --> 00:12:49,023
+Human beings are canny
 
 218
-00:12:28,031 --> 00:12:31,103
-Am I working with telstra on this and telstra just gonna go
+00:12:49,279 --> 00:12:50,815
+You can't trust the way they use language
 
 219
-00:12:31,615 --> 00:12:34,175
-Therefore nobody got promoted unless they were Roger
+00:12:51,839 --> 00:12:53,375
+um, over here
 
 220
-00:12:34,943 --> 00:12:37,503
-So the waterfall guys rang one year sprint
+00:12:53,887 --> 00:12:56,959
+One of the Big Things We Lost in architecture and elsewhere is the concept
 
 221
-00:12:40,575 --> 00:12:43,903
-So they could say they would really add you alright
+00:12:57,215 --> 00:12:57,727
+of time boxes
 
 222
-00:12:44,415 --> 00:12:46,975
-That's what the thing is very very Common
+00:12:58,239 --> 00:13:00,543
+or we got obsessed with two week’s time boxes
 
 223
-00:12:47,231 --> 00:12:49,023
-Human beings a candy
+00:13:01,567 --> 00:13:05,151
+Certainly, when I was involved in architect in large decision support systems
 
 224
-00:12:49,279 --> 00:12:50,815
-You can't just the way the is language
+00:13:05,663 --> 00:13:07,455
+we would play around with three months
 
 225
-00:12:51,839 --> 00:12:53,375
-I'm over here
-
-226
-00:12:53,887 --> 00:12:56,959
-One of the Big Things We Lost in architecture and I'll swear to concept
-
-227
-00:12:57,215 --> 00:12:57,727
-The time boxers
-
-228
-00:12:58,239 --> 00:13:00,543
-A2B got obsessed with two week time boxers
-
-229
-00:13:01,567 --> 00:13:05,151
-Certainly when I was involved in architect in last decision support systems
-
-230
-00:13:05,663 --> 00:13:07,455
-We will play around with three months
-
-231
 00:13:07,711 --> 00:13:10,015
 With a guaranteed delivery at the end of three months
 
-232
+226
 00:13:10,527 --> 00:13:13,855
-But we very resource or weed very delivery
+But we very resource or we’d very delivery
 
-233
+227
 00:13:14,111 --> 00:13:14,879
 To meet the date
 
-234
+228
 00:13:15,903 --> 00:13:20,767
-I actually gave us a lot of flexibility and definition phase and people looking like forgotten that stuff
+I actually gave us a lot of flexibility in definition phase and people looking like forgotten that stuff
 
-235
+229
 00:13:21,535 --> 00:13:23,071
-Was it created the rights of the focus
+but it created the right sort of focus
 
-236
+230
 00:13:24,095 --> 00:13:29,215
 Over here we're experimenting with radically different approaches and I'll just mention three of them
 
-237
+231
 00:13:29,471 --> 00:13:29,983
 At this point
 
-238
+232
 00:13:30,751 --> 00:13:34,079
-When is winter starting to look at an articulated needs
+one is we’re now starting to look at an articulated needs
 
-239
+233
 00:13:35,615 --> 00:13:37,151
 Before we even get
 
-240
+234
 00:13:37,407 --> 00:13:39,199
-The design of any type
+to design of any type
 
-241
+235
 00:13:40,735 --> 00:13:46,879
-What we need to do is to surface the an articulated needs the things that people don't yet know they what they want
+What we need to do is to surface the unarticulated needs the things that people don't yet know they were what they want
 
-242
+236
 00:13:48,159 --> 00:13:49,439
-So when the ways we do that
+So one of the ways we do that
 
-243
+237
 00:13:49,951 --> 00:13:53,535
-Is we get people to interpret all of their technologies into Watts
-
+Is we get people to interpret all of their technologies into what’s
 244
 00:13:53,791 --> 00:13:55,327
-Call obstruction metadata
+Call high obstruction metadata
 
-245
+238
 00:13:56,095 --> 00:14:01,471
-We capture continuous narratives from users about day today for stations about their work
+We capture continuous narratives from users about day to day frustrations about their work
 
-246
+239
 00:14:02,239 --> 00:14:04,799
 And then we merge the two databases together
 
-247
+240
 00:14:05,055 --> 00:14:06,335
-Can we look at clusters
+and we look at clusters
 
-248
+241
 00:14:06,591 --> 00:14:08,639
-Abuser anecdotes with technology
+of user anecdotes with technology
 
-249
+242
 00:14:09,151 --> 00:14:11,199
-Inside one of those come together
+and say why are those come together
 
-250
+243
 00:14:11,711 --> 00:14:13,247
 And that gives us novel ideas
 
-251
+244
 00:14:15,039 --> 00:14:17,343
-He actually did this with Philips lighting
+We actually did this with Philips lighting
 
-252
+245
 00:14:17,599 --> 00:14:21,439
-Yeah taking all of the technology capability customer stories
+taking all of the technology capability customer stories
 
-253
+246
 00:14:21,951 --> 00:14:23,231
 Putting the two together
 
-254
+247
 00:14:23,487 --> 00:14:26,559
-Five clusters three of which became multi million dollar businesses
+Five clusters three of which became multi-million dollar businesses
 
-255
+248
 00:14:27,839 --> 00:14:31,935
-Is what you're doing is you're forcing accepted moments or insights
+what you're doing is you're forcing accepted moments or insights
 
-256
+249
 00:14:32,703 --> 00:14:36,543
-By moving up to a level of abstraction remember I started this on language
+By moving up to a level of abstraction, remember I started this on language?
 
-257
+250
 00:14:37,567 --> 00:14:40,127
-Ok if you don't know it we learn to paint
+Ok if you don't know it we learnt to paint
 
-258
+251
 00:14:40,383 --> 00:14:42,175
 Before we learn to speak
 
-259
+252
 00:14:42,687 --> 00:14:43,199
-Is a species
+as a species
 
-260
+253
 00:14:44,735 --> 00:14:47,551
 Art comes before language in human evolution
 
-261
+254
 00:14:48,831 --> 00:14:53,951
-And it turns out that has major evolution invented you was an accident when it happened
+And it turns out art has major evolution advantage it was an accident when it happened
 
-262
+255
 00:14:54,207 --> 00:14:57,279
-Somebody sketch some pictures on a wall it can like work for the hunt
+Somebody sketched some pictures on a wall it kind like work for the hunt
 
-263
+256
 00:14:57,791 --> 00:14:59,583
 But then it started to really work
 
-264
+257
 00:14:59,839 --> 00:15:02,143
 But if you move up a level of abstraction
 
-265
+258
 00:15:02,655 --> 00:15:04,959
-You make connections in completely novel works
+You make connections in completely novel ways
 
-266
+259
 00:15:06,239 --> 00:15:07,263
 Engineers
 
-267
+260
 00:15:07,775 --> 00:15:09,311
-Actually I musicians
+Who actually are musicians
 
-268
+261
 00:15:09,823 --> 00:15:12,895
-Will tell you they have their best problem solving capability
+Will tell you they have their best problem-solving capability
 
-269
+262
 00:15:13,151 --> 00:15:14,175
 When they play music
 
-270
+263
 00:15:15,711 --> 00:15:18,271
 Art is critical to human invention
 
-271
+264
 00:15:18,783 --> 00:15:21,343
-It's where the problem is Stem education is really scary
+It's why the problem with STEM education is really scary
 
-272
+265
 00:15:21,855 --> 00:15:24,671
-Because we reducing human beings down to the level of Aon
+Because we are reducing human beings down to the level of the art
 
-273
+266
 00:15:26,207 --> 00:15:30,303
-Hannah Stephanie doing this is about to start with University of California San Diego
+Other stuff we doing this is about to start with the University of California San Diego
 
-274
+267
 00:15:30,559 --> 00:15:33,375
 And this is actually much more about infrastructure management
 
-275
+268
 00:15:33,631 --> 00:15:35,935
 If you come to the university to do computing
 
-276
+269
 00:15:36,447 --> 00:15:40,799
-You have to phone 0300 with somebody from the humanities and somebody from the pure sciences
+You have to form a trio with somebody from the humanities and somebody from the pure sciences
 
-277
+270
 00:15:41,311 --> 00:15:43,615
-When you're given pass by the University of Leeds 3 months
+on your given task by the University every three months
 
-278
+271
 00:15:45,407 --> 00:15:49,759
-What we're doing is building across silent network of people who focus on a task
+What we're doing is building a cross silent(solo?) network of people who focus on a task
 
-279
+272
 00:15:50,271 --> 00:15:53,343
-So that we can bring things together in novel unexpected ways
+So that we can bring things together in novel or unexpected ways
 
-280
+273
 00:15:54,623 --> 00:15:58,975
 And a lot of this is about creating an architecture for Discovery
 
-281
+274
 00:15:59,487 --> 00:16:02,047
-Raven trading architectures deliver
+rather than creating an architectures to deliver
 
-282
+275
 00:16:02,303 --> 00:16:03,071
 What people have asked for
 
-283
+276
 00:16:04,351 --> 00:16:06,655
 Did you get the discovery architecture right
 
-284
+277
 00:16:06,911 --> 00:16:08,703
 The recipe comes a lot easier
 
-285
+278
 00:16:08,959 --> 00:16:11,775
-Because you got actually more structure in terms of the way you work
+Because you’ve got actually more structure in terms of the way you work
+
+279
+00:16:13,311 --> 00:16:16,895
+I could go on on that but there's a lot more material that which I can move on to
+
+280
+00:16:17,407 --> 00:16:19,711
+The key thing I want to finish off is this question and modelling
+
+281
+00:16:20,991 --> 00:16:23,295
+Are you a fine people in complexity theory
+
+282
+00:16:23,551 --> 00:16:26,623
+This is what I call the computational complexity guide(?)
+
+283
+00:16:27,135 --> 00:16:28,927
+My field is called down through complexity
+
+284
+00:16:29,183 --> 00:16:30,975
+And the study of complexity in human systems
+
+285
+00:16:31,743 --> 00:16:34,559
+The computational guide(?) think everything is like birth locking
 
 286
-00:16:13,311 --> 00:16:16,895
-I could go on and that but there's a lot more material that was I can move onto
+00:16:35,583 --> 00:16:38,655
+You know but it's flock around in skies called boys algorithm
 
 287
-00:16:17,407 --> 00:16:19,711
-Keeping I want to finish office it's question and modelling
-
-288
-00:16:20,991 --> 00:16:23,295
-Are you a fine people in complexity Theory
-
-289
-00:16:23,551 --> 00:16:26,623
-This is what I call the computational complexity guys
-
-290
-00:16:27,135 --> 00:16:28,927
-My field is cool down through complexity
-
-291
-00:16:29,183 --> 00:16:30,975
-And the study of complexity in human system
-
-292
-00:16:31,743 --> 00:16:34,559
-The computational guys think everything is like blocking
-
-293
-00:16:35,583 --> 00:16:38,655
-Anyway but it's block around in sky schoolboys algorithm
-
-294
 00:16:38,911 --> 00:16:41,471
 It's follow the next bird max speed avoid collision
 
-295
+288
 00:16:42,495 --> 00:16:44,287
-At that also works by the way if you want
+and that also works by the way if you want
 
-296
+289
 00:16:44,543 --> 00:16:46,079
 To drive south of Naples in Italy
 
-297
+290
 00:16:46,847 --> 00:16:51,711
-It's a much more effective heuristic than following the rules alright if you max speed avoid collision
+It's a much more effective heuristic than following the rules, alright? if you match speed avoid collision
 
-298
+291
 00:16:52,223 --> 00:16:58,367
-Yeah and follow the next car you actually have a stressful driving experience even in Sorrento if you assume they follow the rules
+Yeah and follow the next car you actually have a stress field driving experience even in Sorrento if you assume they’ll follow the rules
 
-299
+292
 00:16:58,623 --> 00:16:59,391
-Oh forget it alright
+forget it, alright?
 
-300
+293
 00:16:59,903 --> 00:17:00,927
 That's not the way it works
 
-301
+294
 00:17:01,695 --> 00:17:03,487
-It will be in that human beings on hands
-
+The trouble being that human beings aren’t ants
 302
 00:17:03,743 --> 00:17:06,047
-Because we haven't got see how you can predict
+Because we haven't got, you know, you can predict
 
-303
+295
 00:17:06,303 --> 00:17:08,607
 The entire complexity of the termites nest
 
-304
+296
 00:17:09,631 --> 00:17:14,495
-Visit genetically encoded rules responding consistently to phone them stimulation
+This is genetically encoded rules responding consistently to (?) them stimulation
 
-305
+297
 00:17:15,519 --> 00:17:18,079
 The human beings can see things through metaphors
 
-306
+298
 00:17:18,847 --> 00:17:20,127
 We see things for abstraction
 
-307
+299
 00:17:20,895 --> 00:17:26,527
 We can change identity overnight when I'm with my children I'm a completely different person than on stage
 
-308
+300
 00:17:27,807 --> 00:17:32,415
-We don't have single agency we don't have single rules with complex pattern based creatures
+We don't have single agency we don't have single rules with complex pattern-based creatures
 
-309
+301
 00:17:33,183 --> 00:17:34,975
-So basically human beings on time
-
+So, basically, human beings aren’t ants
 310
 00:17:35,743 --> 00:17:38,047
-And that means you got a real problem with modelling
+And that means you’ve got a real problem with modelling
 
-311
+302
 00:17:39,327 --> 00:17:45,471
-I gave the keynote of the European complexity conference all academics this Edward I speak about why you can't model of Complex Adaptive
+I gave the keynote at the European complexity conference all academics they said what I speak about why you can't model of Complex Adaptive system
 
-312
+303
 00:17:45,727 --> 00:17:51,103
 I said no problem nobody told me the entire audience will be academics who built models
 
-313
+304
 00:17:52,383 --> 00:17:57,759
-Yeah that would like Daniel going into the lines then that was when I met girl man he was the other here
+that would like Daniel going into the Lions Den that was when I met Gelman he was the other here
 
-314
+305
 00:17:58,015 --> 00:18:00,831
-And you can't challenge get on my knees when the world's most famous physicist
+And you can't challenge Gelman he’s won the world's most famous physicist
 
-315
+306
 00:18:01,343 --> 00:18:04,159
 He backed me up and said you can't model the human system
 
-316
+307
 00:18:05,695 --> 00:18:08,767
 The only valid model of human system is a system itself
 
-317
+308
 00:18:09,535 --> 00:18:14,143
 A map to some extent is where we're starting to go but it's also part of the general concern
 
-318
+309
 00:18:14,911 --> 00:18:17,215
-About an increase of artificial turf
+About an increase of artificial intelligence 
 
-319
+310
 00:18:17,471 --> 00:18:17,983
-Official intelligence
+Focus on artificial intelligence 
 
-320
+311
 00:18:19,519 --> 00:18:24,383
-This is actually real problems anybody hasn't ready in M Banks books surface detail
+This is actually real problems, anybody hasn't ready the IAIN M. BANKS’ book: surface detail?
 
-321
+312
 00:18:24,895 --> 00:18:29,503
-I am back is a brilliant science fiction writer tragically died of cancer
+IAIN M. BANKS is a brilliant science fiction writer, and tragically died of cancer
 
-322
+313
 00:18:30,015 --> 00:18:35,391
-Are you then propose to his long-term girlfriend by asking her if she would do the honour of becoming his widow
+And he then proposed to his long-term girlfriend by asking her if she would do the honor of becoming his widow
 
-323
+314
 00:18:36,159 --> 00:18:38,975
-Is that sort of sense of humour alright
+Is that sort of sense of humor, right?
 
-324
+315
 00:18:39,743 --> 00:18:44,095
 Read that and be terrified I've just been involved in a big think tank in California
 
-325
+316
 00:18:44,351 --> 00:18:47,679
-General Hughes actor is actually as second most
+General Hughes act is actually AI is the second most
 
-326
+317
 00:18:47,935 --> 00:18:49,215
-Highest existential threat
+Highest existential threat to
 
-327
+318
 00:18:49,471 --> 00:18:51,263
-The humanity after nuclear war
+humanity after nuclear war
 
-328
+319
 00:18:51,775 --> 00:18:52,799
 And ecological
 
-329
+320
 00:18:53,055 --> 00:18:54,335
-Change is actually number for
+Change is actually number four
 
-330
+321
 00:18:55,615 --> 00:19:00,735
-When the reasons is with reducing human beings to information retrieval and process
+where the reason is we’re reducing human beings to information retrieval and process
 
-331
+322
 00:19:01,247 --> 00:19:02,527
-Nai is better at that
+And AI is better than that
 
-332
+323
 00:19:04,063 --> 00:19:06,879
-And we won't go onto 101 machines and things like that
+And we won't go on to AI driven more machines and things like that
 
-333
+324
 00:19:07,135 --> 00:19:10,463
 We need to be very careful about that because a human being is more than this
 
-334
+325
 00:19:11,231 --> 00:19:13,279
 And then of course we get all the culture nonsense
 
-335
+326
 00:19:15,071 --> 00:19:17,887
 Everybody wants to engineer if in doubt blame culture
 
-336
+327
 00:19:18,655 --> 00:19:21,471
 If your pet project didn't work it was their fault
 
-337
+328
 00:19:22,239 --> 00:19:25,567
-Because they have the wrong culture or the wrong mindset and this is
+Because they have the wrong culture or the wrong mindset, now this is
 
-338
+329
 00:19:25,823 --> 00:19:27,103
 Appalling science
 
-339
+330
 00:19:28,127 --> 00:19:30,431
 There is no such thing as a mindset
 
-340
+331
 00:19:31,455 --> 00:19:34,527
-Is a complex set of interactions overtimes in a series of
+There Is a complex set of interactions overtimes in a series of
 
-341
+332
 00:19:34,783 --> 00:19:35,295
 The tropes
 
-342
+333
 00:19:35,551 --> 00:19:37,343
 But it's not an individual mindset
 
-343
+334
 00:19:38,367 --> 00:19:42,463
-You get people who will gather people stories that's good news we gather people stories
+You get people who will gather people’s stories that's good news we gather people’s stories
 
-344
+335
 00:19:43,231 --> 00:19:43,743
 But we let
 
-345
+336
 00:19:43,999 --> 00:19:46,047
-People interpret than themselves
+People interpret them themselves
 
-346
+337
 00:19:46,815 --> 00:19:50,399
 We don't interpret them or let computers interpret them
 
-347
+338
 00:19:50,911 --> 00:19:52,703
 Because that restricts us to text
 
-348
+339
 00:19:53,727 --> 00:19:55,775
 And by the way you can write down
 
-349
+340
 00:19:56,031 --> 00:19:58,079
 10% of what you know
 
-350
+341
 00:19:59,615 --> 00:20:01,919
 Anything which is processing text
 
-351
+342
 00:20:02,687 --> 00:20:05,503
 Is again dealing with a very very limited set
 
-352
+343
 00:20:06,783 --> 00:20:08,575
 There's a power issue here as well
 
-353
+344
 00:20:08,831 --> 00:20:11,391
 Who interprets people's narrative is there
 
-354
+345
 00:20:11,647 --> 00:20:13,951
-This is from work with just doing with the BBC
+This is from work were just doing with the BBC
 
-355
+346
 00:20:14,463 --> 00:20:16,255
 Weather presenting cartoons
 
-356
+347
 00:20:16,511 --> 00:20:19,583
 Employees are choosing cartoons which represent their culture
 
-357
+348
 00:20:20,351 --> 00:20:23,679
 Interpreting those on the high abstraction metadata
 
-358
+349
 00:20:23,935 --> 00:20:27,007
-I'm from that with an actually drawing a series of maps
+and from that we then actually drawing a series of maps
 
-359
+350
 00:20:27,519 --> 00:20:30,079
-How many reasons does we don't want to fall into one of these traps
+And when the reason is we don't want to fall into one of these traps
 
-360
+351
 00:20:31,871 --> 00:20:34,943
-Yep mansplaining postcolonialism
+Yep mansplaining post-colonialism
 
-361
+352
 00:20:35,455 --> 00:20:38,783
-All that lovely one about the expert must be right
+All that lovely word about the expert must be right
 
-362
+353
 00:20:39,295 --> 00:20:39,807
 Ok
 
-363
+354
 00:20:40,063 --> 00:20:41,599
-I'm giving you three illustration as there
+I'm giving you three illustrations there
 
-364
+355
 00:20:42,367 --> 00:20:44,671
 If you really want to understand the human system
 
-365
+356
 00:20:45,183 --> 00:20:47,743
-You got a hand over the power of interpretation
+You’ve got a hand over the power of interpretation
 
-366
+357
 00:20:48,255 --> 00:20:49,791
 To the people themselves
 
-367
+358
 00:20:50,047 --> 00:20:51,839
-Does it mean you don't have a room for experts
+Does it mean you don't have a role for experts
 
-368
+359
 00:20:52,351 --> 00:20:55,679
-We got to distribute the property function you can't tell that centrally
+We got to distribute the cognitive function you can't hold that centrally
 
-369
+360
 00:20:56,447 --> 00:20:57,471
-Save from net
+So from that
 
-370
+361
 00:20:58,239 --> 00:20:59,775
-That allows us to do some very interest
+That allows us to do some very interest things
 
-371
+362
 00:21:01,567 --> 00:21:03,871
 This example is a dispositional map
 
-372
+363
 00:21:04,127 --> 00:21:06,943
 And this is actually where we are starting to go with systems architecture
 
-373
+364
 00:21:07,455 --> 00:21:08,991
-Bolsover things like kanban
+Also with things like kanban
 
-374
+365
 00:21:10,015 --> 00:21:11,807
-So if you look at categories and kanban
+So if you look at categories and Kanban(?)
 
-375
+366
 00:21:12,831 --> 00:21:15,647
-Ok the key Concepts and kanban is working progress
+Ok the key Concepts on kanban is working progress
 
-376
+367
 00:21:16,671 --> 00:21:22,815
-Yeah not the representation of those who hear the advocaat she would think it was all about Post-it notes moving between columns
+Yeah not the representation of those to hear the advocates you would think it was all about Post-it notes moving between columns
 
-377
+368
 00:21:23,583 --> 00:21:25,119
 Key Concepts is working progress
 
-378
+369
 00:21:25,887 --> 00:21:29,727
-In an audit system work in progress is a series of discrete job unit
+In an ordered system work in progress is a series of discrete job unit
 
-379
+370
 00:21:29,983 --> 00:21:31,007
-The kanban Works
+So The kanban Works
 
-380
+371
 00:21:31,775 --> 00:21:35,103
-In a complex system is a series of unrealised
+In a complex system is a series of unrealized
 
-381
+372
 00:21:35,359 --> 00:21:36,127
 Potentialities
 
-382
+373
 00:21:36,639 --> 00:21:38,431
 So the representation has to change
 
-383
+374
 00:21:39,199 --> 00:21:45,087
-This is actually a landscape drawing from mass observation self interpretation of the point of origin
+This is actually a landscape drawn from mass observation self interpretation at the point of origin
 
-384
+375
 00:21:45,599 --> 00:21:49,695
-Anything actually cultural change map so if I actually want to change culture on this one
+And this is actually a cultural change map so if I actually want to change culture on this one
 
-385
+376
 00:21:50,463 --> 00:21:52,511
-If my desires Stacey's appear
+If my desires Stacey(?) is up here
 
-386
+377
 00:21:54,559 --> 00:21:56,351
-You can see I've got some things up there sexy
+You can see I've got some things up there so
 
-387
+378
 00:21:56,607 --> 00:21:57,119
-What's a tick in the box
+It’s a tick in the box
 
-388
+379
 00:21:57,631 --> 00:21:59,167
 This is very very negative
 
-389
+380
 00:21:59,679 --> 00:22:01,727
-To move them up there is a Step Too Far
+To move them up there as a Step Too Far
 
-390
+381
 00:22:03,263 --> 00:22:05,311
 What I do instead is I look at this
 
-391
+382
 00:22:05,823 --> 00:22:07,615
 And I say what can I do tomorrow
 
-392
+383
 00:22:08,127 --> 00:22:09,407
 To create more like these
 
-393
+384
 00:22:10,175 --> 00:22:10,943
 If you would like those
 
-394
+385
 00:22:12,735 --> 00:22:15,551
 What I'm doing this is a key principle of complex design
 
-395
+386
 00:22:16,063 --> 00:22:18,879
-Is an shift in the system to an adjacent possible
+Is I’m shifting the system to an adjacent possible
 
-396
+387
 00:22:20,159 --> 00:22:22,463
 And once I get enough stability at that point
 
-397
+388
 00:22:22,719 --> 00:22:24,511
 I can use more conventional approaches
 
-398
+389
 00:22:25,023 --> 00:22:28,863
-This is what I'm talking about about architect into under the discovery
+This is what I'm talking about architecting to under for discovery
 
-399
+390
 00:22:29,119 --> 00:22:30,911
 Before you architect for delivery
 
-400
+391
 00:22:31,935 --> 00:22:34,495
-Did you actually start with the start with delivery
+And if you actually start with the delivery
 
-401
+392
 00:22:34,751 --> 00:22:36,543
-You miss the discovery phase
+You’ve missed the discovery phase
 
-402
+393
 00:22:36,799 --> 00:22:38,847
-Are you going to miss opportunities as well as threats
+and you’re gonna miss opportunities as well as threats
 
-403
+394
 00:22:39,871 --> 00:22:41,663
 That's actually from a hospital
 
-404
+395
 00:22:42,175 --> 00:22:45,247
-Autolyse answer key Concepts call fractal engagement
+That also allows us a key Concept called fractal engagement
 
-405
+396
 00:22:46,015 --> 00:22:51,135
 So the same data can produce frameworks at the level of responsibility of every individual
 
-406
+397
 00:22:52,159 --> 00:22:55,743
-And again I haven't got time to go into this I'll go to this in the strategy session
+And again, I haven't got time to go into this I'll go this in the strategy session
 
-407
+398
 00:22:56,255 --> 00:22:59,327
 Fractal engagement is the way we actually achieve change
 
-408
+399
 00:23:00,095 --> 00:23:03,167
 People don't make decisions about what other people should do
 
-409
+400
 00:23:03,423 --> 00:23:08,031
 They make decisions about what they can do tomorrow within their own sphere of competence
 
-410
+401
 00:23:09,311 --> 00:23:12,127
-Then the system as a whole torrent extra multiple actions
+Then the system as a whole orientates through multiple actions
 
-411
+402
 00:23:12,639 --> 00:23:14,943
-That's a big concept by just hinting at it now
+That's a big concept I’m just hinting at it now
 
-412
+403
 00:23:15,711 --> 00:23:17,503
-And I thought we call fractal change
+And that’s what we call fractal change and way
 
-413
-00:23:18,015 --> 00:23:18,527
-EBay
-
-414
+404
 00:23:19,295 --> 00:23:20,831
-It's all about multiple perspectives
+It's also about multiple perspectives
 
-415
+405
 00:23:22,623 --> 00:23:26,207
-This is actually from again this is work on the whole variety.
+This is actually from again this is work on the whole variety of areas.
 
-416
+406
 00:23:26,463 --> 00:23:27,743
 This is Peace and Conflict resolution
 
-417
+407
 00:23:28,511 --> 00:23:33,887
-What we doing here is present in an infographic and when are doing this in system design Discovery architecture
+What we doing here is presenting in infographic and we are doing this in system design Discovery architecture
 
-418
+408
 00:23:34,399 --> 00:23:37,471
-Representing infographics about where we think we should be
+We’re Representing infographics about where we think we should be
 
-419
+409
 00:23:38,239 --> 00:23:40,799
 We're getting every employee to interpret that
 
-420
+410
 00:23:41,055 --> 00:23:45,663
-Enjoying the max of the interpretation before anybody talks to anybody else
+And drawing the maps of the interpretation before anybody talks to anybody else
 
-421
+411
 00:23:47,711 --> 00:23:50,271
 In that space is actually from Columbia this is
 
-422
+412
 00:23:50,783 --> 00:23:51,551
 Yeah big one
 
-423
+413
 00:23:52,575 --> 00:23:57,183
 You can see that blue and green see the same data in such radically different ways
 
-424
+414
 00:23:57,439 --> 00:23:59,999
-Sitting down to talk to each other is a waste of time
+Sitting them down to talk to each other as a waste of time
 
-425
+415
 00:24:01,279 --> 00:24:03,583
-The only thing they both agree on his they hate the red guys
+The only thing they both agree on this is they hate the red guys
 
-426
+416
 00:24:05,375 --> 00:24:06,655
-Get the strategy here
+the strategy here
 
-427
+417
 00:24:07,935 --> 00:24:09,983
 Is there actually make these more extreme
 
-428
+418
 00:24:11,775 --> 00:24:13,823
-Will it be getting new consensus in the middle
+So that we get a new consensus in the middle
 
-429
+419
 00:24:15,103 --> 00:24:19,199
-The other reason we do this is I want to find outliers
+The other reason we do this is I want to find outlets
 
-430
+420
 00:24:19,967 --> 00:24:21,759
-Agama talk about Discovery architecture
+Again I talk about Discovery architecture
 
-431
+421
 00:24:22,271 --> 00:24:27,135
-I want to see groups of people were seeing the world differently from everybody else
+I want to see groups of people who are seeing the world differently from everybody else
 
-432
+422
 00:24:27,647 --> 00:24:30,207
 Because those are the things the 17%
 
-433
+423
 00:24:31,231 --> 00:24:32,511
-Who seen the Cancer nodule
+Who seen the Cancer module
 
-434
+424
 00:24:33,023 --> 00:24:37,375
-Rob and people were going with orthodoxy so again that's the concept of Discovery architecture
+Rather than people are going with orthodoxy so again that's the concept of Discovery architecture
 
-435
+425
 00:24:37,887 --> 00:24:38,911
-RAM delivery architect
+Rather than delivery architect
 
-436
+426
 00:24:40,191 --> 00:24:43,263
 And the final slide finish off on this How You scale a complex system
 
-437
+427
 00:24:44,543 --> 00:24:49,663
-Again this is a big field but the one thing you don't do is you never scale the complex adaptor
+Again this is a big field, but the one thing you don't do is you never scale the complex adaptor
 
-438
+428
 00:24:49,919 --> 00:24:50,431
-The system
+system
 
-439
+429
 00:24:50,687 --> 00:24:52,991
 By aggregation or imitation
 
-440
+430
 00:24:54,783 --> 00:24:58,111
-You don't take everything and aggregated up into some massive diagram
+You don't take everything and aggregated it up into some massive diagram
 
-441
+431
 00:24:58,623 --> 00:25:00,927
 And you don't say that worked will do more of it
 
-442
+432
 00:25:02,463 --> 00:25:08,607
-What do you actually doing to decompose things and there's a whole body working on this by the way an object orientation
+What do you actually do is you decompose things and there's a whole body of working on this, by the way, an object orientation
 
-443
+433
 00:25:08,863 --> 00:25:10,399
-Remember to going back to at the moment
+Which some of us are going back to at the moment
 
-444
+434
 00:25:10,911 --> 00:25:14,239
 You decompose things to the lowest coherent object
 
-445
+435
 00:25:15,263 --> 00:25:17,823
-You define protocols for the interactions be
+You define protocols for the interactions 
 
-446
+436
 00:25:18,079 --> 00:25:18,847
 Between the objects
 
-447
+437
 00:25:19,615 --> 00:25:22,687
-Annual animal patterns to emergency stimulator system
+And you allow novel patterns to emerge as you stimulator the system
 
-448
+438
 00:25:23,711 --> 00:25:28,063
-So you staying but scale by decomposition and recombination
+So you sail but scale by decomposition and recombination
 
-449
+439
 00:25:28,831 --> 00:25:30,367
 Not by aggregation
 
-450
+440
 00:25:30,879 --> 00:25:32,415
-And not bite imitation
+And not by imitation
 
-451
+441
 00:25:33,439 --> 00:25:36,511
 Have a challenge for design the Challenge for architecture
 
-452
+442
 00:25:36,767 --> 00:25:39,327
-Is the move much further back in the cycle
+Is to move much further back in the cycle
 
-453
+443
 00:25:40,095 --> 00:25:42,143
-Video with an articulated knees
+To deal with an articulated needs
 
-454
+444
 00:25:43,167 --> 00:25:45,215
 To discover on an objective basis
 
-455
+445
 00:25:45,471 --> 00:25:48,287
 Novel possibilities unexpected consequences
 
-456
+446
 00:25:48,799 --> 00:25:51,615
-Andy bell systems with the responsive capability
+And build systems with the responsive capability
 
-457
+447
 00:25:52,127 --> 00:25:54,943
 To exploit opportunities as they present themselves
 
-458
+448
 00:25:55,455 --> 00:25:56,479
 Before they're fully now
 
-459
+449
 00:25:57,503 --> 00:26:01,599
 In order to do that we need to have a sound understanding of the science
 
-460
+450
 00:26:02,111 --> 00:26:03,391
 Behind human cognition
 
-461
+451
 00:26:04,159 --> 00:26:05,695
-And the science behind system
+And the science behind systems
 
-462
+452
 00:26:06,719 --> 00:26:09,279
-Is under conditions of extreme uncertainty
+Based on the conditions of extreme uncertainty
 
-463
+453
 00:26:09,791 --> 00:26:13,375
-Falling back for the constraints of natural science gives us security
+Falling back to the constraints of natural science gives us security
 
-464
+454
 00:26:14,143 --> 00:26:17,983
-Falling back to empirical past memories of what work before
+Falling back to empirical parsh memories of what work before
 
-465
+455
 00:26:18,495 --> 00:26:20,543
-Makes it very very random
+Makes us very very vulnerable
 
-466
+456
 00:26:21,311 --> 00:26:22,079
 Thank you very much for your time
