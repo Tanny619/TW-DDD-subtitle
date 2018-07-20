@@ -946,888 +946,891 @@ So one of the ways we do that
 237
 00:13:49,951 --> 00:13:53,535
 Is we get people to interpret all of their technologies into what’s
-244
+
+238
 00:13:53,791 --> 00:13:55,327
 Call high obstruction metadata
 
-238
+239
 00:13:56,095 --> 00:14:01,471
 We capture continuous narratives from users about day to day frustrations about their work
 
-239
+240
 00:14:02,239 --> 00:14:04,799
 And then we merge the two databases together
 
-240
+241
 00:14:05,055 --> 00:14:06,335
 and we look at clusters
 
-241
+242
 00:14:06,591 --> 00:14:08,639
 of user anecdotes with technology
 
-242
+243
 00:14:09,151 --> 00:14:11,199
 and say why are those come together
 
-243
+244
 00:14:11,711 --> 00:14:13,247
 And that gives us novel ideas
 
-244
+245
 00:14:15,039 --> 00:14:17,343
 We actually did this with Philips lighting
 
-245
+246
 00:14:17,599 --> 00:14:21,439
 taking all of the technology capability customer stories
 
-246
+247
 00:14:21,951 --> 00:14:23,231
 Putting the two together
 
-247
+248
 00:14:23,487 --> 00:14:26,559
 Five clusters three of which became multi-million dollar businesses
 
-248
+249
 00:14:27,839 --> 00:14:31,935
 what you're doing is you're forcing accepted moments or insights
 
-249
+250
 00:14:32,703 --> 00:14:36,543
 By moving up to a level of abstraction, remember I started this on language?
 
-250
+251
 00:14:37,567 --> 00:14:40,127
 Ok if you don't know it we learnt to paint
 
-251
+252
 00:14:40,383 --> 00:14:42,175
 Before we learn to speak
 
-252
+253
 00:14:42,687 --> 00:14:43,199
 as a species
 
-253
+254
 00:14:44,735 --> 00:14:47,551
 Art comes before language in human evolution
 
-254
+255
 00:14:48,831 --> 00:14:53,951
 And it turns out art has major evolution advantage it was an accident when it happened
 
-255
+256
 00:14:54,207 --> 00:14:57,279
 Somebody sketched some pictures on a wall it kind like work for the hunt
 
-256
+257
 00:14:57,791 --> 00:14:59,583
 But then it started to really work
 
-257
+258
 00:14:59,839 --> 00:15:02,143
 But if you move up a level of abstraction
 
-258
+259
 00:15:02,655 --> 00:15:04,959
 You make connections in completely novel ways
 
-259
+260
 00:15:06,239 --> 00:15:07,263
 Engineers
 
-260
+261
 00:15:07,775 --> 00:15:09,311
 Who actually are musicians
 
-261
+262
 00:15:09,823 --> 00:15:12,895
 Will tell you they have their best problem-solving capability
 
-262
+263
 00:15:13,151 --> 00:15:14,175
 When they play music
 
-263
+264
 00:15:15,711 --> 00:15:18,271
 Art is critical to human invention
 
-264
+265
 00:15:18,783 --> 00:15:21,343
 It's why the problem with STEM education is really scary
 
-265
+266
 00:15:21,855 --> 00:15:24,671
 Because we are reducing human beings down to the level of the art
 
-266
+267
 00:15:26,207 --> 00:15:30,303
 Other stuff we doing this is about to start with the University of California San Diego
 
-267
+268
 00:15:30,559 --> 00:15:33,375
 And this is actually much more about infrastructure management
 
-268
+269
 00:15:33,631 --> 00:15:35,935
 If you come to the university to do computing
 
-269
+270
 00:15:36,447 --> 00:15:40,799
 You have to form a trio with somebody from the humanities and somebody from the pure sciences
 
-270
+271
 00:15:41,311 --> 00:15:43,615
 on your given task by the University every three months
 
-271
+272
 00:15:45,407 --> 00:15:49,759
 What we're doing is building a cross silent(solo?) network of people who focus on a task
 
-272
+273
 00:15:50,271 --> 00:15:53,343
 So that we can bring things together in novel or unexpected ways
 
-273
+274
 00:15:54,623 --> 00:15:58,975
 And a lot of this is about creating an architecture for Discovery
 
-274
+275
 00:15:59,487 --> 00:16:02,047
 rather than creating an architectures to deliver
 
-275
+276
 00:16:02,303 --> 00:16:03,071
 What people have asked for
 
-276
+277
 00:16:04,351 --> 00:16:06,655
 Did you get the discovery architecture right
 
-277
+278
 00:16:06,911 --> 00:16:08,703
 The recipe comes a lot easier
 
-278
+279
 00:16:08,959 --> 00:16:11,775
 Because you’ve got actually more structure in terms of the way you work
 
-279
+280
 00:16:13,311 --> 00:16:16,895
 I could go on on that but there's a lot more material that which I can move on to
 
-280
+281
 00:16:17,407 --> 00:16:19,711
 The key thing I want to finish off is this question and modelling
 
-281
+282
 00:16:20,991 --> 00:16:23,295
 Are you a fine people in complexity theory
 
-282
+283
 00:16:23,551 --> 00:16:26,623
 This is what I call the computational complexity guide(?)
 
-283
+284
 00:16:27,135 --> 00:16:28,927
 My field is called down through complexity
 
-284
+285
 00:16:29,183 --> 00:16:30,975
 And the study of complexity in human systems
 
-285
+286
 00:16:31,743 --> 00:16:34,559
 The computational guide(?) think everything is like birth locking
 
-286
+287
 00:16:35,583 --> 00:16:38,655
 You know but it's flock around in skies called boys algorithm
 
-287
+288
 00:16:38,911 --> 00:16:41,471
 It's follow the next bird max speed avoid collision
 
-288
+289
 00:16:42,495 --> 00:16:44,287
 and that also works by the way if you want
 
-289
+290
 00:16:44,543 --> 00:16:46,079
 To drive south of Naples in Italy
 
-290
+291
 00:16:46,847 --> 00:16:51,711
 It's a much more effective heuristic than following the rules, alright? if you match speed avoid collision
 
-291
+292
 00:16:52,223 --> 00:16:58,367
 Yeah and follow the next car you actually have a stress field driving experience even in Sorrento if you assume they’ll follow the rules
 
-292
+293
 00:16:58,623 --> 00:16:59,391
 forget it, alright?
 
-293
+294
 00:16:59,903 --> 00:17:00,927
 That's not the way it works
 
-294
+295
 00:17:01,695 --> 00:17:03,487
 The trouble being that human beings aren’t ants
-302
+
+296
 00:17:03,743 --> 00:17:06,047
 Because we haven't got, you know, you can predict
 
-295
+297
 00:17:06,303 --> 00:17:08,607
 The entire complexity of the termites nest
 
-296
+298
 00:17:09,631 --> 00:17:14,495
 This is genetically encoded rules responding consistently to (?) them stimulation
 
-297
+299
 00:17:15,519 --> 00:17:18,079
 The human beings can see things through metaphors
 
-298
+300
 00:17:18,847 --> 00:17:20,127
 We see things for abstraction
 
-299
+301
 00:17:20,895 --> 00:17:26,527
 We can change identity overnight when I'm with my children I'm a completely different person than on stage
 
-300
+302
 00:17:27,807 --> 00:17:32,415
 We don't have single agency we don't have single rules with complex pattern-based creatures
 
-301
+303
 00:17:33,183 --> 00:17:34,975
 So, basically, human beings aren’t ants
-310
+
+304
 00:17:35,743 --> 00:17:38,047
 And that means you’ve got a real problem with modelling
 
-302
+305
 00:17:39,327 --> 00:17:45,471
 I gave the keynote at the European complexity conference all academics they said what I speak about why you can't model of Complex Adaptive system
 
-303
+306
 00:17:45,727 --> 00:17:51,103
 I said no problem nobody told me the entire audience will be academics who built models
 
-304
+307
 00:17:52,383 --> 00:17:57,759
 that would like Daniel going into the Lions Den that was when I met Gelman he was the other here
 
-305
+308
 00:17:58,015 --> 00:18:00,831
 And you can't challenge Gelman he’s won the world's most famous physicist
 
-306
+309
 00:18:01,343 --> 00:18:04,159
 He backed me up and said you can't model the human system
 
-307
+310
 00:18:05,695 --> 00:18:08,767
 The only valid model of human system is a system itself
 
-308
+311
 00:18:09,535 --> 00:18:14,143
 A map to some extent is where we're starting to go but it's also part of the general concern
 
-309
+312
 00:18:14,911 --> 00:18:17,215
 About an increase of artificial intelligence 
 
-310
+313
 00:18:17,471 --> 00:18:17,983
 Focus on artificial intelligence 
 
-311
+314
 00:18:19,519 --> 00:18:24,383
 This is actually real problems, anybody hasn't ready the IAIN M. BANKS’ book: surface detail?
 
-312
+315
 00:18:24,895 --> 00:18:29,503
 IAIN M. BANKS is a brilliant science fiction writer, and tragically died of cancer
 
-313
+316
 00:18:30,015 --> 00:18:35,391
 And he then proposed to his long-term girlfriend by asking her if she would do the honor of becoming his widow
 
-314
+317
 00:18:36,159 --> 00:18:38,975
 Is that sort of sense of humor, right?
 
-315
+318
 00:18:39,743 --> 00:18:44,095
 Read that and be terrified I've just been involved in a big think tank in California
 
-316
+319
 00:18:44,351 --> 00:18:47,679
 General Hughes act is actually AI is the second most
 
-317
+320
 00:18:47,935 --> 00:18:49,215
 Highest existential threat to
 
-318
+321
 00:18:49,471 --> 00:18:51,263
 humanity after nuclear war
 
-319
+322
 00:18:51,775 --> 00:18:52,799
 And ecological
 
-320
+323
 00:18:53,055 --> 00:18:54,335
 Change is actually number four
 
-321
+324
 00:18:55,615 --> 00:19:00,735
 where the reason is we’re reducing human beings to information retrieval and process
 
-322
+325
 00:19:01,247 --> 00:19:02,527
 And AI is better than that
 
-323
+326
 00:19:04,063 --> 00:19:06,879
 And we won't go on to AI driven more machines and things like that
 
-324
+327
 00:19:07,135 --> 00:19:10,463
 We need to be very careful about that because a human being is more than this
 
-325
+328
 00:19:11,231 --> 00:19:13,279
 And then of course we get all the culture nonsense
 
-326
+329
 00:19:15,071 --> 00:19:17,887
 Everybody wants to engineer if in doubt blame culture
 
-327
+330
 00:19:18,655 --> 00:19:21,471
 If your pet project didn't work it was their fault
 
-328
+331
 00:19:22,239 --> 00:19:25,567
 Because they have the wrong culture or the wrong mindset, now this is
 
-329
+332
 00:19:25,823 --> 00:19:27,103
 Appalling science
 
-330
+333
 00:19:28,127 --> 00:19:30,431
 There is no such thing as a mindset
 
-331
+334
 00:19:31,455 --> 00:19:34,527
 There Is a complex set of interactions overtimes in a series of
 
-332
+335
 00:19:34,783 --> 00:19:35,295
 The tropes
 
-333
+336
 00:19:35,551 --> 00:19:37,343
 But it's not an individual mindset
 
-334
+337
 00:19:38,367 --> 00:19:42,463
 You get people who will gather people’s stories that's good news we gather people’s stories
 
-335
+338
 00:19:43,231 --> 00:19:43,743
 But we let
 
-336
+339
 00:19:43,999 --> 00:19:46,047
 People interpret them themselves
 
-337
+340
 00:19:46,815 --> 00:19:50,399
 We don't interpret them or let computers interpret them
 
-338
+341
 00:19:50,911 --> 00:19:52,703
 Because that restricts us to text
 
-339
+342
 00:19:53,727 --> 00:19:55,775
 And by the way you can write down
 
-340
+343
 00:19:56,031 --> 00:19:58,079
 10% of what you know
 
-341
+344
 00:19:59,615 --> 00:20:01,919
 Anything which is processing text
 
-342
+345
 00:20:02,687 --> 00:20:05,503
 Is again dealing with a very very limited set
 
-343
+346
 00:20:06,783 --> 00:20:08,575
 There's a power issue here as well
 
-344
+347
 00:20:08,831 --> 00:20:11,391
 Who interprets people's narrative is there
 
-345
+348
 00:20:11,647 --> 00:20:13,951
 This is from work were just doing with the BBC
 
-346
+349
 00:20:14,463 --> 00:20:16,255
 Weather presenting cartoons
 
-347
+350
 00:20:16,511 --> 00:20:19,583
 Employees are choosing cartoons which represent their culture
 
-348
+351
 00:20:20,351 --> 00:20:23,679
 Interpreting those on the high abstraction metadata
 
-349
+352
 00:20:23,935 --> 00:20:27,007
 and from that we then actually drawing a series of maps
 
-350
+353
 00:20:27,519 --> 00:20:30,079
 And when the reason is we don't want to fall into one of these traps
 
-351
+354
 00:20:31,871 --> 00:20:34,943
 Yep mansplaining post-colonialism
 
-352
+355
 00:20:35,455 --> 00:20:38,783
 All that lovely word about the expert must be right
 
-353
+356
 00:20:39,295 --> 00:20:39,807
 Ok
 
-354
+357
 00:20:40,063 --> 00:20:41,599
 I'm giving you three illustrations there
 
-355
+358
 00:20:42,367 --> 00:20:44,671
 If you really want to understand the human system
 
-356
+359
 00:20:45,183 --> 00:20:47,743
 You’ve got a hand over the power of interpretation
 
-357
+360
 00:20:48,255 --> 00:20:49,791
 To the people themselves
 
-358
+361
 00:20:50,047 --> 00:20:51,839
 Does it mean you don't have a role for experts
 
-359
+362
 00:20:52,351 --> 00:20:55,679
 We got to distribute the cognitive function you can't hold that centrally
 
-360
+363
 00:20:56,447 --> 00:20:57,471
 So from that
 
-361
+364
 00:20:58,239 --> 00:20:59,775
 That allows us to do some very interest things
 
-362
+365
 00:21:01,567 --> 00:21:03,871
 This example is a dispositional map
 
-363
+366
 00:21:04,127 --> 00:21:06,943
 And this is actually where we are starting to go with systems architecture
 
-364
+367
 00:21:07,455 --> 00:21:08,991
 Also with things like kanban
 
-365
+368
 00:21:10,015 --> 00:21:11,807
 So if you look at categories and Kanban(?)
 
-366
+369
 00:21:12,831 --> 00:21:15,647
 Ok the key Concepts on kanban is working progress
 
-367
+370
 00:21:16,671 --> 00:21:22,815
 Yeah not the representation of those to hear the advocates you would think it was all about Post-it notes moving between columns
 
-368
+371
 00:21:23,583 --> 00:21:25,119
 Key Concepts is working progress
 
-369
+372
 00:21:25,887 --> 00:21:29,727
 In an ordered system work in progress is a series of discrete job unit
 
-370
+373
 00:21:29,983 --> 00:21:31,007
 So The kanban Works
 
-371
+374
 00:21:31,775 --> 00:21:35,103
 In a complex system is a series of unrealized
 
-372
+375
 00:21:35,359 --> 00:21:36,127
 Potentialities
 
-373
+376
 00:21:36,639 --> 00:21:38,431
 So the representation has to change
 
-374
+377
 00:21:39,199 --> 00:21:45,087
 This is actually a landscape drawn from mass observation self interpretation at the point of origin
 
-375
+378
 00:21:45,599 --> 00:21:49,695
 And this is actually a cultural change map so if I actually want to change culture on this one
 
-376
+379
 00:21:50,463 --> 00:21:52,511
 If my desires Stacey(?) is up here
 
-377
+380
 00:21:54,559 --> 00:21:56,351
 You can see I've got some things up there so
 
-378
+381
 00:21:56,607 --> 00:21:57,119
 It’s a tick in the box
 
-379
+382
 00:21:57,631 --> 00:21:59,167
 This is very very negative
 
-380
+383
 00:21:59,679 --> 00:22:01,727
 To move them up there as a Step Too Far
 
-381
+384
 00:22:03,263 --> 00:22:05,311
 What I do instead is I look at this
 
-382
+385
 00:22:05,823 --> 00:22:07,615
 And I say what can I do tomorrow
 
-383
+386
 00:22:08,127 --> 00:22:09,407
 To create more like these
 
-384
+387
 00:22:10,175 --> 00:22:10,943
 If you would like those
 
-385
+388
 00:22:12,735 --> 00:22:15,551
 What I'm doing this is a key principle of complex design
 
-386
+389
 00:22:16,063 --> 00:22:18,879
 Is I’m shifting the system to an adjacent possible
 
-387
+390
 00:22:20,159 --> 00:22:22,463
 And once I get enough stability at that point
 
-388
+391
 00:22:22,719 --> 00:22:24,511
 I can use more conventional approaches
 
-389
+392
 00:22:25,023 --> 00:22:28,863
 This is what I'm talking about architecting to under for discovery
 
-390
+393
 00:22:29,119 --> 00:22:30,911
 Before you architect for delivery
 
-391
+394
 00:22:31,935 --> 00:22:34,495
 And if you actually start with the delivery
 
-392
+395
 00:22:34,751 --> 00:22:36,543
 You’ve missed the discovery phase
 
-393
+396
 00:22:36,799 --> 00:22:38,847
 and you’re gonna miss opportunities as well as threats
 
-394
+397
 00:22:39,871 --> 00:22:41,663
 That's actually from a hospital
 
-395
+398
 00:22:42,175 --> 00:22:45,247
 That also allows us a key Concept called fractal engagement
 
-396
+399
 00:22:46,015 --> 00:22:51,135
 So the same data can produce frameworks at the level of responsibility of every individual
 
-397
+400
 00:22:52,159 --> 00:22:55,743
 And again, I haven't got time to go into this I'll go this in the strategy session
 
-398
+401
 00:22:56,255 --> 00:22:59,327
 Fractal engagement is the way we actually achieve change
 
-399
+402
 00:23:00,095 --> 00:23:03,167
 People don't make decisions about what other people should do
 
-400
+403
 00:23:03,423 --> 00:23:08,031
 They make decisions about what they can do tomorrow within their own sphere of competence
 
-401
+404
 00:23:09,311 --> 00:23:12,127
 Then the system as a whole orientates through multiple actions
 
-402
+405
 00:23:12,639 --> 00:23:14,943
 That's a big concept I’m just hinting at it now
 
-403
+406
 00:23:15,711 --> 00:23:17,503
 And that’s what we call fractal change and way
 
-404
+407
 00:23:19,295 --> 00:23:20,831
 It's also about multiple perspectives
 
-405
+408
 00:23:22,623 --> 00:23:26,207
 This is actually from again this is work on the whole variety of areas.
 
-406
+409
 00:23:26,463 --> 00:23:27,743
 This is Peace and Conflict resolution
 
-407
+410
 00:23:28,511 --> 00:23:33,887
 What we doing here is presenting in infographic and we are doing this in system design Discovery architecture
 
-408
+411
 00:23:34,399 --> 00:23:37,471
 We’re Representing infographics about where we think we should be
 
-409
+412
 00:23:38,239 --> 00:23:40,799
 We're getting every employee to interpret that
 
-410
+413
 00:23:41,055 --> 00:23:45,663
 And drawing the maps of the interpretation before anybody talks to anybody else
 
-411
+414
 00:23:47,711 --> 00:23:50,271
 In that space is actually from Columbia this is
 
-412
+415
 00:23:50,783 --> 00:23:51,551
 Yeah big one
 
-413
+416
 00:23:52,575 --> 00:23:57,183
 You can see that blue and green see the same data in such radically different ways
 
-414
+417
 00:23:57,439 --> 00:23:59,999
 Sitting them down to talk to each other as a waste of time
 
-415
+418
 00:24:01,279 --> 00:24:03,583
 The only thing they both agree on this is they hate the red guys
 
-416
+419
 00:24:05,375 --> 00:24:06,655
 the strategy here
 
-417
+420
 00:24:07,935 --> 00:24:09,983
 Is there actually make these more extreme
 
-418
+421
 00:24:11,775 --> 00:24:13,823
 So that we get a new consensus in the middle
 
-419
+422
 00:24:15,103 --> 00:24:19,199
 The other reason we do this is I want to find outlets
 
-420
+423
 00:24:19,967 --> 00:24:21,759
 Again I talk about Discovery architecture
 
-421
+424
 00:24:22,271 --> 00:24:27,135
 I want to see groups of people who are seeing the world differently from everybody else
 
-422
+425
 00:24:27,647 --> 00:24:30,207
 Because those are the things the 17%
 
-423
+426
 00:24:31,231 --> 00:24:32,511
 Who seen the Cancer module
 
-424
+427
 00:24:33,023 --> 00:24:37,375
 Rather than people are going with orthodoxy so again that's the concept of Discovery architecture
 
-425
+428
 00:24:37,887 --> 00:24:38,911
 Rather than delivery architect
 
-426
+429
 00:24:40,191 --> 00:24:43,263
 And the final slide finish off on this How You scale a complex system
 
-427
+430
 00:24:44,543 --> 00:24:49,663
 Again this is a big field, but the one thing you don't do is you never scale the complex adaptor
 
-428
+431
 00:24:49,919 --> 00:24:50,431
 system
 
-429
+432
 00:24:50,687 --> 00:24:52,991
 By aggregation or imitation
 
-430
+433
 00:24:54,783 --> 00:24:58,111
 You don't take everything and aggregated it up into some massive diagram
 
-431
+434
 00:24:58,623 --> 00:25:00,927
 And you don't say that worked will do more of it
 
-432
+435
 00:25:02,463 --> 00:25:08,607
 What do you actually do is you decompose things and there's a whole body of working on this, by the way, an object orientation
 
-433
+436
 00:25:08,863 --> 00:25:10,399
 Which some of us are going back to at the moment
 
-434
+437
 00:25:10,911 --> 00:25:14,239
 You decompose things to the lowest coherent object
 
-435
+438
 00:25:15,263 --> 00:25:17,823
 You define protocols for the interactions 
 
-436
+439
 00:25:18,079 --> 00:25:18,847
 Between the objects
 
-437
+440
 00:25:19,615 --> 00:25:22,687
 And you allow novel patterns to emerge as you stimulator the system
 
-438
+441
 00:25:23,711 --> 00:25:28,063
 So you sail but scale by decomposition and recombination
 
-439
+442
 00:25:28,831 --> 00:25:30,367
 Not by aggregation
 
-440
+443
 00:25:30,879 --> 00:25:32,415
 And not by imitation
 
-441
+444
 00:25:33,439 --> 00:25:36,511
 Have a challenge for design the Challenge for architecture
 
-442
+445
 00:25:36,767 --> 00:25:39,327
 Is to move much further back in the cycle
 
-443
+446
 00:25:40,095 --> 00:25:42,143
 To deal with an articulated needs
 
-444
+447
 00:25:43,167 --> 00:25:45,215
 To discover on an objective basis
 
-445
+448
 00:25:45,471 --> 00:25:48,287
 Novel possibilities unexpected consequences
 
-446
+449
 00:25:48,799 --> 00:25:51,615
 And build systems with the responsive capability
 
-447
+450
 00:25:52,127 --> 00:25:54,943
 To exploit opportunities as they present themselves
 
-448
+451
 00:25:55,455 --> 00:25:56,479
 Before they're fully now
 
-449
+452
 00:25:57,503 --> 00:26:01,599
 In order to do that we need to have a sound understanding of the science
 
-450
+453
 00:26:02,111 --> 00:26:03,391
 Behind human cognition
 
-451
+454
 00:26:04,159 --> 00:26:05,695
 And the science behind systems
 
-452
+455
 00:26:06,719 --> 00:26:09,279
 Based on the conditions of extreme uncertainty
 
-453
+456
 00:26:09,791 --> 00:26:13,375
 Falling back to the constraints of natural science gives us security
 
-454
+457
 00:26:14,143 --> 00:26:17,983
 Falling back to empirical parsh memories of what work before
 
-455
+458
 00:26:18,495 --> 00:26:20,543
 Makes us very very vulnerable
 
-456
+459
 00:26:21,311 --> 00:26:22,079
 Thank you very much for your time
