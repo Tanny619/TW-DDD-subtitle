@@ -12,7 +12,7 @@ to grasp DDD concept at the very beginning
 
 4
 00:00:15,872 --> 00:00:18,944
-while it's the time to put it into your project or into your code?
+while it's the time to put it into your project or into your code? 
 
 5
 00:00:19,968 --> 00:00:26,112
@@ -20,7 +20,7 @@ Yeah ok. So you're not alone. I have to confess
 
 6
 00:00:26,368 --> 00:00:28,160
-I see a lot of talk about DDD.
+I see a lot of talk about DDD. 
 
 7
 00:00:28,416 --> 00:00:28,928
@@ -160,7 +160,7 @@ Here is the model of a train. The train which has three coaches. Coach A, coach 
 
 41
 00:02:48,960 --> 00:02:50,240
-Which has some
+Which has some 
 
 42
 00:02:50,496 --> 00:02:53,312
@@ -328,7 +328,7 @@ When you buy a ticket, you have an ID
 
 83
 00:05:14,879 --> 00:05:21,023
-on your train ticket. This is the idea actually. Yeah. But this is a service that only provide a unique identifier.
+on your train ticket. This is the idea actually. Yeah. But this is a service that only provide a unique identifier. 
 
 84
 00:05:21,279 --> 00:05:22,047
@@ -749,7 +749,7 @@ So what would you recommend to fix that bug?
 
 188
 00:11:27,359 --> 00:11:40,639
-What would be your strategy?
+What would be your strategy? 
 
 189
 00:11:41,439 --> 00:11:47,327
@@ -789,7 +789,7 @@ That's kind of interaction we have.
 
 198
 00:12:19,327 --> 00:12:23,143
-So it's time for the strategy what would you recommend? (Writing tests?)
+So it's time for the strategy what would you recommend? (Writing tests?) 
 
 199
 00:12:23,679 --> 00:12:24,191
@@ -1377,7 +1377,7 @@ names of the variables, for example,
 
 345
 00:21:26,656 --> 00:21:27,424
-And after,
+And after, 
 
 346
 00:21:28,192 --> 00:21:34,336
@@ -1673,7 +1673,7 @@ Two
 
 419
 00:25:54,432 --> 00:25:56,736
-Two and a half? Two and a half, yeah.
+Two and a half? Two and a half, yeah. 
 
 420
 00:25:57,504 --> 00:26:00,576
@@ -1797,7 +1797,7 @@ But never used.
 
 450
 00:28:06,272 --> 00:28:07,808
-Who has already seen that kind of
+Who has already seen that kind of 
 
 451
 00:28:08,064 --> 00:28:13,696
@@ -1955,1433 +1955,2101 @@ when improving our mental model about it
 00:30:20,928 --> 00:30:22,976
 and trying to clean up some mess.
 
-1
-00:30:26,000 --> 00:30:28,304
+490
+00:30:24,516 --> 00:30:26,820
 Ok, something better you?
 
-2
-00:30:29,072 --> 00:30:29,584
+491
+00:30:27,588 --> 00:30:28,100
 Yep
 
-3
-00:30:30,096 --> 00:30:31,888
+492
+00:30:28,612 --> 00:30:30,404
 Can you see what's still bothering
 
-4
-00:30:32,656 --> 00:30:35,728
+493
+00:30:31,172 --> 00:30:34,244
 Ok it's still very procedural code, one method, too screen high
 
-5
-00:30:36,240 --> 00:30:39,824
+494
+00:30:34,756 --> 00:30:38,340
 doing this and then doing that and then do this ok
 
-6
-00:30:40,592 --> 00:30:41,616
+495
+00:30:39,108 --> 00:30:40,132
 Collection script
 
-7
-00:30:45,968 --> 00:30:50,832
+496
+00:30:44,484 --> 00:30:49,348
 Yeah, Here "get the train" is useless
 
-8
-00:30:51,088 --> 00:30:52,624
+497
+00:30:49,604 --> 00:30:51,140
 so we cut it
 
-9
-00:30:53,136 --> 00:30:54,160
+498
+00:30:51,652 --> 00:30:52,676
 Yeah, It is better
 
-10
-00:30:54,416 --> 00:30:57,488
+499
+00:30:52,932 --> 00:30:56,004
 Now, the problem is we
 
-11
-00:30:58,256 --> 00:31:04,400
+500
+00:30:56,772 --> 00:31:02,916
 still share the "train", but this one normally return the domain object, not a kind of JSON.
 
-12
-00:31:05,936 --> 00:31:07,984
+501
+00:31:04,452 --> 00:31:06,500
 We will see that a trend that have a physical of proxy
 
-13
-00:31:09,264 --> 00:31:15,408
+502
+00:31:07,780 --> 00:31:13,924
 to external web API will make into
 
-14
-00:31:15,664 --> 00:31:20,784
-a adaptor, for in the portal adapter pattern that we will
+503
+00:31:14,180 --> 00:31:19,300
+a adaptor, for in the portal adapter pattern that we will 
 
-15
-00:31:21,296 --> 00:31:27,440
+504
+00:31:19,812 --> 00:31:25,956
 Have another of view before that, so don't worry if you are not aware of that, instead of returning
 
-16
-00:31:27,696 --> 00:31:30,512
+505
+00:31:26,212 --> 00:31:29,028
 a string of JSON let's make that
 
-17
-00:31:30,768 --> 00:31:32,560
+506
+00:31:29,284 --> 00:31:31,076
 method return as a train stones. Yeah
 
-18
-00:31:33,072 --> 00:31:39,216
-So that we can get rid of JSON within the method
+507
+00:31:31,588 --> 00:31:37,732
+So that we can get rid of JSON within the Reserve method
 
-19
-00:31:39,728 --> 00:31:44,592
+508
+00:31:38,244 --> 00:31:43,108
 To make it more domain and purely and not mixing technical staff with
 
-20
-00:31:44,848 --> 00:31:46,896
+509
+00:31:43,364 --> 00:31:45,412
 function domain stuff. Ok for you? Yes. Still Ok for you?
 
-21
-00:31:50,992 --> 00:31:53,040
+510
+00:31:49,508 --> 00:31:51,556
 So I discovered that the file
 
-22
-00:31:53,296 --> 00:31:55,344
+511
+00:31:51,812 --> 00:31:53,860
 There is a constructor of the train
 
-23
-00:31:55,600 --> 00:32:01,744
+512
+00:31:54,116 --> 00:32:00,260
 The train, ok, we see a lot of stuff to deserialize JSON
 
-24
-00:32:02,768 --> 00:32:05,328
+513
+00:32:01,284 --> 00:32:03,844
 This is the file actually
 
-25
-00:32:05,584 --> 00:32:09,936
+514
+00:32:04,100 --> 00:32:08,452
 This one is not choosed
 
-26
-00:32:16,080 --> 00:32:17,872
+515
+00:32:14,596 --> 00:32:16,388
 Delete, OK
 
-27
-00:32:19,152 --> 00:32:22,480
+516
+00:32:17,668 --> 00:32:20,996
 this one is never used too
 
-28
-00:32:24,016 --> 00:32:24,528
+517
+00:32:22,532 --> 00:32:23,044
 Let's delete it also
 
-29
-00:32:25,040 --> 00:32:25,808
+518
+00:32:23,556 --> 00:32:24,324
 
 
-30
-00:32:26,064 --> 00:32:29,648
+519
+00:32:24,580 --> 00:32:28,164
 also this one is grey
 
-31
-00:32:31,952 --> 00:32:35,280
+520
+00:32:30,468 --> 00:32:33,796
 You can split into various files maybe.. Yeah, let's delete
 
-32
-00:32:37,584 --> 00:32:38,864
+521
+00:32:36,100 --> 00:32:37,380
 So here we are in the
 
-33
-00:32:39,888 --> 00:32:40,656
+522
+00:32:38,404 --> 00:32:39,172
 Train
 
-34
-00:32:40,912 --> 00:32:41,680
+523
+00:32:39,428 --> 00:32:40,196
 Class
 
-35
-00:32:42,192 --> 00:32:47,312
+524
+00:32:40,708 --> 00:32:45,828
 Yeah, and Train class does not have tons of behaviors I would say except
 
-36
-00:32:47,568 --> 00:32:49,872
+525
+00:32:46,084 --> 00:32:48,388
 by parsing a
 
-37
-00:32:50,128 --> 00:32:53,200
+526
+00:32:48,644 --> 00:32:51,716
 JSON
 
-38
-00:32:53,712 --> 00:32:55,248
-My magic resharper
+527
+00:32:52,228 --> 00:32:53,764
+My magic C#
 
-39
-00:32:55,760 --> 00:32:56,272
+528
+00:32:54,276 --> 00:32:54,788
 Ok
 
-40
-00:32:57,296 --> 00:32:59,856
+529
+00:32:55,812 --> 00:32:58,372
 we use a lambda. OK. Yeah.
 
-41
-00:33:00,112 --> 00:33:06,256
+530
+00:32:58,628 --> 00:33:04,772
 I will move this one. There are the members of ... the properties and field of ... Ok.
 
-42
-00:33:06,512 --> 00:33:12,400
+531
+00:33:05,028 --> 00:33:10,916
  Then all we have its a constructor. Only technical stuff.
 
-43
-00:33:13,680 --> 00:33:14,704
+532
+00:33:12,196 --> 00:33:13,220
 
 
-44
-00:33:14,960 --> 00:33:15,984
+533
+00:33:13,476 --> 00:33:14,500
 What would you suggest
 
-45
-00:33:20,592 --> 00:33:21,616
+534
+00:33:19,108 --> 00:33:20,132
 If I drink
 
-46
-00:33:22,128 --> 00:33:23,152
+535
+00:33:20,644 --> 00:33:21,668
 [Audience Question]
 
-47
-00:33:30,320 --> 00:33:35,696
+536
+00:33:28,836 --> 00:33:34,212
 There is better location to do some JSON parsing
 
-48
-00:33:35,952 --> 00:33:38,512
+537
+00:33:34,468 --> 00:33:37,028
 but the train which is part of the domain and we should not do that here.
 
-49
-00:33:39,024 --> 00:33:45,168
+538
+00:33:37,540 --> 00:33:43,684
 Let's us do that. Yeah, Ok, so do that I have to create
 
-50
-00:33:46,960 --> 00:33:49,264
+539
+00:33:45,476 --> 00:33:47,780
 a little [method] to encapsulat the code I want to move.
 
-51
-00:33:49,776 --> 00:33:55,920
+540
+00:33:48,292 --> 00:33:54,436
  This is something that we will do a lot. Extract and Move, Extract the method and move into the proper location.
 
-52
-00:33:56,176 --> 00:34:00,784
+541
+00:33:54,692 --> 00:33:59,300
 We do that a lot during the session. The first time we will do it. Ok.
 
-53
-00:34:01,040 --> 00:34:03,088
+542
+00:33:59,556 --> 00:34:01,604
 I take all the code I want
 
-54
-00:34:03,600 --> 00:34:04,624
+543
+00:34:02,116 --> 00:34:03,140
 To remove, To extract
 
-55
-00:34:05,392 --> 00:34:06,416
+544
+00:34:03,908 --> 00:34:04,932
 This one is ok?
 
-56
-00:34:06,928 --> 00:34:08,208
+545
+00:34:05,444 --> 00:34:06,724
 
 
-57
-00:34:09,232 --> 00:34:10,256
+546
+00:34:07,748 --> 00:34:08,772
 
 
-58
-00:34:10,512 --> 00:34:11,024
+547
+00:34:09,028 --> 00:34:09,540
 
 
-59
-00:34:11,536 --> 00:34:13,328
-One more, Ok. this one. Okey.
+548
+00:34:10,052 --> 00:34:11,844
+One more, Ok. this one. Okey. 
 
-60
-00:34:14,352 --> 00:34:17,168
+549
+00:34:12,868 --> 00:34:15,684
 The screen is very high.
 
-61
-00:34:20,496 --> 00:34:25,616
+550
+00:34:19,012 --> 00:34:24,132
 So we extract method from that, and it still will be instance method. Yeah.
 
-62
-00:34:25,872 --> 00:34:27,408
+551
+00:34:24,388 --> 00:34:25,924
 That
 
-63
-00:34:27,664 --> 00:34:28,688
+552
+00:34:26,180 --> 00:34:27,204
 Train topology
 
-64
-00:34:28,944 --> 00:34:31,248
+553
+00:34:27,460 --> 00:34:29,764
 Because while passing the JSON.
 
-65
-00:34:31,504 --> 00:34:32,016
+554
+00:34:30,020 --> 00:34:30,532
 The thing is
 
-66
-00:34:32,528 --> 00:34:35,344
+555
+00:34:31,044 --> 00:34:33,860
 Setting some value to the property of the train
 
-67
-00:34:36,112 --> 00:34:37,904
+556
+00:34:34,628 --> 00:34:36,420
 That's a nice method.
 
-68
-00:34:38,160 --> 00:34:38,672
+557
+00:34:36,676 --> 00:34:37,188
  Here?
 
-69
-00:34:39,696 --> 00:34:42,256
+558
+00:34:38,212 --> 00:34:40,772
 So who is extracting into a new
 
-70
-00:34:42,768 --> 00:34:43,792
+559
+00:34:41,284 --> 00:34:42,308
 Method
 
-71
-00:34:44,304 --> 00:34:48,144
+560
+00:34:42,820 --> 00:34:46,660
 Probility to move it to continue to use this? Yeah.
 
-72
-00:34:48,656 --> 00:34:52,496
+561
+00:34:47,172 --> 00:34:51,012
 A good way to see if I have some dependency because that I want to move this one
 
-73
-00:34:53,008 --> 00:34:56,080
+562
+00:34:51,524 --> 00:34:54,596
 But I don't want to add dependency from this one
 
-74
-00:34:56,336 --> 00:34:58,128
+563
+00:34:54,852 --> 00:34:56,644
 I know I want to be insulate
 
-75
-00:34:58,384 --> 00:34:58,896
+564
+00:34:56,900 --> 00:34:57,412
 So
 
-76
-00:34:59,152 --> 00:35:00,176
+565
+00:34:57,668 --> 00:34:58,692
 I use static
 
-77
-00:35:02,992 --> 00:35:04,528
+566
+00:35:01,508 --> 00:35:03,044
 And I have some squeezers.
 
-78
-00:35:05,040 --> 00:35:05,552
+567
+00:35:03,556 --> 00:35:04,068
 Squeezes
 
-79
-00:35:05,808 --> 00:35:07,344
+568
+00:35:04,324 --> 00:35:05,860
 Here and here because this is static
 
-80
-00:35:07,856 --> 00:35:14,000
+569
+00:35:06,372 --> 00:35:12,516
 That's where we tried to change the second test also see if it's static, it make some error.
 
-81
-00:35:13,850 --> 00:35:28,790
+570
+00:35:12,772 --> 00:35:16,100
 Yeah so how can we cut these
+
+571
+00:35:16,356 --> 00:35:17,636
 Yeah relationship
 
-82
-00:35:28,790 --> 00:35:38,000
-Actually we're trying .....
-
-83
-00:35:38,000 --> 00:35:43,460
-[Audience Question]
-
-84
-00:35:43,460 --> 00:35:49,190
-it is a good idea. There is something we can do also it's a so far the if the string is not
-empty then I increment the
-
-85
-00:35:49,190 --> 00:35:54,619
-the reserve seats instead of changing that
-value of kinds of seats from that point
-
-86
-00:35:54,619 --> 00:35:59,359
-we may be able to cut the behavior
-within the property and every time
-
-87
-00:35:59,359 --> 00:36:04,640
-call the property the property is doing
- the test so it may be one way of
-
-88
-00:36:04,640 --> 00:36:11,440
-doing it so what do you think? let's try
-that and as I set here instead of
-
-89
-00:36:11,440 --> 00:36:19,850
-letting the method changing the value
- it will be something like 'seat' ..
-
-90
-00:36:19,850 --> 00:36:24,640
-where... not where.. count
-
-91
-00:36:24,640 --> 00:36:31,150
-not... Something like that..
-
-92
-00:36:31,150 --> 00:36:38,530
-Richard so it's a kind of think you for
-so much aware of Java streams it's a
-
-93
-00:36:38,530 --> 00:36:44,940
-more functional way of dealing
-with collection and with enumerables
-
-94
-00:36:44,940 --> 00:36:49,780
-it's not so, here below is writing something like I take the
-
-95
-00:36:49,780 --> 00:36:54,910
-list of the seats and I count every seat
-where that lambda is meaning all seats where they don't have a booking at
-
-96
-00:36:57,790 --> 00:37:03,610
-first. so okay I can I can
-surprise this one
-so now you can get rid of that
-
-97
-00:37:03,610 --> 00:37:11,140
-it will be done at the other level
-and this one maybe I can make as
-you propose something similar associate
-
-98
-00:37:13,840 --> 00:37:18,970
-to list of.
-yeah, show some that
-method into a function actually because
-
-99
-00:37:21,040 --> 00:37:32,280
-it it may be a static function yeah so I
-have a seat I change the signature, like a
-
-100
-00:37:32,280 --> 00:37:41,410
-list of suits it
-okay
-and then here I change the local
-variable, And now I return seat
-
-101
-00:37:47,880 --> 00:37:54,010
-so we can extract that method into a
-function so that where we call it we get the result directly
-
-102
-00:37:54,010 --> 00:38:00,250
-so...  we adapt train
-topology
-this is a first step
-
-103
-00:38:00,250 --> 00:38:05,140
-because we have to move it into the
-proper location
-why is it trend is...
-
-104
-00:38:05,140 --> 00:38:12,970
-because it's because it's actually.. it's a matter of time
-
-105
-00:38:12,970 --> 00:38:19,570
-okay, maybe so you
-extract the method you make its static function
-
-106
-00:38:19,570 --> 00:38:27,070
-so we can move it kind of
-easily
-let's put it....
-if you get back to the method
-
-107
-00:38:27,070 --> 00:38:31,859
-where it has been called
-yes
- here we have a get train
-
-108
-00:38:37,150 --> 00:38:42,430
-yeah
-so it might be interesting
-instead of having the JSON topology to
-get the train
-to return a train
-
-109
-00:38:44,500 --> 00:38:49,799
-maybe we can put that static function into the train data service
-yeah
-
-110
-00:38:49,799 --> 00:39:03,690
-so let's move
-so you move the method
-into the train data service, okay?
-
-111
-00:39:04,270 --> 00:39:08,710
-so far we still have a awkward
-dependency in the train class but we change it in a second
-
-112
-00:39:08,710 --> 00:39:16,260
-so you make it to a public
-Yes, And
-
-113
-00:39:16,260 --> 00:39:22,089
-the goal is to change this one
-the get train
-the get train
-I will change the signature
-so instead of returning a task of string
-
-114
-00:39:25,270 --> 00:39:30,339
-yeah touches before it's I
-think where of requesting a Web API so
-
-115
-00:39:30,339 --> 00:39:38,020
-it's kind of actually on that complexity
-but...
-okay
-but you have to read it
-it's return a train
-
-116
-00:39:38,020 --> 00:39:42,880
-yeah
-to be better. for the business part
-
-117
-00:39:42,880 --> 00:39:49,630
-I will to take the train...
-okay
-so you new train track from the topology
-
-118
-00:39:49,630 --> 00:39:57,970
-but the train doesn't take the
-topology we want to adapt the JSON so
-we call it that adaption train topology
-
-119
-00:40:04,529 --> 00:40:12,789
-but currently the train don't receive...
-you have to change that
-yeah
-
-120
-00:40:12,789 --> 00:40:17,079
-I have to change that also
-instead of that
-let's accepting a list of seats
-yes
-
-121
-00:40:17,079 --> 00:40:20,319
-so to instantiate a train we will accept
-the list of seats which will be much more easy to discussed yet, to play with
-
-122
-00:40:20,319 --> 00:40:25,750
-yeah and remove this one
-
-123
-00:40:25,750 --> 00:40:30,609
-so we don't have any kind of references from the train to any kind of train data service
-
-124
-00:40:30,609 --> 00:40:38,770
-or a structure code you know
-so that so
-now I can take this one so 'gettrain'
-
-125
-00:40:38,770 --> 00:40:42,579
-now is returning a train
-so you don't need that anymore
-
-126
-00:40:42,579 --> 00:40:47,820
- I can remove this
-and here we have some...
-Okay yes much better
-
-127
-00:40:47,820 --> 00:40:49,620
-we asked the train data service to get
-a train and we get a train
-
-128
-00:40:51,240 --> 00:40:55,530
-I compiled because maybe I have
-break. yeah I read something
-
-129
-00:40:55,530 --> 00:41:00,420
-something that buzz me is u nconscious even
-if it does not compile it still green
-
-130
-00:41:00,420 --> 00:41:07,370
-yeah it's a kind of bug I would say. It is a ...  Yes this is a ...
-
-131
-00:41:07,370 --> 00:41:11,970
-within of test we did enough tests we
-have made some ... to a train
-
-132
-00:41:11,970 --> 00:41:17,220
-from a given JSON for given topology
-and this is where we have to do the same
-
-133
-00:41:17,220 --> 00:41:24,210
-we have to adjust the previous code that
-we are expecting to ...
-
-134
-00:41:24,210 --> 00:41:32,370
-signature to the new one
-so, compile, it is ok.
-
-135
-00:41:32,370 --> 00:41:35,130
-fine all right
-it's okay it's okay and
-
-136
-00:41:35,130 --> 00:41:39,600
-you come back to ...
-let's get back to the ...
-okay so thank you Bruno
-
-137
-00:41:39,600 --> 00:41:45,050
-yeah
-actually we move a topology code that
-
-138
-00:41:45,050 --> 00:41:50,030
-were part of the train
-
-139
-00:41:50,030 --> 00:41:55,430
-so I'm much better, much
-more comfortable with that code but
-there's still lots of things that bother me
-
-140
-00:41:57,290 --> 00:42:03,800
-for instance let's see the train
- okay you clean the deck you improve the situation
-
-141
-00:42:03,800 --> 00:42:13,880
-but ok, this is a train what is
-it? it's a pure data class without any kind of behaviors without any
-responsibly
-
-142
-00:42:13,880 --> 00:42:18,650
- and I'm not aware, maybe it's
-
-143
-00:42:18,650 --> 00:42:23,180
-a follower that has said
-once this kind of object is kind of
-teenager object or child object you have to take responsibilities somehow
-
-144
-00:42:25,970 --> 00:42:33,650
-and yet, so - let's let's do that
-
-145
-00:42:33,650 --> 00:42:39,710
- also we have a concept of seats yeah seat Wow
-there is a name for that
-
-146
-00:42:39,710 --> 00:42:45,860
-yeah actually there is a name for that
-kind of domain you have an idea of what
-
-147
-00:42:45,860 --> 00:42:57,620
-so we are lacking all the
-concept of the domain within our code
-
-148
-00:42:59,360 --> 00:43:03,950
-but when we have we have kind of data class yeah and all of yours in easy that original method
-
-149
-00:43:06,800 --> 00:43:12,470
-kind of collections fit here very
-positive are doing all the logic what I
-suggest if you agree is to try to cap some behaviors
-
-150
-00:43:18,200 --> 00:43:22,010
-and to put it in the
-proper location and try to mass
-
-151
-00:43:22,010 --> 00:43:29,300
-our child objects
-yeah maybe you can
-show something about our to check
-yeah
-
-152
-00:43:29,300 --> 00:43:37,310
-maybe we'll slide just since we will do it a lot let's see visually what we will do
-we have a Class A Class B
-
-153
-00:43:40,970 --> 00:43:44,990
-Class A is a web ticket manager has a method for
-instance and the Class B is like say the
-
-154
-00:43:44,990 --> 00:43:50,300
-train so what we will do a lot
-it's to extract code to extract the
-
-155
-00:43:50,300 --> 00:43:54,200
-behavior and to a method so then we will
-have a method
-into the same type and then we will move
-
-156
-00:43:56,870 --> 00:44:01,310
-it into the proper location, the train
-for instance and at the end of the day
-
-157
-00:44:01,310 --> 00:44:06,560
-we will have more actually...
-good balance
-
-158
-00:44:06,560 --> 00:44:14,030
-yeah domain and stuff like that
-okay
-so let me switch back to the code
-
-159
-00:44:14,030 --> 00:44:22,970
- so I suggest that we will do that
-okay each train reserved seats plus it's the
-first business rule, a train should not
-
-160
-00:44:25,490 --> 00:44:30,370
-exceed maximum capacity of the Train
- I suggest that we extract a method here
-
-161
-00:44:30,370 --> 00:44:41,600
-but maybe..
-if does not exceed overall train's capacity
-
-162
-00:44:41,600 --> 00:44:45,260
-once you like that are you okay you know
-there are you
-
-163
-00:44:45,260 --> 00:44:53,450
-yeah capacity
-sorry I will make us a
-non-static method a public one to be
-able to move it easily so here I extract
-
-164
-00:44:57,380 --> 00:45:07,580
-that big if with that method
-where should I move it according to...
-the train
-
-165
-00:45:07,580 --> 00:45:13,730
-yeah and there is a hint if I have said
-f6 to move Resharper say okay you pass
-
-166
-00:45:13,730 --> 00:45:18,680
-an argument a train instance of argument
-so you can easily move that behavior to the tain
-
-167
-00:45:18,680 --> 00:45:23,780
-okay do train I have the train
-does not exceed overall train capacity
-
-168
-00:45:23,780 --> 00:45:33,950
-if I want to request that number of seats
-okay actually what we have here is available seats we are building a list of available seats
-
-169
-00:45:36,770 --> 00:45:43,280
- so let us call a
-method with find available seats for
-
-170
-00:46:02,260 --> 00:46:06,569
-actually
-there is some concept that we may introduce here
-what do think
-
-171
-00:46:08,790 --> 00:46:22,530
-[Audience Question]
-
-172
-00:46:23,119 --> 00:46:28,440
-yeah, at the end of the day we need to have seats in a given coach
-
-173
-00:46:28,440 --> 00:46:33,500
-but before that the domain expert was
-talking a lot about reservation attempts
-
-174
-00:46:33,500 --> 00:46:40,050
-it's a really important concept for him
-so I suggest that we instead of just dealing with available seats
-
-175
-00:46:40,050 --> 00:46:43,950
-let's build something from that part
-
-176
-00:46:50,690 --> 00:46:57,480
-before
-we are improving the code, Rruno also have something to show you
-
-177
-00:46:57,480 --> 00:47:04,319
-yeah maybe you some people know and
-
-178
-00:47:04,319 --> 00:47:10,589
-depend it's a tool to check the
-dependency but it exists JArchitect
-
-179
-00:47:10,589 --> 00:47:18,569
-for Java or C++
-basically an advanced tools yes it's analyzing your code and
-
-180
-00:47:18,569 --> 00:47:25,170
-raising some warnings or error and we were
-working with Macau in deep
-
-181
-00:47:25,170 --> 00:47:31,170
-yeah and we asked him to introduce a way to check that code base, follow the
-
-182
-00:47:31,170 --> 00:47:35,010
-ubiquitous language, it's a prototype
-
-183
-00:47:35,010 --> 00:47:41,069
-is not a release and we try to imagine you you have a team you have a
-legacy code and you know the vocabulary
-
-184
-00:47:45,060 --> 00:47:50,520
-of the domain expert and create a rule
-it's called your code should rely on
-
-185
-00:47:50,520 --> 00:47:56,700
-your you ubiquit language and we see
-we have some problem and as you can see
-
-186
-00:47:56,700 --> 00:48:03,240
-we have the list of program
-and the world not matching correctly
-
-187
-00:48:03,240 --> 00:48:10,530
-the cap is there so we have to enter a
-list of worlds that are part of our domain
-
-188
-00:48:10,530 --> 00:48:16,920
-yeah like train etc .. currently we have defined
-
-189
-00:48:16,920 --> 00:48:23,430
-this list for each domain you want and the tool we tried to check
-that so it's still in alpha yeah
-
-190
-00:48:27,059 --> 00:48:32,729
-but I think it would be interesting where to
-make some audit of some
-to have a kind of code smell about that
-
-191
-00:48:35,249 --> 00:48:43,949
-okay okay
- so run it
-what was the result?
-
-192
-00:48:43,949 --> 00:48:52,619
-okay so let's get back to to the business
-we have some list of
-
-193
-00:48:52,619 --> 00:48:58,079
-available seats I suggest that we change the signature that
-
-194
-00:48:58,079 --> 00:49:02,699
-we introducing the concept of reservation attempt
-so here instead of returning a
-
-195
-00:49:02,699 --> 00:49:13,349
-list of seats let's make it return a reservation attempt,
- typo here
-
-196
-00:49:13,349 --> 00:49:15,949
-thank you
-
-197
-00:49:16,730 --> 00:49:24,170
-okay yeah okay the type does not exist
-so yes I'm aware of that maybe I will
-
-198
-00:49:24,170 --> 00:49:37,730
-rename it also but here as you can see
-sorry ..
-
-199
-00:49:37,730 --> 00:49:41,240
-the reservation temp type does not
-exist yet so let's create it I'll tend
-to create a reservation attempt
-okay?
-
-200
-00:49:43,670 --> 00:49:54,049
-and here since the
-function is expecting to return me that
-
-201
-00:49:54,049 --> 00:49:59,079
-kind of reservation attempt all I have
-to do is to install yet here at the end
-
-202
-00:49:59,079 --> 00:50:05,510
-return a new reservation attempt
-ok?
-providing it the list of seats I just found
-
-203
-00:50:05,510 --> 00:50:11,270
-all I have to do is to create the
-constructor accepting a list of seats for that reservation attempt
- ok？
-
-204
-00:50:14,569 --> 00:50:23,690
+572
+00:35:18,404 --> 00:35:19,172
+
+
+573
+00:35:27,364 --> 00:35:31,972
+Yeah mate motion answers
+
+574
+00:35:37,092 --> 00:35:39,396
+Send an apology as an argument
+
+575
+00:35:39,652 --> 00:35:45,796
+Yeah that's a good idea but there is something I can do also it's so far
+
+576
+00:35:46,052 --> 00:35:49,892
+If a is not New Zealand then I increment the results it
+
+577
+00:35:50,148 --> 00:35:50,916
+Instead of
+
+578
+00:35:51,428 --> 00:35:54,244
+Changing that value of cos of sitcom.
+
+579
+00:35:54,500 --> 00:35:56,292
+But we may be able to
+
+580
+00:35:56,548 --> 00:35:58,596
+Causes of using the potty
+
+581
+00:35:58,852 --> 00:36:04,996
+And everytime I call the property new property is doing the computer desk so many one way of doing it
+
+582
+00:36:05,764 --> 00:36:06,276
+Something
+
+583
+00:36:09,604 --> 00:36:11,396
+Instead of
+
+584
+00:36:11,908 --> 00:36:17,028
+Lezyne v11 changing the value it will be something like
+
+585
+00:36:18,052 --> 00:36:18,564
+Set
+
+586
+00:36:19,076 --> 00:36:25,220
+Return on debt collection of sets so that as well not not at work on
+
+587
+00:36:25,732 --> 00:36:26,756
+Don't want
+
+588
+00:36:28,036 --> 00:36:29,316
+Not Nero auntie
+
+589
+00:36:29,828 --> 00:36:30,852
+Something like that
+
+590
+00:36:31,364 --> 00:36:34,436
+Result sorry sir cannot thank you for the match
+
+591
+00:36:34,692 --> 00:36:37,508
+Well for the last rooms
+
+592
+00:36:38,020 --> 00:36:40,580
+Isomorphic artificial Wales
+
+593
+00:36:41,348 --> 00:36:44,932
+Drilling waste collection Andrews email address
+
+594
+00:36:45,188 --> 00:36:47,236
+It so that's not this not
+
+595
+00:36:47,492 --> 00:36:53,636
+So here when I was writing something like I think the list of the seats and I can't everything's well that Lundy is very
+
+596
+00:36:53,892 --> 00:36:55,684
+Ring all's well
+
+597
+00:36:55,940 --> 00:37:01,316
+I don't have a booking at all times his father
+
+598
+00:37:02,340 --> 00:37:03,620
+So now you can get
+
+599
+00:37:03,876 --> 00:37:04,644
+Rid of that
+
+600
+00:37:04,900 --> 00:37:06,948
+Familiar
+
+601
+00:37:07,204 --> 00:37:08,228
+And this one
+
+602
+00:37:08,996 --> 00:37:10,020
+Maybe I can
+
+603
+00:37:10,532 --> 00:37:11,044
+Next
+
+604
+00:37:11,300 --> 00:37:13,092
+As you propose something similar
+
+605
+00:37:13,348 --> 00:37:15,908
+ASOS a list
+
+606
+00:37:16,676 --> 00:37:22,820
+What's an intro song that's made into a fashion I shouldn't because I
+
+607
+00:37:23,588 --> 00:37:24,868
+Statin function
+
+608
+00:37:26,660 --> 00:37:27,172
+So
+
+609
+00:37:27,428 --> 00:37:30,244
+I was still the oceans furniture
+
+610
+00:37:31,012 --> 00:37:31,780
+I like you
+
+611
+00:37:32,804 --> 00:37:33,316
+List
+
+612
+00:37:36,900 --> 00:37:39,204
+Antalya
+
+613
+00:37:39,972 --> 00:37:44,068
+I received a look-a-like about yesterday now
+
+614
+00:37:44,580 --> 00:37:45,860
+I return
+
+615
+00:37:48,676 --> 00:37:51,492
+Sorry, that message into a pension
+
+616
+00:37:51,748 --> 00:37:54,820
+So that's where we call it we get the results
+
+617
+00:37:55,076 --> 00:37:55,844
+Direction
+
+618
+00:37:57,124 --> 00:37:59,428
+So since we added strength ability
+
+619
+00:37:59,684 --> 00:38:02,244
+University because we have to move it
+
+620
+00:38:02,500 --> 00:38:03,780
+What's the population
+
+621
+00:38:04,292 --> 00:38:10,436
+What is the train is because it's because it's running yeah it's a matter of
+
+622
+00:38:15,044 --> 00:38:18,884
+Ok maybe just trying to message you make it
+
+623
+00:38:19,140 --> 00:38:19,652
+Perfect
+
+624
+00:38:20,164 --> 00:38:21,956
+Function so we can move it
+
+625
+00:38:22,212 --> 00:38:23,748
+Granny off internet
+
+626
+00:38:24,004 --> 00:38:28,100
+Let's put it it will get back to you I haven't eaten
+
+627
+00:38:28,612 --> 00:38:30,404
+Well it has been called
+
+628
+00:38:30,660 --> 00:38:33,988
+Yes
+
+629
+00:38:34,244 --> 00:38:38,340
+Here we have the train
+
+630
+00:38:38,852 --> 00:38:43,972
+So it may be interesting instead of having no didn't have energy to get the train to return on train
+
+631
+00:38:44,228 --> 00:38:45,764
+For men you can put that
+
+632
+00:38:46,020 --> 00:38:47,812
+Study functioning to the tenderness of his
+
+633
+00:38:50,628 --> 00:38:51,396
+So let's move
+
+634
+00:38:56,772 --> 00:38:59,332
+So you must be signed into the train
+
+635
+00:39:00,356 --> 00:39:01,892
+Weather.co.uk
+
+636
+00:39:03,684 --> 00:39:07,268
+So far we still have a crown dependency in the
+
+637
+00:39:07,524 --> 00:39:11,108
+In the train class between infinity Motorcycle
+
+638
+00:39:11,620 --> 00:39:14,436
+So you make it to open each user
+
+639
+00:39:14,692 --> 00:39:15,716
+Yes and
+
+640
+00:39:16,996 --> 00:39:19,044
+The goal is to change the Swan
+
+641
+00:39:19,556 --> 00:39:22,628
+Madrid train and get train at Everton this year show
+
+642
+00:39:23,908 --> 00:39:27,492
+2010 original itasca strings attached before it sank
+
+643
+00:39:28,004 --> 00:39:31,588
+Will requesting a weather API so it's a good offer
+
+644
+00:39:33,380 --> 00:39:35,172
+I should have died complexity matter
+
+645
+00:39:36,196 --> 00:39:40,036
+Ok what tree restaurants in Sweden train
+
+646
+00:39:40,292 --> 00:39:41,060
+Maria Bello
+
+647
+00:39:41,316 --> 00:39:46,180
+For the business not have to take the train or within subject
+
+648
+00:39:46,692 --> 00:39:50,276
+Ok so I'm trying to transform the topology
+
+649
+00:39:52,836 --> 00:39:57,444
+The trend on deserts of the British weather
+
+650
+00:39:57,700 --> 00:39:58,724
+So we call it that
+
+651
+00:40:00,004 --> 00:40:01,796
+Identification
+
+652
+00:40:02,820 --> 00:40:04,356
+But
+
+653
+00:40:04,868 --> 00:40:08,196
+Currently the train a dog
+
+654
+00:40:08,452 --> 00:40:10,244
+Received
+
+655
+00:40:10,500 --> 00:40:12,804
+Citizens Advice
+
+656
+00:40:13,060 --> 00:40:19,204
+Change that herself still have that lets accepting a list of s*** yeah so it was not the train we will accept it
+
+657
+00:40:19,460 --> 00:40:21,508
+Mushroom much more easy to
+
+658
+00:40:22,020 --> 00:40:25,092
+Cliff Richard to play with and remove this phone
+
+659
+00:40:25,348 --> 00:40:29,444
+So we don't have any kind of references from the train to when you can off
+
+660
+00:40:29,700 --> 00:40:32,260
+Trend of Us army soldier
+
+661
+00:40:33,284 --> 00:40:34,052
+So that's
+
+662
+00:40:34,564 --> 00:40:35,076
+So
+
+663
+00:40:35,332 --> 00:40:36,356
+No I can
+
+664
+00:40:36,612 --> 00:40:40,452
+Texas want to get train now is retiring at rentals
+
+665
+00:40:40,708 --> 00:40:42,500
+So you don't need that anymore
+
+666
+00:40:42,756 --> 00:40:43,780
+I don't know what is fun
+
+667
+00:40:44,292 --> 00:40:44,804
+In here
+
+668
+00:40:45,316 --> 00:40:51,460
+We have some ok but we ask the train we get
+
+669
+00:40:51,972 --> 00:40:57,348
+I compiled because maybe I ask Reading
+
+670
+00:40:58,116 --> 00:41:03,236
+Even if it doesn't add components to Green
+
+671
+00:41:04,516 --> 00:41:10,660
+Brewers compile yes this is we do not test vision Express Enfield
+
+672
+00:41:11,172 --> 00:41:17,316
+Worcestershire train from Avengers unforgiven topology and this is where we have to do the same way
+
+673
+00:41:17,572 --> 00:41:18,084
+Have to adjust
+
+674
+00:41:18,852 --> 00:41:19,876
+The prettiest girl
+
+675
+00:41:20,132 --> 00:41:21,668
+The prospecting tool
+
+676
+00:41:22,180 --> 00:41:26,020
+The song on YouTube please YouTube the new one
+
+677
+00:41:26,788 --> 00:41:27,300
+So
+
+678
+00:41:28,068 --> 00:41:28,580
+Should
+
+679
+00:41:28,836 --> 00:41:30,884
+While I'm singing
+
+680
+00:41:31,140 --> 00:41:31,652
+Ok
+
+681
+00:41:31,908 --> 00:41:36,004
+Does a foil I don't return back to
+
+682
+00:41:36,260 --> 00:41:36,772
+Lips
+
+683
+00:41:37,284 --> 00:41:38,564
+Rebecca was ok
+
+684
+00:41:38,820 --> 00:41:44,964
+So thank you for all your technical
+
+685
+00:41:45,220 --> 00:41:48,804
+That we are back of the train and we get put into a politician
+
+686
+00:41:49,316 --> 00:41:50,596
+Mrs bottles in hospital
+
+687
+00:41:51,364 --> 00:41:53,155
+So I'm much better
+
+688
+00:41:53,411 --> 00:41:57,763
+How much mortgage off tomorrow is that good that there's another thing that bother me
+
+689
+00:41:59,043 --> 00:42:04,675
+Find Stones Let's see the train ok you can you improve the situation but
+
+690
+00:42:05,955 --> 00:42:07,235
+Ok this is a train
+
+691
+00:42:09,283 --> 00:42:10,051
+What is it
+
+692
+00:42:12,099 --> 00:42:15,171
+To a better class result in each other videos
+
+693
+00:42:15,683 --> 00:42:21,059
+Nottingham Christmas to me and I'm not aware of maybe photo calendar to send once
+
+694
+00:42:21,571 --> 00:42:25,411
+Instead of object instead of a teenager object or child object
+
+695
+00:42:25,667 --> 00:42:27,971
+Yes to take responsibilities somehow
+
+696
+00:42:28,227 --> 00:42:30,275
+Nhgs
+
+697
+00:42:30,531 --> 00:42:31,555
+Torrentz2
+
+698
+00:42:32,067 --> 00:42:35,139
+Wrestlers who that's also we have a concept of Sin
+
+699
+00:42:36,931 --> 00:42:40,259
+Well then I'm trying to talk to you who's the name for that
+
+700
+00:42:40,515 --> 00:42:42,051
+Actually there is a name for that
+
+701
+00:42:42,307 --> 00:42:43,587
+Canada men
+
+702
+00:42:44,867 --> 00:42:45,891
+Travelodge Ilford
+
+703
+00:42:47,683 --> 00:42:51,779
+Anna Magdalena company and England
+
+704
+00:42:52,291 --> 00:42:52,803
+So
+
+705
+00:42:53,059 --> 00:42:54,595
+We are
+
+706
+00:42:55,107 --> 00:42:55,875
+Lacking
+
+707
+00:42:57,155 --> 00:43:02,531
+All the percentage of The Dimension of God when we have we have kind of any mixture pin data class
+
+708
+00:43:02,787 --> 00:43:05,347
+All of the angels in Easy
+
+709
+00:43:05,603 --> 00:43:08,419
+That's rhythm a Third Kind of collection 6 year
+
+710
+00:43:08,931 --> 00:43:12,003
+Harry Potter July doing all the magic
+
+711
+00:43:12,259 --> 00:43:13,027
+What I suggest
+
+712
+00:43:14,307 --> 00:43:15,843
+Surely it's too
+
+713
+00:43:17,123 --> 00:43:23,011
+Production Gear Jordan to put it in the population in Tritton Leicester or child objects
+
+714
+00:43:25,059 --> 00:43:28,131
+You can show something about MOT checker
+
+715
+00:43:29,155 --> 00:43:30,179
+Roman numerals
+
+716
+00:43:30,435 --> 00:43:30,947
+Athlone
+
+717
+00:43:31,203 --> 00:43:32,739
+YouTube
+
+718
+00:43:32,995 --> 00:43:39,139
+Just since we were doing a lot and it seems really what will we do we have a place
+
+719
+00:43:39,395 --> 00:43:45,539
+Has be classed as a Wimpy Kid furniture offers on the sofa instance and the Crosby's Alexa.
+
+720
+00:43:45,795 --> 00:43:49,379
+So what'll we do a lot it's to extract credit
+
+721
+00:43:49,635 --> 00:43:50,915
+Please type the behavior
+
+722
+00:43:51,427 --> 00:43:55,523
+Into a method so then you will have a method into the same type
+
+723
+00:43:56,035 --> 00:43:59,875
+And then we will move it into the population in the train France
+
+724
+00:44:00,131 --> 00:44:04,227
+At the end of the day would have more actually rating
+
+725
+00:44:04,483 --> 00:44:09,603
+New Balance
+
+726
+00:44:10,115 --> 00:44:12,419
+Let me switch back to the planet
+
+727
+00:44:13,443 --> 00:44:14,723
+Lottery
+
+728
+00:44:15,491 --> 00:44:16,515
+We will do that
+
+729
+00:44:17,027 --> 00:44:18,819
+Ok
+
+730
+00:44:19,587 --> 00:44:25,731
+This train reserve seats personal analysis the first Middle School attendance should not
+
+731
+00:44:25,987 --> 00:44:28,035
+Maximum capacity of the train
+
+732
+00:44:28,291 --> 00:44:30,339
+I suggested recycle message here
+
+733
+00:44:31,107 --> 00:44:37,251
+But maybe does not it does not exceed does not exceed
+
+734
+00:44:37,763 --> 00:44:39,299
+Overall
+
+735
+00:44:40,835 --> 00:44:42,371
+Friends episode in concert
+
+736
+00:44:42,883 --> 00:44:43,651
+Are you ok
+
+737
+00:44:43,907 --> 00:44:45,187
+Will that work
+
+738
+00:44:46,467 --> 00:44:47,235
+Depression
+
+739
+00:44:47,747 --> 00:44:49,539
+Diversity
+
+740
+00:44:50,051 --> 00:44:54,403
+I will make us a non static method and primaquine to be able to move it
+
+741
+00:44:54,915 --> 00:44:55,427
+Isn't it
+
+742
+00:44:56,195 --> 00:45:00,803
+So here I strike that two minutes with that method
+
+743
+00:45:01,571 --> 00:45:02,851
+Where should I
+
+744
+00:45:03,107 --> 00:45:04,387
+Move it
+
+745
+00:45:05,411 --> 00:45:05,923
+Going to
+
+746
+00:45:06,691 --> 00:45:08,995
+The training and everything
+
+747
+00:45:09,251 --> 00:45:10,787
+If I said
+
+748
+00:45:11,043 --> 00:45:11,811
+6 tomorrow
+
+749
+00:45:12,067 --> 00:45:18,211
+Azure Python passing arguments to an instance of an argument so you can easily move that day
+
+750
+00:45:20,515 --> 00:45:24,099
+Trainer has a train does not exceed over altering capacity
+
+751
+00:45:24,355 --> 00:45:27,683
+If I want to replace number of seats
+
+752
+00:45:27,939 --> 00:45:28,451
+Ok
+
+753
+00:45:31,523 --> 00:45:35,107
+Actually what we have here is available seats
+
+754
+00:45:35,619 --> 00:45:40,483
+Real building list of available seats at School of Massage Windsor
+
+755
+00:45:40,995 --> 00:45:42,275
+Final elements
+
+756
+00:45:43,043 --> 00:45:43,811
+Wynsors
+
+757
+00:45:44,067 --> 00:45:45,347
+Filezilla
+
+758
+00:45:45,603 --> 00:45:46,371
+Nonsense
+
+759
+00:45:47,907 --> 00:45:50,979
+Turn on statistics on solar movies
+
+760
+00:45:53,027 --> 00:45:53,795
+So here
+
+761
+00:45:54,307 --> 00:45:58,915
+If the train does not exceed if I request does not exceed the maximum capacity
+
+762
+00:45:59,427 --> 00:46:00,963
+Where to find sum of elements
+
+763
+00:46:03,267 --> 00:46:04,035
+Actually
+
+764
+00:46:05,059 --> 00:46:08,387
+They said that we may introduce here instead of that
+
+765
+00:46:08,643 --> 00:46:09,155
+When you finish
+
+766
+00:46:09,667 --> 00:46:10,435
+NBA profit
+
+767
+00:46:12,227 --> 00:46:13,251
+Just pretend
+
+768
+00:46:14,019 --> 00:46:15,299
+Allocation
+
+769
+00:46:16,579 --> 00:46:17,603
+A specification
+
+770
+00:46:17,859 --> 00:46:18,371
+Yes
+
+771
+00:46:23,235 --> 00:46:28,867
+Yeah except of course at the end of the day we will need to try 1800 Portsmouth
+
+772
+00:46:29,123 --> 00:46:33,475
+Before that's the don't expect was talking a lot about whether I should attend
+
+773
+00:46:34,499 --> 00:46:36,547
+Set a rear bottom cassette for fine
+
+774
+00:46:37,059 --> 00:46:39,107
+So I think it's so sweet
+
+775
+00:46:39,363 --> 00:46:42,435
+Instead of just dealing with available seats a list of Sith
+
+776
+00:46:42,691 --> 00:46:45,251
+There's a vendor distance of possession from that
+
+777
+00:46:45,763 --> 00:46:46,275
+But
+
+778
+00:46:50,627 --> 00:46:52,931
+Yes I sent you something
+
+779
+00:46:53,187 --> 00:46:58,819
+Original iPhone we are improving the colour blue are at something to to show you
+
+780
+00:46:59,075 --> 00:47:01,123
+Yeah maybe
+
+781
+00:47:01,635 --> 00:47:05,219
+Some people know in Japan
+
+782
+00:47:05,475 --> 00:47:11,363
+It's a tool to check the dependencies that it exists the architect for Java
+
+783
+00:47:11,619 --> 00:47:13,667
+Of C++
+
+784
+00:47:14,179 --> 00:47:20,067
+Navigational in your code and the Rising Sun
+
+785
+00:47:20,579 --> 00:47:26,723
+Warning forever and we were working with you thanks Mike I don't have anybody anyway
+
+786
+00:47:26,979 --> 00:47:33,123
+Ask him to introduce somewhere to check that turns photos into Cambridge
+
+787
+00:47:33,379 --> 00:47:39,523
+Author of the name Enterprise it's not a release and we tried to imagine imagine
+
+788
+00:47:39,779 --> 00:47:45,923
+Can you have a team you have a legacy card and you know the vocabulary of the next
+
+789
+00:47:46,947 --> 00:47:47,971
+Red Aurora
+
+790
+00:47:48,483 --> 00:47:54,627
+Scorpio card should rely on your ability language and we see we have some problem and
+
+791
+00:47:56,163 --> 00:48:02,307
+As you can see we have the list of program and the world not matching correctly
+
+792
+00:48:02,563 --> 00:48:04,867
+Letters of a gamma camera
+
+793
+00:48:05,123 --> 00:48:06,915
+We have to
+
+794
+00:48:07,427 --> 00:48:13,571
+Enter a list of words that are part of Oldham in Lancashire
+
+795
+00:48:13,827 --> 00:48:19,971
+Reclamation fruitfield
+
+796
+00:48:20,227 --> 00:48:23,811
+Manual and automatic
+
+797
+00:48:24,579 --> 00:48:30,723
+What is cheering alpha I think it would be an interesting way to make some
+
+798
+00:48:30,979 --> 00:48:35,331
+Forgot to issue a kind of smell about that
+
+799
+00:48:36,867 --> 00:48:41,731
+So Ryan's what was the results for the 3
+
+800
+00:48:42,499 --> 00:48:45,827
+Yeah I don't want to
+
+801
+00:48:46,339 --> 00:48:52,483
+Ok so let's get back to to the business we have a solicitor
+
+802
+00:48:52,739 --> 00:48:53,507
+Available seats
+
+803
+00:48:54,275 --> 00:48:55,811
+I think that we change that
+
+804
+00:48:56,323 --> 00:49:00,931
+Send signature on that by introducing the concept of inheritance
+
+805
+00:49:01,187 --> 00:49:03,235
+For here instead of returning a list of sets
+
+806
+00:49:04,259 --> 00:49:07,331
+Let's make a trip return reservation
+
+807
+00:49:07,843 --> 00:49:08,355
+Adult
+
+808
+00:49:09,891 --> 00:49:16,035
+I'm sorry I'm going to type all Heroes elation at them thank you
+
+809
+00:49:16,291 --> 00:49:17,827
+Ok
+
+810
+00:49:19,619 --> 00:49:25,763
+Ok the time doesn't exist so yes I'm aware of that maybe I will ring I need to answer that
+
+811
+00:49:26,275 --> 00:49:27,299
+Shiraz UK
+
+812
+00:49:27,555 --> 00:49:30,371
+Say sorry as I was July 10th where is it
+
+813
+00:49:33,955 --> 00:49:35,747
+Sorry
+
+814
+00:49:36,003 --> 00:49:41,635
+Yesterday night and I don't I don't think so let's Create it and enter
+
+815
+00:49:41,891 --> 00:49:43,939
+Three types of violation adult ok
+
+816
+00:49:47,011 --> 00:49:47,523
+Share
+
+817
+00:49:48,291 --> 00:49:50,083
+Since
+
+818
+00:49:50,851 --> 00:49:55,971
+The method is a function is expecting to it'll music and possession all I have to do
+
+819
+00:49:56,483 --> 00:49:58,275
+Is to install search here
+
+820
+00:49:58,531 --> 00:49:59,299
+Asian
+
+821
+00:49:59,555 --> 00:50:02,115
+Little and newer version attempts
+
+822
+00:50:02,371 --> 00:50:02,883
+Ok
+
+823
+00:50:03,395 --> 00:50:04,163
+Providing you
+
+824
+00:50:04,419 --> 00:50:05,955
+The list of sheets I just found
+
+825
+00:50:07,747 --> 00:50:11,587
+All I have to do is to create the conflict or accepting a list of Sith
+
+826
+00:50:11,843 --> 00:50:13,635
+Well that's what I said I don't ok
+
+827
+00:50:14,403 --> 00:50:15,171
 And that's it
-maybe I will need to to walk with the seats
-
-205
-00:50:23,690 --> 00:50:29,809
-so let me start off creating a field[parameter] seats
-
-206
-00:50:29,809 --> 00:50:36,410
-Maybe introduce a read property because I will
-
-207
-00:50:39,170 --> 00:50:44,869
-need to work with the the seats of that reservation attempt
-okay?
-
-208
-00:50:44,869 --> 00:50:49,819
-so we just introduced a reservation attempt which has a property of seats
-and that's it
-
-209
-00:50:49,819 --> 00:50:55,730
-pretty much so that the findavailableseats now the name is maybe
-build reservation temp
-
-210
-00:50:55,730 --> 00:51:02,990
-would be better
-yeah okay
-so now the method is built reservation attempt
-its find available
-
-211
-00:51:05,150 --> 00:51:08,450
-seat within the Train and return a
-reservation attemp with that
-it's okay for everyone
-said
-
-212
-00:51:12,410 --> 00:51:17,569
-so the code is not compiling anymore because I used
-to work with the list of seats so what I
-
-213
-00:51:17,569 --> 00:51:23,210
-need is to rename available seat by
-reservation attemp
-first step and then to
-
-214
-00:51:23,210 --> 00:51:28,820
-add the in direction to the seats and to
-work with the
-
-215
-00:51:28,820 --> 00:51:33,320
-the list of the seats
-so just let me fill that
-
-216
-00:51:33,320 --> 00:51:46,040
-three location
-f12
-oops
-got seats
-
-217
-00:51:46,040 --> 00:51:51,260
-should compile let me check
-okay it's compiling is still green
-
-218
-00:51:51,260 --> 00:51:58,910
-so here what I just did is to create a
-concept that is directly come from the
-domain a reservation attempt and replace
-
-219
-00:52:02,300 --> 00:52:07,520
-a simple list of seat
-okay ?
-what can I do here reservation attempt
-
-220
-00:52:07,520 --> 00:52:14,000
-here it's like saying the
-
-221
-00:52:14,000 --> 00:52:18,770
-is reservation
-attempt fulfilled, the domain expert
-
-222
-00:52:18,770 --> 00:52:24,560
-talking a lot about that so let's create
-a method for that
-extract and move
-
-223
-00:52:24,560 --> 00:52:31,640
-is fulfilled or not
-
-224
-00:52:31,640 --> 00:52:37,040
-I think it's it's okay for that
-so we asked the reservation attempt are you fullfilled
-
-225
-00:52:37,040 --> 00:52:44,510
-so first extract still on that
-class and then to move it to the up
-
-226
-00:52:44,510 --> 00:52:47,530
-sorry
-
-227
-00:52:47,530 --> 00:52:51,590
-I extract to behavior and I put it into
-the proper location which is reservationAttempt
-
-228
-00:52:51,590 --> 00:52:56,630
-let something bother me because you pass twice the seat request count
-
-229
-00:52:56,630 --> 00:53:01,400
-yeah
-you passed there and pass there
-you actually can provide
-
-230
-00:53:01,400 --> 00:53:06,320
-the seat requested count once when we construct the reservation attempt so
-
-231
-00:53:06,320 --> 00:53:10,250
-that we don't need anymore to ask to provide it every time we want to to
-
-232
-00:53:10,250 --> 00:53:16,810
-check if it's fulfill
-let's do that
-okay I agree
-go to implementation
-
-233
-00:53:16,810 --> 00:53:21,110
-seats requested counts I would provide it
-into the constructor of the reservation
-
-234
-00:53:21,110 --> 00:53:31,000
-attempt here okay sorry I thinking I did a huge mistake
-
-235
-00:53:32,100 --> 00:53:38,970
-so okay so I changed the constructor of
-the reservation attempt I'll tend to add
-
-236
-00:53:38,970 --> 00:53:44,520
-parameter to the constructor
-yes please sir do that
-and seats requested count here
-
-237
-00:53:44,520 --> 00:53:49,290
-what I can do is simply to keep a
-read-only field meaning it's not public
-
-238
-00:53:49,290 --> 00:53:53,580
-it won't be accessible by the outside
-world
-
-239
-00:53:53,580 --> 00:53:59,610
-now I had it what
-I can do is to leverage on it instead
-
-240
-00:53:59,610 --> 00:54:06,080
-of the one that is provided as argument in the each fulfill so here I replace it
-
-241
-00:54:06,080 --> 00:54:14,670
-the parameter with the internal field
-and now can get safety delete this
-
-242
-00:54:14,670 --> 00:54:22,140
-parameter since I'm in C# I can
-transform it into property expression body
-
-243
-00:54:22,140 --> 00:54:31,470
-okay let's let's move that now I
-think it's okay okay so here getting
-
-244
-00:54:31,470 --> 00:54:38,070
-back to the each fullfield usage you
-see I'm on a reserve method I asked
-
-245
-00:54:38,070 --> 00:54:43,620
-to build a reservation attempt to the
-Train
-oh maybe
-you don't move the BuildReservation on the train
-
-246
-00:54:44,070 --> 00:54:49,110
-below that I move the build attempt method to the Train
-
-247
-00:54:49,110 --> 00:54:54,150
-first so let's move
-it into the Train so now I can ask the
-
-248
-00:54:54,150 --> 00:54:57,750
-Train, please train build reservation attempt with that number of
-
-249
-00:54:57,750 --> 00:55:02,940
-seats I want.
-get a reservation attempt
-and then if it's fulfilled then I can
-
-250
-00:55:02,940 --> 00:55:07,620
-continue I can continue to ask the
-booking reference and also booking ref
-
-251
-00:55:07,620 --> 00:55:13,800
-is not part of the domain he said always
-booking reference yeah so let's stick to
-
-252
-00:55:13,800 --> 00:55:20,580
-the domain long edge in that case and
-then what we do is to iterate on every
-seats of the reservation attempt to
-
-253
-00:55:22,170 --> 00:55:28,320
-assign the booking refs yeah maybe we
-can extract a method here and put it
-
-254
-00:55:28,320 --> 00:55:34,010
-into the reservation attempt directly
-which will be assigned booking refs
-
-255
-00:55:34,010 --> 00:55:40,040
-which one the
-
-256
-00:55:40,420 --> 00:55:44,839
-the demo of exacting term
-of the domain expert we assign a booking refs
-
-257
-00:55:44,839 --> 00:55:48,619
-to revervation attempt
-ok I extract
-
-258
-00:55:48,619 --> 00:55:54,200
-the method what will be the next chain
-stuff to do to move yeah move to the
-reservation attempt
-ok so we assign
-
-259
-00:55:57,619 --> 00:56:02,930
-booking refs to the reservation
-attempt
-ok if we look at the
-implementation for you to
-
-260
-00:56:05,210 --> 00:56:09,650
-follow we take that bookingReference and
-assign it to every one of the seats of
-
-261
-00:56:09,650 --> 00:56:21,020
-the bookingRef
-ok?
-[Audience Question]
- I was thinking the same thing as you
-
-262
-00:56:21,020 --> 00:56:28,010
-and the domain expert was really saying
-the process is to build
-
-263
-00:56:28,010 --> 00:56:32,270
-a reservation attempt and at the end of the day to transform it into a
-reservation so yes but I was the same idea
-
-264
-00:56:35,670 --> 00:56:40,400
-yeah absolutely
-
-265
-00:56:40,400 --> 00:56:47,450
-good question
-actually we thought it's
-like a technical term build you used to
-do it to use it in technical but for the
-
-266
-00:56:50,390 --> 00:56:55,730
-domain expertise it was still a concept of this realm
-so we have a train caching to save ...
-
-267
-00:56:55,730 --> 00:57:02,000
-Wow well maybe it's time to morally
-have a cache in this application within
-
-268
-00:57:02,000 --> 00:57:08,119
-this application, yes you can cache everywhere let's see if it's still
-
-269
-00:57:08,119 --> 00:57:12,529
-relevant here
-ok?
-we have a declaration
-of the cache here on web ticket manager
-
-270
-00:57:12,529 --> 00:57:16,970
-then we associate it into the
-constructor of the web ticket manager
-
-271
-00:57:16,970 --> 00:57:23,930
-then we clear it
-interesting we clear it
-and cause it change the color
-
-272
-00:57:23,930 --> 00:57:30,710
-it illustrate me that oh it takes 3
-second, average of 2 second
-
-273
-00:57:30,710 --> 00:57:37,099
-to clear the cache I don't know what
-it's there but ok I hope it was and then
-
-274
-00:57:37,099 --> 00:57:43,700
-we save,
- yeah the bookingReference and
-the train id, ok. into the cache
-and then that's it
-
-275
-00:57:48,470 --> 00:57:55,880
-so the cache where we only save stuff
-but think about our
-maybe it was a
-
-276
-00:57:55,880 --> 00:58:02,570
-unfinished item,
- maybe that but even
-now if we implement correctly it's a
-
-277
-00:58:02,570 --> 00:58:05,720
-mistake
-as we said before
-
-278
-00:58:07,849 --> 00:58:16,609
-why we cache our topology,
-it's a mistake
-they can change it
-
-279
-00:58:19,250 --> 00:58:25,400
-and so yes it's a it's kind of stupid
-thing I would say let's get rid
-
-280
-00:58:25,400 --> 00:58:33,910
-of that, I remove it here I
-remove that remove that
-I feel better now
-[Audience Question]
-
-281
-00:58:47,720 --> 00:58:53,000
-this is the kind of discussion we may have since it's not here we
-
-282
-00:58:53,000 --> 00:58:56,210
-call it before because it's not the first time we run the session but
-
-283
-00:58:56,210 --> 00:59:01,250
-yes I will be with that this is
-something that we must discuss about the
-
-284
-00:59:01,250 --> 00:59:06,200
-strategy without talking about technical details but saying that we can memorize
-
-285
-00:59:06,200 --> 00:59:18,170
-stuff that we get at that time is it
-correct according to you
-[Audience Question]
-so yeah so ok
-
-286
-00:59:18,170 --> 00:59:26,410
-we get back to the method we get a train
-from train data service
-
-287
-00:59:26,410 --> 00:59:31,880
-then we have to judge train capacity
-
-288
-00:59:31,880 --> 00:59:36,290
-if it's not the case we build a reservation attempt yeah then we check
-
-289
-00:59:36,290 --> 00:59:42,770
-if it's fulfilled or not because we may
-run out of seats I see the train is full
-
-290
-00:59:42,770 --> 00:59:50,000
-for instance or reached the next to the
-limit then we ask booking reference service then
-
-291
-00:59:50,000 --> 00:59:54,200
-we assign the booking reference and
-then we booked the seat and then we
-
-292
-00:59:54,200 --> 01:00:00,670
-return the the result I don't know for
-you but now the method is one screen high
-
-293
-01:00:00,670 --> 01:00:05,480
-we are embracing a little bit more the
-concept of the domain
+
+828
+00:50:15,939 --> 00:50:20,035
+Meditation intense I need to
+
+829
+00:50:20,291 --> 00:50:24,131
+I will need to drop in the sticks
+
+830
+00:50:24,643 --> 00:50:25,667
+So let me
+
+831
+00:50:26,179 --> 00:50:28,739
+Set of creating a few let me Create
+
+832
+00:50:29,251 --> 00:50:30,275
+Let's be real and that
+
+833
+00:50:30,531 --> 00:50:31,299
+Apprenticeships
+
+834
+00:50:31,555 --> 00:50:33,859
+National identity history
+
+835
+00:50:34,115 --> 00:50:39,747
+Maybe to produce a report that said because I will need
+
+836
+00:50:40,259 --> 00:50:43,331
+Rock with her the tips of that animation of dogs
+
+837
+00:50:43,843 --> 00:50:44,355
+Ok
+
+838
+00:50:44,611 --> 00:50:46,403
+So we just thinking to reservation account
+
+839
+00:50:46,659 --> 00:50:48,451
+Each other property assets
+
+840
+00:50:49,219 --> 00:50:50,755
+And that it's pretty much
+
+841
+00:50:51,011 --> 00:50:54,595
+So that the final elements it's now the name is
+
+842
+00:50:55,107 --> 00:50:57,155
+BBC weather
+
+843
+00:50:57,923 --> 00:50:59,203
+Any better yet
+
+844
+00:51:01,507 --> 00:51:04,067
+Fernando massages beautiful passionate earned it
+
+845
+00:51:04,579 --> 00:51:07,907
+Find a venomous it was in the train and return result shadow temple that
+
+846
+00:51:08,163 --> 00:51:09,187
+It's ok for everyone
+
+847
+00:51:11,491 --> 00:51:16,611
+So the card is not complaining anymore because I used to work with a list of seats
+
+848
+00:51:16,867 --> 00:51:20,195
+So what I need is to rename available to buy in Ashington
+
+849
+00:51:21,987 --> 00:51:22,755
+And then
+
+850
+00:51:23,011 --> 00:51:23,523
+Two
+
+851
+00:51:23,779 --> 00:51:26,083
+Adding directions to the city
+
+852
+00:51:26,851 --> 00:51:32,995
+Dental work with the list of numbers
+
+853
+00:51:33,251 --> 00:51:34,019
+Convert 3
+
+854
+00:51:34,275 --> 00:51:35,043
+Location
+
+855
+00:51:35,811 --> 00:51:37,091
+S12
+
+856
+00:51:38,115 --> 00:51:38,883
+Look suits
+
+857
+00:51:39,907 --> 00:51:41,699
+The squirrel in love
+
+858
+00:51:42,467 --> 00:51:44,259
+Rob Delaney
+
+859
+00:51:45,795 --> 00:51:47,587
+Fortran compiler Project
+
+860
+00:51:49,635 --> 00:51:51,171
+Ok it's compiling still win
+
+861
+00:51:51,683 --> 00:51:54,243
+For hear what I just did is to
+
+862
+00:51:55,779 --> 00:52:01,923
+Traits of a cancer directly come from the domain of havisham attempt and I
+
+863
+00:52:02,179 --> 00:52:04,739
+Replace a simple instruction by a mate
+
+864
+00:52:06,275 --> 00:52:09,859
+What can I do here I have a debit card
+
+865
+00:52:10,627 --> 00:52:13,187
+Yeah it's like saying
+
+866
+00:52:13,443 --> 00:52:17,539
+Doddle
+
+867
+00:52:18,051 --> 00:52:20,355
+The new film with talking a lot about that song
+
+868
+00:52:20,611 --> 00:52:21,891
+Let's create a method for that
+
+869
+00:52:22,915 --> 00:52:23,427
+A cut
+
+870
+00:52:24,195 --> 00:52:25,987
+Animals in
+
+871
+00:52:26,499 --> 00:52:30,339
+Fulfilled most complicated formula to find out in writing in English
+
+872
+00:52:31,363 --> 00:52:32,131
+Birthing kits
+
+873
+00:52:32,387 --> 00:52:33,923
+It's ok for that
+
+874
+00:52:34,435 --> 00:52:35,203
+So we asked
+
+875
+00:52:35,715 --> 00:52:38,787
+What is an isotope are you fulfilled so first X Factor
+
+876
+00:52:39,299 --> 00:52:42,371
+Cylinder under to gas and then to move it
+
+877
+00:52:42,883 --> 00:52:45,187
+I'm sorry
+
+878
+00:52:45,443 --> 00:52:46,979
+Today's weather
+
+879
+00:52:47,235 --> 00:52:52,099
+So I ate a cartoon of you and I put it into the politician which is awesome
+
+880
+00:52:52,355 --> 00:52:55,939
+The little something bother me because you passed twice
+
+881
+00:52:56,195 --> 00:52:57,987
+Citroen request agilitas
+
+882
+00:52:58,243 --> 00:53:04,387
+You better and if I can provide the 6th question Colts once when we construct
+
+883
+00:53:06,179 --> 00:53:11,555
+So that we don't need anymore to ask to provide it's every time we want to to check if it's Gucci wallet
+
+884
+00:53:12,067 --> 00:53:15,907
+Lisburn Auto Care degree go to implementation
+
+885
+00:53:16,675 --> 00:53:18,723
+Sequestered colds
+
+886
+00:53:18,979 --> 00:53:21,795
+I will provide it into the closet organisation attempts
+
+887
+00:53:23,331 --> 00:53:23,843
+Ok
+
+888
+00:53:25,123 --> 00:53:26,403
+Sorry I think I'm
+
+889
+00:53:27,427 --> 00:53:29,219
+I need a huge mistake
+
+890
+00:53:31,779 --> 00:53:33,059
+Up sorry
+
+891
+00:53:33,827 --> 00:53:34,339
+Ok
+
+892
+00:53:34,595 --> 00:53:37,155
+So I change the photo on the reservation account
+
+893
+00:53:37,667 --> 00:53:41,763
+Alton Tower, Cheltenham Hospital yes please sir
+
+894
+00:53:42,019 --> 00:53:42,787
+Regards
+
+895
+00:53:43,299 --> 00:53:46,627
+Italy coast to coast Newark what I can do is simply too cheaper
+
+896
+00:53:46,883 --> 00:53:52,003
+Arena mission meaning it's not finish it will be accessible through here
+
+897
+00:53:52,259 --> 00:53:53,027
+Outside world
+
+898
+00:53:53,539 --> 00:53:55,331
+388 in
+
+899
+00:53:55,587 --> 00:53:56,867
+No I had it
+
+900
+00:53:57,123 --> 00:53:58,915
+What I can do is to lay right on that
+
+901
+00:53:59,171 --> 00:53:59,939
+Instead of
+
+902
+00:54:00,195 --> 00:54:01,731
+The one that is provided
+
+903
+00:54:01,987 --> 00:54:03,779
+As arguments in the instruction
+
+904
+00:54:04,291 --> 00:54:05,059
+4 year
+
+905
+00:54:05,315 --> 00:54:06,339
+I replace it
+
+906
+00:54:06,851 --> 00:54:12,995
+The bomber dealt with in January I can get cigarettes
+
+907
+00:54:14,531 --> 00:54:15,299
+Define meta
+
+908
+00:54:15,811 --> 00:54:20,419
+Since I'm in the shop I can post your mates into property
+
+909
+00:54:21,443 --> 00:54:23,491
+Xbox One buddy
+
+910
+00:54:24,003 --> 00:54:24,771
+Ok
+
+911
+00:54:25,283 --> 00:54:26,819
+This one's that
+
+912
+00:54:27,075 --> 00:54:28,611
+No I think it's ok ok
+
+913
+00:54:29,635 --> 00:54:32,963
+So here getting back to the Institute
+
+914
+00:54:33,731 --> 00:54:35,267
+You said you see
+
+915
+00:54:35,523 --> 00:54:40,131
+I want to reserve massage I asked that has happened to me the other night then to the train
+
+916
+00:54:40,643 --> 00:54:46,787
+Albania on the train
+
+917
+00:54:47,555 --> 00:54:48,067
+Roulette
+
+918
+00:54:48,835 --> 00:54:49,603
+I just extract
+
+919
+00:54:49,859 --> 00:54:52,675
+The Mistletoe let's move it into the train
+
+920
+00:54:52,931 --> 00:54:57,027
+So now I can ask the train please try and give me your attention music
+
+921
+00:54:57,283 --> 00:54:58,563
+Number 68
+
+922
+00:54:59,075 --> 00:55:01,635
+Get off its food
+
+923
+00:55:02,403 --> 00:55:03,427
+Then I can continue
+
+924
+00:55:04,195 --> 00:55:10,339
+I can't continue to ASDA booking office and also looking at her she is not part of the domain you said always looking
+
+925
+00:55:11,363 --> 00:55:12,387
+So let's
+
+926
+00:55:12,643 --> 00:55:14,947
+Stickers of the mend Longridge
+
+927
+00:55:15,203 --> 00:55:16,483
+The Chase
+
+928
+00:55:16,995 --> 00:55:23,139
+And then what we do is to iterate or every citizen resolution attempt to assign materials
+
+929
+00:55:24,419 --> 00:55:25,443
+Maybe we can
+
+930
+00:55:25,699 --> 00:55:27,235
+Attack the messenger
+
+931
+00:55:27,747 --> 00:55:31,331
+And put it into the position and then directly which will be a sign
+
+932
+00:55:32,099 --> 00:55:32,867
+Booking reference
+
+933
+00:55:34,915 --> 00:55:36,451
+Which one video
+
+934
+00:55:36,963 --> 00:55:41,059
+Which was the
+
+935
+00:55:41,315 --> 00:55:45,411
+The devil's a dimension is that time of the minute we are signing with initials
+
+936
+00:55:45,923 --> 00:55:47,459
+Designer shirts ok
+
+937
+00:55:48,227 --> 00:55:50,019
+I tried to my son what will be the next
+
+938
+00:55:51,299 --> 00:55:52,323
+Stephanie
+
+939
+00:55:52,835 --> 00:55:54,883
+To move ya love to know that I don't
+
+940
+00:55:55,395 --> 00:55:56,419
+Ok
+
+941
+00:55:56,675 --> 00:55:59,747
+So we are seeing meteor showers 2010
+
+942
+00:56:00,771 --> 00:56:01,283
+Ok
+
+943
+00:56:02,051 --> 00:56:08,195
+If we look at the implementation just too funny to fail all we take that looking at house and sign it
+
+944
+00:56:08,451 --> 00:56:09,475
+To everyone of the seats
+
+945
+00:56:09,987 --> 00:56:11,011
+Of the multinationals
+
+946
+00:56:19,459 --> 00:56:23,555
+I was thinking the same thing as you and the Medics was really saying it
+
+947
+00:56:23,811 --> 00:56:24,579
+We build
+
+948
+00:56:25,091 --> 00:56:28,931
+The process is to build a reservation agent
+
+949
+00:56:29,443 --> 00:56:33,027
+And at the end of the day to transform it into hibernation
+
+950
+00:56:33,795 --> 00:56:36,867
+So yes but I wasn't saying that
+
+951
+00:56:37,379 --> 00:56:40,451
+Idea
+
+952
+00:56:40,707 --> 00:56:41,475
+Regression
+
+953
+00:56:41,731 --> 00:56:46,339
+Actually we thought it's like a technical team builder
+
+954
+00:56:46,851 --> 00:56:52,995
+Used to do it to use it in technical lead for the next concert
+
+955
+00:56:54,019 --> 00:57:00,163
+So we have a train station see what it may be sent to more and you haven't
+
+956
+00:57:00,419 --> 00:57:03,491
+Who is happy fashion within this application of the Year sequel
+
+957
+00:57:04,003 --> 00:57:09,379
+Yeah it's just everywhere let's see if it's irrelevant you ok
+
+958
+00:57:09,635 --> 00:57:10,147
+Rabbit
+
+959
+00:57:10,403 --> 00:57:13,219
+Decoration of the general manager
+
+960
+00:57:13,731 --> 00:57:17,059
+Then we used to set it into the hospital so intricate Benidorm
+
+961
+00:57:17,571 --> 00:57:20,387
+Then we clear it interesting
+
+962
+00:57:20,899 --> 00:57:26,787
+Weekly rates and an unconscious changing the glow in the stretching mediatek Street II
+
+963
+00:57:27,555 --> 00:57:30,115
+Average average of two figures
+
+964
+00:57:30,371 --> 00:57:33,443
+Total to clear the cache I don't know what to debit
+
+965
+00:57:33,955 --> 00:57:35,747
+Ok I hope it's worth
+
+966
+00:57:36,771 --> 00:57:38,307
+And then we said
+
+967
+00:57:38,819 --> 00:57:39,331
+The book
+
+968
+00:57:39,587 --> 00:57:43,939
+English film Olsen the trainer Gok into into the dash
+
+969
+00:57:44,195 --> 00:57:45,987
+And then that's it
+
+970
+00:57:47,011 --> 00:57:48,547
+Is that so
+
+971
+00:57:48,803 --> 00:57:50,595
+Attach where we only save stuff
+
+972
+00:57:52,643 --> 00:57:58,275
+But think about the hour
+
+973
+00:57:58,531 --> 00:57:59,299
+Ivana
+
+974
+00:57:59,555 --> 00:58:01,347
+Windjammer correctly
+
+975
+00:58:02,371 --> 00:58:03,139
+It's a mistake
+
+976
+00:58:03,395 --> 00:58:06,467
+As we said before we completely older
+
+977
+00:58:07,235 --> 00:58:07,747
+Khomeini
+
+978
+00:58:08,259 --> 00:58:08,771
+So
+
+979
+00:58:09,539 --> 00:58:11,331
+Autocar venues self service
+
+980
+00:58:12,355 --> 00:58:14,147
+And why we cash
+
+981
+00:58:14,403 --> 00:58:16,707
+HR department waiting staff
+
+982
+00:58:17,219 --> 00:58:17,987
+It's a mistake
+
+983
+00:58:18,243 --> 00:58:22,339
+You can change it and say yes it says it's going to stupid
+
+984
+00:58:22,595 --> 00:58:23,619
+Think I would say
+
+985
+00:58:24,387 --> 00:58:26,947
+Miss Katrina Isabella switch up
+
+986
+00:58:27,203 --> 00:58:28,995
+I remove it here
+
+987
+00:58:29,763 --> 00:58:32,067
+Animals that swim of that sand
+
+988
+00:58:32,323 --> 00:58:33,091
+Hi
+
+989
+00:58:34,627 --> 00:58:35,651
+Nationbuilder
+
+990
+00:58:46,915 --> 00:58:51,011
+This is a discussion we we we may have with the National
+
+991
+00:58:51,267 --> 00:58:52,291
+Thisisnottingham
+
+992
+00:58:52,803 --> 00:58:56,387
+Recording before win because it's not the first time we run the session.
+
+993
+00:58:56,643 --> 00:59:02,787
+Yes you're over that this is something that we discussed
+
+994
+00:59:03,043 --> 00:59:05,091
+Technical details with saying that
+
+995
+00:59:05,347 --> 00:59:06,627
+Retained amores
+
+996
+00:59:06,883 --> 00:59:09,699
+Stuff that we get at that time is it correct
+
+997
+00:59:09,955 --> 00:59:11,747
+According to you
+
+998
+00:59:12,003 --> 00:59:13,283
+So yeah
+
+999
+00:59:15,587 --> 00:59:19,171
+So ok we
+
+1000
+00:59:19,427 --> 00:59:21,475
+Directors lodge massage
+
+1001
+00:59:21,731 --> 00:59:26,595
+We get a train then we asked to train
+
+1002
+00:59:27,363 --> 00:59:27,875
+Alex
+
+1003
+00:59:28,131 --> 00:59:31,971
+Overheard in the other twin capacity 3 ask princess yet
+
+1004
+00:59:32,227 --> 00:59:37,603
+Adjustable bookcase remember that I should I dance then we check if it's fulfill that
+
+1005
+00:59:38,371 --> 00:59:39,395
+Nicolas Marin
+
+1006
+00:59:39,651 --> 00:59:40,931
+Outdoor Pursuits
+
+1007
+00:59:41,187 --> 00:59:43,491
+The house in the 24th fences
+
+1008
+00:59:43,747 --> 00:59:47,075
+Wrist tattoo next to the Limit
+
+1009
+00:59:47,587 --> 00:59:49,123
+Then we Oscar booking assholes
+
+1010
+00:59:49,891 --> 00:59:52,963
+Then we assign the booking office and then we booked the seats
+
+1011
+00:59:53,219 --> 00:59:56,547
+And then we return the there isn't
+
+1012
+00:59:56,803 --> 01:00:00,387
+I don't know phone you but now the Mercedes one screen hi
+
+1013
+01:00:01,411 --> 01:00:06,275
+We are addressing a little bit more the concept of the domain and we
 
 1014
 01:00:06,531 --> 01:00:12,163
@@ -3469,11 +4137,11 @@ because
 
 1035
 01:01:15,143 --> 01:01:16,679
-when we enter BuildReservationAttempt here
+when we enter BuildReservationAttempt here 
 
 1036
 01:01:18,727 --> 01:01:20,775
-we build it from the
+we build it from the 
 
 1037
 01:01:21,287 --> 01:01:25,383
@@ -3481,7 +4149,7 @@ train perspective and not from the coach perspective
 
 1038
 01:01:25,639 --> 01:01:28,455
-we use all seats with no notion of coach
+we use all seats with no notion of coach 
 
 1039
 01:01:28,967 --> 01:01:33,575
@@ -3505,7 +4173,7 @@ yeah absolutely..good idea
 
 1044
 01:02:14,791 --> 01:02:17,351
-but how to introduce it
+but how to introduce it 
 
 1045
 01:02:17,607 --> 01:02:18,119
@@ -3513,11 +4181,11 @@ right now
 
 1046
 01:02:18,631 --> 01:02:20,679
-what will be your next move?
+what will be your next move? 
 
 1047
 01:02:24,263 --> 01:02:29,127
-yeah okay, but how to do that?
+yeah okay, but how to do that? 
 
 1048
 01:02:29,383 --> 01:02:30,919
@@ -3541,7 +4209,7 @@ we will check that the a train exposed coaches for instance
 
 1053
 01:02:50,375 --> 01:02:52,935
- for example
+ for example 
 
 1054
 01:02:53,959 --> 01:02:56,519
@@ -3557,7 +4225,7 @@ And
 
 1057
 01:02:59,847 --> 01:03:01,383
-we want you
+we want you 
 
 1058
 01:03:01,639 --> 01:03:05,479
@@ -3585,7 +4253,7 @@ It's a time? should
 
 1064
 01:03:21,863 --> 01:03:24,935
-And maybe...to be...should expose coaches something like that?
+And maybe...to be...should expose coaches something like that? 
 
 1065
 01:03:26,471 --> 01:03:27,495
@@ -3593,7 +4261,7 @@ So we get a train
 
 1066
 01:03:28,519 --> 01:03:30,823
-so should TrainShould expose coaches?
+so should TrainShould expose coaches? 
 
 1067
 01:03:38,503 --> 01:03:40,551
@@ -3625,7 +4293,7 @@ But
 
 1074
 01:04:04,871 --> 01:04:06,407
-Because money
+Because money 
 
 1075
 01:04:06,663 --> 01:04:12,807
@@ -3653,7 +4321,7 @@ and step like so it we need the population through to make it
 
 1081
 01:04:36,871 --> 01:04:38,151
-So Far we need it
+So Far we need it 
 
 1082
 01:04:38,407 --> 01:04:41,735
@@ -3681,7 +4349,7 @@ So just for
 
 1088
 01:04:55,559 --> 01:04:57,607
-some explanation because I use a
+some explanation because I use a 
 
 1089
 01:04:58,631 --> 01:05:00,423
@@ -3697,19 +4365,19 @@ We use it in the tests to mock some situations...this is a tenth topology table
 
 1092
 01:05:09,383 --> 01:05:15,527
-so he will probably have built a spawning...it's a way to qualify the topology
+so he will probably have built a spawning...it's a way to qualify the topology 
 
 1093
 01:05:15,783 --> 01:05:21,415
-And it's good to use because I know in this topology
+And it's good to use because I know in this topology 
 
 1094
 01:05:21,671 --> 01:05:23,719
-I have two coach and
+I have two coach and 
 
 1095
 01:05:24,487 --> 01:05:25,767
-we stand seat for each coach so it's the reason why I use this one
+we stand seat for each coach so it's the reason why I use this one 
 
 1096
 01:05:26,023 --> 01:05:29,351
@@ -3821,7 +4489,7 @@ doesn't exists yet
 
 1123
 01:06:48,967 --> 01:06:51,527
-The same we will create
+The same we will create 
 
 1124
 01:06:51,783 --> 01:06:52,295
@@ -3833,7 +4501,7 @@ for Coach...Yeah I would create it because...right time
 
 1126
 01:06:57,415 --> 01:07:00,231
-So here the train will have
+So here the train will have 
 
 1127
 01:07:00,743 --> 01:07:02,279
@@ -3977,7 +4645,7 @@ I introduced available
 
 1162
 01:09:03,879 --> 01:09:05,159
-we called it..can newCoach? No?
+we called it..can newCoach? No? 
 
 1163
 01:09:08,743 --> 01:09:09,255
@@ -4017,7 +4685,7 @@ actually you have to ......I have to refactor at first
 
 1172
 01:09:41,767 --> 01:09:47,911
-the coache is here
+the coache is here 
 
 1173
 01:09:48,167 --> 01:09:50,727
@@ -4085,7 +4753,7 @@ oh, no, no..just compile...I think is not compiling
 
 1189
 01:10:43,463 --> 01:10:44,231
-anymore, something like that
+anymore, something like that	
 
 1190
 01:10:44,999 --> 01:10:51,143
@@ -4121,7 +4789,7 @@ If you have more time
 
 1198
 01:11:12,903 --> 01:11:14,439
-There is something I would like to do
+There is something I would like to do 
 
 1199
 01:11:15,975 --> 01:11:19,303
@@ -4197,7 +4865,7 @@ the only
 
 1217
 01:12:14,855 --> 01:12:17,671
-things that will be mutable is the reservation attempt
+things that will be mutable is the reservation attempt 
 
 1218
 01:12:18,951 --> 01:12:24,071
@@ -4217,7 +4885,7 @@ And the reseravation would be immutable
 
 1222
 01:12:34,055 --> 01:12:36,871
-the reservation to reservation....we it's
+the reservation to reservation....we it's 
 
 1223
 01:12:37,127 --> 01:12:38,663
@@ -4245,7 +4913,7 @@ its meaning the coach
 
 1229
 01:13:02,983 --> 01:13:06,567
-We have a method which is addSeats so I can add seats for the coache
+We have a method which is addSeats so I can add seats for the coache 
 
 1230
 01:13:06,823 --> 01:13:10,151
@@ -4333,7 +5001,7 @@ In any case it's important to discuss with domain expert
 
 1251
 01:14:23,623 --> 01:14:25,671
-unfortunately we used to do that session with one domain expert
+unfortunately we used to do that session with one domain expert 
 
 1252
 01:14:25,927 --> 01:14:26,951
@@ -4369,7 +5037,7 @@ states relating to something that I don't
 
 1260
 01:14:52,551 --> 01:14:53,319
-I'm not
+I'm not  
 
 1261
 01:14:53,575 --> 01:14:55,879
@@ -4397,7 +5065,7 @@ Yeah, absolutely
 
 1267
 01:15:27,623 --> 01:15:33,767
-Ok I think maybe it's not pop up...yeah...absolutely...okay...so...instead of changing the coach here
+Ok I think maybe it's not pop up...yeah...absolutely...okay...so...instead of changing the coach here 
 
 1268
 01:15:34,023 --> 01:15:36,327
@@ -4409,7 +5077,7 @@ make it a coach of attention here
 
 1270
 01:15:40,679 --> 01:15:46,055
-So I didn't seats it doesn't mutate the existing coach which will only return
+So I didn't seats it doesn't mutate the existing coach which will only return 
 
 1271
 01:15:46,311 --> 01:15:47,079
@@ -4429,7 +5097,7 @@ with seat name
 
 1275
 01:15:55,015 --> 01:15:55,783
-with what?
+with what? 
 
 1276
 01:15:56,295 --> 01:15:57,063
@@ -4453,11 +5121,11 @@ expect outstage our left floor forward
 
 1281
 01:16:11,655 --> 01:16:17,799
-I guess museum story with tons of stuff so
+I guess museum story with tons of stuff so 
 
 1282
 01:16:18,055 --> 01:16:21,383
-we had to pick a fight for that short version of two hours... there are many things that we may improve what them about
+we had to pick a fight for that short version of two hours... there are many things that we may improve what them about 
 
 1283
 01:16:23,431 --> 01:16:28,295
@@ -4489,7 +5157,7 @@ Yes
 
 1290
 01:16:46,727 --> 01:16:47,751
-to avoid the
+to avoid the 
 
 1291
 01:16:48,775 --> 01:16:50,055
@@ -4549,7 +5217,7 @@ through it...new coach
 
 1305
 01:17:27,943 --> 01:17:30,759
-Yeah, new coach and then to stalk the new coach by
+Yeah, new coach and then to stalk the new coach by 
 
 1306
 01:17:31,271 --> 01:17:33,319
@@ -4557,7 +5225,7 @@ a ball into dictionary
 
 1307
 01:17:34,087 --> 01:17:37,415
-So it's still red here?
+So it's still red here? 
 
 1308
 01:17:37,671 --> 01:17:41,767
@@ -4613,7 +5281,7 @@ we will do that because we would like to show you a picture second architecture 
 
 1321
 01:19:03,431 --> 01:19:09,319
-Yeah but absolutely that was next point actually we have a train which has
+Yeah but absolutely that was next point actually we have a train which has 
 
 1322
 01:19:10,087 --> 01:19:11,623
@@ -4673,7 +5341,7 @@ for every seats
 
 1336
 01:19:47,975 --> 01:19:49,767
-change to c
+change to c 
 
 1337
 01:19:50,023 --> 01:19:50,791
@@ -4745,7 +5413,7 @@ Absolutely...villages?...yes
 
 1354
 01:20:39,944 --> 01:20:43,016
-idea is to move the findAvailableSeats or the buildReservationAttempt
+idea is to move the findAvailableSeats or the buildReservationAttempt 
 
 1355
 01:20:43,272 --> 01:20:44,296
@@ -4953,7 +5621,7 @@ based on the  what's on 'seat'
 
 1406
 01:23:19,176 --> 01:23:21,224
-here we have some kind of
+here we have some kind of 
 
 1407
 01:23:21,480 --> 01:23:27,112
@@ -5057,7 +5725,7 @@ Since we are working on seats
 
 1432
 01:25:02,088 --> 01:25:03,880
-so non-static public
+so non-static public 
 
 1433
 01:25:05,160 --> 01:25:05,928
@@ -5077,7 +5745,7 @@ Move it
 
 1437
 01:25:12,840 --> 01:25:17,192
-So here now if you can zoom on the link us with a request
+So here now if you can zoom on the link us with a request 
 
 1438
 01:25:17,704 --> 01:25:21,800
@@ -5089,7 +5757,7 @@ And we take the first number that we need it
 
 1440
 01:25:32,040 --> 01:25:36,648
-We need it. That's we introduced that eariler for the each fulfilled
+We need it. That's we introduced that eariler for the each fulfilled 
 
 1441
 01:25:37,928 --> 01:25:42,792
