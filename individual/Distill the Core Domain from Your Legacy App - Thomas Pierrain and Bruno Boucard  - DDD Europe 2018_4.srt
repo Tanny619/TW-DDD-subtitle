@@ -1,2367 +1,1569 @@
 1
-00:00:00,000 --> 00:00:02,048
-Maybe we can have a
+01:25:53,670 --> 01:26:04,620
+yeah maybe we can have a tiny part
+about aggregates yeah so just a tiny
 
 2
-00:00:03,328 --> 00:00:04,096
-Tiny
+01:26:04,620 --> 01:26:09,000
+part about aggregates. Aggregates is a 
+collection of objects which is entity and value types
 
 3
-00:00:04,608 --> 00:00:06,656
-Part about Aggregates
+01:26:09,000 --> 01:26:16,220
+treated as a conceptual whole. Can
+you see some aggregates in here
 
 4
-00:00:06,912 --> 00:00:13,056
-
+01:26:18,460 --> 01:26:30,470
+train? yeah. Is coach an aggregate? no.
+why is that?[Audience]yeah some aggregates mayby immutable.
 
 5
-00:00:13,312 --> 00:00:14,848
-AstraZeneca Central Hall
+01:26:30,470 --> 01:26:34,490
+Actually it's
+no because aggregates need invariants,
+need business rules need something to to
 
 6
-00:00:16,640 --> 00:00:18,176
-Can you see somebody getting here
+01:26:36,800 --> 01:26:42,560
+to to
+yeah to be enforced I would say. And here
 
 7
-00:00:23,040 --> 00:00:24,064
-Train
+01:26:42,560 --> 01:26:49,130
+the only variants we have is train level.
 
 8
-00:00:24,576 --> 00:00:25,600
-Is Gorton aggregate
+01:26:49,130 --> 01:26:53,600
+they must not exceed 70 percent of the
+train tickets limited which is the business I
 
 9
-00:00:27,392 --> 00:00:27,904
-Why is that
+01:26:53,600 --> 01:27:01,130
+own and the coach aggregates as to as
+to to enforced when we discuss with the
 
 10
-00:00:32,512 --> 00:00:38,656
-And does not seem to know because aggregates in science
+01:27:01,130 --> 01:27:05,210
+domain expert he told us that he
+wanted to add some new rules related to the coach.
 
 11
-00:00:38,912 --> 00:00:41,984
-When do the schools need to 22222
+01:27:05,210 --> 01:27:11,000
+so that coach must not be
+fulfilled also at must not be exceed 
 
 12
-00:00:42,496 --> 00:00:43,520
-Tamiya
+01:27:11,000 --> 01:27:15,980
+given capacity so in that case it will
+turn into an aggregate voice maybe it's
 
 13
-00:00:45,824 --> 00:00:50,176
-Ed Sheeran the only running value for harvesting data training
+01:27:15,980 --> 01:27:22,850
+a kind of detail. But something
+interesting. Train, coach and seat may
 
 14
-00:00:50,432 --> 00:00:56,320
-The I lost I do I must not exceed 70% of the 20% meat
+01:27:22,850 --> 01:27:28,760
+all be value types here. as we discuss
+earlier if we think about the way we
 
 15
-00:00:56,832 --> 00:00:58,368
-This is a museum Dundee
+01:27:28,760 --> 01:27:33,850
+interact with the external backend we
+get a kind of snapshot valid from a
 
 16
-00:00:58,624 --> 00:01:02,720
-Coach Aggregates s202
+01:27:33,850 --> 01:27:40,280
+moment of time and we will work on that
+snapshot. so we don't want to keep it in
+cache. We just want to work with all those
 
 17
-00:01:04,000 --> 00:01:09,632
-When we discussed with the ministry after you told her that you wanted to have some new rules ready to the coach
+01:27:43,340 --> 01:27:49,880
+aggregates. fine cells so to enforce that
+we can make it all value types. actually
 
 18
-00:01:10,144 --> 00:01:14,752
-So that's a good enough money for funeral so I must not be here
+01:27:49,880 --> 01:27:53,090
+in the long term Russian we that's what
+we did
 
 19
-00:01:15,008 --> 00:01:18,080
-The giving diversity is going to change maternity
+01:27:53,090 --> 01:28:03,080
+so that means that some aggregates may
+be completely value types also.[Audience] yeah the
 
 20
-00:01:18,336 --> 00:01:22,432
-Leggetts voice maybe it's getting better
+01:28:03,080 --> 01:28:10,430
+trend here it most of the case it's like
+this message was to it was one 
 
 21
-00:01:22,688 --> 00:01:24,992
-Something interesting
+01:28:10,430 --> 01:28:15,340
+case where we could have this exception [Audience]
 
 22
-00:01:25,504 --> 00:01:28,320
-Train coaches and seatbelt devalue types here
+01:28:27,380 --> 01:28:32,519
+if we have a level-two Business School
+to be enforced at the coach level it.
 
 23
-00:01:28,832 --> 00:01:30,624
-As we discussed earlier
+01:28:32,519 --> 01:28:37,289
+Yeah, in the long version we do that. So so far we
+improved somehow the web ticket manager
 
 24
-00:01:30,880 --> 00:01:34,976
-If you think about the way we interact with external backend
+01:28:39,300 --> 01:28:45,179
+and the before it was a free screen
+high, full of legacy code with lots
 
 25
-00:01:35,232 --> 00:01:36,512
-You're the kind of snapshots
+01:28:45,179 --> 01:28:50,880
+of legacy stuff yeah. I think we have
+kind of improved a little bit it's one
 
 26
-00:01:37,024 --> 00:01:39,328
-Venice, moment of time
+01:28:50,880 --> 01:28:56,309
+screen high. It's using the word of the
+domain within the code what we call
 
 27
-00:01:39,584 --> 00:01:42,144
-In we will rock on that Snapchat song
+01:28:56,309 --> 01:29:02,130
+ubiquitous language. we extract some
+behaviors and we put them into the proper
 
 28
-00:01:42,400 --> 00:01:48,544
-With a wall to keep it in cash we just want to rock with all those Aggregates
+01:29:02,130 --> 01:29:07,769
+locations, but there is still something
+that botheres us. someone has told it
 
 29
-00:01:48,800 --> 00:01:49,312
-Francis
+01:29:07,769 --> 01:29:15,959
+before this is that we have some Json
+ design into the domain method
 
 30
-00:01:49,568 --> 00:01:55,712
-So24 that we can make it all when you type so I shouldn't International
+01:29:15,959 --> 01:29:22,110
+and we still have our Task of strings
+which is also a jism. yeah what we would
 
 31
-00:01:55,968 --> 00:01:56,992
-That's what we did
+01:29:22,110 --> 01:29:28,380
+like to do here is to get rid of that
+design, and stuff and to replace it by
 
 32
-00:01:57,504 --> 00:02:03,136
-So that means that some aggregates may be completely when you type so so
+01:29:28,380 --> 01:29:35,579
+reserve. sorry, reservation. So
+that the Reserve method will return a
 
 33
-00:02:06,720 --> 00:02:08,000
-The train here
+01:29:35,579 --> 01:29:41,249
+reservation. then on the infrastructure side
+side and we will transform
 
 34
-00:02:09,536 --> 00:02:12,096
-It's most of the cases leggings with each other
+01:29:41,249 --> 01:29:45,989
+the Reservation into a json version,
+if we have an adapter if we have
 
 35
-00:02:12,352 --> 00:02:16,192
-Do it was 11 days where we could have
+01:29:45,989 --> 01:29:50,340
+something pluggable. okay so I
+suggest I will talk a little bit about
 
 36
-00:02:16,448 --> 00:02:17,728
-Just exception
+01:29:50,340 --> 01:29:52,979
+the second equation which slide. I'm
+sorry
 
 37
-00:02:30,272 --> 00:02:36,416
-If you have a number you're just going to be interested because
+01:29:52,979 --> 01:30:00,179
+I will work on the code you
+don't see. but it will explain when we
 
 38
-00:02:36,672 --> 00:02:40,000
-Maternity orangutan letter in the longest run without me do that
+01:30:00,179 --> 01:30:04,380
+get back to the code and like an
+architecture we explain what we have done.
 
 39
-00:02:40,512 --> 00:02:43,328
-Source of how we improved somehow the web ticket manager
+01:30:04,380 --> 01:30:10,590
+okay
+so who is aware of what hexagonal architecture is?
 
 40
-00:02:43,584 --> 00:02:45,120
-And I had a little brother
+01:30:10,590 --> 01:30:18,420
+okay cool what hexagonal 
+architecture pattern is made
 
 41
-00:02:45,376 --> 00:02:46,400
-Kristina Si
+01:30:18,420 --> 01:30:24,090
+by Alistair Cockburn.
+I can't remember, the long time ago.
 
 42
-00:02:46,912 --> 00:02:51,264
-Fallout 4 interactive car there is a lot of finger sister now
+01:30:24,090 --> 01:30:28,940
+and it has many benefits. it's a pattern
+at the architectural level it's known as to
 
 43
-00:02:51,776 --> 00:02:52,800
-I think we have gone off
+01:30:33,620 --> 01:30:40,370
+embrace change it was the first idea of
+Alistair was to plug and unplug external
 
 44
-00:02:53,312 --> 00:02:59,456
-Improve the little bit 61 screen hi it's using the world's of the domain was in the car
+01:30:40,370 --> 01:30:46,460
+dependencies plug and unplug stuff he
+was talking about whether system able to
 
 45
-00:02:59,712 --> 00:03:00,992
-Don't recall lyrics Justin
+01:30:46,460 --> 01:30:51,260
+to be plugged with many different
+standards as input and many different
 
 46
-00:03:02,272 --> 00:03:06,624
-Rifftrax and some of the other new we put it into the popular locations
+01:30:51,260 --> 01:30:56,780
+stutters as output to broadcast news to
+broadcast to TV to radio to whatever.
+so it was kind of to have
 
 47
-00:03:07,392 --> 00:03:08,672
-But there is still something
+01:31:00,830 --> 01:31:07,220
+of clean code inside and every changes
+in terms of i/o or way to interact with
 
 48
-00:03:08,928 --> 00:03:09,696
-Weather
+01:31:07,220 --> 01:31:12,290
+the system to be a non-event to be
+something like you plug a plug in and
 
 49
-00:03:10,720 --> 00:03:11,744
-Tomorrow started
+01:31:12,290 --> 01:31:17,900
+you can plug a plug in and that's it so
+it's it's come with it was introduced by
 
 50
-00:03:12,000 --> 00:03:12,512
-The swap
+01:31:17,900 --> 01:31:25,040
+that idea in mind but when we think
+about it, it may allow us that we want to
 
 51
-00:03:14,048 --> 00:03:15,840
-This is that we have some Jesus
+01:31:25,040 --> 01:31:30,320
+first on the domain to make some code
+more value, business value inside to
 
 52
-00:03:16,608 --> 00:03:18,912
-Booking design into the
+01:31:30,320 --> 01:31:36,310
+protect our domain code from the
+technical stuff. I don't know for you but
 
 53
-00:03:19,168 --> 00:03:20,704
-The main method
+01:31:36,310 --> 01:31:40,790
+during long time I thought it was not
+even possible to properly split between
 
 54
-00:03:20,960 --> 00:03:25,056
-Respiratory telescope strings is also ageism
+01:31:40,790 --> 01:31:46,070
+domain logic and and technical. We
+tried many times that we failed a lot and
 
 55
-00:03:25,568 --> 00:03:30,688
-What we would like to do here is to get rid of that designs train stuff
+01:31:46,070 --> 01:31:51,880
+seems I discovered that pattern.
+it's really a nice way to and for that
 
 56
-00:03:31,456 --> 00:03:36,320
-Attributed by your husband
+01:31:51,880 --> 01:31:56,330
+and I also want to enforce testability because
+since everything is a pluggable and
 
 57
-00:03:36,576 --> 00:03:40,416
-That's all that's ok that my son will return a reservation
+01:31:56,330 --> 01:32:02,150
+We can stub, we can mock, we can
+stub the input output of the
 
 58
-00:03:40,672 --> 00:03:41,952
-And then
+01:32:02,150 --> 01:32:07,730
+systems, business logic inside and so for
+today we will focus much more the how to
 
 59
-00:03:42,464 --> 00:03:44,000
-On the positive side
+01:32:07,730 --> 01:32:12,350
+protect our domain code. So how does it work?
+It works
 
 60
-00:03:44,256 --> 00:03:47,072
-We will transform the liberation into a diesel
+01:32:12,350 --> 01:32:16,460
+considering the world in two different
+area there is inside and there is
 
 61
-00:03:47,328 --> 00:03:47,840
-Russian
+01:32:16,460 --> 01:32:21,440
+outside
+simple, right? No thousands of layers, no...
 
 62
-00:03:48,096 --> 00:03:52,704
-If you have another term for wanting something that is on top of suggest
+01:32:21,440 --> 01:32:27,410
+simply two area, the inside is a domain
+it's your domain code like
 
 63
-00:03:52,960 --> 00:03:58,848
-I will talk a little bit about that I'm sorry I will work on the card
+01:32:27,410 --> 01:32:30,680
+method like the train, the
+reservationAttempt, the stuff like that
 
 64
-00:03:59,360 --> 00:04:00,640
-Gaza
+01:32:30,680 --> 01:32:36,560
+and the infrastructure code is at the
+outside of your system. So this
 
 65
-00:04:01,152 --> 00:04:07,296
-You don't seem that it will explain when we get back to the code
+01:32:36,560 --> 01:32:39,710
+is where you will find your favorite
+HTTP stack,
 
 66
-00:04:09,600 --> 00:04:15,232
-So who is the weather for today
+01:32:39,710 --> 01:32:43,520
+your database drivers, your
+message middleware, your favorite solution.
 
 67
-00:04:16,512 --> 00:04:17,024
-Ok good
+01:32:43,520 --> 01:32:47,110
+or whatever. This is
+infrastructure side, code. which I've got
+and what we want is to first
 
 68
-00:04:18,816 --> 00:04:23,424
-What is it going to hospital is it secure pattern made by Alistair Cockburn
+01:32:50,390 --> 01:32:56,390
+improve the domain code so we have
+diversity she is some kind of putting
 
 69
-00:04:24,448 --> 00:04:28,800
-I called him another day
+01:32:56,390 --> 01:33:03,080
+some  barriers around your domain code and
+defining some entry points to enter and
 
 70
-00:04:29,056 --> 00:04:32,128
-And it has many benefits
+01:33:03,080 --> 01:33:08,810
+to leave the the domain code. So you keep
+the infrasturcture code at the other
 
 71
-00:04:32,384 --> 00:04:34,688
-Patel Natasha teacher 11
+01:33:08,810 --> 01:33:15,860
+side. This is a nice capability actually
+because I don't know for you but when
+you start your career as a developer you
 
 72
-00:04:35,200 --> 00:04:40,576
-If an Oyster on breast change it was the first
+01:33:17,660 --> 01:33:21,260
+need to improve your skills, you need to
+discover new thing you need to do lot
 
 73
-00:04:40,832 --> 00:04:42,368
-Eyedea freestyle S2
+01:33:21,260 --> 01:33:26,270
+of mistakes you need to implement you
+own framework in order to realize
 
 74
-00:04:42,624 --> 00:04:43,648
-Plug and unplug
+01:33:26,270 --> 01:33:30,140
+at one point that there are some silly
+stuff like implementing your framework
 
 75
-00:04:43,904 --> 00:04:45,952
-External dependencies plugin and play store
+01:33:30,140 --> 01:33:36,230
+stuff like that. But before you focus on
+the domain really, it's still important
+for some new young developers to be able
 
 76
-00:04:46,208 --> 00:04:49,024
-Just talking about the weather system
+01:33:38,750 --> 01:33:43,370
+to play in a kind of playground. I'm
+okay with that
 
 77
-00:04:49,536 --> 00:04:55,168
-Ableton tuner plug with many different standards as important many different
+01:33:43,370 --> 01:33:48,500
+as much as it does not jeopardize the
+business value and the project and in
 
 78
-00:04:55,424 --> 00:04:56,704
-Ronaldo sock boots
+01:33:48,500 --> 01:33:51,800
+that case I'm happy with that because
+there is a kind of location where you
 
 79
-00:04:57,216 --> 00:05:01,056
-Broadcast news to broadcast to TV to radio to whatever
+01:33:51,800 --> 01:33:56,180
+can play. It's a playground your infrastructure
+code. You can try new technology new
 
 80
-00:05:01,312 --> 00:05:04,128
-So it was Israel and us to have a
+01:33:56,180 --> 01:34:01,130
+stuffs without jeopardizing
+the domain code. So this is what I really
 
 81
-00:05:04,640 --> 00:05:06,688
-Kenneth clean code inside and
+01:34:01,130 --> 01:34:05,719
+like in that pattern. So how does
+it work, because there are barriers
 
 82
-00:05:07,200 --> 00:05:12,064
-Every changes in terms of 400 or way to interact with the system
+01:34:05,719 --> 01:34:09,560
+but I need to enter and to leave the
+building, I would say that, to leave the
 
 83
-00:05:12,320 --> 00:05:17,952
-Premier tournaments 2017 he knew you play your pregnant and you went back up again and that's it
+01:34:09,560 --> 01:34:13,880
+domain code. So to do so in terms of
+dependencies, all dependencies are
 
 84
-00:05:18,464 --> 00:05:23,840
-Sorry it's come with us was introduced by that I didn't mind
+01:34:13,880 --> 01:34:17,330
+towards inside. believes the
+infrastructure code is aware of
 
 85
-00:05:24,096 --> 00:05:27,168
-That's when we think about it babe
+01:34:17,330 --> 01:34:22,489
+reference of domain code, but of course the
+domain code should not be aware to any
 
 86
-00:05:27,424 --> 00:05:31,520
-I notice that we want to Foster on the domain to make some Cudmore
+01:34:22,489 --> 01:34:29,110
+framework. Even Jesus stuff. It seemed
+like that so the domain is completely
 
 87
-00:05:31,776 --> 00:05:33,824
-Volume dealers value inside
+01:34:29,110 --> 01:34:36,770
+independent from any kind of technology
+even Json string or thing like that. So
 
 88
-00:05:34,080 --> 00:05:35,104
-Power products
+01:34:36,770 --> 01:34:42,800
+to allow us to move from the
+inside to the outside to ask new thing
 
 89
-00:05:35,360 --> 00:05:38,688
-Doing good, technical stuff
+01:34:42,800 --> 01:34:47,870
+to talk with external web api and do
+some stuff, we will rely on ports and
 
 90
-00:05:39,200 --> 00:05:40,480
-I don't know for you but
+01:34:47,870 --> 01:34:53,180
+adapters. And to do so we are actually
+using
 
 91
-00:05:40,992 --> 00:05:47,136
-Very long time I thought it was not even possible to popular speed between domain music and and technical one week
+01:34:53,180 --> 01:34:58,160
+inversion dependency principle, so that
+from the inside we can go outside and do
 
 92
-00:05:47,392 --> 00:05:48,416
-We tried many times.
+01:34:58,160 --> 01:35:04,130
+some stuff. Alistair Cockbrun recently
+discussed with an another guy I can't
 
 93
-00:05:48,928 --> 00:05:52,768
-Refers to lots and in since I discovered that that Patel
+01:35:04,130 --> 01:35:07,910
+remember the name and that was
+suggesting the name of configurable
 
 94
-00:05:53,024 --> 00:05:55,328
-It's really nice way to inform that
+01:35:07,910 --> 01:35:12,920
+dependencies. What Alistair was saying is
+dependency injection principle I don't
 
 95
-00:05:56,608 --> 00:06:02,752
-I also do you want Foster 72 because everything is a pluggable which unlocked
+01:35:12,920 --> 01:35:17,840
+really like because this is like if
+negative way of formulating things. It's
 
 96
-00:06:03,008 --> 00:06:06,592
-Toaster input output of the systems
+01:35:17,840 --> 01:35:23,900
+you used to do that do the other way
+around do the inverse so he was trying
+to find a much more fluent intention way
 
 97
-00:06:07,104 --> 00:06:08,896
-This week's inside in
+01:35:27,080 --> 01:35:32,660
+of saying that, so they lead to
+configurable dependencies so you plug
 
 98
-00:06:09,408 --> 00:06:12,736
-So what you doing for Christmas morning how to put it on the mountain
+01:35:32,660 --> 01:35:41,420
+and unplug your dependencies around your main.
+So if we get back to a case
 
 99
-00:06:13,760 --> 00:06:14,784
-How does it work
+01:35:41,420 --> 01:35:47,420
+here we say we have ports and adapter
+to enter and to leave the domain. So
 
 100
-00:06:15,296 --> 00:06:17,600
-It was considering the world into
+01:35:47,420 --> 01:35:52,550
+ports belongs to the domain and there
+are some interfaces like lollipops here
 
 101
-00:06:17,856 --> 00:06:18,880
-Different area
+01:35:52,550 --> 01:35:57,440
+so here I've got the IReserveSeats which
+is the entry point from the
+tata system. so I had through an
 
 102
-00:06:19,136 --> 00:06:20,928
-There is a inside and there is no type
+01:36:00,770 --> 01:36:07,340
+adapter HTTP adapter IP dot net callback
+I must call an interface which is a port
 
 103
-00:06:21,440 --> 00:06:22,208
-Sybarite
+01:36:07,340 --> 01:36:14,930
+I have another seat, say please reserve
+me something and I get a
 
 104
-00:06:22,720 --> 00:06:23,232
-No
+01:36:14,930 --> 01:36:19,190
+reservation and that adapter will do the
+rotation between the reservation and the
+Json version because the Json that so it
 
 105
-00:06:24,000 --> 00:06:26,816
-So the lovely girls know something to area
+01:36:23,810 --> 01:36:29,840
+will be the proper location to do so
+when I need to form a business rule
 
 106
-00:06:27,840 --> 00:06:33,984
-The insiders of the main it showed unemployed like it I like the train station attendant
+01:36:29,840 --> 01:36:35,090
+when I need some extra data some extra
+thing if not provided by everything I
 
 107
-00:06:34,240 --> 00:06:34,752
-The stuff like that
+01:36:35,090 --> 01:36:41,270
+need from the beginning there are many
+ways to do that but if let say I need to
 
 108
-00:06:35,008 --> 00:06:36,800
-Is it possible to code is at
+01:36:41,270 --> 01:36:47,390
+ask one of the external
+SSL dependency you know the three web
 
 109
-00:06:37,056 --> 00:06:39,872
-The outside of show off your system
+01:36:47,390 --> 01:36:52,160
+api we call during the process, we need
+to access, we need to add something to
+the outside, so to do so we asked some
 
 110
-00:06:40,128 --> 00:06:43,200
-So this is where you will find your favourite HTTP start
+01:36:54,940 --> 01:37:00,680
+ports also made from the inside there is
+IBookSeats interface there is IProvideTrainTopology
 
 111
-00:06:43,456 --> 00:06:49,600
-No that his rivals your message oriented middleware every solution what it is it is in cottage cheese
+01:37:00,680 --> 01:37:05,840
+interface and there is
+IGetBookingRef interface. these
 
 112
-00:06:51,904 --> 00:06:56,000
-And what we want is to Foster and to improve the Dominican
+01:37:05,840 --> 01:37:09,270
+are domain interface
+the port still
 
 113
-00:06:56,512 --> 00:06:57,536
-So we have
+01:37:09,270 --> 01:37:14,010
+belongs to the domain reason why the
+lollipop is in blue
 
 114
-00:06:58,048 --> 00:07:02,400
-How do you know National Insurance sometimes about putting some bum boils around your bum and blood
+01:37:14,010 --> 01:37:17,970
+but the adapter is what belongs to infrastructure
 
 115
-00:07:03,168 --> 00:07:03,680
-N
+01:37:17,970 --> 01:37:22,170
+so basically adapter is something that
+maps between the infrastructure code to
 
 116
-00:07:04,192 --> 00:07:05,984
-Defining some entry points
+01:37:22,170 --> 01:37:28,620
+the domain one and vice-versa. Is that OK for
+all of you? yeah? we'll see that in
 
 117
-00:07:06,240 --> 00:07:09,568
-29 to 20 centimetres
+01:37:28,620 --> 01:37:36,060
+the code in a few minutes. so port and
+adapter to go in and to go out. easy, right? okay
 
 118
-00:07:09,824 --> 00:07:10,592
-Funny clip
+01:37:36,060 --> 01:37:40,650
+but when we try to implement it the
+first time there's tons of question that
+arouse and there are many ways to
 
 119
-00:07:10,848 --> 00:07:13,152
-The Apostle shop good idea sign
+01:37:45,540 --> 01:37:50,880
+do so. We'll show you one. we have to
+initialize we have to init to initiate
 
 120
-00:07:15,200 --> 00:07:21,344
-Nice community actually because I don't know for you better when you start your stereos Liverpool
+01:37:50,880 --> 01:37:59,520
+you are to build you
+have to build the stuff so I like I've
 
 121
-00:07:21,600 --> 00:07:23,904
-You need to improve your skin you need to discover new sink
+01:37:59,520 --> 01:38:02,670
+got a metaphor which is a key ring
+metaphor to explain that to my
 
 122
-00:07:24,160 --> 00:07:25,952
-Need to meet new lot of mistakes
+01:38:02,670 --> 01:38:07,710
+mate I try to explain to you. First step,
+its we will talk here about the
 
 123
-00:07:26,208 --> 00:07:28,000
-Newton Village Hall Kinross unit
+01:38:07,710 --> 01:38:11,700
+composition of utopian application, you
+know, the place on your application
 
 124
-00:07:28,768 --> 00:07:34,912
-Ul.to to realise at one point that there are some serious stuff like influence you all time rock stuff like that
+01:38:11,700 --> 01:38:17,070
+where you build all your dependencies
+and then voila apply the system is able
 
 125
-00:07:35,168 --> 00:07:38,752
-But before you focus on the on the Dunham really
+01:38:17,070 --> 01:38:22,320
+to work and to do is work okay so we're
+talking about the bootstrap of your
 
 126
-00:07:39,008 --> 00:07:43,360
-Experian Boston for some new jungle ability to be able to
+01:38:22,320 --> 01:38:27,000
+application here so three steps first
+step is to instantiate I need to go out
 
 127
-00:07:43,616 --> 00:07:45,152
-To play in the care of playground
+01:38:27,000 --> 01:38:32,760
+adapters. All the adapters go to ask
+to the SSL back-end "please give me a
 
 128
-00:07:46,176 --> 00:07:47,200
-I'm ok with that
+01:38:32,760 --> 01:38:36,360
+topology please
+so here represented twp Train Data Service Adapter
+and Booking Reference Service Adapter
 
 129
-00:07:47,456 --> 00:07:49,760
-As much as it does not geopandas
+01:38:38,340 --> 01:38:44,460
+adapter these are like keys to go
+outside and to ask stuff, so the first step
 
 130
-00:07:50,272 --> 00:07:54,624
-The biggest value in the project and in that case I'm happy with that because there is kind of
+01:38:44,460 --> 01:38:49,980
+is access those keys. Then second step
+is I've got those keys, I wrapped them
+with
 
 131
-00:07:54,880 --> 00:07:57,952
-Location where you can play It's a playground South Hospital
+01:38:52,200 --> 01:38:57,330
+hexagon, with the domain. the hexagon is
+where the domain stay so it's a web ticket manager.
 
 132
-00:07:58,464 --> 00:08:02,560
-Try new technology new stuff that are members of Japan is England
+01:38:57,330 --> 01:39:01,440
+So the web ticket manager
+will receive within its console ports 
 
 133
-00:08:03,072 --> 00:08:03,840
-101
+01:39:01,440 --> 01:39:09,930
+interface to interact with the
+outside world and then we instantiate we
 
 134
-00:08:04,096 --> 00:08:06,400
-I really like you letter is a pattern
+01:39:09,930 --> 01:39:14,400
+wrapped the hexagon with a new
+adapter which will be the adapter to be
+used in order to
 
 135
-00:08:07,168 --> 00:08:13,312
-So how do you drop because they are ok but I need to
+01:39:17,250 --> 01:39:22,890
+interact with our system so it's "I need to enter" adapters
+that it's the way to
 
 136
-00:08:13,568 --> 00:08:14,592
-Dementia
+01:39:22,890 --> 01:39:27,660
+communicate with our application, but
+once we do that all we have to keep in
+our hand from an application perspective
 
 137
-00:08:14,848 --> 00:08:18,688
-To do so in terms of dependencies all dependencies afterwards inside
+01:39:29,570 --> 01:39:35,070
+from the asp.net Web API perspective all
+I have to keep in my hand will be the entrypoint adapter
 
 138
-00:08:19,200 --> 00:08:21,760
-Leeds away restaurants
+01:39:35,070 --> 01:39:39,540
+so all the rest of the hexagon
 
 139
-00:08:23,040 --> 00:08:25,600
-But of course I do we could not be aware that alright
+01:39:39,540 --> 01:39:46,590
+and adapters it's an implementation
+details once I've built the place all I
 
 140
-00:08:26,112 --> 00:08:27,136
-Any homework
+01:39:46,590 --> 01:39:51,660
+have to keep from our Web API
+perspective is that adapter which is the
 
 141
-00:08:27,648 --> 00:08:32,256
-Avengers on stuff if you like that's all the domain is completely
+01:39:51,660 --> 01:39:58,110
+entry point from a formal system. okay? to
+put it differently those three steps
 
 142
-00:08:33,536 --> 00:08:39,680
-Independent from any kind of technology even g-strings
+01:39:58,110 --> 01:40:04,199
+looking at them in the diagram. First we instantiate
+the adapter we need to go out, so
 
 143
-00:08:40,448 --> 00:08:43,008
-So to do so tomorrow to S2
+01:40:04,199 --> 01:40:07,980
+the three back ends then we wrap
+them with hexagon
 
 144
-00:08:43,264 --> 00:08:45,568
-Wolf from the Inside to the outside to ask
+01:40:07,980 --> 01:40:13,440
+whereas domain logic stands and then we
+wrap that domain logic it's like Russian
 
 145
-00:08:46,080 --> 00:08:49,664
-New sing to talk with external web apis and do some stuff
+01:40:13,440 --> 01:40:18,000
+doll you know I need to go out the hexagon I need to go in and at the end of
 
 146
-00:08:50,432 --> 00:08:52,480
-We will rely on personalities
+01:40:18,000 --> 01:40:21,660
+the day all you keep in your hands - I
+need to go in. This is the only thing
 
 147
-00:08:53,760 --> 00:08:54,784
-Lucifer
+01:40:21,660 --> 01:40:26,270
+that you need to interact with
+system from application perspective
 
 148
-00:08:55,296 --> 00:08:58,368
-We actually use the dependency inversion principle
+01:40:26,270 --> 01:40:30,960
+so all you keep in your line will be
+only that adapter that you will inject
 
 149
-00:08:58,880 --> 00:09:02,720
-For that funding so we can go outside and do some stuff
+01:40:30,960 --> 01:40:38,489
+into your callback I speed up the
+corners and stuff like that. okay? sure
+you have some question we will call it
 
 150
-00:09:03,488 --> 00:09:09,632
-How do you stop a building and recently his test results remember the name and that was
+01:40:41,400 --> 01:40:51,440
+or hope you will have some questions. so
+just to have a look on the new version
 
 151
-00:09:09,888 --> 00:09:10,912
-Suggesting the name of
+01:40:51,440 --> 01:41:00,080
+you can notice now we have a reservation
+and the modification has been to call a
 
 152
-00:09:11,168 --> 00:09:12,448
-Configurable dependencies
+01:41:00,080 --> 01:41:09,410
+confirm because after this line I know
+there is no exception and I can return
 
 153
-00:09:13,472 --> 00:09:18,848
-Weather is the worst thing is impossible possible I don't really like because this is like you
+01:41:09,410 --> 01:41:16,230
+the reservation. so the did, the
+modification of the test is there, yeah, we
 
 154
-00:09:19,360 --> 00:09:21,920
-Negative way of formulating Sainsbury's
+01:41:16,230 --> 01:41:23,429
+returned a reservation and I already
+create a beginning of adapter, the output
 
 155
-00:09:22,432 --> 00:09:23,712
-You used to do that
+01:41:23,429 --> 01:41:31,380
+adapter with AdaptReservation.
+ This function will be called by Thomas in
 
 156
-00:09:23,968 --> 00:09:26,272
-Do the other way round do the inverse
+01:41:31,380 --> 01:41:35,199
+a few minutes, so you start to move
+the technical json implementation to the
+proper place. exactly. okay. what I suggest
 
 157
-00:09:27,040 --> 00:09:32,928
-Sorry was trying to find them much more fluent intention way of saying that
+01:41:38,469 --> 01:41:44,499
+is to for me to to reduce in that first
+acceptance test what I will have to do
 
 158
-00:09:33,184 --> 00:09:35,744
-So they lead us to a configurable dependencies
+01:41:44,499 --> 01:41:53,229
+into my bootstrap my composition route
+okay, so first one is to step one is to
 
 159
-00:09:36,000 --> 00:09:38,304
-So you plug in and plug in your dependencies
+01:41:53,229 --> 01:41:58,539
+instantiate "I want to go out" adapter. so
+here trainDataService for instance we
+can even rename it to trainDataServicesAdapter.
 
 160
-00:09:38,560 --> 00:09:41,632
-Randy alderman
+01:42:00,820 --> 01:42:05,949
+it's a bad name, it's still the
+service. that's obviously I was there
 
 161
-00:09:42,656 --> 00:09:48,544
-So if we get back to where we Ascend we have posted another talk to enter
+01:42:05,949 --> 01:42:14,439
+it's a proxy too. and same thing for
+that bookingReferenceServiceAdapter. okay, step one I instantiate
 
 162
-00:09:48,800 --> 00:09:50,848
-I believe the video man
+01:42:14,439 --> 01:42:17,349
+the dependencies I need to go to the
+outside world
 
 163
-00:09:51,104 --> 00:09:51,872
-The box
+01:42:17,349 --> 01:42:24,489
+yeah? all right, then what I need is to
+instantiate the hexagon. actually so the
+exact on here is a web ticket manager. so
 
 164
-00:09:52,640 --> 00:09:56,736
-Dirhams to the demand and there are some interfaces like a lollipop here
+01:42:27,189 --> 01:42:35,260
+let's call it hexagon only here for
+pedagogical school perspective over your
 
 165
-00:09:56,992 --> 00:10:00,832
-So here I've got sizes of Suits which is the entry point from the
+01:42:35,260 --> 01:42:41,039
+life you don't you will call it with a
+business name so please don't tell Eric
+that we did that but just it's to focus
 
 166
-00:10:01,088 --> 00:10:02,368
-From the clipper system
+01:42:45,280 --> 01:42:48,999
+on the hexagon and infrastructure here.
+it's better for me to rename it hexagon
 
 167
-00:10:03,136 --> 00:10:03,904
-So I asked
+01:42:48,999 --> 01:42:53,349
+here and then instead of
+calling directly the hexagon
 
 168
-00:10:04,416 --> 00:10:07,744
-Phone adaptor hdcp 2.2 asp.net call back
+01:42:53,349 --> 01:42:58,719
+all I have said before is the
+application we would have to interact
 
 169
-00:10:08,256 --> 00:10:12,352
-I must call an interface which is a but I forgot it
+01:42:58,719 --> 01:43:01,599
+with my business logic through an
+adapter yeah
 
 170
-00:10:13,632 --> 00:10:16,960
-Naturism you remind me something
+01:43:01,599 --> 01:43:06,939
+so let's introduce it. yeah, step 3
+instantiate "I want to go in" adaptor, so
 
 171
-00:10:18,496 --> 00:10:20,800
-I got a reservation in that I have done will
+01:43:06,939 --> 01:43:13,269
+here but I can do is to how can we
+generation oh yeah you already
 
 172
-00:10:21,056 --> 00:10:26,176
-Does irritation between resurrection and regional nationalism
+01:43:13,269 --> 01:43:20,409
+came same name, so I will
+instantiate it providing what should I
+provide. okay I think I got a sense like
 
 173
-00:10:26,432 --> 00:10:29,504
-So it's it would be the proper location to do so
+01:43:25,059 --> 01:43:30,159
+Russian dolls so those two first we are
+providing to the hexagon here and the
+hexagon is provided to the 
 
 174
-00:10:31,296 --> 00:10:37,440
-Will I need to for my middle school when I need some extra data from EE starting if I have not provided
+01:43:32,829 --> 01:43:39,189
+guy. okay so I create a constructor
+because so far you just had made a
 
 175
-00:10:37,696 --> 00:10:40,512
-Maya everything I need from the beginning
+01:43:39,189 --> 01:43:44,709
+static functions. okay maybe you have to
+make that abstraction
+not to inject what ticket manager yes
 
 176
-00:10:40,768 --> 00:10:42,816
-There are many ways to do that but
+01:43:48,969 --> 01:43:53,590
+actually yes you're right, we talked
+about personnel at the ports are like
 
 177
-00:10:43,072 --> 00:10:48,960
-Liberalism say I need to ask you one of the external essence of dependency
+01:43:53,590 --> 01:44:00,429
+interfaces so what I can do maybe is on
+the web ticket manager here it's
 
 178
-00:10:49,216 --> 00:10:53,312
-You know this via web API we called during the process
+01:44:00,429 --> 01:44:06,670
+introducing its we changed after so
+let's create an interface for that and
 
 179
-00:10:53,568 --> 00:10:57,664
-We need to accept we need to add something to the outside safe to do so
+01:44:06,670 --> 01:44:20,170
+let's say I reserve seats, something like that? em...
+Sorry, I used to work on the Mac,
 
 180
-00:10:57,920 --> 00:11:01,248
-We asked some parts on Sunday closing time
+01:44:20,170 --> 01:44:25,300
+so we try to pick a keyboard
+IReserveSeats
 
 181
-00:11:01,760 --> 00:11:03,040
-There is a I book seats
+01:44:25,300 --> 01:44:33,039
+you work every day on the PC
+yes, but not the same keyboard  I tried to find
 
 182
-00:11:03,296 --> 00:11:06,368
-The phrase there is a hypervisor time topology interface
+01:44:33,039 --> 01:44:44,729
+exeucise, stress yeah so I asked I add
+the reserve method on that interface.
 
 183
-00:11:06,880 --> 00:11:09,184
-EasyJet booking a source interface
+01:44:44,729 --> 01:44:49,929
+here this is a port this is a port in
+order to enter the hexagon
 
 184
-00:11:10,464 --> 00:11:14,048
-Domain interface the Baskervilles to the domain
+01:44:49,929 --> 01:44:56,559
+so getting back to the code here
+what I will provide to the external
 
 185
-00:11:14,560 --> 00:11:17,376
-Reason why the lollipop in Zulu
+01:44:56,559 --> 01:45:04,150
+adapter it will be the hexagon but as
+oops, go to implementation as charlie
+reserved seats yeah IReserveSeat.
 
 186
-00:11:17,632 --> 00:11:21,728
-But the Adidas is what spirit is in hospital
+01:45:07,860 --> 01:45:16,150
+okay let me keep it into a private field
+here I will need it. so I start set a
 
 187
-00:11:22,496 --> 00:11:26,848
-From anything you wanna do something that's Maps between The Fosters chocolate to the doorman one
+01:45:16,150 --> 01:45:22,689
+reservation adapter okay so third step to
+associate other nationality let's
 
 188
-00:11:27,360 --> 00:11:28,128
-Invasion Airsoft
+01:45:22,689 --> 01:45:29,469
+introduce a variable for that with our
+instance okay my idea will be to replace
 
 189
-00:11:29,408 --> 00:11:30,432
-Is the death of all of you
+01:45:29,469 --> 01:45:34,959
+the direct call to the hexagon by
+something going through the adapter you
 
 190
-00:11:31,968 --> 00:11:34,016
-Where is the Latin word for dinner in a minute
+01:45:34,959 --> 01:45:40,539
+know. so just to make it compile I will
+go to the controller to web controller
 
 191
-00:11:34,528 --> 00:11:36,576
-So put another girl to go into god
+01:45:40,539 --> 01:45:46,479
+which is the place where I will use that
+exact same adapter so in that controller
 
 192
-00:11:37,600 --> 00:11:38,368
-Is it right
+01:45:46,479 --> 01:45:53,079
+here I will need to my entry point will
+be together reservation request dto so I
+will get a reservation request dto
 
 193
-00:11:39,648 --> 00:11:42,976
-Ok but when we try to implement it the first time
+01:45:54,909 --> 01:45:59,710
+give it to the adapter and the adapter
+will get back to me with a Json
 
 194
-00:11:43,232 --> 00:11:44,512
-Stunt of questions that
+01:45:59,710 --> 01:46:06,590
+relating to the reservation okay? so to
+do so I think the reservation dto is not
 
 195
-00:11:45,280 --> 00:11:46,816
-Rosin
+01:46:06,590 --> 01:46:11,420
+in the proper place. I won't be able to
+access it from the from the test. So
 
 196
-00:11:47,840 --> 00:11:51,936
-How many ways to to to do so so will show you one
+01:46:11,420 --> 01:46:16,580
+I suggest that we move that and maybe it
+will be no envision is quite painful to
 
 197
-00:11:52,192 --> 00:11:55,776
-We have to initialise we are twin it to insulate
+01:46:16,580 --> 01:46:21,830
+create project it's long so I will just
+create a directory here. I will create
 
 198
-00:11:56,032 --> 00:11:58,080
-20 seater
+01:46:21,830 --> 01:46:25,850
+Train Train domain all right and
+infra
 
 199
-00:11:58,336 --> 00:12:01,152
-When you had to build you up the Builder stuff
+01:46:25,850 --> 01:46:33,620
+so that we can start to split infra
+(infrastructure) and so that we
+can we are able to speak properly every
 
 200
-00:12:01,408 --> 00:12:07,040
-So I'd like to get a bit of forward to the children with their talk to him to send that to my mate
+01:46:36,590 --> 01:46:43,190
+type into the proper location. I'd moved
+typed into matching files for be sure
+that every file match to type so
 
 201
-00:12:07,296 --> 00:12:08,576
-I tried to explain to you
+01:46:45,860 --> 01:46:53,090
+BookingReferenceService where should I put
+domain or infra
 
 202
-00:12:09,088 --> 00:12:13,952
-Prostitutes will talk to you about the composition without your application you know
+01:46:53,090 --> 01:47:02,200
+service. it's a bad name, the
+name will be different but yeah coach
 
 203
-00:12:14,208 --> 00:12:17,280
-The place on the opportunity where you get all your dependencies
+01:47:02,200 --> 01:47:11,600
+domain yeah IBookingReferenceService 
+yeah it's an interface so it's a port
 
 204
-00:12:17,792 --> 00:12:23,168
-And then follow a player leave the system is able to work continues his way
+01:47:11,600 --> 01:47:20,570
+yeah actually here so domain yeah. IReservedSeats?
+port, so the domain, yeah
 
 205
-00:12:23,680 --> 00:12:25,472
-So we're talking about.
+01:47:21,950 --> 01:47:29,090
+ITrainDataservice, its names but
+it's a domain is it okay its interface
 
 206
-00:12:25,984 --> 00:12:27,008
-OCI application
+01:47:29,090 --> 01:47:35,860
+yeah reservation domain, right?
+reserved I shall attempt same
+reservation hotel for you , same
 
 207
-00:12:27,264 --> 00:12:29,824
-Sort three steps first step is to associate
+01:47:39,640 --> 01:47:43,820
+reservationFailure also it's a
+domain.
+actually it's much more something to
 
 208
-00:12:30,080 --> 00:12:31,872
-I need to blow out adaptor
+01:47:45,290 --> 01:47:49,340
+implement the biggest law where there is
+no added value more than twelve toppling
 
 209
-00:12:32,128 --> 00:12:36,224
-Was there a bus to go to ask to the attention back in please
+01:47:49,340 --> 01:47:55,430
+seats? domain. I'm kind of happy
+because you have more domains than the
 
 210
-00:12:36,480 --> 00:12:38,016
-Give me a topology please.
+01:47:55,430 --> 01:48:02,740
+infrastructur which is not the case in
+all my projects so far so SeatJsonPoco
 
 211
-00:12:38,272 --> 00:12:44,416
-We are presented to candidates only say that I'm working at all services. I like cheese
+01:48:03,370 --> 01:48:10,280
+SeatsReservationAdapter? infrastructure, yeah
 
 212
-00:12:44,672 --> 00:12:46,464
-To go outside in to ask stuff
+01:48:10,280 --> 01:48:15,060
+ThreadsholdTrainCapacity? domain, absolutely even if we
 
 213
-00:12:47,232 --> 00:12:48,000
-Sofa
+01:48:15,060 --> 01:48:24,030
+came in through the name. Train? is it
+domain and what do we have? TimeDataSservice,
+ of course which is another time
 
 214
-00:12:48,256 --> 00:12:49,792
-Purpose tour to St Austin's
+01:48:28,620 --> 01:48:36,450
+and WebTicketManager, domain. it's
+all exactly but so far it's seen as some
 
 215
-00:12:50,304 --> 00:12:51,840
-Then second Step is
+01:48:36,450 --> 01:48:45,480
+to HTTP rationale that we get rid no
+it's okay so let's put it to the... let's
 
 216
-00:12:52,096 --> 00:12:56,704
-Another skin and wrap them with you if I could I drop them with the
+01:48:45,480 --> 01:48:48,230
+keep it in the middle
 
 217
-00:12:56,960 --> 00:12:57,472
-Cinnamon
+01:48:49,370 --> 01:48:54,390
+let's keep it into the middle before we
+completely clean the house and put it in
 
 218
-00:12:58,240 --> 00:13:01,824
-Medina swimming stuff so it's a way to get manager
+01:48:54,390 --> 01:48:57,930
+adjust the namespace
+sorry I just enhancement yeah I would
 
 219
-00:13:02,336 --> 00:13:05,920
-So they went to get manager will receive we discuss with dodgy box
+01:48:57,930 --> 01:49:03,060
+adjust the namespace here for the project.
+ so that everyone would be at
 
 220
-00:13:06,432 --> 00:13:07,968
-Interface to interact
+01:49:03,060 --> 01:49:16,080
+the proper location okay. so what I was
+saying is I will from the should TrainTrainShould
+getting back to the test
 
 221
-00:13:08,480 --> 00:13:10,784
-Physics jet A1
+01:49:19,080 --> 01:49:22,620
+okay
+I said that I would like to introduce a
 
 222
-00:13:11,552 --> 00:13:12,320
-And then
+01:49:22,620 --> 01:49:28,680
+way to interact with the ReservationAdapter,
+ so let's say it's a Post dto.
 
 223
-00:13:12,576 --> 00:13:13,344
-Will Associates
+01:49:28,680 --> 01:49:34,440
+there is a better name to
+find but new reservation request
+diffuses I don't know if you you move it
 
 224
-00:13:13,600 --> 00:13:14,880
-We're up the zygote
+01:49:36,630 --> 01:49:43,530
+I don't know I didn't move thanks below
+so ReservationRequestDto I
 
 225
-00:13:15,136 --> 00:13:20,512
-Whizzer a new adaptor which means Indian actor to be used in a document array into
+01:49:43,530 --> 01:49:54,390
+have to move is it's on the bad project.
+move to folder... TrainTrain infra
 
 226
-00:13:21,024 --> 00:13:22,304
-Redirect miso system
+01:49:54,390 --> 01:50:00,360
+so now I will be able to reference it
+from the test, otherwise it will be part
+of the Web API which has no reference so
 
 227
-00:13:22,816 --> 00:13:28,704
-Sweetie I need to go I need to enter data it's easier to communicate with your application
+01:50:03,630 --> 01:50:10,290
+far okay. so we here I will instantiate a
+new reservation request dto. This is ASP.net
 
 228
-00:13:28,960 --> 00:13:34,080
-But what we do that or we have to keep your head from an application that picture
+01:50:10,290 --> 01:50:16,290
+which used to instantiate
+that for me but our number_of_seats here
 
 229
-00:13:34,336 --> 00:13:36,640
-On the asp.net web API testing
+01:50:16,290 --> 01:50:23,530
+will be seatsRequestedCount and
+the other train_id
 
 230
-00:13:36,896 --> 00:13:38,944
-All I have to keep in mind we're busy
+01:50:23,530 --> 01:50:29,890
+setting the
+equivalent of the Json we receive as
 
 231
-00:13:39,200 --> 00:13:40,224
-Entrypoint editor
+01:50:29,890 --> 01:50:33,520
+the input
+it's a poco for it will be
 
 232
-00:13:40,736 --> 00:13:45,344
-Took over the rest of the Year exactly one and and and adaptors
+01:50:33,520 --> 01:50:42,570
+TraineId. here is my train
+yeah okay so here I post a new
+request dto, maybe this thing's, let's
 
 233
-00:13:45,600 --> 00:13:49,952
-Its own implementation details what's a builder place
+01:50:46,900 --> 01:50:56,020
+make it a variable, to make it clean so I've
+got a reservationRequestDto and then I
 
 234
-00:13:50,208 --> 00:13:51,232
-What I have to tip
+01:50:56,020 --> 01:51:01,240
+pass the reservation request to the adapter yeah,
+ I want to go into adapter. create method okay create the
 
 235
-00:13:52,000 --> 00:13:57,120
-For my web API pass between is that adaptor what is the entry point for my for my system
+01:51:03,550 --> 01:51:11,200
+method and instead of returning void I
+will return maybe a string which will be
 
 236
-00:13:57,888 --> 00:13:58,400
-Ok
+01:51:11,200 --> 01:51:17,710
+the Json. Here I can
+return something much more like asp.net
 
 237
-00:13:59,680 --> 00:14:00,704
-WD-40
+01:51:17,710 --> 01:51:21,940
+internal structure to make a
+response but I won't go into that here
 
 238
-00:14:01,216 --> 00:14:04,032
-The Three Steps looking at the diagram
+01:51:21,940 --> 01:51:29,640
+but as I rationalize it you okay
+so here I am in the posts method yeah
 
 239
-00:14:04,544 --> 00:14:07,104
-Weight loss surgery. We need to go out
+01:51:29,640 --> 01:51:36,390
+that should return me a jsonReservation.
+ something like that
 
 240
-00:14:07,616 --> 00:14:09,408
-Sort of view for the three daggers
+01:51:36,390 --> 01:51:40,390
+why not
+yeah so the adapter will return me that
 
 241
-00:14:09,920 --> 00:14:13,504
-Then we wrap them with things are going well for Domino's extenze
+01:51:40,390 --> 01:51:46,260
+and I will assert on that yeah so
+instead of all that
 
 242
-00:14:14,016 --> 00:14:16,064
-And then we're up that's the main reason
+01:51:46,410 --> 01:51:51,940
+jsonReservation should be equal to
+that Json. that objective to target you
 
 243
-00:14:16,320 --> 00:14:18,112
-It's like a Russian don't you know
+01:51:51,940 --> 01:51:56,740
+know that yeah so it's still right
+because I didn't plug the adapter. so
 
 244
-00:14:18,368 --> 00:14:20,672
-I need to go out zigzagoon I need to go in
+01:51:56,740 --> 01:52:03,160
+adapter has three steps to
+instantiate the entire hexagon structure
 
 245
-00:14:21,184 --> 00:14:24,256
-And at the end of the day only keeping your hands say I need to go in
+01:52:03,160 --> 01:52:09,480
+but when I mean every method of the
+adapter has three steps basically its
 
 246
-00:14:24,512 --> 00:14:27,072
-This isn't the only thing that you need to interact with her
+01:52:09,480 --> 01:52:13,440
+first step is to adapt from their infrastructure 
+to the domain
 
 247
-00:14:27,328 --> 00:14:29,632
-The system application test BT
+01:52:13,440 --> 01:52:18,190
+second step is to call the business
+logic and then the third step is to
 
 248
-00:14:30,912 --> 00:14:33,984
-Total entertainment will be only that other girl that you will
+01:52:18,190 --> 01:52:23,800
+adapt from domain answer to the
+infrastructure and to return it. yeah you
 
 249
-00:14:34,496 --> 00:14:39,104
-Inject into your call back service political 4 hours and stuff like that
+01:52:23,800 --> 01:52:29,860
+know what is it about in every method of
+adapter so let's make it here, in that
+case I don't have to adapt
 
 250
-00:14:39,872 --> 00:14:40,384
-Ok
+01:52:31,540 --> 01:52:34,679
+here so I will just introduce a new
+variable
 
 251
-00:14:42,176 --> 00:14:43,712
-Shut your dumb question
+01:52:34,679 --> 01:52:40,800
+for the number_of_seats and with a
+machine liquid in the real life
 
 252
-00:14:44,480 --> 00:14:46,272
-Will guided tour
+01:52:40,800 --> 01:52:47,640
+maybe you you have to serialize yourself
+and we simulate this tech because asp.net
 
 253
-00:14:46,784 --> 00:14:48,064
-Hope you will have some questions
+01:52:47,640 --> 01:52:53,040
+do that for us but sometimes
+you have to translate the Json in
 
 254
-00:14:49,600 --> 00:14:50,880
-Hello
+01:52:53,040 --> 01:52:59,820
+local variable for a domain object. so here
+what I just did is to get some variables
 
 255
-00:14:51,648 --> 00:14:53,952
-Just to have a logo on the new version
+01:52:59,820 --> 01:53:04,500
+but this is where you will have to
+translate transform adjust whatever it
 
 256
-00:14:56,000 --> 00:14:58,560
-You cannot test now we have a reservation
+01:53:04,500 --> 01:53:10,110
+takes to be able to call the
+domain logic. yeah Good. so now I call the
 
 257
-00:14:59,584 --> 00:15:01,632
-And the modification has been
+01:53:10,110 --> 01:53:16,679
+hexagon so hexagon.Reserve, it's
+a business domain method and I put it
 
 258
-00:15:02,400 --> 00:15:04,192
-Toubkal
+01:53:16,679 --> 01:53:23,640
+to put it local variable I get and numberOfSeats
+number of let me call me
 
 259
-00:15:04,448 --> 00:15:07,008
-Confirm because after this time
+01:53:23,640 --> 01:53:36,900
+requested okay I called the hexagon,
+its return me reservation, since it is a method a
+yeah
 
 260
-00:15:07,520 --> 00:15:08,288
-I know
+01:53:37,830 --> 01:53:43,710
+so has a ration but since it's an async
+method I will have to await that and
 
 261
-00:15:09,056 --> 00:15:10,592
-Is there is no exception
+01:53:43,710 --> 01:53:49,500
+truth sorry some like that c# to
+obtain the sequence call. but since your
 
 262
-00:15:10,848 --> 00:15:11,872
-And I can
+01:53:49,500 --> 01:53:54,840
+method is I think because it's called
+also async method I asked you to do so
 
 263
-00:15:12,384 --> 00:15:13,408
-Rittal
+01:53:54,840 --> 01:54:01,020
+and then adapt from domain to this is a
+method Bruno already done we had adapter
 
 264
-00:15:13,920 --> 00:15:15,200
-The resolution
+01:54:01,020 --> 01:54:05,300
+adapter damage sure I provide a
+reservation and I get some string and
 
 265
-00:15:15,456 --> 00:15:18,528
-Does the medication on the tester
+01:54:05,300 --> 01:54:12,090
+yeah I guess, to return. you see I get a
+reservation from the business logic and
 
 266
-00:15:18,784 --> 00:15:22,112
-Is there here with me returning reservation
+01:54:12,090 --> 01:54:22,230
+then what I do is to adapt back from
+the domain to the json infrastructure. this
+is still red what did I miss
 
 267
-00:15:22,368 --> 00:15:22,880
-N
+01:54:26,610 --> 01:54:29,689
+[Music]
 
 268
-00:15:23,136 --> 00:15:28,000
-I already cried the beginning of adaptor output adaptor
+01:54:32,430 --> 01:54:44,650
+you have to await also because
+of a weight this is Mexican Russian okay
+it's green sorry it was async/await
 
 269
-00:15:28,256 --> 00:15:29,792
-Wizard app reservation
+01:54:47,020 --> 01:54:52,780
+issue. that's time to implement in SSP
+net. so here as you can see within one
+acceptance test we have done what we
 
 270
-00:15:30,048 --> 00:15:32,864
-This disk this function will be
+01:54:54,460 --> 01:54:59,530
+have to do is in composition note of the
+application I don't know what you want
 
 271
-00:15:33,376 --> 00:15:33,888
-Call
+01:54:59,530 --> 01:55:08,650
+to do, well, we have less than 10 minutes
+I think what that parts should be the one
 
 272
-00:15:34,400 --> 00:15:40,544
-Vitamasque instrument used to move the technical issues in relation to the place exactly
+01:55:08,650 --> 01:55:13,000
+that we will put into the setup of the
+application so I can do that plug into
 
 273
-00:15:40,800 --> 00:15:41,312
-Ok
+01:55:13,000 --> 01:55:18,370
+the webosphere but maybe it's better to
+keep some time for questions or for kind
 
 274
-00:15:41,824 --> 00:15:44,384
-What is the distance to for me to
+01:55:18,370 --> 01:55:21,969
+of wrap up, what do you think? okay
+yeah otherwise I think I will have to
 
 275
-00:15:44,896 --> 00:15:46,944
-Refusing rats first acceptance test
+01:55:21,969 --> 01:55:35,320
+run because we kind of little bit late
+yeah so wrap up, we started from
 
 276
-00:15:47,200 --> 00:15:49,760
-What I will have to do into Maya
+01:55:35,320 --> 01:55:42,130
+situation like this we have a web ticket
+manager with a very procedural code do
 
 277
-00:15:50,272 --> 00:15:53,088
-Buttercup my Corporation Road ok
+01:55:42,130 --> 01:55:48,450
+this and after we lead to some more
 
 278
-00:15:53,600 --> 00:15:55,904
-So first one is to step 1
+01:55:48,450 --> 01:55:56,370
+consistent and more, I don't know what to
+say, short working code also
 
 279
-00:15:56,160 --> 00:16:00,000
-List all instances I want to go out adaptor so here
+01:55:56,370 --> 01:56:02,800
+after Reserve method was kind of something
+like this. thing is yes pretty much what
 
 280
-00:16:00,512 --> 00:16:01,536
-Candida service
+01:56:02,800 --> 01:56:09,489
+we achieved what's important is that we
+embrace the language of our domain
+within our code plus legacy code very
 
 281
-00:16:01,792 --> 00:16:05,376
-Princess we can even recording we know me to come dancing senator
+01:56:12,430 --> 01:56:17,469
+crappy and when we if we had time to
+executor and append
 
 282
-00:16:05,888 --> 00:16:07,936
-Cabana service
+01:56:17,469 --> 01:56:25,050
+we will have less warnings we just you
+know in second just just in front yeah
 
 283
-00:16:08,192 --> 00:16:11,520
-Ze707 it's a proxy to
+01:56:25,050 --> 01:56:30,160
+so we are talking
+about reservations, trains reception
 
 284
-00:16:12,032 --> 00:16:13,056
-I'm sending for
+01:56:30,160 --> 01:56:35,710
+at term present which is fulfilled you
+see so much, even if our domain experts
 
 285
-00:16:13,312 --> 00:16:14,080
-That
+01:56:35,710 --> 01:56:42,469
+is not able to read our code we can read
+in front of him and
 
 286
-00:16:14,592 --> 00:16:15,360
-Adaptor
+01:56:42,469 --> 01:56:49,070
+being, yeah, being able to have a
+discussion and he's being able to say no
 
 287
-00:16:15,872 --> 00:16:16,640
-Ok
+01:56:49,070 --> 01:56:54,340
+no this is not what I want for that
+system. so there is less
 
 288
-00:16:17,408 --> 00:16:22,016
-Step one instance of the dependencies I need to go to the outside world
+01:56:54,340 --> 01:57:00,199
+friction there is less gaps between what
+we implemented what we was talking about.
+so it's better if you want to follow him
 
 289
-00:16:22,272 --> 00:16:25,600
-Then what I need is to associate
+01:57:04,360 --> 01:57:11,810
+yeah we had some called ndependent show it in
+a few seconds, but just before that
 
 290
-00:16:26,880 --> 00:16:27,904
-Zigzag
+01:57:11,810 --> 01:57:19,310
+yeah that's because it takes time to
+switch as a final wrap-up we did not
 
 291
-00:16:28,160 --> 00:16:30,464
-So the attack on here is a web ticket manager
+01:57:19,310 --> 01:57:23,810
+have to time to to make you feel that
+because automate expertise in Paris and
 
 292
-00:16:30,976 --> 00:16:31,488
-So let's
+01:57:23,810 --> 01:57:29,120
+our first version was with him on stage
+but it's crucial to talk to your domain
+experts yeah most of the project has
 
 293
-00:16:31,744 --> 00:16:33,024
-College
+01:57:31,429 --> 01:57:36,710
+issue because the developers are not even
+allowed to talk to domain experts.
 
 294
-00:16:33,792 --> 00:16:39,936
-Is it going to here for
+01:57:36,710 --> 01:57:41,239
+so for me so no it's a no-go I finish I
+decide not to go to the project if it's
+like this, but it wasn't the case at the
 
 295
-00:16:40,192 --> 00:16:42,496
-Unusual business
+01:57:43,370 --> 01:57:50,300
+beginning of my career so takes yes it
+takes courage time determination to
 
 296
-00:16:42,752 --> 00:16:45,056
-Name so please don't tell Eric
+01:57:50,300 --> 01:57:58,120
+enforce that. but it's crucial otherwise
+yeah not as if they don't buy the legacy
 
 297
-00:16:45,568 --> 00:16:50,688
-Trinidad Express
+01:57:58,120 --> 01:58:04,610
+because I'm a coach and I learn how to
+refactor the code generate people when
 
 298
-00:16:50,944 --> 00:16:51,456
-Toffee TV
+01:58:04,610 --> 01:58:09,560
+there is dependencies said my code is
+not testable actually we can test any
 
 299
-00:16:51,968 --> 00:16:54,016
-Weather for ME2 397 hair
+01:58:09,560 --> 01:58:16,820
+code any code so don't be daunted by it
+I guess you may have some gut to do so yeah it
+cost I but it's doable yeah and also
 
 300
-00:16:54,528 --> 00:16:57,344
-And then instead of going directly the lagoon
+01:58:21,530 --> 01:58:27,080
+it's we don't use a lot of techniques
+here we basically use two basic
 
 301
-00:16:58,112 --> 00:17:04,256
-All I said before is the application would have to interact with my biometrics
+01:58:27,080 --> 01:58:30,260
+techniques from the refactoring book of
+Martin Fowler
 
 302
-00:17:04,512 --> 00:17:06,560
-IPhone adaptor so let's introduce it
+01:58:30,260 --> 01:58:35,780
+it's extract and move methods so it's
+pretty much simple as soon as you have a
+test Alice which is the first steps you
 
 303
-00:17:08,096 --> 00:17:08,608
-Supreme
+01:58:38,199 --> 01:58:44,739
+can extract and move very very easily
+the more complicated is to find some
 
 304
-00:17:08,864 --> 00:17:11,424
-Interested I want to go in adaptor so here
+01:58:44,739 --> 01:58:53,640
+proper semantics and to and to invest in
+your domain design they we have great
 
 305
-00:17:11,680 --> 00:17:14,496
-I can do is to what how can we then use it
+01:58:53,640 --> 01:58:57,930
+in track of improvement as you just said
+by some of you. yes this is something
 
 306
-00:17:23,200 --> 00:17:24,992
-Providing what should I provide
+01:58:57,930 --> 01:59:05,730
+that is a living and ensuring you have
+yeah you have been very interactive user
+so thank you very much
 
 307
-00:17:26,784 --> 00:17:30,112
-That sounds like Russian dolls
-
-308
-00:17:30,624 --> 00:17:36,768
-Those two fasts where providing two things are going here and eggs are going to provide into theatres in UK
-
-309
-00:17:38,560 --> 00:17:43,680
-Ok so I tried to go to talk because it's so far you just had men aesthetic
-
-310
-00:17:44,448 --> 00:17:46,240
-From chance ok
-
-311
-00:17:46,496 --> 00:17:50,848
-Maybe you have to make an attraction and not to inject the web
-
-312
-00:17:51,104 --> 00:17:51,616
-Ticket manager
-
-313
-00:17:52,640 --> 00:17:58,528
-Yes actually yes you're right we talked about boxing at the Fox I like interfaces
-
-314
-00:17:59,040 --> 00:18:00,320
-So what I can do
-
-315
-00:18:00,832 --> 00:18:03,648
-Maybe is on the web ticket manager here
-
-316
-00:18:04,160 --> 00:18:10,304
-This information can write and we will change after so let's create an interface for that
-
-317
-00:18:10,560 --> 00:18:11,584
-Adana CI
-
-318
-00:18:14,656 --> 00:18:16,192
-Arizer solo
-
-319
-00:18:16,448 --> 00:18:17,984
-No sorry
-
-320
-00:18:20,800 --> 00:18:23,104
-I
-
-321
-00:18:23,360 --> 00:18:29,504
-I used to work in the on the market so we tried to pick a team order to resolve action 600
-
-322
-00:18:29,760 --> 00:18:31,808
-Weather AccuWeather
-
-323
-00:18:32,576 --> 00:18:34,880
-Yes but never sent you one
-
-324
-00:18:35,392 --> 00:18:41,024
-I was asleep I tried to text using Google IP address
-
-325
-00:18:41,280 --> 00:18:47,424
-Yeah so I asked I had already told on that device
-
-326
-00:18:49,216 --> 00:18:50,752
-This is a box
-
-327
-00:18:51,008 --> 00:18:54,080
-This is a box in order to Enter the Dragon
-
-328
-00:18:54,592 --> 00:18:56,896
-So I'm getting back to the garden yet
-
-329
-00:18:57,408 --> 00:18:57,920
-Share
-
-330
-00:18:58,432 --> 00:19:03,808
-What I will provide to the external adaptor it will be the exam but as
-
-331
-00:19:04,064 --> 00:19:04,832
-Hobbs
-
-332
-00:19:05,856 --> 00:19:08,928
-Go to politician as a child of 6
-
-333
-00:19:10,208 --> 00:19:11,232
-I resisted.
-
-334
-00:19:12,512 --> 00:19:13,024
-Ok
-
-335
-00:19:13,280 --> 00:19:17,120
-Let me type it into a private folder here I will need it
-
-336
-00:19:17,888 --> 00:19:21,472
-So I started off as a fashion editor
-
-337
-00:19:21,984 --> 00:19:22,496
-Ok
-
-338
-00:19:23,008 --> 00:19:23,520
-Soap
-
-339
-00:19:23,776 --> 00:19:24,800
-Chillstep
-
-340
-00:19:25,056 --> 00:19:28,128
-Glyphosate 1127 for that
-
-341
-00:19:31,712 --> 00:19:35,296
-Biannual need to replace the direct call to zigzagoon
-
-342
-00:19:36,320 --> 00:19:39,136
-My something going through the adaptor you know
-
-343
-00:19:39,648 --> 00:19:44,512
-So just to make it compile I will go to the coffee off to work now
-
-344
-00:19:45,024 --> 00:19:48,864
-Machine the place where I will use that exact same adaptor
-
-345
-00:19:49,632 --> 00:19:50,912
-Find acoperire
-
-346
-00:19:51,424 --> 00:19:52,704
-I will need to
-
-347
-00:19:53,216 --> 00:19:56,288
-My entry point with me together with an Acer Liquid Z2
-
-348
-00:19:56,800 --> 00:19:59,104
-So I will get to this emotion because it's you
-
-349
-00:19:59,360 --> 00:20:02,432
-Lyrics to the ladder and the other will get back
-
-350
-00:20:02,688 --> 00:20:03,712
-Newsagent
-
-351
-00:20:03,968 --> 00:20:07,296
-Relating to the ocean
-
-352
-00:20:08,064 --> 00:20:11,648
-So do you so I think that I shall issue is not in the Pop-up Play off
-
-353
-00:20:12,160 --> 00:20:18,304
-I won't be able to elicit message from the from the desk so I think that maybe
-
-354
-00:20:18,560 --> 00:20:21,120
-Pencil Project
-
-355
-00:20:21,632 --> 00:20:24,704
-As long as so I was just created and directories here
-
-356
-00:20:25,472 --> 00:20:27,520
-Electrical conduit aluminum
-
-357
-00:20:28,032 --> 00:20:29,568
-Alright in consulate of hop
-
-358
-00:20:30,080 --> 00:20:30,848
-So that meeting
-
-359
-00:20:31,104 --> 00:20:32,128
-Stock to splits
-
-360
-00:20:33,920 --> 00:20:34,944
-Info
-
-361
-00:20:35,456 --> 00:20:38,016
-How to join party
-
-362
-00:20:38,272 --> 00:20:42,112
-We are able to speak properly every type into the population
-
-363
-00:20:42,880 --> 00:20:45,440
-Agitating to merchandise for
-
-364
-00:20:46,464 --> 00:20:50,560
-Be sure that every 5 much to type so looking at us
-
-365
-00:20:51,584 --> 00:20:52,608
-What is a schooner
-
-366
-00:20:52,864 --> 00:20:54,400
-What's the weather
-
-367
-00:20:56,192 --> 00:20:57,472
-Looking at someone's eyes
-
-368
-00:20:57,728 --> 00:21:00,544
-It's about men only the name will be different that
-
-369
-00:21:04,896 --> 00:21:05,408
-Porsche
-
-370
-00:21:06,688 --> 00:21:08,224
-Romania
-
-371
-00:21:08,480 --> 00:21:10,016
-Booking a civil service
-
-372
-00:21:11,808 --> 00:21:16,672
-Dementia
-
-373
-00:21:16,928 --> 00:21:17,696
-Sunderland
-
-374
-00:21:18,720 --> 00:21:20,000
-I suggested
-
-375
-00:21:21,536 --> 00:21:22,048
-Support
-
-376
-00:21:22,816 --> 00:21:23,584
-To Vauxhall
-
-377
-00:21:24,352 --> 00:21:25,376
-Domain name
-
-378
-00:21:25,888 --> 00:21:28,192
-Itrain data service
-
-379
-00:21:28,960 --> 00:21:31,520
-Alison Edwards into the mains ok
-
-380
-00:21:32,544 --> 00:21:33,312
-Shane Duffy
-
-381
-00:21:33,568 --> 00:21:34,336
-Animation
-
-382
-00:21:35,360 --> 00:21:36,640
-Damental rights
-
-383
-00:21:38,944 --> 00:21:39,456
-Same
-
-384
-00:21:40,224 --> 00:21:41,504
-Resolution of video
-
-385
-00:21:42,272 --> 00:21:43,040
-Something
-
-386
-00:21:44,064 --> 00:21:45,856
-Animation video also
-
-387
-00:21:46,112 --> 00:21:52,256
-I said it's much more something to implement a new digital age in there is no added value more than
-
-388
-00:21:53,792 --> 00:21:54,304
-Sips
-
-389
-00:21:55,328 --> 00:21:56,352
-The MegaMind
-
-390
-00:21:57,120 --> 00:22:01,728
-I'm cannot attend because you are more than ins on the prostitute machine undertakings all my projects
-
-391
-00:22:02,496 --> 00:22:04,800
-So far for 16 and 4
-
-392
-00:22:08,128 --> 00:22:09,408
-Supervision and after
-
-393
-00:22:09,920 --> 00:22:11,200
-Ella dearest Battleday
-
-394
-00:22:11,968 --> 00:22:13,504
-Stratagem
-
-395
-00:22:13,760 --> 00:22:15,808
-Somerton Festival 2015
-
-396
-00:22:17,088 --> 00:22:18,368
-Lemon for acne
-
-397
-00:22:18,624 --> 00:22:19,904
-If anything changes the name
-
-398
-00:22:20,160 --> 00:22:21,440
-Trailer
-
-399
-00:22:21,696 --> 00:22:22,464
-Is it the man
-
-400
-00:22:23,232 --> 00:22:24,512
-Top of the Pops
-
-401
-00:22:25,024 --> 00:22:28,352
-And what do we have candida summer's
-
-402
-00:22:30,400 --> 00:22:32,448
-Astrocenter
-
-403
-00:22:32,960 --> 00:22:34,240
-And went to get manager
-
-404
-00:22:36,544 --> 00:22:38,080
-Exercising
-
-405
-00:22:38,336 --> 00:22:42,688
-Read so Sally Skinner's son to St Peter shoulder to get
-
-406
-00:22:43,968 --> 00:22:44,736
-Lottery
-
-407
-00:22:46,272 --> 00:22:48,832
-You know it's ok so let's put into the
-
-408
-00:22:49,088 --> 00:22:50,624
-Best ticketing Limited
-
-409
-00:22:51,392 --> 00:22:57,536
-Oops sorry I don't know what I'm doing it into the middle before we completely clean the house
-
-410
-00:22:57,792 --> 00:22:59,584
-And put it into the living
-
-411
-00:23:00,352 --> 00:23:04,448
-I want some space here for this for the project
-
-412
-00:23:05,216 --> 00:23:06,752
-So that anyone with me
-
-413
-00:23:07,008 --> 00:23:07,776
-The puppet
-
-414
-00:23:10,080 --> 00:23:10,848
-Booty
-
-415
-00:23:11,360 --> 00:23:15,968
-So what I was saying is I will from the
-
-416
-00:23:18,528 --> 00:23:19,040
-Sugar
-
-417
-00:23:19,552 --> 00:23:20,832
-What are system issues
-
-418
-00:23:22,112 --> 00:23:23,136
-Getting back to the test
-
-419
-00:23:23,392 --> 00:23:23,904
-Ok
-
-420
-00:23:24,416 --> 00:23:29,024
-I said that I would like to introduce a way to interact with yellow eyeshadow
-
-421
-00:23:29,536 --> 00:23:30,048
-So let's
-
-422
-00:23:31,584 --> 00:23:32,352
-Offensive
-
-423
-00:23:32,864 --> 00:23:36,704
-It's a Boston jewellery made on M25
-
-424
-00:23:36,960 --> 00:23:38,752
-New is emotionally present
-
-425
-00:23:39,008 --> 00:23:40,544
-I don't know if you remove it
-
-426
-00:23:41,824 --> 00:23:43,104
-I don't know I didn't know
-
-427
-00:23:43,360 --> 00:23:44,640
-Thanks will also
-
-428
-00:23:45,152 --> 00:23:48,224
-Revolutionary questions you're here afternoon
-
-429
-00:23:48,480 --> 00:23:50,784
-Is it on the map Project
-
-430
-00:23:51,040 --> 00:23:52,576
-Muscle food
-
-431
-00:23:53,600 --> 00:23:55,392
-Tamilrockers
-
-432
-00:23:55,648 --> 00:23:57,184
-Next National Lottery draw
-
-433
-00:23:57,696 --> 00:23:58,720
-Ok
-
-434
-00:23:59,488 --> 00:24:02,304
-For now I will be able to see what it comes with it
-
-435
-00:24:02,560 --> 00:24:05,888
-Otherwise it will be baptism with API which has more
-
-436
-00:24:06,656 --> 00:24:08,192
-Restaurants Southall
-
-437
-00:24:08,960 --> 00:24:13,312
-So I wish you I will set a new reservation request need to know
-
-438
-00:24:13,568 --> 00:24:17,920
-This is expedited come up with us to install said that for me but
-
-439
-00:24:18,432 --> 00:24:20,992
-I will number 10 will be
-
-440
-00:24:21,248 --> 00:24:21,760
-Centre
-
-441
-00:24:22,016 --> 00:24:22,528
-Suits
-
-442
-00:24:23,040 --> 00:24:25,088
-Christian Coulson
-
-443
-00:24:25,600 --> 00:24:28,928
-And then the other trilogy
-
-444
-00:24:29,184 --> 00:24:32,768
-For here I'm sitting eating a lot of the season
-
-445
-00:24:33,280 --> 00:24:34,304
-Museum Ellesmere Port
-
-446
-00:24:34,560 --> 00:24:36,352
-Etobicoke foresight
-
-447
-00:24:36,864 --> 00:24:38,656
-Any 2010 in here
-
-448
-00:24:41,472 --> 00:24:43,008
-Ok so here
-
-449
-00:24:44,544 --> 00:24:48,128
-I bust a new requested to you
-
-450
-00:24:48,384 --> 00:24:48,896
-The nearest
-
-451
-00:24:50,432 --> 00:24:55,808
-This Makita liable to make it clear and 20th anniversary
-
-452
-00:24:56,064 --> 00:24:58,880
-Celebrity quiz UK
-
-453
-00:24:59,648 --> 00:25:03,488
-And then I puzzle international consultancy TV presenter
-
-454
-00:25:04,256 --> 00:25:05,536
-Be able to go in adaptor
-
-455
-00:25:06,048 --> 00:25:08,096
-Christmas holidays in the Sun
-
-456
-00:25:08,608 --> 00:25:13,984
-Instead of returning void I will return any string
-
-457
-00:25:14,240 --> 00:25:16,032
-Tunisia you don't know when
-
-458
-00:25:16,288 --> 00:25:18,592
-I don't hear it
-
-459
-00:25:19,616 --> 00:25:25,760
-Returns of the English more like asp.net internal structure to make a response but I won't go into that
-
-460
-00:25:26,016 --> 00:25:26,784
-Humid
-
-461
-00:25:27,040 --> 00:25:28,832
-Anniversary presents UK
-
-462
-00:25:29,344 --> 00:25:30,368
-So here I'm
-
-463
-00:25:31,136 --> 00:25:31,904
-In the bus
-
-464
-00:25:32,160 --> 00:25:32,928
-Smythson
-
-465
-00:25:33,696 --> 00:25:38,048
-Luxury Brittany by diesel
-
-466
-00:25:38,304 --> 00:25:40,096
-There is another version something like that
-
-467
-00:25:41,120 --> 00:25:41,632
-Why not
-
-468
-00:25:41,888 --> 00:25:47,264
-For the other two will you tell me that and I will accept them on that
-
-469
-00:25:47,520 --> 00:25:48,544
-Instead of all that
-
-470
-00:25:52,128 --> 00:25:53,152
-Should we call to that
-
-471
-00:25:53,408 --> 00:25:59,040
-Exacerbated
-
-472
-00:25:59,296 --> 00:25:59,808
-Yellowtail
-
-473
-00:26:00,576 --> 00:26:02,368
-So I don't I don't mind
-
-474
-00:26:03,392 --> 00:26:07,488
-Three Steps to install kodi on firestick
-
-475
-00:26:07,744 --> 00:26:11,840
-Then when I'm in every method of the other three stability
-
-476
-00:26:12,352 --> 00:26:13,120
-It's
-
-477
-00:26:14,144 --> 00:26:16,704
-Prostate is to edit forms are constituted Enderman
-
-478
-00:26:17,984 --> 00:26:20,032
-Single step is to call the military
-
-479
-00:26:20,544 --> 00:26:23,360
-And then the first step is to adopt Cumberland
-
-480
-00:26:23,872 --> 00:26:25,920
-Answer of putting password you want to return it
-
-481
-00:26:27,456 --> 00:26:31,552
-You know well what is a bottom entry method of had a total list
-
-482
-00:26:31,808 --> 00:26:32,832
-Making sure
-
-483
-00:26:33,088 --> 00:26:38,720
-In that case I don't have to adopt you so I will just introduce a new variable
-
-484
-00:26:39,232 --> 00:26:41,536
-For the number seats
-
-485
-00:26:41,792 --> 00:26:47,936
-Invitation Rayquaza in real life baby do you have to sterilise Your Say
-
-486
-00:26:48,192 --> 00:26:48,960
-Southend
-
-487
-00:26:49,216 --> 00:26:50,496
-Who is similar to step
-
-488
-00:26:50,752 --> 00:26:54,592
-Because ice. Is that far for us that sometimes you have to
-
-489
-00:26:54,848 --> 00:26:56,640
-Translate to German
-
-490
-00:26:56,896 --> 00:26:58,176
-In local variable
-
-491
-00:26:58,432 --> 00:26:58,944
-4
-
-492
-00:26:59,456 --> 00:27:00,224
-The domain object
-
-493
-00:27:00,736 --> 00:27:06,880
-So here what I just did this to get some diapers but this is where you will have to talk later.
-
-494
-00:27:07,136 --> 00:27:09,696
-Adjust whatever I text to O2
-
-495
-00:27:09,952 --> 00:27:11,744
-From here to prawns in the Midlands
-
-496
-00:27:12,768 --> 00:27:18,912
-So now I called her eggs are gone so he's going that says it's a business domain
-
-497
-00:27:19,168 --> 00:27:20,960
-I'm the Sword and I put it there
-
-498
-00:27:21,216 --> 00:27:24,032
-Turn a local variable that end in Dorset
-
-499
-00:27:26,080 --> 00:27:28,128
-Animosity call me requested
-
-500
-00:27:29,408 --> 00:27:30,688
-Anymore
-
-501
-00:27:34,272 --> 00:27:35,808
-I called the exact
-
-502
-00:27:36,064 --> 00:27:39,136
-It's a written resolution
-
-503
-00:27:39,648 --> 00:27:41,696
-Cirencester Patterdale Cross
-
-504
-00:27:41,952 --> 00:27:42,976
-Tyres on a Sunday
-
-505
-00:27:43,488 --> 00:27:46,304
-Cinta salah search method I will have to await
-
-506
-00:27:46,816 --> 00:27:52,960
-That's untrue sorry says some July
-
-507
-00:27:53,216 --> 00:27:54,752
-Simpsons of Mercedes SE
-
-508
-00:27:55,008 --> 00:28:01,152
-Because it's closer I sync my phone I have to do so and then adapt some of her
-
-509
-00:28:01,408 --> 00:28:07,552
-Hotels in Benalmadena
-
-510
-00:28:09,088 --> 00:28:11,392
-And you're a retard
-
-511
-00:28:12,672 --> 00:28:16,000
-NCIS origination comes a MiDAS music
-
-512
-00:28:16,256 --> 00:28:17,024
-And then
-
-513
-00:28:17,280 --> 00:28:19,072
-What I do is true
-
-514
-00:28:19,840 --> 00:28:20,608
-Adam Birch
-
-515
-00:28:20,864 --> 00:28:21,888
-Forms of dementia
-
-516
-00:28:22,144 --> 00:28:23,168
-Provision
-
-517
-00:28:23,424 --> 00:28:25,216
-Pathogen
-
-518
-00:28:25,984 --> 00:28:28,800
-Mrs still read what did I miss
-
-519
-00:28:29,312 --> 00:28:30,848
-Mercia
-
-520
-00:28:35,456 --> 00:28:41,600
-America
-
-521
-00:28:41,856 --> 00:28:44,160
-This is Michigan weather in Ashington
-
-522
-00:28:49,792 --> 00:28:52,864
-Sorry for the wait time 29th
-
-523
-00:28:53,120 --> 00:28:54,144
-In asp.net
-
-524
-00:28:54,656 --> 00:29:00,800
-Topsy Regency with one of the process we have done what we have to do is no completion notification
-
-525
-00:29:02,336 --> 00:29:04,128
-I don't know what you want to do
-
-526
-00:29:05,152 --> 00:29:08,224
-We have less than 10 minutes I think
-
-527
-00:29:09,504 --> 00:29:10,016
-What
-
-528
-00:29:10,272 --> 00:29:16,160
-That part should near the one that we will put into the set-up of the application so I can do that
-
-529
-00:29:16,672 --> 00:29:18,464
-Dragon tattoos on Weber spirit
-
-530
-00:29:18,720 --> 00:29:23,584
-Movie spirited to keep some time for questions or for killing rabbits for new thing ok
-
-531
-00:29:24,608 --> 00:29:27,168
-The weather today will have to run for the return
-
-532
-00:29:27,936 --> 00:29:28,704
-Uniplate
-
-533
-00:29:30,240 --> 00:29:30,752
-So
-
-534
-00:29:36,384 --> 00:29:36,896
-Robert
-
-535
-00:29:37,920 --> 00:29:42,272
-We started from situation like this we have a web ticket manager
-
-536
-00:29:42,784 --> 00:29:48,416
-Wizadora positive are good diseases that do that and then the Zen Den
-
-537
-00:29:48,672 --> 00:29:52,000
-And after all we need to some more
-
-538
-00:29:52,256 --> 00:29:54,560
-Golf courses Stanton Moor
-
-539
-00:29:55,072 --> 00:29:57,120
-I don't know what to say at the shops
-
-540
-00:29:58,400 --> 00:29:59,424
-Rockin concerts
-
-541
-00:30:00,960 --> 00:30:04,544
-After all the others are scared of something like this
-
-542
-00:30:04,800 --> 00:30:05,568
-Thing is
-
-543
-00:30:05,824 --> 00:30:07,616
-Yes pretty much what we had shaved
-
-544
-00:30:09,920 --> 00:30:13,760
-What's important that we Embrace the long weather for older men
-
-545
-00:30:14,016 --> 00:30:14,784
-Weed awkward
-
-546
-00:30:15,040 --> 00:30:17,088
-But we get so Good lyrics rapping
-
-547
-00:30:17,344 --> 00:30:23,488
-And when we if we had time to executor new panda will have less warnings
-
-548
-00:30:23,744 --> 00:30:25,536
-Control urinating
-
-549
-00:30:26,048 --> 00:30:28,864
-Just just informed you
-
-550
-00:30:29,632 --> 00:30:35,776
-So we are we will come down sticking back to the nations that trend was actually don't put all of this field
-
-551
-00:30:36,032 --> 00:30:37,056
-Musixmatch
-
-552
-00:30:37,568 --> 00:30:43,712
-UB40 that is not able to read our code we can read a code in front of him
-
-553
-00:30:44,992 --> 00:30:51,136
-Nbr yeah being able to have a discussion and he's
-
-554
-00:30:51,392 --> 00:30:57,024
-Amoxicillin is not what I want for fall for the system start stop
-
-555
-00:30:57,280 --> 00:30:58,304
-So there is less
-
-556
-00:30:59,072 --> 00:31:04,192
-Pretenders live gaps between between Plymouth and what she was talking about
-
-557
-00:31:04,704 --> 00:31:05,216
-Sides
-
-558
-00:31:05,472 --> 00:31:07,008
-Madonna if you want to follow him
-
-559
-00:31:10,080 --> 00:31:16,224
-We had some independent show it in a few seconds but just before that no longer
-
-560
-00:31:16,480 --> 00:31:19,296
-Listen because it takes time to switch
-
-561
-00:31:20,832 --> 00:31:22,368
-As a father Robin
-
-562
-00:31:22,880 --> 00:31:29,024
-We will have to 1:50 to make you feel that because all the racecourses in Paris and authorisation weather
-
-563
-00:31:29,280 --> 00:31:30,816
-Museum on stairs
-
-564
-00:31:31,072 --> 00:31:37,216
-But it's crucial to talk to your limit expect yet muscle project as it should because delivery note
-
-565
-00:31:37,472 --> 00:31:40,544
-Allowed to I want to talk to the next.
-
-566
-00:31:40,800 --> 00:31:45,664
-Performing to know it's a number I think she said not to go to the project if it's like this
-
-567
-00:31:45,920 --> 00:31:48,992
-But it wasn't looking at the beginning of a carrier so
-
-568
-00:31:49,504 --> 00:31:55,136
-Text yes it's Takes correct time determination to Twin Falls at
-
-569
-00:31:55,392 --> 00:31:57,440
-When is crucial otherwise
-
-570
-00:31:59,744 --> 00:32:01,536
-Who has India done by the Legacy
-
-571
-00:32:02,816 --> 00:32:08,960
-Because I'm a coach and I learn how to reflect all of the Godzilla people when there is
-
-572
-00:32:09,216 --> 00:32:14,080
-Dependencies said my code is not testable I surely we can test a nickel
-
-573
-00:32:14,848 --> 00:32:15,360
-Eniko
-
-574
-00:32:15,872 --> 00:32:16,384
-So
-
-575
-00:32:16,640 --> 00:32:17,920
-Don't be daunted by biggest
-
-576
-00:32:18,176 --> 00:32:19,200
-You may have some dust
-
-577
-00:32:22,528 --> 00:32:28,672
-Yeah and also do if we don't use a lot of techniques
-
-578
-00:32:28,928 --> 00:32:30,464
-We basically used to
-
-579
-00:32:30,720 --> 00:32:34,304
-Betting techniques from the refectory Newcastle knotting Ferrell
-
-580
-00:32:34,560 --> 00:32:37,120
-It's extracted move message so it's
-
-581
-00:32:37,632 --> 00:32:38,400
-Pretty Made Simple
-
-582
-00:32:38,912 --> 00:32:40,448
-As soon as you have a tetanus
-
-583
-00:32:40,704 --> 00:32:41,728
-Beautiful steps
-
-584
-00:32:42,752 --> 00:32:44,032
-You can apply to move
-
-585
-00:32:44,288 --> 00:32:45,568
-Very very easily
-
-586
-00:32:45,824 --> 00:32:48,640
-The more complicated is to find some
-
-587
-00:32:49,408 --> 00:32:52,224
-Popular Simon chicken in NN2
-
-588
-00:32:52,480 --> 00:32:54,784
-Interinvest new older men designer
-
-589
-00:32:55,040 --> 00:32:58,880
-Do we have greater impact of improvement
-
-590
-00:32:59,136 --> 00:33:00,416
-If you just send me some of you
-
-591
-00:33:00,672 --> 00:33:04,256
-Yes this is something that is only doing and I'm inserting
-
-592
-00:33:06,304 --> 00:33:12,448
-You have been very interesting with that so thank you very much
+01:59:07,190 --> 01:59:12,340
+[Applause]
